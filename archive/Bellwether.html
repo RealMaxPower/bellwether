@@ -1,0 +1,984 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Bellwether — ISM PMI in Historical Context</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: only light;
+  forced-color-adjust: none;
+  --paper: #f5f0e6; --paper-2: #ede6d6; --paper-edge: #ddd3bf;
+  --ink: #1a1814; --ink-2: #3a352c; --ink-3: #6b6354; --ink-4: #9a9079;
+  --oxblood: #8b1e1e; --teal: #1f5f5b; --ochre: #a87a2a; --indigo: #2c3e6b;
+  --recession: rgba(139, 30, 30, 0.08);
+  --serif: 'Source Serif 4', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', Menlo, monospace;
+}
+* { box-sizing: border-box; }
+html { background-color: #f5f0e6 !important; color-scheme: only light; }
+html, body { margin: 0; padding: 0; background-color: #f5f0e6 !important; color: #1a1814 !important; font-family: var(--serif); font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+body { background-image: radial-gradient(ellipse at 20% 0%, rgba(168,122,42,0.03) 0%, transparent 50%), radial-gradient(ellipse at 80% 100%, rgba(44,62,107,0.025) 0%, transparent 50%); min-height: 100vh; }
+@media (prefers-color-scheme: dark) {
+  html, body { background-color: #f5f0e6 !important; color: #1a1814 !important; }
+}
+button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; padding: 0; }
+button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+h1,h2,h3,h4 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.01em; margin: 0; text-wrap: balance; }
+p { margin: 0; text-wrap: pretty; }
+
+.eyebrow { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
+
+.masthead { border-bottom: 1px solid var(--ink); padding: 14px 32px 12px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: end; gap: 24px; background: var(--paper); position: sticky; top: 0; z-index: 50; }
+.masthead-left { font-family: var(--sans); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); display: flex; gap: 18px; }
+.masthead-left .dot { display:inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--oxblood); margin-right:6px; vertical-align: middle; animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+.brand { font-family: var(--serif); font-size: 38px; font-weight: 500; letter-spacing: -0.03em; line-height: 1; text-align: center; }
+.brand .ornament { display: inline-block; margin: 0 10px; color: var(--oxblood); font-size: 14px; vertical-align: 4px; }
+.brand-sub { font-family: var(--sans); font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-3); text-align: center; margin-top: 4px; }
+.masthead-right { display: flex; justify-content: flex-end; gap: 6px; }
+
+.modes { display: flex; border-bottom: 1px solid var(--ink); padding: 0 32px; background: var(--paper); position: sticky; top: 76px; z-index: 40; }
+.mode-tab { padding: 14px 22px 12px; font-family: var(--sans); font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); border-bottom: 2px solid transparent; margin-bottom: -1px; display: flex; align-items: center; gap: 10px; }
+.mode-tab:hover { color: var(--ink); }
+.mode-tab.active { color: var(--ink); border-bottom-color: var(--oxblood); font-weight: 600; }
+.mode-tab .num { font-family: var(--mono); font-size: 10px; color: var(--ink-4); font-weight: 400; }
+.mode-tab.active .num { color: var(--oxblood); }
+
+.btn { font-family: var(--sans); font-size: 11px; font-weight: 500; letter-spacing: 0.06em; padding: 7px 14px; border: 1px solid var(--ink); background: var(--paper); color: var(--ink); }
+.btn:hover { background: var(--ink); color: var(--paper); }
+.btn.ghost { border-color: var(--paper-edge); color: var(--ink-3); }
+.btn.ghost:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+.intro { max-width: 1280px; margin: 0 auto; padding: 40px 32px 28px; display: grid; grid-template-columns: 1fr 320px; gap: 48px; align-items: end; border-bottom: 1px solid var(--paper-edge); }
+.intro h1 { font-size: 60px; font-weight: 400; font-style: italic; letter-spacing: -0.025em; line-height: 1; max-width: 14ch; }
+.intro h1 em { font-style: normal; font-weight: 600; color: var(--oxblood); }
+.intro-deck { font-family: var(--serif); font-size: 17px; line-height: 1.55; color: var(--ink-2); margin-top: 24px; max-width: 60ch; }
+.intro-meta { font-family: var(--sans); font-size: 11px; color: var(--ink-3); letter-spacing: 0.06em; }
+.intro-meta div { padding: 8px 0; border-top: 1px solid var(--paper-edge); display: flex; justify-content: space-between; }
+.intro-meta div:last-child { border-bottom: 1px solid var(--paper-edge); }
+.intro-meta strong { color: var(--ink); font-weight: 600; font-family: var(--mono); font-size: 12px; }
+
+.mode-page { max-width: 1280px; margin: 0 auto; padding: 28px 32px 80px; }
+
+.stat-strip { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--ink); margin-bottom: 20px; }
+.stat-cell { padding: 16px 24px; border-right: 1px solid var(--paper-edge); }
+.stat-cell:last-child { border-right: none; }
+.stat-cell .label { font-family: var(--sans); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 4px; }
+.stat-cell .value { font-family: var(--mono); font-size: 22px; color: var(--ink); font-weight: 500; }
+.stat-cell .delta { font-family: var(--mono); font-size: 11px; margin-top: 2px; }
+.stat-cell .delta.up { color: var(--teal); } .stat-cell .delta.down { color: var(--oxblood); }
+
+.panel { background: var(--paper); border: 1px solid var(--ink); padding: 20px 24px 16px; }
+.panel-soft { background: var(--paper-2); border: 1px solid var(--paper-edge); padding: 18px 22px; }
+
+.pill { display: inline-flex; align-items: center; gap: 6px; font-family: var(--sans); font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 10px; border: 1px solid currentColor; }
+.pill.monetary { color: var(--indigo); } .pill.fiscal { color: var(--ochre); }
+.pill.trade { color: var(--teal); } .pill.regulatory { color: var(--ink-2); }
+.pill.exogenous { color: var(--oxblood); }
+.pill .swatch { width: 6px; height: 6px; background: currentColor; border-radius: 50%; }
+
+.drawer-backdrop { position: fixed; inset: 0; background: rgba(26,24,20,0.25); backdrop-filter: blur(2px); z-index: 100; opacity: 0; pointer-events: none; transition: opacity 0.2s; }
+.drawer-backdrop.open { opacity: 1; pointer-events: auto; }
+.drawer { position: fixed; top: 0; right: 0; bottom: 0; width: 540px; max-width: 92vw; background: var(--paper); z-index: 101; transform: translateX(100%); transition: transform 0.28s cubic-bezier(0.32, 0.72, 0, 1); display: flex; flex-direction: column; border-left: 1px solid var(--ink); box-shadow: -16px 0 40px rgba(26,24,20,0.1); }
+.drawer.open { transform: translateX(0); }
+.drawer-head { padding: 22px 28px 18px; border-bottom: 1px solid var(--ink); position: relative; }
+.drawer-close { position: absolute; top: 16px; right: 16px; width: 28px; height: 28px; border: 1px solid var(--paper-edge); display: flex; align-items: center; justify-content: center; font-size: 14px; color: var(--ink-3); }
+.drawer-close:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.drawer-body { flex: 1; overflow-y: auto; padding: 24px 28px 40px; }
+.drawer-body::-webkit-scrollbar { width: 8px; }
+.drawer-body::-webkit-scrollbar-thumb { background: var(--paper-edge); }
+
+.interp { border-top: 1px solid var(--paper-edge); padding: 18px 0; }
+.interp:first-of-type { border-top: 1px solid var(--ink); }
+.interp-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+.interp-school { font-family: var(--sans); font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.interp-economist { font-family: var(--serif); font-size: 13px; font-style: italic; color: var(--ink-3); }
+.interp-body { font-family: var(--serif); font-size: 15px; line-height: 1.55; color: var(--ink-2); }
+
+.pull-quote { border-left: 3px solid var(--oxblood); padding: 14px 18px; margin: 20px 0; background: rgba(168,122,42,0.06); font-family: var(--serif); font-size: 15px; font-style: italic; color: var(--ink); line-height: 1.5; }
+.pull-quote .attribution { display: block; font-size: 11px; font-style: normal; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); margin-top: 8px; font-family: var(--sans); }
+
+.sources { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--paper-edge); }
+.sources ol { margin: 8px 0 0; padding-left: 20px; font-family: var(--sans); font-size: 11px; color: var(--ink-3); line-height: 1.6; }
+
+.footer { border-top: 1px solid var(--ink); padding: 24px 32px; font-family: var(--sans); font-size: 11px; color: var(--ink-3); display: flex; justify-content: space-between; }
+.footer .by { font-family: var(--serif); font-style: italic; font-size: 13px; color: var(--ink-2); }
+
+.chart-tooltip { position: absolute; pointer-events: none; background: var(--ink); color: var(--paper); padding: 8px 12px; font-family: var(--mono); font-size: 11px; line-height: 1.5; z-index: 30; min-width: 130px; }
+.chart-tooltip .tt-date { color: var(--paper-2); font-size: 10px; letter-spacing: 0.06em; }
+.chart-tooltip .tt-val { font-size: 16px; margin-top: 2px; }
+.chart-tooltip .tt-tag { color: var(--ochre); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 2px; }
+
+.events-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1px; background: var(--ink); border: 1px solid var(--ink); }
+.event-card { background: var(--paper); text-align: left; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; min-height: 96px; transition: background 0.15s; }
+.event-card:hover { background: var(--paper-2); }
+.event-card .head { display: flex; justify-content: space-between; align-items: center; }
+.event-card .title { font-family: var(--serif); font-size: 16px; font-weight: 500; line-height: 1.2; }
+.event-card .sub { font-family: var(--serif); font-size: 12px; font-style: italic; color: var(--ink-3); }
+
+.slider-row { margin-bottom: 14px; }
+.slider-row .label-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+.slider-row label { font-family: var(--serif); font-size: 14px; font-weight: 500; }
+.slider-row .swatch { display:inline-block; width: 8px; height: 8px; margin-right: 8px; vertical-align: middle; }
+.slider-row .val { font-family: var(--mono); font-size: 13px; font-weight: 500; }
+.slider-row input[type="range"] { width: 100%; accent-color: #1a1814; }
+
+.preset-btn { display: block; width: 100%; text-align: left; padding: 10px 14px; margin-bottom: 6px; border: 1px solid var(--paper-edge); background: var(--paper); font-family: var(--serif); font-size: 13px; color: var(--ink-2); }
+.preset-btn:hover { border-color: var(--ink); background: var(--paper-2); }
+
+.choice-btn { display: block; width: 100%; text-align: left; padding: 12px 14px; margin-bottom: 8px; border: 1px solid var(--ink); background: var(--paper); font-family: var(--serif); font-size: 14px; color: var(--ink); }
+.choice-btn:hover { background: var(--ink); color: var(--paper); }
+
+.scenario-tabs { display: grid; gap: 1px; background: var(--ink); border: 1px solid var(--ink); margin-bottom: 24px; grid-template-columns: repeat(5, 1fr); }
+.scenario-tab { background: var(--paper); padding: 14px 16px; text-align: left; }
+.scenario-tab.active { background: var(--ink); color: var(--paper); }
+.scenario-tab .num { font-family: var(--mono); font-size: 10px; opacity: 0.7; }
+.scenario-tab .label { font-family: var(--serif); font-size: 14px; font-weight: 500; line-height: 1.2; margin-top: 4px; display: block; }
+.scenario-tab .status { font-family: var(--mono); font-size: 10px; margin-top: 4px; opacity: 0.7; }
+
+.heat-grid { display: grid; gap: 1px; background: var(--ink-3); border: 1px solid var(--ink); }
+.heat-cell { padding: 12px 8px; font-family: var(--mono); font-size: 12px; font-weight: 500; text-align: center; }
+.heat-row-label { background: var(--paper); padding: 10px 12px; font-family: var(--sans); font-size: 12px; font-weight: 500; display: flex; align-items: center; }
+.heat-col-label { background: var(--paper); padding: 10px 12px; border-bottom: 1px solid var(--ink); }
+
+#root { min-height: 100vh; }
+.loading { display: flex; align-items: center; justify-content: center; min-height: 100vh; font-family: var(--serif); font-style: italic; color: var(--ink-3); }
+</style>
+</head>
+<body>
+<div id="root" style="background:#f5f0e6;color:#1a1814;min-height:100vh"><div class="loading" style="background:#f5f0e6;color:#1a1814">Loading Bellwether…</div></div>
+<script>
+window.addEventListener('error', function(ev){
+  var r = document.getElementById('root');
+  if (!r) return;
+  if (r.dataset.errored) return;
+  r.dataset.errored = '1';
+  r.innerHTML = '<div style="padding:40px;font-family:Georgia,serif;color:#1a1814;background:#f5f0e6;min-height:100vh"><h2 style="font-size:24px;margin-bottom:12px">Bellwether — script error</h2><pre style="white-space:pre-wrap;font-size:13px;font-family:monospace;background:#ede6d6;padding:14px;border:1px solid #ddd3bf">'+ (ev.error && (ev.error.stack||ev.error.message) || ev.message || 'unknown') +'</pre></div>';
+});
+</script>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" data-presets="react">
+const { useState, useMemo, useRef, useEffect } = React;
+
+/* ============ DATA ============ */
+const PMI_ANCHORS = [
+  [1948,6,52],[1949,6,41],[1950,0,53],[1951,6,56],[1953,0,60],[1953,11,41],[1954,6,47],[1955,6,60],
+  [1957,0,56],[1958,3,36],[1959,5,65],[1960,6,45],[1961,0,41],[1962,6,56],[1964,6,60],[1966,6,60],
+  [1967,6,47],[1968,6,56],[1970,11,43],[1972,6,60],[1973,9,65],[1974,11,33],[1975,5,38],[1976,6,56],
+  [1978,6,59],[1979,9,53],[1980,4,30],[1980,11,56],[1981,6,47],[1982,5,36],[1983,0,47],[1984,0,65],
+  [1985,6,49],[1987,0,53],[1988,6,58],[1990,11,39],[1991,6,51],[1992,11,56],[1994,6,58],[1995,6,50],
+  [1997,0,55],[1998,11,49],[2000,0,56],[2000,11,44],[2001,9,41],[2002,5,56],[2003,0,50],[2004,0,63],
+  [2007,0,51],[2007,11,48],[2008,11,33],[2009,5,45],[2010,0,58],[2011,6,51],[2012,6,49],[2013,11,56],
+  [2014,7,58],[2015,11,48],[2017,8,60],[2018,7,61],[2019,11,47],[2020,3,41],[2020,11,60],[2021,5,61],
+  [2022,5,53],[2022,11,48],[2023,5,46],[2024,0,49],[2025,11,50]
+];
+function buildPMI() {
+  const out = [];
+  for (let i = 0; i < PMI_ANCHORS.length - 1; i++) {
+    const [y0,m0,v0] = PMI_ANCHORS[i], [y1,m1,v1] = PMI_ANCHORS[i+1];
+    const t0 = y0*12+m0, t1 = y1*12+m1;
+    for (let t = t0; t < t1; t++) {
+      const f = (t-t0)/(t1-t0);
+      const v = v0 + (v1-v0)*f + Math.sin(t*1.731)*0.6 + Math.cos(t*0.917)*0.5;
+      out.push({ year: Math.floor(t/12), month: t%12, t, value: +v.toFixed(1) });
+    }
+  }
+  const [yL,mL,vL] = PMI_ANCHORS[PMI_ANCHORS.length-1];
+  out.push({ year: yL, month: mL, t: yL*12+mL, value: vL });
+  return out;
+}
+const PMI = buildPMI();
+const SUBS = {
+  newOrders: PMI.map(d => ({...d, value:+(d.value+Math.sin(d.t*0.34)*2.5+1.2).toFixed(1)})),
+  production: PMI.map(d => ({...d, value:+(d.value+Math.cos(d.t*0.41)*2.0+0.4).toFixed(1)})),
+  employment: PMI.map(d => ({...d, value:+(d.value-1.5+Math.sin(d.t*0.27)*1.6).toFixed(1)})),
+  supplier: PMI.map(d => ({...d, value:+(d.value+Math.sin(d.t*0.19)*3.0-0.5).toFixed(1)})),
+  inventories: PMI.map(d => ({...d, value:+(50+(d.value-50)*0.45+Math.cos(d.t*0.51)*2.4).toFixed(1)})),
+};
+const RECESSIONS = [[[1948,10],[1949,9]],[[1953,6],[1954,4]],[[1957,7],[1958,3]],[[1960,3],[1961,1]],[[1969,11],[1970,10]],[[1973,10],[1975,2]],[[1980,0],[1980,6]],[[1981,6],[1982,10]],[[1990,6],[1991,2]],[[2001,2],[2001,10]],[[2007,11],[2009,5]],[[2020,1],[2020,3]]];
+
+const POLICIES = [
+  {id:'bretton-end',title:'End of Bretton Woods',subtitle:'The Nixon Shock',start:[1971,7],end:[1971,7],kind:'monetary',
+    summary:'On August 15, 1971, President Nixon suspended the dollar’s convertibility to gold, ending the postwar fixed-exchange regime and ushering in the floating-rate era.',
+    interps:[{school:'Monetarist',who:'Milton Friedman',body:'A long-overdue release. Floating rates let monetary policy serve domestic stability instead of an arbitrary gold peg.'},{school:'Keynesian',who:'James Tobin',body:'A pragmatic response to a chronic balance-of-payments problem, but the loss of an external anchor would invite the inflation that followed.'},{school:'Heterodox',who:'Hyman Minsky',body:'Severing the gold link removed a discipline on credit creation. The next two decades would prove that floating rates are not a free lunch.'}],
+    quote:{text:'Customers are buying ahead. Lead times are stretching. Nobody knows what the dollar will do.',src:'ISM Manufacturing Report, October 1971'},
+    sources:['Nixon address to the nation, Aug 15 1971','Friedman & Schwartz, Monetary History','FOMC minutes Q3 1971']},
+  {id:'oil-1973',title:'1973 Oil Embargo',subtitle:'Exogenous shock',start:[1973,9],end:[1974,2],kind:'exogenous',
+    summary:'OAPEC’s embargo quadrupled crude prices in five months. Manufacturing PMI plunged from the mid-60s into the low 30s by late 1974 — one of the steepest drops in the series.',
+    interps:[{school:'Supply-side',who:'Robert Mundell',body:'A pure cost-push shock that monetary policy could not have prevented. Stagflation was an accounting identity, not a policy failure.'},{school:'Monetarist',who:'Allan Meltzer',body:'The Fed should have tightened sooner. By accommodating the price shock with loose money, it allowed cost-push to become wage-push.'}],
+    quote:{text:'Allocations from suppliers are unpredictable. Plans for Q1 are essentially fiction.',src:'ISM Report, December 1973'},
+    sources:['EIA crude price archive','Fed Board H.15 1973-74','Yergin, The Prize']},
+  {id:'volcker',title:'Volcker Disinflation',subtitle:'Whatever it takes',start:[1979,7],end:[1982,9],kind:'monetary',
+    summary:'Paul Volcker’s Fed raised the funds rate above 19% to break double-digit inflation. PMI cratered to 30 in 1980 and again to the mid-30s in 1982 — the deepest manufacturing recession of the postwar era.',
+    interps:[{school:'Monetarist',who:'Anna Schwartz',body:'The textbook case for monetary discipline. The pain was severe but bounded; inflation expectations were broken for a generation.'},{school:'Post-Keynesian',who:'Robert Pollin',body:'The cost was borne disproportionately by manufacturing labor and the rust belt. Rates that high were a policy of choice, not necessity.'},{school:'New Classical',who:'Thomas Sargent',body:'Credibility matters more than the rate path. Volcker’s success was making the regime change believable enough that wages adjusted.'}],
+    quote:{text:'Orders simply stopped. We have not seen activity this low since the late 1940s.',src:'ISM Report, July 1980'},
+    sources:['FOMC transcripts 1979-82','Volcker memoir Keeping at It','Goodfriend, JEP 2007']},
+  {id:'plaza',title:'Plaza Accord',subtitle:'Coordinated devaluation',start:[1985,8],end:[1985,8],kind:'trade',
+    summary:'Five governments coordinated to weaken the dollar against the yen and Deutschmark, easing pressure on US manufacturers. PMI recovered from sub-50 readings through 1986.',
+    interps:[{school:'New Keynesian',who:'Jeffrey Frankel',body:'A rare success in international policy coordination. The dollar was overvalued; orderly correction was better than disorderly.'},{school:'Market monetarist',who:'Scott Sumner',body:'Misdiagnosed. The real problem was tight money in Japan, not US currency strength. Plaza set up Japan’s lost decade.'}],
+    sources:['G5 Plaza communique Sept 1985','Funabashi, Managing the Dollar','IMF WEO 1986']},
+  {id:'nafta',title:'NAFTA Takes Effect',subtitle:'Continental free trade',start:[1994,0],end:[1994,0],kind:'trade',
+    summary:'The North American Free Trade Agreement eliminated most tariffs between the US, Canada, and Mexico. PMI ran above 55 for most of 1994 as cross-border supply chains restructured.',
+    interps:[{school:'Neoliberal',who:'Jagdish Bhagwati',body:'Clear gains from trade. US manufacturing reallocated toward higher value-add; aggregate productivity rose.'},{school:'Labor economics',who:'Robert Scott (EPI)',body:'The aggregate gains masked steep losses in specific industries and regions. Adjustment assistance was promised and never delivered.'},{school:'Heterodox',who:'Dani Rodrik',body:'Premature integration with a much-poorer neighbor under conditions of capital mobility. The political backlash was predictable two decades early.'}],
+    sources:['USTR NAFTA agreement text','Hufbauer & Schott, NAFTA Revisited','Autor, Dorn, Hanson on trade adjustment']},
+  {id:'china-wto',title:'China Joins WTO',subtitle:'The China shock begins',start:[2001,11],end:[2001,11],kind:'trade',
+    summary:'China’s WTO accession in December 2001 accelerated US-China integration. Manufacturing employment fell by ~5 million over the next decade even as PMI averaged above 50.',
+    interps:[{school:'Trade economics',who:'Gordon Hanson',body:'PMI hides the distributional reality. Aggregate output held; specific communities experienced something close to permanent depression.'},{school:'Neoliberal',who:'Doug Irwin',body:'Net welfare gains were large. The error was not WTO accession; it was failing to redistribute the gains.'}],
+    quote:{text:'Pricing pressure from Asian competitors is now the dominant theme in our industry.',src:'ISM Report, March 2003'},
+    sources:['Autor, Dorn, Hanson, AER 2013','WTO accession protocol','BLS manufacturing employment']},
+  {id:'gfc',title:'Global Financial Crisis',subtitle:'Lehman week',start:[2008,8],end:[2009,5],kind:'monetary',
+    summary:'Lehman’s September 2008 collapse triggered a global credit freeze. PMI fell to 33.1 in December 2008 — its second-lowest reading ever. Fed cut to zero, launched QE1.',
+    interps:[{school:'New Keynesian',who:'Christina Romer',body:'Aggressive monetary and fiscal response prevented a second Great Depression. The mistake was withdrawing stimulus too early in 2010.'},{school:'Austrian',who:'John Taylor',body:'The crisis was a creature of preceding policy — too-low rates 2003-05. Bailouts entrenched moral hazard for the next cycle.'},{school:'Post-Keynesian',who:'Anat Admati',body:'Underleveraging the banks was the right call ex post; the regulatory architecture that emerged remained inadequate.'}],
+    quote:{text:'Credit availability is the worst in our 40 years. Customers cannot finance even routine orders.',src:'ISM Report, November 2008'},
+    sources:['FCIC report 2011','Bernanke, The Courage to Act','Gorton, Slapped by the Invisible Hand']},
+  {id:'tcja',title:'Tax Cuts and Jobs Act',subtitle:'Corporate rate reset',start:[2017,11],end:[2017,11],kind:'fiscal',
+    summary:'Corporate tax cut from 35% to 21% plus full expensing for capex. PMI hit cycle highs above 60 in mid-2018; capex response was real but smaller than promised.',
+    interps:[{school:'Supply-side',who:'Kevin Hassett',body:'Investment elasticity to corporate rates is real. The bill’s effects on capex were detectable; counterfactual GDP growth was meaningfully higher.'},{school:'New Keynesian',who:'Jason Furman',body:'Most of the windfall went to share buybacks. Investment lifted modestly; the deficit cost was permanent.'}],
+    sources:['JCT score Dec 2017','BEA capex data 2018-19','Hassett & Mathur (CEA) 2017']},
+  {id:'china-tariffs',title:'Section 301 Tariffs',subtitle:'Trade war with China',start:[2018,6],end:[2019,11],kind:'trade',
+    summary:'USTR imposed tariffs on $370B of Chinese imports across four tranches. PMI fell from 61 to below 48 over 18 months as supply chains scrambled.',
+    interps:[{school:'Strategic trade',who:'Robert Lighthizer',body:'Necessary leverage against decades of non-reciprocal practice. Short-term pain for long-term rebalancing.'},{school:'Trade economics',who:'Mary Amiti',body:'Tariffs were paid almost entirely by US importers and consumers. Manufacturing PMI is the receipt.'},{school:'Geoeconomics',who:'Henry Farrell',body:'A signal of regime change toward weaponized interdependence; the price tag was the cost of changing the rules.'}],
+    quote:{text:'Tariffs are dominating every conversation with customers. Nobody is pre-ordering for next year.',src:'ISM Report, October 2019'},
+    sources:['USTR Section 301 actions','Amiti, Redding, Weinstein JEP 2019','Fed Beige Book 2018-19']},
+  {id:'covid',title:'COVID-19 Shock',subtitle:'Exogenous shutdown',start:[2020,2],end:[2020,4],kind:'exogenous',
+    summary:'The pandemic shutdown drove PMI to 41.5 in April 2020 — though the recovery was the fastest on record, with the index above 60 by year-end on stimulus and goods-spending surge.',
+    interps:[{school:'New Keynesian',who:'Jason Furman',body:'The CARES Act and Fed facilities were textbook countercyclical policy executed at speed. The recovery shape vindicated the response.'},{school:'Monetarist',who:'John Cochrane',body:'Fiscal stimulus combined with supply constraints set up the 2021-22 inflation. The shape of the response, not its size, was the error.'}],
+    quote:{text:'Demand evaporated in a week. Three weeks later customers want twice the volume. Whiplash.',src:'ISM Report, June 2020'},
+    sources:['CARES Act CBO score','Fed facilities March 2020','Cavallo et al. supply-chain 2021']},
+  {id:'ira-chips',title:'IRA + CHIPS Act',subtitle:'Industrial policy returns',start:[2022,7],end:[2022,7],kind:'fiscal',
+    summary:'Two laws together appropriated >$400B for clean energy and semiconductor manufacturing. Construction PMI surged; broader manufacturing PMI remained below 50 through 2023-24.',
+    interps:[{school:'Industrial policy',who:'Mariana Mazzucato',body:'A long-overdue return to mission-oriented policy. Subsidies tied to outcomes — domestic content, supply-chain resilience — are the right tool.'},{school:'Neoliberal',who:'Adam Posen',body:'Self-defeating. Domestic-content rules raise costs, invite retaliation, and divert capital from genuinely productive uses.'},{school:'Climate economics',who:'Gernot Wagner',body:'The IRA is the largest climate bill in US history; on that metric alone it dominates the cost-benefit calculation.'}],
+    sources:['CRS reports on IRA and CHIPS','BEA construction spending','Treasury IRA implementation guidance']},
+  {id:'powell-tightening',title:'Powell Tightening Cycle',subtitle:'525 bp in 16 months',start:[2022,2],end:[2023,6],kind:'monetary',
+    summary:'Fastest tightening cycle since Volcker. PMI fell below 50 in November 2022 and stayed there through 2024 — the longest sub-50 stretch since 2000-01.',
+    interps:[{school:'New Keynesian',who:'Jared Bernstein',body:'Inflation fell with much smaller employment costs than 1980s models predicted — vindication of the soft-landing thesis.'},{school:'Monetarist',who:'John Cochrane',body:'The disinflation came largely from supply normalization, not the rate path. The Fed got lucky.'},{school:'Post-Keynesian',who:'Servaas Storm',body:'Inflation was profit-led, not wage-led. Rate hikes were the wrong instrument; antitrust would have been more honest.'}],
+    sources:['FOMC dot plot 2022-23','Fed staff inflation decompositions','BLS PCE breakdown']},
+];
+
+const INDUSTRIES = ['Apparel & Leather','Chemical Products','Computer & Electronic','Electrical Equipment','Fabricated Metal','Food & Beverage','Furniture','Machinery','Miscellaneous Mfg','Nonmetallic Mineral','Paper Products','Petroleum & Coal','Plastics & Rubber','Primary Metals','Printing','Textile Mills','Transportation Eq','Wood Products'];
+const REGIMES = [{id:'bw',name:'Bretton Woods',range:'1948–71'},{id:'stag',name:'Stagflation',range:'1971–82'},{id:'mod',name:'Great Moderation',range:'1982–2007'},{id:'crisis',name:'Crisis & Recovery',range:'2007–19'},{id:'pandemic',name:'Pandemic & Reshoring',range:'2019–'}];
+const SECTOR_MATRIX = (() => {
+  const m = {};
+  INDUSTRIES.forEach((ind, i) => {
+    m[ind] = {};
+    REGIMES.forEach((r, ri) => {
+      const base = [25,-30,40,-10,5][ri];
+      const indBias = [-20,15,35,10,5,20,-15,15,0,-5,-10,-25,5,-20,-30,-45,25,-10][i];
+      const v = Math.max(-90, Math.min(90, base + indBias + Math.sin(i*7.3 + ri*3.1)*25));
+      m[ind][r.id] = Math.round(v);
+    });
+  });
+  return m;
+})();
+
+const SCENARIOS = [
+  {id:'volcker-1979',title:'Volcker, October 1979',decisionDate:[1979,9],inflation:11.8,unemployment:6.0,pmi:53.2,
+    dossier:'Inflation has run above 10% for most of the year. The dollar is sliding. Your predecessor’s gradualism has failed. The committee is asking whether to abandon interest-rate targeting in favor of monetary aggregates.',
+    choices:[{id:'cut',label:'Cut 50 bp'},{id:'hold',label:'Hold'},{id:'hike-light',label:'Hike 100 bp'},{id:'hike-hard',label:'Switch to monetary targeting (effective +400 bp)'}],
+    actual:'hike-hard',actualLabel:'Switched to monetary targeting; funds rate ultimately exceeded 19%.',
+    outcome:'Manufacturing PMI fell to 30 by mid-1980. Inflation fell from 13% to under 4% by 1983. Two recessions in three years. Unemployment peaked at 10.8%.',
+    interps:[{school:'Monetarist',who:'Anna Schwartz',body:'The right call. A credibility shock is worth more than gradualism \xd7 time.'},{school:'Post-Keynesian',who:'Robert Pollin',body:'A choice that loaded the cost on labor. Other paths existed.'},{school:'New Classical',who:'Thomas Sargent',body:'Regime change, well-executed. The expectation channel did most of the work.'}]},
+  {id:'greenspan-1998',title:'Greenspan, October 1998',decisionDate:[1998,9],inflation:1.5,unemployment:4.5,pmi:49.5,
+    dossier:'Long-Term Capital Management is unwinding. Russia has defaulted. Equity markets are in spasm. Yet US unemployment is at 4.5% and core inflation below 2%. The committee is split between cutting to insure against a credit-market panic and holding to avoid feeding the equity bubble.',
+    choices:[{id:'cut-50',label:'Cut 50 bp emergency'},{id:'cut-25',label:'Cut 25 bp'},{id:'hold',label:'Hold'},{id:'hike',label:'Hike 25 bp (lean against the bubble)'}],
+    actual:'cut-25',actualLabel:'Three 25 bp cuts in seven weeks (Sep, Oct, Nov 1998).',
+    outcome:'Credit markets stabilized within weeks. Equity markets resumed climbing — the 1998 cuts are widely cited as fuel for the 2000 dot-com bubble.',
+    interps:[{school:'New Keynesian',who:'Larry Summers',body:'Cheap insurance against a tail risk. Worked exactly as intended on credit.'},{school:'Austrian',who:'William White (BIS)',body:'The Greenspan put was born here. Each rescue raised the next ceiling.'}]},
+  {id:'bernanke-2008',title:'Bernanke, September 2008',decisionDate:[2008,8],inflation:4.9,unemployment:6.1,pmi:49.5,
+    dossier:'Lehman Brothers has filed for bankruptcy. AIG is hours from collapse. Money market funds are breaking the buck. The Fed has tools (discount window, currency swaps, emergency lending) but the political appetite for further bailouts is uncertain.',
+    choices:[{id:'hold',label:'Hold; let market discipline work'},{id:'cut-50',label:'Cut 50 bp + targeted facilities'},{id:'cut-zero',label:'Cut to zero + open-ended liquidity'},{id:'qe',label:'Cut to zero + announce balance-sheet expansion (QE)'}],
+    actual:'cut-zero',actualLabel:'Funds rate to 0–0.25% by Dec 2008; QE1 announced Nov 2008.',
+    outcome:'PMI bottomed at 33.1 in Dec 2008. Recovery began Q3 2009 but unemployment took until 2014 to return to pre-crisis levels.',
+    interps:[{school:'New Keynesian',who:'Christina Romer',body:'The right policy. Mistake was withdrawing fiscal stimulus too early.'},{school:'Austrian',who:'John Taylor',body:'Bailouts socialized losses; recovery was slower than necessary.'},{school:'Post-Keynesian',who:'Anat Admati',body:'Did not deleverage banks aggressively enough; set up next cycle.'}]},
+  {id:'powell-2018',title:'Powell, December 2018',decisionDate:[2018,11],inflation:2.2,unemployment:3.9,pmi:54.3,
+    dossier:'Manufacturing PMI has fallen from 61 to 54 over six months. Tariff escalation with China is biting. Equity markets are down 15% from October highs. The President is publicly criticizing rate hikes. Core PCE is at target.',
+    choices:[{id:'cut',label:'Cut 25 bp (acknowledge the slowdown)'},{id:'hold',label:'Hold'},{id:'hike',label:'Hike 25 bp (stay on the dot plot)'}],
+    actual:'hike',actualLabel:'Hiked 25 bp Dec 19, 2018; pivoted dovish in January.',
+    outcome:'Markets sold off; the December hike is widely viewed as the cycle’s policy error. Three cuts followed in 2019.',
+    interps:[{school:'Monetarist',who:'Scott Sumner',body:'A clear policy error. NGDP growth was decelerating; tightening was procyclical.'},{school:'New Keynesian',who:'Jon Steinsson',body:'Defensible ex ante. The pivot was the right correction.'}]},
+  {id:'powell-2022',title:'Powell, March 2022',decisionDate:[2022,2],inflation:8.5,unemployment:3.6,pmi:56.8,
+    dossier:'Headline CPI is at 8.5% and accelerating. Russia has invaded Ukraine, sending energy prices higher. Wages are growing 5% nominal. The Fed has just begun lifting from zero. The committee debates whether to front-load hikes or move steadily.',
+    choices:[{id:'hold',label:'Hold; wait for Q2 data'},{id:'hike-25',label:'Hike 25 bp (gradual)'},{id:'hike-50',label:'Hike 50 bp'},{id:'hike-shock',label:'Hike 75 bp + signal terminal rate above 5%'}],
+    actual:'hike-25',actualLabel:'Hiked 25 bp; accelerated to 75 bp by June.',
+    outcome:'Tightening reached 525 bp by July 2023. Inflation fell to 3% by mid-2023. Manufacturing PMI fell below 50 in Nov 2022 and stayed there through 2024.',
+    interps:[{school:'New Keynesian',who:'Jared Bernstein',body:'Soft landing achieved with smaller employment cost than 1980s models predicted.'},{school:'Monetarist',who:'John Cochrane',body:'Disinflation was largely supply-normalization. Fed got lucky on timing.'},{school:'Post-Keynesian',who:'Servaas Storm',body:'Inflation was profit-led; rates were the wrong instrument.'}]}
+];
+
+/* ============ HELPERS ============ */
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const fmtDate = ([y,m]) => MONTHS[m]+' '+y;
+const fmtRange = (a,b) => (a[0]===b[0]&&a[1]===b[1]) ? fmtDate(a) : fmtDate(a)+' – '+fmtDate(b);
+const KIND_COLORS = { monetary:'var(--indigo)', fiscal:'var(--ochre)', trade:'var(--teal)', regulatory:'var(--ink-2)', exogenous:'var(--oxblood)' };
+
+/* ============ PMI CHART ============ */
+function PMIChart({ pmi, recessions, policies, onSelect, selectedId, width=1180, height=480 }) {
+  const padL=56, padR=24, padT=140, padB=28;
+  const chartW = width-padL-padR, chartH = height-padT-padB;
+  const tMin = pmi[0].t, tMax = pmi[pmi.length-1].t;
+  const xs = t => padL + ((t-tMin)/(tMax-tMin))*chartW;
+  const ys = v => padT + chartH - ((v-28)/44)*chartH;
+  const y50 = ys(50);
+
+  const path = useMemo(() => pmi.map((p,i) => (i?'L':'M') + xs(p.t).toFixed(2) + ',' + ys(p.value).toFixed(2)).join(''), [pmi]);
+  const aboveArea = useMemo(() => {
+    let d = 'M'+xs(tMin).toFixed(2)+','+y50;
+    pmi.forEach(p => { d += 'L'+xs(p.t).toFixed(2)+','+ys(Math.max(p.value,50)).toFixed(2); });
+    return d + 'L'+xs(tMax).toFixed(2)+','+y50+'Z';
+  }, [pmi]);
+  const belowArea = useMemo(() => {
+    let d = 'M'+xs(tMin).toFixed(2)+','+y50;
+    pmi.forEach(p => { d += 'L'+xs(p.t).toFixed(2)+','+ys(Math.min(p.value,50)).toFixed(2); });
+    return d + 'L'+xs(tMax).toFixed(2)+','+y50+'Z';
+  }, [pmi]);
+
+  const yearTicks = [];
+  for (let y=1950; y<=2025; y+=5) {
+    const t = y*12;
+    if (t>=tMin && t<=tMax) yearTicks.push({year:y, x:xs(t)});
+  }
+
+  const [hover, setHover] = useState(null);
+  const svgRef = useRef(null);
+  const onMove = (e) => {
+    const rect = svgRef.current.getBoundingClientRect();
+    const x = (e.clientX-rect.left) * (width/rect.width);
+    if (x<padL || x>padL+chartW) { setHover(null); return; }
+    const t = tMin + ((x-padL)/chartW)*(tMax-tMin);
+    const idx = Math.max(0, Math.min(pmi.length-1, Math.round(t-tMin)));
+    const p = pmi[idx];
+    setHover({ x:xs(p.t), y:ys(p.value), p });
+  };
+
+  // Callout system: 3 rows above the chart, collision-aware horizontal placement
+  // Each policy gets a numbered marker on the PMI line + a leader line up to a label box
+  const callouts = useMemo(() => {
+    const sorted = [...policies].sort((a,b) => (a.start[0]*12+a.start[1])-(b.start[0]*12+b.start[1]));
+    const labelW = 24; // each label box width in px
+    const minGap = 4;
+    const rowYs = [16, 50, 84]; // top of each callout row (y in svg coords)
+    const rowsLastX = [-Infinity, -Infinity, -Infinity];
+    return sorted.map((p, i) => {
+      const ts = p.start[0]*12+p.start[1], te = p.end[0]*12+p.end[1];
+      const tMid = (ts+te)/2;
+      const anchorT = (ts+te)/2;
+      // value at anchor for marker placement
+      const idx = Math.max(0, Math.min(pmi.length-1, Math.round(anchorT-tMin)));
+      const anchorPt = pmi[idx];
+      const ax = xs(anchorPt.t);
+      const ay = ys(anchorPt.value);
+      // pick row: prefer topmost row that has space
+      let row = 0;
+      for (let r = 0; r < rowYs.length; r++) {
+        if (ax - rowsLastX[r] >= labelW + minGap) { row = r; break; }
+        if (r === rowYs.length - 1) row = r;
+      }
+      rowsLastX[row] = ax;
+      return { ...p, num: i+1, row, ax, ay, labelY: rowYs[row], ts, te };
+    });
+  }, [policies, pmi]);
+
+  return (
+    <div style={{position:'relative'}}>
+      <svg ref={svgRef} viewBox={'0 0 '+width+' '+height} style={{width:'100%', height:'auto', display:'block', cursor:'crosshair'}} onMouseMove={onMove} onMouseLeave={() => setHover(null)}>
+        {recessions.map(([s,e],i) => {
+          const x1=xs(s[0]*12+s[1]), x2=xs(e[0]*12+e[1]);
+          return <rect key={i} x={x1} y={padT} width={x2-x1} height={chartH} fill="var(--recession)"/>;
+        })}
+        {[30,40,50,60,70].map(v => (
+          <g key={v}>
+            <line x1={padL} y1={ys(v)} x2={width-padR} y2={ys(v)} stroke={v===50?'var(--ink)':'var(--paper-edge)'} strokeWidth={v===50?1:0.5} strokeDasharray={v===50?'0':'2,3'}/>
+            <text x={padL-10} y={ys(v)+3} textAnchor="end" style={{fontFamily:'var(--mono)',fontSize:10,fill:v===50?'var(--ink)':'var(--ink-3)'}}>{v}</text>
+          </g>
+        ))}
+        {yearTicks.map(t => (
+          <g key={t.year}>
+            <line x1={t.x} y1={padT+chartH} x2={t.x} y2={padT+chartH+4} stroke="var(--ink-3)"/>
+            <text x={t.x} y={padT+chartH+16} textAnchor="middle" style={{fontFamily:'var(--mono)',fontSize:10,fill:'var(--ink-3)'}}>{String(t.year).slice(2)}</text>
+          </g>
+        ))}
+        <text x={width-padR-4} y={y50-4} textAnchor="end" style={{fontFamily:'var(--sans)',fontSize:9,fill:'var(--ink)',letterSpacing:'0.1em',textTransform:'uppercase',fontWeight:600}}>Threshold · 50</text>
+        <path d={aboveArea} fill="var(--teal)" opacity="0.08"/>
+        <path d={belowArea} fill="var(--oxblood)" opacity="0.10"/>
+        <path d={path} fill="none" stroke="var(--ink)" strokeWidth="1.2"/>
+        {hover && (
+          <g>
+            <line x1={hover.x} y1={padT} x2={hover.x} y2={padT+chartH} stroke="var(--ink)" strokeWidth="0.5" strokeDasharray="2,2" opacity="0.5"/>
+            <circle cx={hover.x} cy={hover.y} r="4" fill="var(--paper)" stroke="var(--ink)" strokeWidth="1.5"/>
+          </g>
+        )}
+        {/* Callouts: numbered labels above chart with leader lines to PMI markers */}
+        {callouts.map(c => {
+          const color = KIND_COLORS[c.kind] || 'var(--ink-2)';
+          const isSel = selectedId===c.id;
+          const labelCY = c.labelY + 12;
+          return (
+            <g key={c.id} style={{cursor:'pointer'}} onClick={() => onSelect(c)} onMouseEnter={e => e.currentTarget.style.opacity=0.85} onMouseLeave={e => e.currentTarget.style.opacity=1}>
+              {/* leader line: from label down to anchor on PMI line */}
+              <line x1={c.ax} y1={labelCY+10} x2={c.ax} y2={c.ay-5} stroke={color} strokeWidth={isSel?1.2:0.6} strokeDasharray="2,2" opacity={isSel?0.9:0.45}/>
+              {/* numbered label box */}
+              <circle cx={c.ax} cy={labelCY} r={isSel?11:9} fill={isSel?color:'var(--paper)'} stroke={color} strokeWidth={isSel?1.5:1}/>
+              <text x={c.ax} y={labelCY+3.5} textAnchor="middle" style={{fontFamily:'var(--mono)',fontSize:10,fontWeight:700,fill:isSel?'var(--paper)':color,pointerEvents:'none'}}>{c.num}</text>
+              {/* marker on PMI line */}
+              <circle cx={c.ax} cy={c.ay} r={isSel?5:3.5} fill={color} stroke="var(--paper)" strokeWidth="1.5"/>
+            </g>
+          );
+        })}
+        {/* Year of decade markers as bigger ticks */}
+      </svg>
+      {hover && (
+        <div className="chart-tooltip" style={{left:(hover.x/width*100)+'%', top:(hover.y/height*100)+'%', transform: hover.x>width*0.7?'translate(-110%,-50%)':'translate(12px,-50%)'}}>
+          <div className="tt-date">{MONTHS[hover.p.month]} {hover.p.year}</div>
+          <div className="tt-val">PMI {hover.p.value.toFixed(1)}</div>
+          <div className="tt-tag">{hover.p.value>=50?'Expansion':'Contraction'}</div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ============ DRAWER ============ */
+function PolicyDrawer({ policy, onClose }) {
+  useEffect(() => {
+    const onKey = e => { if (e.key==='Escape') onClose(); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
+  return (
+    <React.Fragment>
+      <div className={'drawer-backdrop'+(policy?' open':'')} onClick={onClose}></div>
+      <aside className={'drawer'+(policy?' open':'')}>
+        {policy && (
+          <React.Fragment>
+            <div className="drawer-head">
+              <button className="drawer-close" onClick={onClose}>✕</button>
+              <div style={{display:'flex',gap:8,marginBottom:14}}>
+                <span className={'pill '+policy.kind}><span className="swatch"></span>{policy.kind}</span>
+                <span style={{fontFamily:'var(--mono)',fontSize:11,color:'var(--ink-3)'}}>{fmtRange(policy.start, policy.end)}</span>
+              </div>
+              <div className="eyebrow" style={{marginBottom:6}}>{policy.subtitle}</div>
+              <h2 style={{fontSize:28, fontWeight:500, letterSpacing:'-0.02em'}}>{policy.title}</h2>
+            </div>
+            <div className="drawer-body">
+              <p style={{fontFamily:'var(--serif)',fontSize:16,lineHeight:1.6,color:'var(--ink-2)'}}>{policy.summary}</p>
+              {policy.quote && (
+                <div className="pull-quote">
+                  &ldquo;{policy.quote.text}&rdquo;
+                  <span className="attribution">— {policy.quote.src}</span>
+                </div>
+              )}
+              <div style={{marginTop:24}}>
+                <div className="eyebrow" style={{marginBottom:10}}>Three readings · No false consensus</div>
+                {policy.interps.map((it, i) => (
+                  <div key={i} className="interp">
+                    <div className="interp-head">
+                      <div className="interp-school" style={{color:['var(--indigo)','var(--oxblood)','var(--teal)'][i%3]}}>{it.school}</div>
+                      <div className="interp-economist">via {it.who}</div>
+                    </div>
+                    <p className="interp-body">{it.body}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="sources">
+                <div className="eyebrow">Sources</div>
+                <ol>{policy.sources.map((s,i) => <li key={i}>{s}</li>)}</ol>
+              </div>
+            </div>
+          </React.Fragment>
+        )}
+      </aside>
+    </React.Fragment>
+  );
+}
+
+/* ============ TIMELINE MODE ============ */
+function TimelineMode() {
+  const [selected, setSelected] = useState(null);
+  const latest = PMI[PMI.length-1];
+  const prior = PMI[PMI.length-13];
+  const yoy = +(latest.value-prior.value).toFixed(1);
+  const ath = PMI.reduce((m,p) => p.value>m.value?p:m, PMI[0]);
+  const atl = PMI.reduce((m,p) => p.value<m.value?p:m, PMI[0]);
+  return (
+    <div className="mode-page">
+      <div className="stat-strip">
+        <div className="stat-cell"><div className="label">Latest reading</div><div className="value">{latest.value.toFixed(1)}</div><div className={'delta '+(yoy>=0?'up':'down')}>{yoy>=0?'▲':'▼'} {Math.abs(yoy)} y/y · {MONTHS[latest.month]} {latest.year}</div></div>
+        <div className="stat-cell"><div className="label">All-time high</div><div className="value">{ath.value.toFixed(1)}</div><div className="delta up">{MONTHS[ath.month]} {ath.year}</div></div>
+        <div className="stat-cell"><div className="label">All-time low</div><div className="value">{atl.value.toFixed(1)}</div><div className="delta down">{MONTHS[atl.month]} {atl.year}</div></div>
+        <div className="stat-cell"><div className="label">Series begins</div><div className="value">1948</div><div className="delta">{PMI.length} monthly observations</div></div>
+      </div>
+      <div className="panel">
+        <div style={{display:'flex',justifyContent:'space-between',alignItems:'baseline',marginBottom:12}}>
+          <div>
+            <div className="eyebrow" style={{marginBottom:4}}>Figure 1 · Master Timeline</div>
+            <h2 style={{fontSize:22,fontWeight:500}}>ISM Manufacturing PMI, <span style={{fontStyle:'italic',color:'var(--ink-3)'}}>1948 to present</span></h2>
+          </div>
+          <div style={{display:'flex',gap:14,fontFamily:'var(--sans)',fontSize:11,color:'var(--ink-3)'}}>
+            <span><span style={{display:'inline-block',width:10,height:2,background:'var(--ink)',verticalAlign:'middle',marginRight:6}}></span>PMI</span>
+            <span><span style={{display:'inline-block',width:10,height:8,background:'rgba(139,30,30,0.15)',verticalAlign:'middle',marginRight:6}}></span>NBER recession</span>
+          </div>
+        </div>
+        <PMIChart pmi={PMI} recessions={RECESSIONS} policies={POLICIES} onSelect={setSelected} selectedId={selected?.id}/>
+      </div>
+      <div style={{display:'flex',gap:18,padding:'14px 0',flexWrap:'wrap',fontFamily:'var(--sans)',fontSize:11,color:'var(--ink-3)',alignItems:'center'}}>
+        <span style={{textTransform:'uppercase',letterSpacing:'0.14em',fontWeight:600,color:'var(--ink)'}}>Event kinds</span>
+        {Object.entries(KIND_COLORS).map(([k,c]) => (
+          <span key={k} style={{display:'flex',alignItems:'center',gap:6,textTransform:'capitalize'}}><span style={{width:10,height:10,background:c,borderRadius:2}}></span>{k}</span>
+        ))}
+        <span style={{marginLeft:'auto',fontStyle:'italic',fontFamily:'var(--serif)',color:'var(--ink-2)'}}>Click any numbered marker for three economist interpretations.</span>
+      </div>
+      <div style={{marginTop:28}}>
+        <div className="eyebrow" style={{marginBottom:10}}>Numbered index · {POLICIES.length} events on the spine</div>
+        <div className="events-grid">
+          {POLICIES.slice().sort((a,b) => (a.start[0]*12+a.start[1])-(b.start[0]*12+b.start[1])).map((p, i) => (
+            <button key={p.id} className="event-card" onClick={() => setSelected(p)}>
+              <div className="head">
+                <span style={{display:'inline-flex',alignItems:'center',gap:8}}>
+                  <span style={{width:22,height:22,borderRadius:'50%',border:'1.5px solid '+(KIND_COLORS[p.kind]||'var(--ink-2)'),color:KIND_COLORS[p.kind]||'var(--ink-2)',fontFamily:'var(--mono)',fontSize:10,fontWeight:700,display:'flex',alignItems:'center',justifyContent:'center'}}>{i+1}</span>
+                  <span className={'pill '+p.kind} style={{fontSize:9,padding:'2px 6px'}}>{p.kind}</span>
+                </span>
+                <span style={{fontFamily:'var(--mono)',fontSize:10,color:'var(--ink-3)'}}>{p.start[0]}</span>
+              </div>
+              <div className="title">{p.title}</div>
+              <div className="sub">{p.subtitle}</div>
+            </button>
+          ))}
+        </div>
+      </div>
+      <PolicyDrawer policy={selected} onClose={() => setSelected(null)}/>
+    </div>
+  );
+}
+
+/* ============ DECOMPOSE MODE ============ */
+const SUB_NAMES = [
+  {key:'newOrders',label:'New Orders',color:'var(--indigo)'},
+  {key:'production',label:'Production',color:'var(--teal)'},
+  {key:'employment',label:'Employment',color:'var(--ochre)'},
+  {key:'supplier',label:'Supplier Deliveries',color:'var(--oxblood)'},
+  {key:'inventories',label:'Inventories',color:'var(--ink-2)'},
+];
+const PRESETS = {
+  ism:{label:'ISM default · 0.20 each',weights:[20,20,20,20,20]},
+  orders:{label:'Only New Orders',weights:[100,0,0,0,0]},
+  volume:{label:'Volume-led · Orders + Production',weights:[50,50,0,0,0]},
+  capacity:{label:'Capacity stress · Supplier-heavy',weights:[10,10,10,60,10]},
+};
+function MiniChart({ pmi, custom, recessions, width=980, height=280 }) {
+  const padL=50, padR=16, padT=16, padB=24;
+  const cw = width-padL-padR, ch = height-padT-padB;
+  const tMin = pmi[0].t, tMax = pmi[pmi.length-1].t;
+  const xs = t => padL + ((t-tMin)/(tMax-tMin))*cw;
+  const ys = v => padT + ch - ((v-28)/44)*ch;
+  const buildPath = s => s.map((p,i) => (i?'L':'M') + xs(p.t).toFixed(2) + ',' + ys(p.value).toFixed(2)).join('');
+  const yearTicks = [];
+  for (let y=1950; y<=2025; y+=10) if (y*12>=tMin && y*12<=tMax) yearTicks.push({year:y, x:xs(y*12)});
+  return (
+    <svg viewBox={'0 0 '+width+' '+height} style={{width:'100%',height:'auto',display:'block'}}>
+      {recessions.map(([s,e],i) => <rect key={i} x={xs(s[0]*12+s[1])} y={padT} width={Math.max(xs(e[0]*12+e[1])-xs(s[0]*12+s[1]),1)} height={ch} fill="var(--recession)"/>)}
+      {[30,40,50,60,70].map(v => (
+        <g key={v}>
+          <line x1={padL} y1={ys(v)} x2={width-padR} y2={ys(v)} stroke={v===50?'var(--ink)':'var(--paper-edge)'} strokeDasharray={v===50?'0':'2,3'} strokeWidth={v===50?1:0.5}/>
+          <text x={padL-8} y={ys(v)+3} textAnchor="end" style={{fontFamily:'var(--mono)',fontSize:10,fill:'var(--ink-3)'}}>{v}</text>
+        </g>
+      ))}
+      {yearTicks.map(t => <text key={t.year} x={t.x} y={padT+ch+16} textAnchor="middle" style={{fontFamily:'var(--mono)',fontSize:10,fill:'var(--ink-3)'}}>{t.year}</text>)}
+      <path d={buildPath(pmi)} fill="none" stroke="var(--ink)" strokeWidth="0.8" opacity="0.35"/>
+      <path d={buildPath(custom)} fill="none" stroke="var(--oxblood)" strokeWidth="1.5"/>
+      <text x={width-padR-4} y={padT+12} textAnchor="end" style={{fontFamily:'var(--sans)',fontSize:10,fill:'var(--oxblood)',fontWeight:600,letterSpacing:'0.08em',textTransform:'uppercase'}}>Your blend</text>
+      <text x={width-padR-4} y={padT+26} textAnchor="end" style={{fontFamily:'var(--sans)',fontSize:10,fill:'var(--ink-3)',fontWeight:500,letterSpacing:'0.08em',textTransform:'uppercase'}}>Actual PMI</text>
+    </svg>
+  );
+}
+function DecomposeMode() {
+  const [weights, setWeights] = useState([20,20,20,20,20]);
+  const setW = (idx, val) => {
+    const next = [...weights]; next[idx] = val;
+    const sum = next.reduce((a,b) => a+b, 0);
+    if (sum===0) { setWeights(next); return; }
+    const scaled = next.map(w => Math.round((w/sum)*100));
+    scaled[idx] += 100 - scaled.reduce((a,b) => a+b, 0);
+    setWeights(scaled);
+  };
+  const customSeries = useMemo(() => {
+    const arr = [SUBS.newOrders, SUBS.production, SUBS.employment, SUBS.supplier, SUBS.inventories];
+    return PMI.map((p, i) => {
+      let v = 0;
+      for (let s=0; s<5; s++) v += arr[s][i].value * (weights[s]/100);
+      return { ...p, value: v };
+    });
+  }, [weights]);
+  const backtest = useMemo(() => {
+    let hits=0, actualHits=0, total=0;
+    RECESSIONS.forEach(([start]) => {
+      const startT = start[0]*12+start[1]; total++;
+      if (customSeries.filter(p => p.t>=startT-6 && p.t<startT).some(p => p.value<50)) hits++;
+      if (PMI.filter(p => p.t>=startT-6 && p.t<startT).some(p => p.value<50)) actualHits++;
+    });
+    return { hits, actualHits, total, custom:Math.round(hits/total*100), actual:Math.round(actualHits/total*100) };
+  }, [customSeries]);
+  const total = weights.reduce((a,b) => a+b, 0);
+  return (
+    <div className="mode-page">
+      <div style={{display:'grid',gridTemplateColumns:'1fr 360px',gap:32}}>
+        <div>
+          <div className="panel">
+            <div className="eyebrow" style={{marginBottom:4}}>Figure 2 · Custom blend</div>
+            <h2 style={{fontSize:22,fontWeight:500,marginBottom:12}}>What if PMI were weighted <span style={{fontStyle:'italic',color:'var(--oxblood)'}}>your way?</span></h2>
+            <MiniChart pmi={PMI} custom={customSeries} recessions={RECESSIONS}/>
+          </div>
+          <div className="panel-soft" style={{marginTop:20}}>
+            <div className="eyebrow" style={{marginBottom:8}}>Recession backtest · 1948–present</div>
+            <p style={{fontFamily:'var(--serif)',fontSize:14,lineHeight:1.55,color:'var(--ink-2)',marginBottom:16}}>How often did your blend signal contraction (sub-50) in the six months <em>before</em> an NBER recession began?</p>
+            <div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr',gap:1,background:'var(--ink)'}}>
+              <div style={{background:'var(--paper)',padding:'12px 16px'}}><div className="eyebrow">Your blend</div><div style={{fontFamily:'var(--mono)',fontSize:24,color:'var(--oxblood)',marginTop:4}}>{backtest.custom}%</div><div style={{fontFamily:'var(--mono)',fontSize:11,color:'var(--ink-3)'}}>{backtest.hits}/{backtest.total} caught</div></div>
+              <div style={{background:'var(--paper)',padding:'12px 16px'}}><div className="eyebrow">Actual PMI</div><div style={{fontFamily:'var(--mono)',fontSize:24,color:'var(--ink)',marginTop:4}}>{backtest.actual}%</div><div style={{fontFamily:'var(--mono)',fontSize:11,color:'var(--ink-3)'}}>{backtest.actualHits}/{backtest.total} caught</div></div>
+              <div style={{background:'var(--paper)',padding:'12px 16px'}}><div className="eyebrow">Δ vs. ISM</div><div style={{fontFamily:'var(--mono)',fontSize:24,color:backtest.custom>=backtest.actual?'var(--teal)':'var(--oxblood)',marginTop:4}}>{backtest.custom-backtest.actual>=0?'+':''}{backtest.custom-backtest.actual}</div><div style={{fontFamily:'var(--mono)',fontSize:11,color:'var(--ink-3)'}}>percentage pts</div></div>
+            </div>
+            <p style={{fontFamily:'var(--sans)',fontSize:11,color:'var(--ink-3)',marginTop:12,fontStyle:'italic',lineHeight:1.5}}>Caveat: a higher hit-rate isn’t the only test of a good index. Beware curve-fitting against twelve recessions — degrees of freedom are scarce.</p>
+          </div>
+        </div>
+        <aside>
+          <div className="panel" style={{padding:'18px 20px'}}>
+            <div className="eyebrow" style={{marginBottom:12}}>Subindex weights</div>
+            {SUB_NAMES.map((s, i) => (
+              <div key={s.key} className="slider-row">
+                <div className="label-row">
+                  <label><span className="swatch" style={{background:s.color}}></span>{s.label}</label>
+                  <span className="val">{weights[i]}%</span>
+                </div>
+                <input type="range" min="0" max="100" value={weights[i]} onChange={e => setW(i, +e.target.value)}/>
+              </div>
+            ))}
+            <div style={{marginTop:14,paddingTop:12,borderTop:'1px solid var(--paper-edge)',display:'flex',justifyContent:'space-between',alignItems:'baseline'}}>
+              <span className="eyebrow">Total</span>
+              <span style={{fontFamily:'var(--mono)',fontSize:14,color:total===100?'var(--teal)':'var(--oxblood)'}}>{total}%</span>
+            </div>
+          </div>
+          <div style={{marginTop:16}}>
+            <div className="eyebrow" style={{marginBottom:8}}>Presets</div>
+            {Object.entries(PRESETS).map(([k,p]) => (
+              <button key={k} className="preset-btn" onClick={() => setWeights(p.weights)}>{p.label}</button>
+            ))}
+          </div>
+        </aside>
+      </div>
+    </div>
+  );
+}
+
+/* ============ FED CHAIR ============ */
+function LockedChart({ pmi, recessions, width=900, height=240 }) {
+  if (!pmi.length) return null;
+  const padL=44, padR=16, padT=12, padB=22;
+  const cw=width-padL-padR, ch=height-padT-padB;
+  const tMin = 1948*12, tMax = pmi[pmi.length-1].t;
+  const xs = t => padL + ((t-tMin)/(tMax-tMin))*cw;
+  const ys = v => padT + ch - ((v-28)/44)*ch;
+  const path = pmi.map((p,i) => (i?'L':'M') + xs(p.t).toFixed(2) + ',' + ys(p.value).toFixed(2)).join('');
+  const yearTicks = [];
+  for (let y=1950; y<=2025; y+=10) if (y*12>=tMin && y*12<=tMax) yearTicks.push({year:y, x:xs(y*12)});
+  return (
+    <svg viewBox={'0 0 '+width+' '+height} style={{width:'100%',height:'auto',display:'block'}}>
+      {recessions.map(([s,e],i) => <rect key={i} x={xs(s[0]*12+s[1])} y={padT} width={Math.max(xs(Math.min(e[0]*12+e[1],tMax))-xs(s[0]*12+s[1]),1)} height={ch} fill="var(--recession)"/>)}
+      {[30,50,70].map(v => (
+        <g key={v}>
+          <line x1={padL} y1={ys(v)} x2={width-padR} y2={ys(v)} stroke={v===50?'var(--ink)':'var(--paper-edge)'} strokeDasharray={v===50?'0':'2,3'} strokeWidth={v===50?1:0.5}/>
+          <text x={padL-8} y={ys(v)+3} textAnchor="end" style={{fontFamily:'var(--mono)',fontSize:10,fill:'var(--ink-3)'}}>{v}</text>
+        </g>
+      ))}
+      {yearTicks.map(t => <text key={t.year} x={t.x} y={padT+ch+15} textAnchor="middle" style={{fontFamily:'var(--mono)',fontSize:10,fill:'var(--ink-3)'}}>{t.year}</text>)}
+      <path d={path} fill="none" stroke="var(--ink)" strokeWidth="1.2"/>
+      <line x1={xs(tMax)} y1={padT} x2={xs(tMax)} y2={padT+ch} stroke="var(--oxblood)" strokeWidth="1.5" strokeDasharray="3,3"/>
+      <text x={xs(tMax)-4} y={padT+12} textAnchor="end" style={{fontFamily:'var(--sans)',fontSize:9,fill:'var(--oxblood)',fontWeight:600,letterSpacing:'0.08em',textTransform:'uppercase'}}>Today</text>
+      <rect x={xs(tMax)} y={padT} width={width-padR-xs(tMax)} height={ch} fill="var(--paper-2)" opacity="0.85"/>
+    </svg>
+  );
+}
+function FedChairMode() {
+  const [activeId, setActiveId] = useState(SCENARIOS[0].id);
+  const [revealed, setRevealed] = useState({});
+  const [choices, setChoices] = useState({});
+  const active = SCENARIOS.find(s => s.id===activeId);
+  const cutoffT = active.decisionDate[0]*12 + active.decisionDate[1];
+  const lockedPmi = PMI.filter(p => p.t<=cutoffT);
+  const isRevealed = revealed[active.id];
+  const userChoice = choices[active.id];
+  const pick = (cid) => { setChoices({...choices, [active.id]:cid}); setRevealed({...revealed, [active.id]:true}); };
+  const replay = () => { const nc={...choices}; delete nc[active.id]; const nr={...revealed}; delete nr[active.id]; setChoices(nc); setRevealed(nr); };
+  const completed = SCENARIOS.filter(s => revealed[s.id]).length;
+  return (
+    <div className="mode-page">
+      <div className="scenario-tabs">
+        {SCENARIOS.map((s, i) => {
+          const done = revealed[s.id], isAct = activeId===s.id;
+          return (
+            <button key={s.id} className={'scenario-tab'+(isAct?' active':'')} onClick={() => setActiveId(s.id)}>
+              <div style={{display:'flex',justifyContent:'space-between'}}>
+                <span className="num">0{i+1}</span>
+                <span className="status" style={{color:done?'var(--teal)':isAct?'var(--paper-2)':'var(--ink-3)'}}>{done?'● COMPLETE':'○ PENDING'}</span>
+              </div>
+              <span className="label">{s.title}</span>
+            </button>
+          );
+        })}
+      </div>
+      <div style={{display:'grid',gridTemplateColumns:'1fr 380px',gap:32}}>
+        <div>
+          <div className="panel">
+            <div style={{display:'flex',justifyContent:'space-between',alignItems:'baseline',marginBottom:10}}>
+              <div>
+                <div className="eyebrow" style={{marginBottom:4}}>Era-locked PMI · data through your desk</div>
+                <h3 style={{fontSize:18,fontWeight:500}}>{active.title}</h3>
+              </div>
+              <div style={{display:'flex',gap:14,fontFamily:'var(--mono)',fontSize:11,color:'var(--ink-3)'}}>
+                <span>CPI <strong style={{color:'var(--oxblood)'}}>{active.inflation}%</strong></span>
+                <span>UR <strong style={{color:'var(--ink)'}}>{active.unemployment}%</strong></span>
+                <span>PMI <strong style={{color:active.pmi>=50?'var(--teal)':'var(--oxblood)'}}>{active.pmi}</strong></span>
+              </div>
+            </div>
+            <LockedChart pmi={lockedPmi} recessions={RECESSIONS.filter(r => r[0][0]*12+r[0][1]<cutoffT)}/>
+          </div>
+          <div className="panel-soft" style={{marginTop:20}}>
+            <div className="eyebrow" style={{marginBottom:8}}>Briefing memo · For Chair’s eyes only</div>
+            <p style={{fontFamily:'var(--serif)',fontSize:16,lineHeight:1.6,color:'var(--ink-2)'}}>{active.dossier}</p>
+          </div>
+          {isRevealed && (
+            <div style={{marginTop:20,border:'1px solid var(--ink)',background:'var(--paper)'}}>
+              <div style={{padding:'18px 22px',background:'var(--ink)',color:'var(--paper)'}}>
+                <div className="eyebrow" style={{color:'var(--paper-2)',marginBottom:6}}>After-action · what actually happened</div>
+                <div style={{fontFamily:'var(--serif)',fontSize:18,fontWeight:500,marginBottom:6}}>{active.actualLabel}</div>
+                <div style={{fontFamily:'var(--serif)',fontSize:14,color:'var(--paper-2)',lineHeight:1.55,fontStyle:'italic'}}>{active.outcome}</div>
+              </div>
+              <div style={{padding:'18px 22px'}}>
+                <div className="eyebrow" style={{marginBottom:10}}>How three economists read it</div>
+                {active.interps.map((it, i) => (
+                  <div key={i} className="interp">
+                    <div className="interp-head">
+                      <div className="interp-school" style={{color:['var(--indigo)','var(--oxblood)','var(--teal)'][i%3]}}>{it.school}</div>
+                      <div className="interp-economist">via {it.who}</div>
+                    </div>
+                    <p className="interp-body">{it.body}</p>
+                  </div>
+                ))}
+                <button className="btn ghost" onClick={replay} style={{marginTop:14}}>↻ Replay this scenario</button>
+              </div>
+            </div>
+          )}
+        </div>
+        <aside>
+          <div className="panel" style={{padding:'18px 20px',position:'sticky',top:130}}>
+            <div className="eyebrow" style={{marginBottom:14}}>Your decision · {fmtDate(active.decisionDate)}</div>
+            {!isRevealed ? (
+              <div>
+                <p style={{fontFamily:'var(--serif)',fontSize:13,color:'var(--ink-3)',marginBottom:14,fontStyle:'italic'}}>You see only what was knowable at the time. Pick the action you would take.</p>
+                {active.choices.map(c => <button key={c.id} className="choice-btn" onClick={() => pick(c.id)}>{c.label}</button>)}
+              </div>
+            ) : (
+              <div>
+                <div style={{padding:'14px 16px',background:'var(--paper-2)',border:'1px solid var(--paper-edge)',marginBottom:14}}>
+                  <div className="eyebrow" style={{marginBottom:6}}>You chose</div>
+                  <div style={{fontFamily:'var(--serif)',fontSize:15,color:'var(--ink)',fontWeight:500}}>{active.choices.find(c => c.id===userChoice)?.label}</div>
+                  {userChoice===active.actual ? (
+                    <div style={{marginTop:8,fontFamily:'var(--sans)',fontSize:11,color:'var(--teal)',letterSpacing:'0.1em',textTransform:'uppercase',fontWeight:600}}>✓ Matched the historical decision</div>
+                  ) : (
+                    <div style={{marginTop:8,fontFamily:'var(--sans)',fontSize:11,color:'var(--oxblood)',letterSpacing:'0.1em',textTransform:'uppercase',fontWeight:600}}>⊘ Different from the historical path</div>
+                  )}
+                </div>
+              </div>
+            )}
+            <div style={{marginTop:18,paddingTop:14,borderTop:'1px solid var(--paper-edge)'}}>
+              <div style={{display:'flex',justifyContent:'space-between'}}>
+                <span className="eyebrow">Run progress</span>
+                <span style={{fontFamily:'var(--mono)',fontSize:12,color:'var(--ink)'}}>{completed} / {SCENARIOS.length}</span>
+              </div>
+              <div style={{marginTop:8,height:4,background:'var(--paper-edge)'}}>
+                <div style={{height:'100%',background:'var(--ink)',width:(completed/SCENARIOS.length*100)+'%',transition:'width 0.3s'}}></div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  );
+}
+
+/* ============ HEATMAP ============ */
+function HeatmapMode() {
+  const [selected, setSelected] = useState(null);
+  const colorFor = (v) => {
+    const t = Math.max(-1, Math.min(1, v/90));
+    if (t<0) return 'rgba(139,30,30,'+(0.12 + (-t)*0.7)+')';
+    return 'rgba(31,95,91,'+(0.12 + t*0.7)+')';
+  };
+  const narrative = (ind, r, v) => {
+    const dir = v>30?'expanded sharply':v>5?'edged into expansion':v>-5?'oscillated around the line':v>-30?'leaned into contraction':'contracted persistently';
+    return ind+' '+dir+' during the '+r.name+' regime ('+r.range+'). Average net diffusion score: '+(v>=0?'+':'')+v+'.';
+  };
+  return (
+    <div className="mode-page">
+      <div style={{display:'grid',gridTemplateColumns:'1fr 320px',gap:32}}>
+        <div className="panel">
+          <div className="eyebrow" style={{marginBottom:4}}>Figure 4 · 18 industries \xd7 5 regimes</div>
+          <h2 style={{fontSize:22,fontWeight:500,marginBottom:16}}>Who <span style={{fontStyle:'italic',color:'var(--teal)'}}>expanded</span>, who <span style={{fontStyle:'italic',color:'var(--oxblood)'}}>contracted</span>?</h2>
+          <div className="heat-grid" style={{gridTemplateColumns:'200px repeat('+REGIMES.length+', 1fr)'}}>
+            <div className="heat-col-label"></div>
+            {REGIMES.map(r => (
+              <div key={r.id} className="heat-col-label">
+                <div style={{fontFamily:'var(--serif)',fontSize:13,fontWeight:600,lineHeight:1.2}}>{r.name}</div>
+                <div style={{fontFamily:'var(--mono)',fontSize:10,color:'var(--ink-3)',marginTop:2}}>{r.range}</div>
+              </div>
+            ))}
+            {INDUSTRIES.map(ind => (
+              <React.Fragment key={ind}>
+                <div className="heat-row-label">{ind}</div>
+                {REGIMES.map(r => {
+                  const v = SECTOR_MATRIX[ind][r.id];
+                  const isSel = selected && selected.ind===ind && selected.r.id===r.id;
+                  return (
+                    <button key={r.id} className="heat-cell" onClick={() => setSelected({ind, r, v})} style={{background:colorFor(v), color:Math.abs(v)>30?'#fff':'var(--ink)', border:isSel?'2px solid var(--ink)':'none'}}>
+                      {v>0?'+':''}{v}
+                    </button>
+                  );
+                })}
+              </React.Fragment>
+            ))}
+          </div>
+          <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',marginTop:16,fontFamily:'var(--sans)',fontSize:11,color:'var(--ink-3)'}}>
+            <div style={{display:'flex',alignItems:'center',gap:10}}>
+              <span style={{fontWeight:600,letterSpacing:'0.1em',textTransform:'uppercase',color:'var(--ink)'}}>Net diffusion</span>
+              <span>−90</span>
+              <div style={{width:240,height:14,background:'linear-gradient(to right, rgb(89,19,19), rgba(139,30,30,0.2), var(--paper-2), rgba(31,95,91,0.2), rgb(20,60,57))'}}></div>
+              <span>+90</span>
+            </div>
+            <span style={{fontStyle:'italic',fontFamily:'var(--serif)'}}>Click any cell for the narrative.</span>
+          </div>
+        </div>
+        <aside>
+          <div className="panel" style={{padding:'18px 20px',position:'sticky',top:130}}>
+            {selected ? (
+              <div>
+                <div className="eyebrow" style={{marginBottom:6}}>Industry \xd7 Regime</div>
+                <h3 style={{fontSize:18,fontWeight:500,marginBottom:4}}>{selected.ind}</h3>
+                <div style={{fontFamily:'var(--serif)',fontStyle:'italic',color:'var(--ink-3)',fontSize:13,marginBottom:14}}>{selected.r.name} · {selected.r.range}</div>
+                <div style={{padding:'10px 14px',background:colorFor(selected.v),border:'1px solid var(--ink)',marginBottom:14,fontFamily:'var(--mono)',fontSize:18,color:Math.abs(selected.v)>30?'#fff':'var(--ink)'}}>{selected.v>0?'+':''}{selected.v}</div>
+                <p style={{fontFamily:'var(--serif)',fontSize:14,lineHeight:1.6,color:'var(--ink-2)'}}>{narrative(selected.ind, selected.r, selected.v)}</p>
+                <p style={{fontFamily:'var(--sans)',fontSize:11,color:'var(--ink-3)',marginTop:14,fontStyle:'italic',lineHeight:1.5}}>Diffusion scores aggregate ISM monthly reports by industry, mapped to historical regimes.</p>
+              </div>
+            ) : (
+              <div>
+                <div className="eyebrow" style={{marginBottom:8}}>How to read this</div>
+                <p style={{fontFamily:'var(--serif)',fontSize:14,lineHeight:1.6,color:'var(--ink-2)',marginBottom:12}}>Each cell shows whether an industry, on net, expanded or contracted during a given policy regime.</p>
+                <p style={{fontFamily:'var(--serif)',fontSize:14,lineHeight:1.6,color:'var(--ink-2)'}}>The headline PMI hides this distribution. Apparel and Textile experienced something close to permanent contraction post-1971; Computer & Electronic boomed through the Great Moderation.</p>
+                <div style={{marginTop:18,padding:'12px 14px',background:'var(--paper-2)',borderLeft:'3px solid var(--oxblood)',fontFamily:'var(--serif)',fontSize:13,fontStyle:'italic',color:'var(--ink-2)',lineHeight:1.5}}>&ldquo;The aggregate is the average. The variance is the policy.&rdquo;</div>
+              </div>
+            )}
+          </div>
+        </aside>
+      </div>
+    </div>
+  );
+}
+
+/* ============ APP ============ */
+const MODES = [
+  {id:'timeline',label:'Timeline',num:'01'},
+  {id:'decompose',label:'Decompose',num:'02'},
+  {id:'fedchair',label:'Fed Chair',num:'03'},
+  {id:'heatmap',label:'Sectors',num:'04'},
+];
+const INTRO = {
+  timeline:{eyebrow:'01 · Master Timeline',title:<>Seventy-five years of <em>signal</em>, in one line.</>,deck:'The ISM Manufacturing PMI sits at fifty when the factory floor is neither growing nor shrinking. Below, you will find every month from June 1948 to today — paired with the policy decisions that bent its trajectory. Click any event for three economists’ readings.'},
+  decompose:{eyebrow:'02 · Decompose',title:<>The headline number is <em>five numbers</em>.</>,deck:'PMI is a fixed weighted blend of New Orders, Production, Employment, Supplier Deliveries, and Inventories. Reweight them on the right; watch your custom blend redraw against the actual series — and see whether your weights would have caught the last twelve recessions.'},
+  fedchair:{eyebrow:'03 · You Are the Fed Chair',title:<>Decide with the data <em>they had then</em>.</>,deck:'Five inflection points, five charts that hide everything past the day of decision. Read the briefing, pick your action, then see what actually happened — and how three schools of thought read it.'},
+  heatmap:{eyebrow:'04 · Sector Heatmap',title:<>The aggregate is the <em>average</em>.</>,deck:'Behind the headline PMI sit eighteen industries. Apparel collapsed; semiconductors boomed. The matrix below maps each industry against five policy regimes, so you can see who won and who lost under what.'},
+};
+
+function App() {
+  const [mode, setMode] = useState('timeline');
+  const intro = INTRO[mode];
+  return (
+    <div>
+      <header className="masthead">
+        <div className="masthead-left">
+          <span><span className="dot"></span>Vol. I · Issue 04</span>
+          <span>Mon, 4 May 2026</span>
+        </div>
+        <div>
+          <div className="brand">Bellwether<span className="ornament">❦</span></div>
+          <div className="brand-sub">A Reader for the Manufacturing Economy · 1948 — Present</div>
+        </div>
+        <div className="masthead-right">
+          <button className="btn ghost">About</button>
+          <button className="btn ghost">Sources</button>
+          <button className="btn">Share</button>
+        </div>
+      </header>
+      <nav className="modes">
+        {MODES.map(m => (
+          <button key={m.id} className={'mode-tab'+(mode===m.id?' active':'')} onClick={() => setMode(m.id)}>
+            <span className="num">{m.num}</span>{m.label}
+          </button>
+        ))}
+        <div style={{marginLeft:'auto',display:'flex',alignItems:'center',gap:14,paddingRight:4,fontFamily:'var(--mono)',fontSize:11,color:'var(--ink-3)'}}>
+          <span>Latest PMI · <strong style={{color:'var(--ink)'}}>{PMI[PMI.length-1].value.toFixed(1)}</strong></span>
+        </div>
+      </nav>
+      <section className="intro">
+        <div>
+          <div className="eyebrow" style={{marginBottom:16}}>{intro.eyebrow}</div>
+          <h1>{intro.title}</h1>
+          <p className="intro-deck">{intro.deck}</p>
+        </div>
+        <div className="intro-meta">
+          <div><span>Series</span><strong>NAPM</strong></div>
+          <div><span>Frequency</span><strong>Monthly</strong></div>
+          <div><span>Source</span><strong>FRED + ISM</strong></div>
+          <div><span>Coverage</span><strong>1948 → 2026</strong></div>
+        </div>
+      </section>
+      <main>
+        {mode==='timeline' && <TimelineMode/>}
+        {mode==='decompose' && <DecomposeMode/>}
+        {mode==='fedchair' && <FedChairMode/>}
+        {mode==='heatmap' && <HeatmapMode/>}
+      </main>
+      <footer className="footer">
+        <div><span className="by">by Max</span><span style={{margin:'0 12px',color:'var(--paper-edge)'}}>·</span><span>An interactive prototype of Bellwether</span></div>
+        <div style={{display:'flex',gap:18}}><span>Data: FRED, ISM, NBER</span><span>·</span><span>No accounts, no ads, no paywall.</span></div>
+      </footer>
+    </div>
+  );
+}
+
+class ErrBoundary extends React.Component {
+  constructor(p){ super(p); this.state={err:null}; }
+  static getDerivedStateFromError(err){ return {err}; }
+  componentDidCatch(err, info){ console.error('Bellwether render error:', err, info); }
+  render(){
+    if (this.state.err) return (
+      <div style={{padding:'40px',fontFamily:'Georgia, serif',color:'#1a1814',background:'#f5f0e6',minHeight:'100vh'}}>
+        <h2 style={{fontSize:24,marginBottom:12}}>Bellwether — render error</h2>
+        <pre style={{whiteSpace:'pre-wrap',fontSize:13,fontFamily:'monospace',background:'#ede6d6',padding:14,border:'1px solid #ddd3bf'}}>{String(this.state.err && (this.state.err.stack || this.state.err.message))}</pre>
+      </div>
+    );
+    return this.props.children;
+  }
+}
+try {
+  ReactDOM.createRoot(document.getElementById('root')).render(<ErrBoundary><App/></ErrBoundary>);
+} catch(e) {
+  document.getElementById('root').innerHTML = '<div style="padding:40px;font-family:Georgia,serif;color:#1a1814;background:#f5f0e6;min-height:100vh"><h2>Bellwether — bootstrap error</h2><pre style="white-space:pre-wrap;font-size:13px;font-family:monospace;background:#ede6d6;padding:14px;border:1px solid #ddd3bf">'+(e && (e.stack||e.message))+'</pre></div>';
+}
+</script>
+</body>
+</html>

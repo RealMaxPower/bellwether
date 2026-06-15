@@ -1,0 +1,81 @@
+{
+  "id": "USREC",
+  "title": "NBER-based Recession Indicator",
+  "source": "NBER Business Cycle Dating Committee",
+  "provenance": "nber",
+  "lastVerifiedAt": "2026-05-04",
+  "periods": [
+    {
+      "peak": "1948-11-01",
+      "trough": "1949-10-01",
+      "label": "Postwar adjustment",
+      "sourceUrl": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions"
+    },
+    {
+      "peak": "1953-07-01",
+      "trough": "1954-05-01",
+      "label": "1953 recession",
+      "sourceUrl": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions"
+    },
+    {
+      "peak": "1957-08-01",
+      "trough": "1958-04-01",
+      "label": "Eisenhower recession",
+      "sourceUrl": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions"
+    },
+    {
+      "peak": "1960-04-01",
+      "trough": "1961-02-01",
+      "label": "1960–61 recession",
+      "sourceUrl": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions"
+    },
+    {
+      "peak": "1969-12-01",
+      "trough": "1970-11-01",
+      "label": "Nixon recession",
+      "sourceUrl": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions"
+    },
+    {
+      "peak": "1973-11-01",
+      "trough": "1975-03-01",
+      "label": "1973 oil shock",
+      "sourceUrl": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions"
+    },
+    {
+      "peak": "1980-01-01",
+      "trough": "1980-07-01",
+      "label": "1980 recession",
+      "sourceUrl": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions"
+    },
+    {
+      "peak": "1981-07-01",
+      "trough": "1982-11-01",
+      "label": "Volcker recession",
+      "sourceUrl": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions"
+    },
+    {
+      "peak": "1990-07-01",
+      "trough": "1991-03-01",
+      "label": "Early-90s recession",
+      "sourceUrl": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions"
+    },
+    {
+      "peak": "2001-03-01",
+      "trough": "2001-11-01",
+      "label": "Dot-com bust",
+      "sourceUrl": "https://www.nber.org/news/business-cycle-dating-committee-announcement-july-17-2003"
+    },
+    {
+      "peak": "2007-12-01",
+      "trough": "2009-06-01",
+      "label": "Great Recession",
+      "sourceUrl": "https://www.nber.org/news/business-cycle-dating-committee-announcement-september-20-2010"
+    },
+    {
+      "peak": "2020-02-01",
+      "trough": "2020-04-01",
+      "label": "COVID-19 recession",
+      "sourceUrl": "https://www.nber.org/news/business-cycle-dating-committee-announcement-july-19-2021"
+    }
+  ]
+}

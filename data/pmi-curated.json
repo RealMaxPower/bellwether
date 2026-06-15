@@ -1,0 +1,100 @@
+{
+  "id": "PMI-CURATED",
+  "title": "ISM Manufacturing PMI Composite (hand-curated)",
+  "source": "ISM monthly Report on Business news releases",
+  "units": "Index",
+  "provenance": "hand-curated",
+  "lastVerifiedAt": "2026-06-14",
+  "observations": [
+    {
+      "date": "2008-10-01",
+      "value": 38.7,
+      "sourceUrl": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"
+    },
+    {
+      "date": "2009-03-01",
+      "value": 36.3,
+      "sourceUrl": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"
+    },
+    {
+      "date": "2018-08-01",
+      "value": 60.8,
+      "sourceUrl": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"
+    },
+    {
+      "date": "2020-04-01",
+      "value": 41.5,
+      "sourceUrl": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"
+    },
+    {
+      "date": "2020-08-01",
+      "value": 56,
+      "sourceUrl": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"
+    },
+    {
+      "date": "2022-06-01",
+      "value": 53,
+      "sourceUrl": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"
+    },
+    {
+      "date": "2023-06-01",
+      "value": 46,
+      "sourceUrl": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"
+    },
+    {
+      "date": "2024-01-01",
+      "value": 49.1,
+      "sourceUrl": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"
+    },
+    {
+      "date": "2025-08-01",
+      "value": 48.7,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-48-7-august-2025-ism-manufacturing-pmi-report-302543264.html"
+    },
+    {
+      "date": "2025-09-01",
+      "value": 49.1,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-49-1-september-2025-ism-manufacturing-pmi-report-302571530.html"
+    },
+    {
+      "date": "2025-10-01",
+      "value": 48.7,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-48-7-october-2025-ism-manufacturing-pmi-report-302601422.html"
+    },
+    {
+      "date": "2025-11-01",
+      "value": 48.2,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-48-2-november-2025-ism-manufacturing-pmi-report-302626979.html"
+    },
+    {
+      "date": "2025-12-01",
+      "value": 47.9,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-47-9-december-2025-ism-manufacturing-pmi-report-302649307.html"
+    },
+    {
+      "date": "2026-01-01",
+      "value": 52.6,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-52-6-january-2026-ism-manufacturing-pmi-report-302675443.html"
+    },
+    {
+      "date": "2026-02-01",
+      "value": 52.4,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-52-4-february-2026-ism-manufacturing-pmi-report-302699883.html"
+    },
+    {
+      "date": "2026-03-01",
+      "value": 52.7,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-52-7-march-2026-ism-manufacturing-pmi-report-302730721.html"
+    },
+    {
+      "date": "2026-04-01",
+      "value": 52.7,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-52-7-april-2026-ism-manufacturing-pmi-report-302759226.html"
+    },
+    {
+      "date": "2026-05-01",
+      "value": 54,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-54-may-2026-ism-manufacturing-pmi-report-302786165.html"
+    }
+  ]
+}

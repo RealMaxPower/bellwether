@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: "Bellwether: an interactive atlas of the ISM PMI suite and US economic policy"
+message: "If you use this project or its compiled series, please cite it as below."
+type: software
+authors:
+  - given-names: Max
+    alias: RealMaxPower
+repository-code: "https://github.com/RealMaxPower/bellwether"
+url: "https://github.com/RealMaxPower/bellwether"
+abstract: >-
+  Bellwether is an interactive atlas of the ISM Manufacturing PMI (1948-present)
+  and Services PMI (1997-present) alongside major US economic-policy decisions.
+  It compiles headline values and subindices from primary ISM Reports on Business
+  (via the Internet Archive and ISM press releases) and Federal Reserve (FRED)
+  series, with per-observation source citations. Economic data values are facts
+  reproduced with attribution; see data/LICENSING.md for the per-source posture.
+keywords:
+  - ISM
+  - PMI
+  - economics
+  - manufacturing
+  - macroeconomics
+  - data-visualization
+license: CC0-1.0
+version: "0.1.0"

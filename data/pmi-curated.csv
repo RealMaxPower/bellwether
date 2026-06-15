@@ -1,0 +1,21 @@
+# ISM Manufacturing PMI — hand-curated values transcribed from ISM monthly Reports on Business.
+#
+# IMPORTANT: the seed values below were entered from the maintainer's working
+# notes / training-era recall, NOT directly from a live ISM release fetch.
+# They line up with well-known historical reference points cited widely in the
+# economics literature (COVID trough, GFC trough, TCJA-era peak, etc.) but
+# every row should be re-verified against its sourceUrl before being treated
+# as authoritative. Replace any row whose value you can't verify.
+#
+# Format: YYYY-MM-01,value,sourceUrl
+# Lines starting with # and blank lines are ignored.
+#
+# Workflow: edit this file, then `npm run import-pmi`.
+2008-10-01,38.7,https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/
+2009-03-01,36.3,https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/
+2018-08-01,60.8,https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/
+2020-04-01,41.5,https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/
+2020-08-01,56.0,https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/
+2022-06-01,53.0,https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/
+2023-06-01,46.0,https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/
+2024-01-01,49.1,https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/

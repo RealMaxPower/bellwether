@@ -1,0 +1,700 @@
+{
+  "id": "PMI-SUBINDICES-WAYBACK",
+  "title": "ISM Manufacturing PMI Composite + 5 subindices (Wayback archive of primary releases)",
+  "source": "Wayback Machine archive of ISM monthly Manufacturing Report on Business pages — composite and the five subindices (New Orders, Production, Employment, Supplier Deliveries, Inventories) extracted from the same paragraphs",
+  "units": "Index",
+  "provenance": "wayback-archive",
+  "lastVerifiedAt": "2026-05-07",
+  "observations": [
+    {
+      "date": "2014-09-01",
+      "composite": 56.6,
+      "newOrders": 60,
+      "production": 64.6,
+      "employment": 54.6,
+      "supplierDeliveries": 52.2,
+      "inventories": 51.5,
+      "sourceUrl": "https://web.archive.org/web/20141018194916/http://www.ism.ws:80/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2014-10-01",
+      "composite": 59,
+      "newOrders": 65.8,
+      "production": 64.8,
+      "employment": 55.5,
+      "supplierDeliveries": 56.2,
+      "inventories": 52.5,
+      "sourceUrl": "https://web.archive.org/web/20141108072816/http://www.ism.ws/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2014-11-01",
+      "composite": 58.7,
+      "newOrders": 66,
+      "production": 64.4,
+      "employment": 54.9,
+      "supplierDeliveries": 56.8,
+      "inventories": 51.5,
+      "sourceUrl": "https://web.archive.org/web/20141220094037/http://www.ism.ws:80/ISMReport/MfgROB.cfm"
+    },
+    {
+      "date": "2014-12-01",
+      "composite": 55.5,
+      "newOrders": 57.3,
+      "production": 58.8,
+      "employment": 56.8,
+      "supplierDeliveries": 59.3,
+      "inventories": 45.5,
+      "sourceUrl": "https://web.archive.org/web/20150105120604/http://www.ism.ws/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2015-01-01",
+      "composite": 53.5,
+      "newOrders": 52.9,
+      "production": 56.5,
+      "employment": 54.1,
+      "supplierDeliveries": 52.9,
+      "inventories": 51,
+      "sourceUrl": "https://web.archive.org/web/20150207061444/http://www.ism.ws:80/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2015-02-01",
+      "composite": 52.9,
+      "newOrders": 52.5,
+      "production": 53.7,
+      "employment": 51.4,
+      "supplierDeliveries": 54.3,
+      "inventories": 52.5,
+      "sourceUrl": "https://web.archive.org/web/20150304163935/http://www.ism.ws:80/ISMReport/MfgROB.cfm"
+    },
+    {
+      "date": "2015-03-01",
+      "composite": 51.5,
+      "newOrders": 51.8,
+      "production": 53.8,
+      "employment": 50,
+      "supplierDeliveries": 50.5,
+      "inventories": 51.5,
+      "sourceUrl": "https://web.archive.org/web/20150402072244/http://www.ism.ws:80/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2020-06-01",
+      "composite": 52.6,
+      "newOrders": 56.4,
+      "production": 57.3,
+      "employment": 42.1,
+      "supplierDeliveries": 56.9,
+      "inventories": 50.5,
+      "sourceUrl": "https://web.archive.org/web/20200809031403/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2020-07-01",
+      "composite": 54.2,
+      "newOrders": 61.5,
+      "production": 62.1,
+      "employment": 44.3,
+      "supplierDeliveries": 55.8,
+      "inventories": 47,
+      "sourceUrl": "https://web.archive.org/web/20200806133002/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    },
+    {
+      "date": "2020-08-01",
+      "composite": 56,
+      "newOrders": 67.6,
+      "production": 63.3,
+      "employment": 46.4,
+      "supplierDeliveries": 58.2,
+      "inventories": 44.4,
+      "sourceUrl": "https://web.archive.org/web/20200901183706/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/august/"
+    },
+    {
+      "date": "2020-09-01",
+      "composite": 55.4,
+      "newOrders": 60.2,
+      "production": 61,
+      "employment": 49.6,
+      "supplierDeliveries": 59,
+      "inventories": 47.1,
+      "sourceUrl": "https://web.archive.org/web/20201004092354/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/september/"
+    },
+    {
+      "date": "2020-10-01",
+      "composite": 59.3,
+      "newOrders": 67.9,
+      "production": 63,
+      "employment": 53.2,
+      "supplierDeliveries": 60.5,
+      "inventories": 51.9,
+      "sourceUrl": "https://web.archive.org/web/20201103034640/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/october/"
+    },
+    {
+      "date": "2020-11-01",
+      "composite": 57.5,
+      "newOrders": 65.1,
+      "production": 60.8,
+      "employment": 48.4,
+      "supplierDeliveries": 61.7,
+      "inventories": 51.2,
+      "sourceUrl": "https://web.archive.org/web/20210124160808/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/november/"
+    },
+    {
+      "date": "2020-12-01",
+      "composite": 60.7,
+      "newOrders": 67.9,
+      "production": 64.8,
+      "employment": 51.5,
+      "supplierDeliveries": 67.6,
+      "inventories": 51.6,
+      "sourceUrl": "https://web.archive.org/web/20210106042752/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/december/"
+    },
+    {
+      "date": "2021-01-01",
+      "composite": 58.7,
+      "newOrders": 61.1,
+      "production": 60.7,
+      "employment": 52.6,
+      "supplierDeliveries": 68.2,
+      "inventories": 50.8,
+      "sourceUrl": "https://web.archive.org/web/20210202083119/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/january/"
+    },
+    {
+      "date": "2021-02-01",
+      "composite": 60.8,
+      "newOrders": 64.8,
+      "production": 63.2,
+      "employment": 54.4,
+      "supplierDeliveries": 72,
+      "inventories": 49.7,
+      "sourceUrl": "https://web.archive.org/web/20210301153311/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/february/"
+    },
+    {
+      "date": "2021-03-01",
+      "composite": 64.7,
+      "newOrders": 68,
+      "production": 68.1,
+      "employment": 59.6,
+      "supplierDeliveries": 76.6,
+      "inventories": 50.8,
+      "sourceUrl": "https://web.archive.org/web/20210401155330/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/march/"
+    },
+    {
+      "date": "2021-04-01",
+      "composite": 60.7,
+      "newOrders": 64.3,
+      "production": 62.5,
+      "employment": 55.1,
+      "supplierDeliveries": 75,
+      "inventories": 46.5,
+      "sourceUrl": "https://web.archive.org/web/20210503162024/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/april/"
+    },
+    {
+      "date": "2021-05-01",
+      "composite": 61.2,
+      "newOrders": 67,
+      "production": 58.5,
+      "employment": 50.9,
+      "supplierDeliveries": 78.8,
+      "inventories": 50.8,
+      "sourceUrl": "https://web.archive.org/web/20210601164033/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/may/"
+    },
+    {
+      "date": "2021-06-01",
+      "composite": 60.6,
+      "newOrders": 66,
+      "production": 60.8,
+      "employment": 49.9,
+      "supplierDeliveries": 75.1,
+      "inventories": 51.1,
+      "sourceUrl": "https://web.archive.org/web/20210701152050/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2021-07-01",
+      "composite": 59.5,
+      "newOrders": 64.9,
+      "production": 58.4,
+      "employment": 52.9,
+      "supplierDeliveries": 72.5,
+      "inventories": 48.9,
+      "sourceUrl": "https://web.archive.org/web/20210802165259/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    },
+    {
+      "date": "2021-08-01",
+      "composite": 59.9,
+      "newOrders": 66.7,
+      "production": 60,
+      "employment": 49,
+      "supplierDeliveries": 69.5,
+      "inventories": 54.2,
+      "sourceUrl": "https://web.archive.org/web/20210901153507/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/august/"
+    },
+    {
+      "date": "2021-09-01",
+      "composite": 61.1,
+      "newOrders": 66.7,
+      "production": 59.4,
+      "employment": 50.2,
+      "supplierDeliveries": 73.4,
+      "inventories": 55.6,
+      "sourceUrl": "https://web.archive.org/web/20211001152228/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/september/"
+    },
+    {
+      "date": "2021-10-01",
+      "composite": 60.8,
+      "newOrders": 59.8,
+      "production": 59.3,
+      "employment": 52,
+      "supplierDeliveries": 75.6,
+      "inventories": 57,
+      "sourceUrl": "https://web.archive.org/web/20211101155501/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/october/"
+    },
+    {
+      "date": "2021-11-01",
+      "composite": 61.1,
+      "newOrders": 61.5,
+      "production": 61.5,
+      "employment": 53.3,
+      "supplierDeliveries": 72.2,
+      "inventories": 56.8,
+      "sourceUrl": "https://web.archive.org/web/20211201163719/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/november/"
+    },
+    {
+      "date": "2021-12-01",
+      "composite": 58.7,
+      "newOrders": 60.4,
+      "production": 59.2,
+      "employment": 54.2,
+      "supplierDeliveries": 64.9,
+      "inventories": 54.7,
+      "sourceUrl": "https://web.archive.org/web/20220104170800/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/december/"
+    },
+    {
+      "date": "2022-01-01",
+      "composite": 57.6,
+      "newOrders": 57.9,
+      "production": 57.8,
+      "employment": 54.5,
+      "supplierDeliveries": 64.6,
+      "inventories": 53.2,
+      "sourceUrl": "https://web.archive.org/web/20220201213908/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/january/"
+    },
+    {
+      "date": "2022-02-01",
+      "composite": 58.6,
+      "newOrders": 61.7,
+      "production": 58.5,
+      "employment": 52.9,
+      "supplierDeliveries": 66.1,
+      "inventories": 53.6,
+      "sourceUrl": "https://web.archive.org/web/20220301154104/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/february/"
+    },
+    {
+      "date": "2022-03-01",
+      "composite": 57.1,
+      "newOrders": 53.8,
+      "production": 54.5,
+      "employment": 56.3,
+      "supplierDeliveries": 65.4,
+      "inventories": 55.5,
+      "sourceUrl": "https://web.archive.org/web/20220401165236/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/march/"
+    },
+    {
+      "date": "2022-04-01",
+      "composite": 55.4,
+      "newOrders": 53.5,
+      "production": 53.6,
+      "employment": 50.9,
+      "supplierDeliveries": 67.2,
+      "inventories": 51.6,
+      "sourceUrl": "https://web.archive.org/web/20220502160949/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/april/"
+    },
+    {
+      "date": "2022-05-01",
+      "composite": 56.1,
+      "newOrders": 55.1,
+      "production": 54.2,
+      "employment": 49.6,
+      "supplierDeliveries": 65.7,
+      "inventories": 55.9,
+      "sourceUrl": "https://web.archive.org/web/20220601154043/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/may/"
+    },
+    {
+      "date": "2022-06-01",
+      "composite": 53,
+      "newOrders": 49.2,
+      "production": 54.9,
+      "employment": 47.3,
+      "supplierDeliveries": 57.3,
+      "inventories": 56,
+      "sourceUrl": "https://web.archive.org/web/20220701153937/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2022-07-01",
+      "composite": 52.8,
+      "newOrders": 48,
+      "production": 53.5,
+      "employment": 49.9,
+      "supplierDeliveries": 55.2,
+      "inventories": 57.3,
+      "sourceUrl": "https://web.archive.org/web/20220801152945/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    },
+    {
+      "date": "2022-08-01",
+      "composite": 52.8,
+      "newOrders": 51.3,
+      "production": 50.4,
+      "employment": 54.2,
+      "supplierDeliveries": 55.1,
+      "inventories": 53.1,
+      "sourceUrl": "https://web.archive.org/web/20220901210127/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/august/"
+    },
+    {
+      "date": "2022-09-01",
+      "composite": 50.9,
+      "newOrders": 47.1,
+      "production": 50.6,
+      "employment": 48.7,
+      "supplierDeliveries": 52.4,
+      "inventories": 55.5,
+      "sourceUrl": "https://web.archive.org/web/20221003153544/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/september/"
+    },
+    {
+      "date": "2022-10-01",
+      "composite": 50.2,
+      "newOrders": 49.2,
+      "production": 52.3,
+      "employment": 50,
+      "supplierDeliveries": 46.8,
+      "inventories": 52.5,
+      "sourceUrl": "https://web.archive.org/web/20221101150747/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/october/"
+    },
+    {
+      "date": "2022-11-01",
+      "composite": 49,
+      "newOrders": 47.2,
+      "production": 51.5,
+      "employment": 48.4,
+      "supplierDeliveries": 47.2,
+      "inventories": 50.9,
+      "sourceUrl": "https://web.archive.org/web/20221201174013/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/november/"
+    },
+    {
+      "date": "2022-12-01",
+      "composite": 48.4,
+      "newOrders": 45.2,
+      "production": 48.5,
+      "employment": 51.4,
+      "supplierDeliveries": 45.1,
+      "inventories": 51.8,
+      "sourceUrl": "https://web.archive.org/web/20230104172342/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/december/"
+    },
+    {
+      "date": "2023-01-01",
+      "composite": 47.4,
+      "newOrders": 42.5,
+      "production": 48,
+      "employment": 50.6,
+      "supplierDeliveries": 45.6,
+      "inventories": 50.2,
+      "sourceUrl": "https://web.archive.org/web/20230201155156/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/january/"
+    },
+    {
+      "date": "2023-02-01",
+      "composite": 47.7,
+      "newOrders": 47,
+      "production": 47.3,
+      "employment": 49.1,
+      "supplierDeliveries": 45.2,
+      "inventories": 50.1,
+      "sourceUrl": "https://web.archive.org/web/20230301201044/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/february/"
+    },
+    {
+      "date": "2023-03-01",
+      "composite": 46.3,
+      "newOrders": 44.3,
+      "production": 47.8,
+      "employment": 46.9,
+      "supplierDeliveries": 44.8,
+      "inventories": 47.5,
+      "sourceUrl": "https://web.archive.org/web/20230403195704/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/march/"
+    },
+    {
+      "date": "2023-04-01",
+      "composite": 47.1,
+      "newOrders": 45.7,
+      "production": 48.9,
+      "employment": 50.2,
+      "supplierDeliveries": 44.6,
+      "inventories": 46.3,
+      "sourceUrl": "https://web.archive.org/web/20230504075654/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/april/"
+    },
+    {
+      "date": "2023-05-01",
+      "composite": 46.9,
+      "newOrders": 42.6,
+      "production": 51.1,
+      "employment": 51.4,
+      "supplierDeliveries": 43.5,
+      "inventories": 45.8,
+      "sourceUrl": "https://web.archive.org/web/20230602061559/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/may/"
+    },
+    {
+      "date": "2023-06-01",
+      "composite": 46,
+      "newOrders": 45.6,
+      "production": 46.7,
+      "employment": 48.1,
+      "supplierDeliveries": 45.7,
+      "inventories": 44,
+      "sourceUrl": "https://web.archive.org/web/20230703210100/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2023-07-01",
+      "composite": 46.4,
+      "newOrders": 47.3,
+      "production": 48.3,
+      "employment": 44.4,
+      "supplierDeliveries": 46.1,
+      "inventories": 46.1,
+      "sourceUrl": "https://web.archive.org/web/20230801152618/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    },
+    {
+      "date": "2023-08-01",
+      "composite": 47.6,
+      "newOrders": 46.8,
+      "production": 50,
+      "employment": 48.5,
+      "supplierDeliveries": 48.6,
+      "inventories": 44,
+      "sourceUrl": "https://web.archive.org/web/20230901185534/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/august/"
+    },
+    {
+      "date": "2023-09-01",
+      "composite": 49,
+      "newOrders": 49.2,
+      "production": 52.5,
+      "employment": 51.2,
+      "supplierDeliveries": 46.4,
+      "inventories": 45.8,
+      "sourceUrl": "https://web.archive.org/web/20231002151006/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/september/"
+    },
+    {
+      "date": "2023-10-01",
+      "composite": 46.7,
+      "newOrders": 45.5,
+      "production": 50.4,
+      "employment": 46.8,
+      "supplierDeliveries": 47.7,
+      "inventories": 43.3,
+      "sourceUrl": "https://web.archive.org/web/20231101193810/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/october/"
+    },
+    {
+      "date": "2023-11-01",
+      "composite": 46.7,
+      "newOrders": 48.3,
+      "production": 48.5,
+      "employment": 45.8,
+      "supplierDeliveries": 46.2,
+      "inventories": 50,
+      "sourceUrl": "https://web.archive.org/web/20231201184042/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/november/"
+    },
+    {
+      "date": "2023-12-01",
+      "composite": 47.4,
+      "newOrders": 47.1,
+      "production": 50.3,
+      "employment": 48.1,
+      "supplierDeliveries": 47,
+      "inventories": 44.3,
+      "sourceUrl": "https://web.archive.org/web/20240103163747/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/december/"
+    },
+    {
+      "date": "2024-01-01",
+      "composite": 49.1,
+      "newOrders": 52.5,
+      "production": 50.4,
+      "employment": 47.1,
+      "supplierDeliveries": 49.1,
+      "inventories": 46.2,
+      "sourceUrl": "https://web.archive.org/web/20240202135753/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/january/"
+    },
+    {
+      "date": "2024-02-01",
+      "composite": 47.8,
+      "newOrders": 49.2,
+      "production": 48.4,
+      "employment": 45.9,
+      "supplierDeliveries": 50.1,
+      "inventories": 45.3,
+      "sourceUrl": "https://web.archive.org/web/20240301153852/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/february/"
+    },
+    {
+      "date": "2024-03-01",
+      "composite": 50.3,
+      "newOrders": 51.4,
+      "production": 54.6,
+      "employment": 47.4,
+      "supplierDeliveries": 49.9,
+      "inventories": 48.2,
+      "sourceUrl": "https://web.archive.org/web/20240402023038/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/march/"
+    },
+    {
+      "date": "2024-04-01",
+      "composite": 49.2,
+      "newOrders": 49.1,
+      "production": 51.3,
+      "employment": 48.6,
+      "supplierDeliveries": 48.9,
+      "inventories": 48.2,
+      "sourceUrl": "https://web.archive.org/web/20240501162303/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/april/"
+    },
+    {
+      "date": "2024-05-01",
+      "composite": 48.7,
+      "newOrders": 45.4,
+      "production": 50.2,
+      "employment": 51.1,
+      "supplierDeliveries": 48.9,
+      "inventories": 47.9,
+      "sourceUrl": "https://web.archive.org/web/20240603162504/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/may/"
+    },
+    {
+      "date": "2024-06-01",
+      "composite": 48.5,
+      "newOrders": 49.3,
+      "production": 48.5,
+      "employment": 49.3,
+      "supplierDeliveries": 49.8,
+      "inventories": 45.4,
+      "sourceUrl": "https://web.archive.org/web/20240701145332/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2024-07-01",
+      "composite": 46.8,
+      "newOrders": 47.4,
+      "production": 45.9,
+      "employment": 43.4,
+      "supplierDeliveries": 52.6,
+      "inventories": 44.5,
+      "sourceUrl": "https://web.archive.org/web/20240801201640/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    },
+    {
+      "date": "2024-08-01",
+      "composite": 47.2,
+      "newOrders": 44.6,
+      "production": 44.8,
+      "employment": 46,
+      "supplierDeliveries": 50.5,
+      "inventories": 50.3,
+      "sourceUrl": "https://web.archive.org/web/20240903155316/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/august/"
+    },
+    {
+      "date": "2024-09-01",
+      "composite": 47.2,
+      "newOrders": 46.1,
+      "production": 49.8,
+      "employment": 43.9,
+      "supplierDeliveries": 52.2,
+      "inventories": 43.9,
+      "sourceUrl": "https://web.archive.org/web/20241001154206/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/september/"
+    },
+    {
+      "date": "2024-10-01",
+      "composite": 46.5,
+      "newOrders": 47.1,
+      "production": 46.2,
+      "employment": 44.4,
+      "supplierDeliveries": 52,
+      "inventories": 42.6,
+      "sourceUrl": "https://web.archive.org/web/20241104093646/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/october/"
+    },
+    {
+      "date": "2024-11-01",
+      "composite": 48.4,
+      "newOrders": 50.4,
+      "production": 46.8,
+      "employment": 48.1,
+      "supplierDeliveries": 48.7,
+      "inventories": 48.1,
+      "sourceUrl": "https://web.archive.org/web/20241202184150/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/november/"
+    },
+    {
+      "date": "2024-12-01",
+      "composite": 49.3,
+      "newOrders": 52.5,
+      "production": 50.3,
+      "employment": 45.3,
+      "supplierDeliveries": 50.1,
+      "inventories": 48.4,
+      "sourceUrl": "https://web.archive.org/web/20250105050846/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/december/"
+    },
+    {
+      "date": "2025-01-01",
+      "composite": 50.9,
+      "newOrders": 55.1,
+      "production": 52.5,
+      "employment": 50.3,
+      "supplierDeliveries": 50.9,
+      "inventories": 45.9,
+      "sourceUrl": "https://web.archive.org/web/20250203163755/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/january/"
+    },
+    {
+      "date": "2025-02-01",
+      "composite": 50.3,
+      "newOrders": 48.6,
+      "production": 50.7,
+      "employment": 47.6,
+      "supplierDeliveries": 54.5,
+      "inventories": 49.9,
+      "sourceUrl": "https://web.archive.org/web/20250303234657/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/february/"
+    },
+    {
+      "date": "2025-03-01",
+      "composite": 49,
+      "newOrders": 45.2,
+      "production": 48.3,
+      "employment": 44.7,
+      "supplierDeliveries": 53.5,
+      "inventories": 53.4,
+      "sourceUrl": "https://web.archive.org/web/20250401201900/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/march/"
+    },
+    {
+      "date": "2025-04-01",
+      "composite": 48.7,
+      "newOrders": 47.2,
+      "production": 44,
+      "employment": 46.5,
+      "supplierDeliveries": 55.2,
+      "inventories": 50.8,
+      "sourceUrl": "https://web.archive.org/web/20250501211709/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/april/"
+    },
+    {
+      "date": "2025-05-01",
+      "composite": 48.5,
+      "newOrders": 47.6,
+      "production": 45.4,
+      "employment": 46.8,
+      "supplierDeliveries": 56.1,
+      "inventories": 46.7,
+      "sourceUrl": "https://web.archive.org/web/20250602200647/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/may/"
+    },
+    {
+      "date": "2025-06-01",
+      "composite": 49,
+      "newOrders": 46.4,
+      "production": 50.3,
+      "employment": 45,
+      "supplierDeliveries": 54.2,
+      "inventories": 49.2,
+      "sourceUrl": "https://web.archive.org/web/20250702051301/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2025-07-01",
+      "composite": 48,
+      "newOrders": 47.1,
+      "production": 51.4,
+      "employment": 43.4,
+      "supplierDeliveries": 49.3,
+      "inventories": 48.9,
+      "sourceUrl": "https://web.archive.org/web/20250801142444/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    }
+  ]
+}

@@ -1,0 +1,1347 @@
+{
+  "id": "SERVICES-INDUSTRY-MONTHLY-WAYBACK",
+  "title": "ISM Services — per-month industry growth/contraction lists (Wayback archive)",
+  "source": "Wayback Machine archive of ISM monthly Services Report on Business pages — overall NMI / Services PMI growth/contraction lists, normalized against the 18-industry canonical names from data/sectors-services.json",
+  "provenance": "wayback-archive",
+  "lastVerifiedAt": "2026-05-09",
+  "industries": [
+    "Accommodation & Food Services",
+    "Agriculture, Forestry, Fishing & Hunting",
+    "Arts, Entertainment & Recreation",
+    "Construction",
+    "Educational Services",
+    "Finance & Insurance",
+    "Health Care & Social Assistance",
+    "Information",
+    "Management of Companies & Support Services",
+    "Mining",
+    "Other Services",
+    "Professional, Scientific & Technical Services",
+    "Public Administration",
+    "Real Estate, Rental & Leasing",
+    "Retail Trade",
+    "Transportation & Warehousing",
+    "Utilities",
+    "Wholesale Trade"
+  ],
+  "observations": [
+    {
+      "date": "2014-09-01",
+      "growing": [
+        "Construction",
+        "Retail Trade",
+        "Utilities",
+        "Information",
+        "Health Care & Social Assistance",
+        "Transportation & Warehousing",
+        "Management of Companies & Support Services",
+        "Wholesale Trade",
+        "Professional, Scientific & Technical Services",
+        "Accommodation & Food Services",
+        "Real Estate, Rental & Leasing",
+        "Finance & Insurance"
+      ],
+      "contracting": [
+        "Arts, Entertainment & Recreation",
+        "Mining",
+        "Educational Services",
+        "Public Administration",
+        "Other Services"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20141020122800/http://www.ism.ws:80/ISMReport/nonmfgROB.cfm"
+    },
+    {
+      "date": "2014-11-01",
+      "growing": [],
+      "contracting": [
+        "Arts, Entertainment & Recreation",
+        "Utilities",
+        "Educational Services"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20141221053517/http://www.ism.ws:80/ISMReport/NonMfgROB.cfm?"
+    },
+    {
+      "date": "2014-12-01",
+      "growing": [],
+      "contracting": [
+        "Arts, Entertainment & Recreation",
+        "Mining",
+        "Educational Services",
+        "Other Services",
+        "Transportation & Warehousing"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20150111064826/http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
+    },
+    {
+      "date": "2015-01-01",
+      "growing": [],
+      "contracting": [
+        "Mining",
+        "Arts, Entertainment & Recreation",
+        "Construction",
+        "Other Services",
+        "Real Estate, Rental & Leasing",
+        "Professional, Scientific & Technical Services",
+        "Educational Services",
+        "Transportation & Warehousing"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20150208024858/http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
+    },
+    {
+      "date": "2015-02-01",
+      "growing": [
+        "Accommodation & Food Services",
+        "Wholesale Trade",
+        "Real Estate, Rental & Leasing",
+        "Transportation & Warehousing",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Utilities",
+        "Management of Companies & Support Services",
+        "Finance & Insurance",
+        "Public Administration",
+        "Educational Services",
+        "Retail Trade",
+        "Professional, Scientific & Technical Services",
+        "Health Care & Social Assistance",
+        "Information"
+      ],
+      "contracting": [
+        "Mining",
+        "Construction",
+        "Other Services",
+        "Arts, Entertainment & Recreation"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20150307201212/http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
+    },
+    {
+      "date": "2015-03-01",
+      "growing": [],
+      "contracting": [
+        "Mining",
+        "Educational Services",
+        "Other Services",
+        "Utilities"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20150407035016/http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
+    },
+    {
+      "date": "2020-07-01",
+      "growing": [
+        "Arts, Entertainment & Recreation",
+        "Health Care & Social Assistance",
+        "Retail Trade",
+        "Transportation & Warehousing",
+        "Wholesale Trade",
+        "Educational Services",
+        "Construction",
+        "Utilities",
+        "Public Administration",
+        "Finance & Insurance",
+        "Management of Companies & Support Services",
+        "Real Estate, Rental & Leasing",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Accommodation & Food Services",
+        "Information"
+      ],
+      "contracting": [
+        "Mining",
+        "Professional, Scientific & Technical Services",
+        "Other Services"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20200809044321/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/july/"
+    },
+    {
+      "date": "2020-08-01",
+      "growing": [
+        "Arts, Entertainment & Recreation",
+        "Health Care & Social Assistance",
+        "Utilities",
+        "Accommodation & Food Services",
+        "Transportation & Warehousing",
+        "Wholesale Trade",
+        "Construction",
+        "Retail Trade",
+        "Management of Companies & Support Services",
+        "Public Administration",
+        "Finance & Insurance",
+        "Educational Services",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Real Estate, Rental & Leasing",
+        "Professional, Scientific & Technical Services"
+      ],
+      "contracting": [
+        "Mining",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Real Estate, Rental & Leasing",
+        "Information",
+        "Professional, Scientific & Technical Services",
+        "Other Services"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20200906172645/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
+    },
+    {
+      "date": "2020-09-01",
+      "growing": [
+        "Arts, Entertainment & Recreation",
+        "Utilities",
+        "Management of Companies & Support Services",
+        "Transportation & Warehousing",
+        "Health Care & Social Assistance",
+        "Wholesale Trade",
+        "Real Estate, Rental & Leasing",
+        "Accommodation & Food Services",
+        "Construction",
+        "Public Administration",
+        "Educational Services",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Finance & Insurance",
+        "Retail Trade",
+        "Information",
+        "Other Services"
+      ],
+      "contracting": [
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Retail Trade"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20201010225242/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/september/"
+    },
+    {
+      "date": "2020-10-01",
+      "growing": [
+        "Transportation & Warehousing",
+        "Construction",
+        "Accommodation & Food Services",
+        "Health Care & Social Assistance",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Educational Services",
+        "Finance & Insurance",
+        "Management of Companies & Support Services",
+        "Wholesale Trade",
+        "Mining",
+        "Professional, Scientific & Technical Services",
+        "Utilities",
+        "Retail Trade",
+        "Real Estate, Rental & Leasing",
+        "Information",
+        "Other Services"
+      ],
+      "contracting": [
+        "Arts, Entertainment & Recreation",
+        "Public Administration"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20201105011330/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+    },
+    {
+      "date": "2020-11-01",
+      "growing": [
+        "Transportation & Warehousing",
+        "Management of Companies & Support Services",
+        "Health Care & Social Assistance",
+        "Utilities",
+        "Accommodation & Food Services",
+        "Construction",
+        "Retail Trade",
+        "Wholesale Trade",
+        "Professional, Scientific & Technical Services",
+        "Finance & Insurance",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Mining",
+        "Public Administration",
+        "Information"
+      ],
+      "contracting": [
+        "Arts, Entertainment & Recreation",
+        "Other Services",
+        "Real Estate, Rental & Leasing",
+        "Educational Services",
+        "Information"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20201209010500/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
+    },
+    {
+      "date": "2020-12-01",
+      "growing": [
+        "Management of Companies & Support Services",
+        "Wholesale Trade",
+        "Retail Trade",
+        "Health Care & Social Assistance",
+        "Transportation & Warehousing",
+        "Finance & Insurance",
+        "Utilities",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Information",
+        "Professional, Scientific & Technical Services",
+        "Mining",
+        "Public Administration",
+        "Construction",
+        "Educational Services"
+      ],
+      "contracting": [
+        "Arts, Entertainment & Recreation",
+        "Accommodation & Food Services",
+        "Other Services",
+        "Real Estate, Rental & Leasing",
+        "Agriculture, Forestry, Fishing & Hunting"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20210119150254/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/december/"
+    },
+    {
+      "date": "2021-01-01",
+      "growing": [
+        "Real Estate, Rental & Leasing",
+        "Construction",
+        "Wholesale Trade",
+        "Finance & Insurance",
+        "Transportation & Warehousing",
+        "Health Care & Social Assistance",
+        "Management of Companies & Support Services",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Accommodation & Food Services",
+        "Other Services",
+        "Mining",
+        "Professional, Scientific & Technical Services",
+        "Public Administration",
+        "Information"
+      ],
+      "contracting": [
+        "Arts, Entertainment & Recreation",
+        "Educational Services",
+        "Retail Trade",
+        "Utilities",
+        "Accommodation & Food Services"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20210204055045/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/january/"
+    },
+    {
+      "date": "2021-02-01",
+      "growing": [
+        "Accommodation & Food Services",
+        "Wholesale Trade",
+        "Transportation & Warehousing",
+        "Construction",
+        "Arts, Entertainment & Recreation",
+        "Public Administration",
+        "Utilities",
+        "Health Care & Social Assistance",
+        "Retail Trade",
+        "Professional, Scientific & Technical Services",
+        "Finance & Insurance",
+        "Management of Companies & Support Services",
+        "Information",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Educational Services",
+        "Other Services",
+        "Mining"
+      ],
+      "contracting": [
+        "Real Estate, Rental & Leasing",
+        "Other Services"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20210303190904/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/february/"
+    },
+    {
+      "date": "2021-03-01",
+      "growing": [
+        "Arts, Entertainment & Recreation",
+        "Wholesale Trade",
+        "Mining",
+        "Management of Companies & Support Services",
+        "Construction",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Accommodation & Food Services",
+        "Real Estate, Rental & Leasing",
+        "Transportation & Warehousing",
+        "Public Administration",
+        "Finance & Insurance",
+        "Utilities",
+        "Health Care & Social Assistance",
+        "Professional, Scientific & Technical Services",
+        "Information",
+        "Retail Trade",
+        "Educational Services",
+        "Other Services"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20210405145401/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/march/"
+    },
+    {
+      "date": "2021-04-01",
+      "growing": [
+        "Arts, Entertainment & Recreation",
+        "Wholesale Trade",
+        "Management of Companies & Support Services",
+        "Construction",
+        "Real Estate, Rental & Leasing",
+        "Utilities",
+        "Public Administration",
+        "Transportation & Warehousing",
+        "Retail Trade",
+        "Other Services",
+        "Finance & Insurance",
+        "Mining",
+        "Health Care & Social Assistance",
+        "Professional, Scientific & Technical Services",
+        "Educational Services",
+        "Information",
+        "Accommodation & Food Services"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20210505155400/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/april/"
+    },
+    {
+      "date": "2021-05-01",
+      "growing": [
+        "Retail Trade",
+        "Wholesale Trade",
+        "Construction",
+        "Arts, Entertainment & Recreation",
+        "Transportation & Warehousing",
+        "Real Estate, Rental & Leasing",
+        "Mining",
+        "Finance & Insurance",
+        "Management of Companies & Support Services",
+        "Utilities",
+        "Other Services",
+        "Information",
+        "Accommodation & Food Services",
+        "Health Care & Social Assistance",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Public Administration",
+        "Professional, Scientific & Technical Services",
+        "Educational Services"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20210603143817/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/may/"
+    },
+    {
+      "date": "2021-07-01",
+      "growing": [
+        "Arts, Entertainment & Recreation",
+        "Wholesale Trade",
+        "Accommodation & Food Services",
+        "Management of Companies & Support Services",
+        "Retail Trade",
+        "Real Estate, Rental & Leasing",
+        "Transportation & Warehousing",
+        "Information",
+        "Other Services",
+        "Public Administration",
+        "Construction",
+        "Health Care & Social Assistance",
+        "Utilities",
+        "Professional, Scientific & Technical Services",
+        "Educational Services",
+        "Finance & Insurance",
+        "Mining"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20210804155307/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/july/"
+    },
+    {
+      "date": "2021-08-01",
+      "growing": [
+        "Accommodation & Food Services",
+        "Retail Trade",
+        "Construction",
+        "Educational Services",
+        "Information",
+        "Mining",
+        "Other Services",
+        "Utilities",
+        "Public Administration",
+        "Transportation & Warehousing",
+        "Health Care & Social Assistance",
+        "Wholesale Trade",
+        "Management of Companies & Support Services",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Finance & Insurance",
+        "Real Estate, Rental & Leasing",
+        "Professional, Scientific & Technical Services"
+      ],
+      "contracting": [
+        "Arts, Entertainment & Recreation",
+        "Real Estate, Rental & Leasing"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20210903140904/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
+    },
+    {
+      "date": "2021-09-01",
+      "growing": [
+        "Retail Trade",
+        "Arts, Entertainment & Recreation",
+        "Management of Companies & Support Services",
+        "Educational Services",
+        "Transportation & Warehousing",
+        "Real Estate, Rental & Leasing",
+        "Accommodation & Food Services",
+        "Construction",
+        "Mining",
+        "Professional, Scientific & Technical Services",
+        "Other Services",
+        "Information",
+        "Health Care & Social Assistance",
+        "Utilities",
+        "Public Administration",
+        "Wholesale Trade",
+        "Finance & Insurance"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20211005165248/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/september/"
+    },
+    {
+      "date": "2021-10-01",
+      "growing": [
+        "Retail Trade",
+        "Transportation & Warehousing",
+        "Real Estate, Rental & Leasing",
+        "Arts, Entertainment & Recreation",
+        "Other Services",
+        "Utilities",
+        "Construction",
+        "Information",
+        "Educational Services",
+        "Wholesale Trade",
+        "Accommodation & Food Services",
+        "Health Care & Social Assistance",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Management of Companies & Support Services",
+        "Finance & Insurance",
+        "Professional, Scientific & Technical Services",
+        "Public Administration",
+        "Mining"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20211103154042/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+    },
+    {
+      "date": "2021-11-01",
+      "growing": [
+        "Real Estate, Rental & Leasing",
+        "Transportation & Warehousing",
+        "Retail Trade",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Management of Companies & Support Services",
+        "Utilities",
+        "Wholesale Trade",
+        "Mining",
+        "Public Administration",
+        "Construction",
+        "Health Care & Social Assistance",
+        "Arts, Entertainment & Recreation",
+        "Other Services",
+        "Professional, Scientific & Technical Services",
+        "Finance & Insurance",
+        "Information",
+        "Educational Services",
+        "Accommodation & Food Services"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20211205170537/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
+    },
+    {
+      "date": "2021-12-01",
+      "growing": [
+        "Accommodation & Food Services",
+        "Wholesale Trade",
+        "Construction",
+        "Transportation & Warehousing",
+        "Management of Companies & Support Services",
+        "Retail Trade",
+        "Other Services",
+        "Health Care & Social Assistance",
+        "Arts, Entertainment & Recreation",
+        "Utilities",
+        "Professional, Scientific & Technical Services",
+        "Public Administration",
+        "Finance & Insurance",
+        "Information",
+        "Real Estate, Rental & Leasing",
+        "Educational Services"
+      ],
+      "contracting": [
+        "Mining",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Educational Services"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20220107050337/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/december/"
+    },
+    {
+      "date": "2022-01-01",
+      "growing": [
+        "Construction",
+        "Retail Trade",
+        "Health Care & Social Assistance",
+        "Public Administration",
+        "Real Estate, Rental & Leasing",
+        "Utilities",
+        "Professional, Scientific & Technical Services",
+        "Other Services",
+        "Educational Services",
+        "Finance & Insurance",
+        "Mining",
+        "Management of Companies & Support Services",
+        "Transportation & Warehousing",
+        "Wholesale Trade",
+        "Accommodation & Food Services"
+      ],
+      "contracting": [
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Arts, Entertainment & Recreation",
+        "Information"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20220203185407/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/january/"
+    },
+    {
+      "date": "2022-02-01",
+      "growing": [
+        "Construction",
+        "Transportation & Warehousing",
+        "Educational Services",
+        "Management of Companies & Support Services",
+        "Wholesale Trade",
+        "Mining",
+        "Utilities",
+        "Health Care & Social Assistance",
+        "Finance & Insurance",
+        "Professional, Scientific & Technical Services",
+        "Public Administration",
+        "Retail Trade",
+        "Information",
+        "Other Services"
+      ],
+      "contracting": [
+        "Real Estate, Rental & Leasing",
+        "Arts, Entertainment & Recreation",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Accommodation & Food Services"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20220303181204/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/february/"
+    },
+    {
+      "date": "2022-03-01",
+      "growing": [
+        "Educational Services",
+        "Arts, Entertainment & Recreation",
+        "Utilities",
+        "Construction",
+        "Wholesale Trade",
+        "Accommodation & Food Services",
+        "Other Services",
+        "Real Estate, Rental & Leasing",
+        "Information",
+        "Transportation & Warehousing",
+        "Public Administration",
+        "Retail Trade",
+        "Management of Companies & Support Services",
+        "Finance & Insurance",
+        "Professional, Scientific & Technical Services",
+        "Mining",
+        "Health Care & Social Assistance"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20220405140449/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/march/"
+    },
+    {
+      "date": "2022-04-01",
+      "growing": [
+        "Construction",
+        "Utilities",
+        "Management of Companies & Support Services",
+        "Real Estate, Rental & Leasing",
+        "Accommodation & Food Services",
+        "Public Administration",
+        "Professional, Scientific & Technical Services",
+        "Educational Services",
+        "Mining",
+        "Transportation & Warehousing",
+        "Wholesale Trade",
+        "Finance & Insurance",
+        "Other Services",
+        "Health Care & Social Assistance",
+        "Retail Trade",
+        "Arts, Entertainment & Recreation",
+        "Agriculture, Forestry, Fishing & Hunting"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20220504145801/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/april/"
+    },
+    {
+      "date": "2022-05-01",
+      "growing": [
+        "Mining",
+        "Construction",
+        "Real Estate, Rental & Leasing",
+        "Educational Services",
+        "Transportation & Warehousing",
+        "Management of Companies & Support Services",
+        "Utilities",
+        "Accommodation & Food Services",
+        "Wholesale Trade",
+        "Professional, Scientific & Technical Services",
+        "Arts, Entertainment & Recreation",
+        "Other Services",
+        "Health Care & Social Assistance",
+        "Public Administration"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20220603145158/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/may/"
+    },
+    {
+      "date": "2022-07-01",
+      "growing": [
+        "Mining",
+        "Real Estate, Rental & Leasing",
+        "Public Administration",
+        "Management of Companies & Support Services",
+        "Construction",
+        "Educational Services",
+        "Other Services",
+        "Utilities",
+        "Professional, Scientific & Technical Services",
+        "Health Care & Social Assistance",
+        "Transportation & Warehousing",
+        "Wholesale Trade",
+        "Information"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20220803160922/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/july/"
+    },
+    {
+      "date": "2022-08-01",
+      "growing": [
+        "Mining",
+        "Real Estate, Rental & Leasing",
+        "Utilities",
+        "Construction",
+        "Educational Services",
+        "Information",
+        "Transportation & Warehousing",
+        "Wholesale Trade",
+        "Health Care & Social Assistance",
+        "Public Administration",
+        "Finance & Insurance",
+        "Management of Companies & Support Services",
+        "Professional, Scientific & Technical Services",
+        "Other Services"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20220907083724/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
+    },
+    {
+      "date": "2022-09-01",
+      "growing": [
+        "Mining",
+        "Other Services",
+        "Educational Services",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Public Administration",
+        "Retail Trade",
+        "Wholesale Trade",
+        "Information",
+        "Utilities",
+        "Professional, Scientific & Technical Services",
+        "Health Care & Social Assistance",
+        "Finance & Insurance",
+        "Real Estate, Rental & Leasing",
+        "Construction",
+        "Management of Companies & Support Services"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20221005141742/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/september/"
+    },
+    {
+      "date": "2022-10-01",
+      "growing": [
+        "Mining",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Arts, Entertainment & Recreation",
+        "Transportation & Warehousing",
+        "Accommodation & Food Services",
+        "Construction",
+        "Utilities",
+        "Other Services",
+        "Information",
+        "Retail Trade",
+        "Professional, Scientific & Technical Services",
+        "Educational Services",
+        "Finance & Insurance",
+        "Public Administration",
+        "Health Care & Social Assistance",
+        "Wholesale Trade"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20221103143322/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+    },
+    {
+      "date": "2022-11-01",
+      "growing": [
+        "Real Estate, Rental & Leasing",
+        "Mining",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Other Services",
+        "Construction",
+        "Health Care & Social Assistance",
+        "Public Administration",
+        "Retail Trade",
+        "Professional, Scientific & Technical Services",
+        "Accommodation & Food Services",
+        "Utilities",
+        "Transportation & Warehousing",
+        "Educational Services"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20221205153915/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
+    },
+    {
+      "date": "2022-12-01",
+      "growing": [
+        "Retail Trade",
+        "Health Care & Social Assistance",
+        "Utilities",
+        "Public Administration",
+        "Arts, Entertainment & Recreation",
+        "Mining",
+        "Accommodation & Food Services",
+        "Transportation & Warehousing",
+        "Management of Companies & Support Services",
+        "Professional, Scientific & Technical Services",
+        "Finance & Insurance"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20230106233804/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/december/"
+    },
+    {
+      "date": "2023-01-01",
+      "growing": [
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Utilities",
+        "Other Services",
+        "Management of Companies & Support Services",
+        "Public Administration",
+        "Educational Services",
+        "Accommodation & Food Services",
+        "Real Estate, Rental & Leasing",
+        "Health Care & Social Assistance",
+        "Professional, Scientific & Technical Services"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20230203153558/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/january/"
+    },
+    {
+      "date": "2023-02-01",
+      "growing": [
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Public Administration",
+        "Construction",
+        "Professional, Scientific & Technical Services",
+        "Retail Trade",
+        "Utilities",
+        "Other Services",
+        "Educational Services",
+        "Finance & Insurance",
+        "Arts, Entertainment & Recreation",
+        "Real Estate, Rental & Leasing",
+        "Health Care & Social Assistance",
+        "Accommodation & Food Services"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20230303152405/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/february/"
+    },
+    {
+      "date": "2023-03-01",
+      "growing": [
+        "Other Services",
+        "Arts, Entertainment & Recreation",
+        "Educational Services",
+        "Accommodation & Food Services",
+        "Public Administration",
+        "Mining",
+        "Management of Companies & Support Services",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Professional, Scientific & Technical Services",
+        "Utilities",
+        "Health Care & Social Assistance",
+        "Construction",
+        "Information"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20230408025007/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/march/"
+    },
+    {
+      "date": "2023-04-01",
+      "growing": [
+        "Arts, Entertainment & Recreation",
+        "Other Services",
+        "Real Estate, Rental & Leasing",
+        "Accommodation & Food Services",
+        "Utilities",
+        "Public Administration",
+        "Transportation & Warehousing",
+        "Professional, Scientific & Technical Services",
+        "Educational Services",
+        "Health Care & Social Assistance",
+        "Retail Trade",
+        "Construction",
+        "Finance & Insurance",
+        "Information"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20230503201422/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/april/"
+    },
+    {
+      "date": "2023-05-01",
+      "growing": [
+        "Accommodation & Food Services",
+        "Management of Companies & Support Services",
+        "Professional, Scientific & Technical Services",
+        "Utilities",
+        "Retail Trade",
+        "Arts, Entertainment & Recreation",
+        "Construction",
+        "Other Services",
+        "Transportation & Warehousing",
+        "Public Administration",
+        "Educational Services"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20230612170843/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/may/"
+    },
+    {
+      "date": "2023-07-01",
+      "growing": [
+        "Other Services",
+        "Construction",
+        "Accommodation & Food Services",
+        "Public Administration",
+        "Management of Companies & Support Services",
+        "Transportation & Warehousing",
+        "Utilities",
+        "Real Estate, Rental & Leasing",
+        "Professional, Scientific & Technical Services",
+        "Health Care & Social Assistance",
+        "Educational Services",
+        "Retail Trade",
+        "Information",
+        "Wholesale Trade"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20230803184000/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/july/"
+    },
+    {
+      "date": "2023-08-01",
+      "growing": [
+        "Real Estate, Rental & Leasing",
+        "Accommodation & Food Services",
+        "Other Services",
+        "Arts, Entertainment & Recreation",
+        "Utilities",
+        "Retail Trade",
+        "Public Administration",
+        "Information",
+        "Educational Services",
+        "Construction",
+        "Finance & Insurance",
+        "Transportation & Warehousing",
+        "Professional, Scientific & Technical Services"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20230906175257/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
+    },
+    {
+      "date": "2023-09-01",
+      "growing": [
+        "Real Estate, Rental & Leasing",
+        "Retail Trade",
+        "Mining",
+        "Other Services",
+        "Utilities",
+        "Health Care & Social Assistance",
+        "Finance & Insurance",
+        "Construction",
+        "Professional, Scientific & Technical Services",
+        "Public Administration",
+        "Information",
+        "Transportation & Warehousing",
+        "Educational Services"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20231004163726/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/september/"
+    },
+    {
+      "date": "2023-10-01",
+      "growing": [
+        "Arts, Entertainment & Recreation",
+        "Retail Trade",
+        "Other Services",
+        "Construction",
+        "Finance & Insurance",
+        "Public Administration",
+        "Transportation & Warehousing",
+        "Utilities",
+        "Educational Services",
+        "Health Care & Social Assistance",
+        "Management of Companies & Support Services",
+        "Information"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20231103205157/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+    },
+    {
+      "date": "2023-11-01",
+      "growing": [
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Health Care & Social Assistance",
+        "Real Estate, Rental & Leasing",
+        "Arts, Entertainment & Recreation",
+        "Transportation & Warehousing",
+        "Retail Trade",
+        "Utilities",
+        "Accommodation & Food Services",
+        "Other Services",
+        "Management of Companies & Support Services",
+        "Finance & Insurance",
+        "Public Administration",
+        "Construction",
+        "Wholesale Trade",
+        "Educational Services"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20231205225517/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
+    },
+    {
+      "date": "2023-12-01",
+      "growing": [
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Accommodation & Food Services",
+        "Health Care & Social Assistance",
+        "Transportation & Warehousing",
+        "Other Services",
+        "Utilities",
+        "Retail Trade",
+        "Professional, Scientific & Technical Services",
+        "Public Administration"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20240106000702/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/december/"
+    },
+    {
+      "date": "2024-01-01",
+      "growing": [
+        "Health Care & Social Assistance",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Professional, Scientific & Technical Services",
+        "Public Administration",
+        "Utilities",
+        "Accommodation & Food Services",
+        "Construction",
+        "Other Services",
+        "Educational Services",
+        "Management of Companies & Support Services"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20240205180506/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/january/"
+    },
+    {
+      "date": "2024-02-01",
+      "growing": [
+        "Construction",
+        "Retail Trade",
+        "Public Administration",
+        "Health Care & Social Assistance",
+        "Accommodation & Food Services",
+        "Utilities",
+        "Professional, Scientific & Technical Services",
+        "Management of Companies & Support Services",
+        "Finance & Insurance",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Wholesale Trade",
+        "Information",
+        "Educational Services",
+        "Transportation & Warehousing"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20240305160805/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/february/"
+    },
+    {
+      "date": "2024-03-01",
+      "growing": [
+        "Accommodation & Food Services",
+        "Professional, Scientific & Technical Services",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Educational Services",
+        "Construction",
+        "Management of Companies & Support Services",
+        "Utilities",
+        "Retail Trade",
+        "Wholesale Trade",
+        "Other Services",
+        "Finance & Insurance",
+        "Health Care & Social Assistance"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20240403163812/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/march/"
+    },
+    {
+      "date": "2024-04-01",
+      "growing": [
+        "Accommodation & Food Services",
+        "Construction",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Utilities",
+        "Mining",
+        "Management of Companies & Support Services",
+        "Educational Services",
+        "Retail Trade",
+        "Finance & Insurance",
+        "Health Care & Social Assistance",
+        "Public Administration",
+        "Wholesale Trade"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20240503212535/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/april/"
+    },
+    {
+      "date": "2024-05-01",
+      "growing": [
+        "Real Estate, Rental & Leasing",
+        "Health Care & Social Assistance",
+        "Other Services",
+        "Educational Services",
+        "Utilities",
+        "Wholesale Trade",
+        "Construction",
+        "Transportation & Warehousing",
+        "Public Administration",
+        "Management of Companies & Support Services",
+        "Finance & Insurance",
+        "Information",
+        "Professional, Scientific & Technical Services"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20240605140922/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/may/"
+    },
+    {
+      "date": "2024-07-01",
+      "growing": [
+        "Arts, Entertainment & Recreation",
+        "Accommodation & Food Services",
+        "Mining",
+        "Construction",
+        "Management of Companies & Support Services",
+        "Transportation & Warehousing",
+        "Public Administration",
+        "Finance & Insurance",
+        "Health Care & Social Assistance",
+        "Utilities"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20240805151514/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/july/"
+    },
+    {
+      "date": "2024-08-01",
+      "growing": [
+        "Arts, Entertainment & Recreation",
+        "Mining",
+        "Transportation & Warehousing",
+        "Other Services",
+        "Information",
+        "Health Care & Social Assistance",
+        "Finance & Insurance",
+        "Public Administration",
+        "Educational Services",
+        "Utilities"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20240905173754/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
+    },
+    {
+      "date": "2024-09-01",
+      "growing": [
+        "Real Estate, Rental & Leasing",
+        "Management of Companies & Support Services",
+        "Accommodation & Food Services",
+        "Mining",
+        "Public Administration",
+        "Health Care & Social Assistance",
+        "Finance & Insurance",
+        "Construction",
+        "Transportation & Warehousing",
+        "Information",
+        "Educational Services",
+        "Utilities"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20241003150956/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/september/"
+    },
+    {
+      "date": "2024-10-01",
+      "growing": [
+        "Retail Trade",
+        "Information",
+        "Transportation & Warehousing",
+        "Accommodation & Food Services",
+        "Finance & Insurance",
+        "Construction",
+        "Mining",
+        "Public Administration",
+        "Utilities",
+        "Real Estate, Rental & Leasing",
+        "Educational Services",
+        "Professional, Scientific & Technical Services",
+        "Health Care & Social Assistance",
+        "Wholesale Trade"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20241108221045/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+    },
+    {
+      "date": "2024-11-01",
+      "growing": [
+        "Accommodation & Food Services",
+        "Arts, Entertainment & Recreation",
+        "Health Care & Social Assistance",
+        "Wholesale Trade",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Public Administration",
+        "Finance & Insurance",
+        "Management of Companies & Support Services",
+        "Retail Trade",
+        "Transportation & Warehousing",
+        "Information",
+        "Professional, Scientific & Technical Services",
+        "Construction",
+        "Utilities"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20241204190724/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
+    },
+    {
+      "date": "2024-12-01",
+      "growing": [
+        "Finance & Insurance",
+        "Arts, Entertainment & Recreation",
+        "Retail Trade",
+        "Health Care & Social Assistance",
+        "Transportation & Warehousing",
+        "Public Administration",
+        "Accommodation & Food Services",
+        "Wholesale Trade",
+        "Utilities"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20250107164038/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/december/"
+    },
+    {
+      "date": "2025-01-01",
+      "growing": [
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Accommodation & Food Services",
+        "Mining",
+        "Wholesale Trade",
+        "Finance & Insurance",
+        "Health Care & Social Assistance",
+        "Educational Services",
+        "Transportation & Warehousing",
+        "Retail Trade",
+        "Information",
+        "Construction",
+        "Management of Companies & Support Services",
+        "Public Administration",
+        "Utilities"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20250205171223/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/january/"
+    },
+    {
+      "date": "2025-02-01",
+      "growing": [
+        "Other Services",
+        "Finance & Insurance",
+        "Wholesale Trade",
+        "Utilities",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Mining",
+        "Real Estate, Rental & Leasing",
+        "Health Care & Social Assistance",
+        "Construction",
+        "Transportation & Warehousing",
+        "Accommodation & Food Services",
+        "Professional, Scientific & Technical Services",
+        "Information",
+        "Public Administration"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20250305201142/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/february/"
+    },
+    {
+      "date": "2025-03-01",
+      "growing": [
+        "Accommodation & Food Services",
+        "Transportation & Warehousing",
+        "Finance & Insurance",
+        "Wholesale Trade",
+        "Public Administration",
+        "Utilities",
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Construction",
+        "Real Estate, Rental & Leasing",
+        "Retail Trade"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20250405164827/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/march/"
+    },
+    {
+      "date": "2025-04-01",
+      "growing": [
+        "Accommodation & Food Services",
+        "Wholesale Trade",
+        "Mining",
+        "Real Estate, Rental & Leasing",
+        "Retail Trade",
+        "Arts, Entertainment & Recreation",
+        "Health Care & Social Assistance",
+        "Transportation & Warehousing",
+        "Information",
+        "Educational Services",
+        "Utilities"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20250506023506/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/april/"
+    },
+    {
+      "date": "2025-05-01",
+      "growing": [
+        "Accommodation & Food Services",
+        "Arts, Entertainment & Recreation",
+        "Public Administration",
+        "Mining",
+        "Utilities",
+        "Educational Services",
+        "Real Estate, Rental & Leasing",
+        "Information",
+        "Health Care & Social Assistance",
+        "Professional, Scientific & Technical Services"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20250605132537/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/may/"
+    },
+    {
+      "date": "2025-07-01",
+      "growing": [
+        "Transportation & Warehousing",
+        "Wholesale Trade",
+        "Finance & Insurance",
+        "Retail Trade",
+        "Other Services",
+        "Management of Companies & Support Services",
+        "Public Administration",
+        "Real Estate, Rental & Leasing",
+        "Information",
+        "Utilities",
+        "Health Care & Social Assistance"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20250805152051/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/july/"
+    }
+  ]
+}

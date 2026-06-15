@@ -1,0 +1,685 @@
+{
+  "id": "ism-services-sectors",
+  "title": "ISM 18 services industries × 5 policy regimes (placeholder scaffold)",
+  "source": "Editorial scaffold — 90 cells pending research from primary ISM Services Reports on Business. The 18 services industries are the ISM canonical Services panel breakdown.",
+  "lastVerifiedAt": "2026-05-09",
+  "regimes": [
+    {
+      "id": "bretton-woods",
+      "label": "Bretton Woods",
+      "range": "1948–71"
+    },
+    {
+      "id": "stagflation",
+      "label": "Stagflation",
+      "range": "1971–82"
+    },
+    {
+      "id": "great-moderation",
+      "label": "Great Moderation",
+      "range": "1982–2007"
+    },
+    {
+      "id": "crisis-recovery",
+      "label": "Crisis & Recovery",
+      "range": "2007–19"
+    },
+    {
+      "id": "pandemic-reshoring",
+      "label": "Pandemic & Reshoring",
+      "range": "2019→"
+    }
+  ],
+  "industries": [
+    "Accommodation & Food Services",
+    "Agriculture, Forestry, Fishing & Hunting",
+    "Arts, Entertainment & Recreation",
+    "Construction",
+    "Educational Services",
+    "Finance & Insurance",
+    "Health Care & Social Assistance",
+    "Information",
+    "Management of Companies & Support Services",
+    "Mining",
+    "Other Services",
+    "Professional, Scientific & Technical Services",
+    "Public Administration",
+    "Real Estate, Rental & Leasing",
+    "Retail Trade",
+    "Transportation & Warehousing",
+    "Utilities",
+    "Wholesale Trade"
+  ],
+  "cells": [
+    {
+      "industry": "Accommodation & Food Services",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Accommodation & Food Services",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Accommodation & Food Services",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Accommodation & Food Services",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Accommodation & Food Services",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Agriculture, Forestry, Fishing & Hunting",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Agriculture, Forestry, Fishing & Hunting",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Agriculture, Forestry, Fishing & Hunting",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Agriculture, Forestry, Fishing & Hunting",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Agriculture, Forestry, Fishing & Hunting",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Arts, Entertainment & Recreation",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Arts, Entertainment & Recreation",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Arts, Entertainment & Recreation",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Arts, Entertainment & Recreation",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Arts, Entertainment & Recreation",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Construction",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Construction",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Construction",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Construction",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Construction",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Educational Services",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Educational Services",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Educational Services",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Educational Services",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Educational Services",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Finance & Insurance",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Finance & Insurance",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Finance & Insurance",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Finance & Insurance",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Finance & Insurance",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Health Care & Social Assistance",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Health Care & Social Assistance",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Health Care & Social Assistance",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Health Care & Social Assistance",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Health Care & Social Assistance",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Information",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Information",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Information",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Information",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Information",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Management of Companies & Support Services",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Management of Companies & Support Services",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Management of Companies & Support Services",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Management of Companies & Support Services",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Management of Companies & Support Services",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Mining",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Mining",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Mining",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Mining",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Mining",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Other Services",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Other Services",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Other Services",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Other Services",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Other Services",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Professional, Scientific & Technical Services",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Professional, Scientific & Technical Services",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Professional, Scientific & Technical Services",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Professional, Scientific & Technical Services",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Professional, Scientific & Technical Services",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Public Administration",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Public Administration",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Public Administration",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Public Administration",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Public Administration",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Real Estate, Rental & Leasing",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Real Estate, Rental & Leasing",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Real Estate, Rental & Leasing",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Real Estate, Rental & Leasing",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Real Estate, Rental & Leasing",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Retail Trade",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Retail Trade",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Retail Trade",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Retail Trade",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Retail Trade",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Transportation & Warehousing",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Transportation & Warehousing",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Transportation & Warehousing",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Transportation & Warehousing",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Transportation & Warehousing",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Utilities",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Utilities",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Utilities",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Utilities",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Utilities",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Wholesale Trade",
+      "regime": "bretton-woods",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Wholesale Trade",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Services PMI did not exist during this regime (started 1997). Cell is a placeholder — no primary-source data available.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Wholesale Trade",
+      "regime": "great-moderation",
+      "score": 0,
+      "narrative": "Editorial scaffold — Services PMI covers only the latter half of this regime (1997-2007). Score pending editorial research.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Wholesale Trade",
+      "regime": "crisis-recovery",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Wholesale Trade",
+      "regime": "pandemic-reshoring",
+      "score": 0,
+      "narrative": "Editorial scaffold — score pending editorial research from primary ISM Services Reports on Business.",
+      "provenance": "hand-estimate"
+    }
+  ]
+}

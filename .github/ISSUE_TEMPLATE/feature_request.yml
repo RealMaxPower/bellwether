@@ -1,0 +1,32 @@
+name: Feature request
+description: Suggest a new mode, visualization, or enhancement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bellwether is a focused product — see `docs/` for the current roadmap. Larger ideas are best discussed in an issue before any code is written.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: What can't you do today, or what's harder than it should be?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should the app do? Sketch the mode, chart, or interaction.
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Data implications
+      description: Does this need new data? If so, what's the primary source, and is it redistributable? (See data/CONTRIBUTING.md and LICENSING.md.)
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered

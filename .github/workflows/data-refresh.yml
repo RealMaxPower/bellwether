@@ -1,0 +1,53 @@
+name: Monthly data refresh
+
+on:
+  # ISM publishes its Manufacturing Report on the first business day of the
+  # month. We refresh on the 5th to give FRED time to mirror.
+  schedule:
+    - cron: "0 14 5 * *"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - run: npm ci
+
+      - name: Pull latest FRED snapshots
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: npm run refresh-data
+
+      - name: Run strict data checks
+        env:
+          STRICT_DATA_CHECKS: "1"
+        run: npm run check-data
+
+      - name: Run full test suite
+        run: npm test
+
+      - name: Open PR with refreshed data
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore(data): monthly FRED refresh"
+          branch: data-refresh/${{ github.run_id }}
+          title: "Monthly data refresh"
+          body: |
+            Automated FRED + ISM spot-check refresh.
+
+            **Maintainer checklist before merging:**
+            - [ ] Read this month's ISM news release and append a row to `data/ism-spot-checks.json`
+            - [ ] Re-run `npm run check-data` locally to confirm reconciliation passes
+            - [ ] Eyeball the diff for any series that looks wildly off prior values
+          add-paths: |
+            data/fred/*.json

@@ -1,0 +1,685 @@
+{
+  "id": "ism-sectors",
+  "title": "ISM 18 industries × 5 policy regimes",
+  "source": "Hand-coded from ISM monthly reports — illustrative seed values, refine with ISM redistribution rights",
+  "lastVerifiedAt": "2026-05-04",
+  "regimes": [
+    {
+      "id": "bretton-woods",
+      "label": "Bretton Woods",
+      "range": "1948–71"
+    },
+    {
+      "id": "stagflation",
+      "label": "Stagflation",
+      "range": "1971–82"
+    },
+    {
+      "id": "great-moderation",
+      "label": "Great Moderation",
+      "range": "1982–2007"
+    },
+    {
+      "id": "crisis-recovery",
+      "label": "Crisis & Recovery",
+      "range": "2007–19"
+    },
+    {
+      "id": "pandemic-reshoring",
+      "label": "Pandemic & Reshoring",
+      "range": "2019→"
+    }
+  ],
+  "industries": [
+    "Apparel, Leather & Allied Products",
+    "Chemical Products",
+    "Computer & Electronic Products",
+    "Electrical Equipment, Appliances & Components",
+    "Fabricated Metal Products",
+    "Food, Beverage & Tobacco",
+    "Furniture & Related Products",
+    "Machinery",
+    "Miscellaneous Manufacturing",
+    "Nonmetallic Mineral Products",
+    "Paper Products",
+    "Petroleum & Coal Products",
+    "Plastics & Rubber Products",
+    "Primary Metals",
+    "Printing & Related Support Activities",
+    "Textile Mills",
+    "Transportation Equipment",
+    "Wood Products"
+  ],
+  "cells": [
+    {
+      "industry": "Apparel, Leather & Allied Products",
+      "regime": "bretton-woods",
+      "score": 28,
+      "narrative": "Strong domestic apparel and leather production through the 1960s; tariff-protected and rapidly mechanizing.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Apparel, Leather & Allied Products",
+      "regime": "stagflation",
+      "score": -10,
+      "narrative": "Energy-intensive textile dyeing and processing was hit hard by oil shocks; the first wave of offshoring began.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Apparel, Leather & Allied Products",
+      "regime": "great-moderation",
+      "score": -55,
+      "narrative": "Offshoring accelerated; domestic apparel manufacturing largely emptied out by 2000.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Apparel, Leather & Allied Products",
+      "regime": "crisis-recovery",
+      "score": -45,
+      "narrative": "Continued contraction with no policy shift to slow it.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Apparel, Leather & Allied Products",
+      "regime": "pandemic-reshoring",
+      "score": -10,
+      "narrative": "Modest reshoring uptick — small base, but boutique re-shoring in technical textiles.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Chemical Products",
+      "regime": "bretton-woods",
+      "score": 60,
+      "narrative": "Postwar chemical industry expansion drove durable PMI strength; petrochemical capacity built out aggressively.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Chemical Products",
+      "regime": "stagflation",
+      "score": 5,
+      "narrative": "Mixed — feedstock costs ballooned but downstream pricing power partially offset.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Chemical Products",
+      "regime": "great-moderation",
+      "score": 30,
+      "narrative": "Specialty chemicals expanded steadily; commodity chemicals moved offshore.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Chemical Products",
+      "regime": "crisis-recovery",
+      "score": 25,
+      "narrative": "Shale-gas feedstock advantage drove a US chemical capex boom.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Chemical Products",
+      "regime": "pandemic-reshoring",
+      "score": 18,
+      "narrative": "Hand-sanitizer, COVID-tech, and battery-precursor capex; mixed across sub-segments.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Computer & Electronic Products",
+      "regime": "bretton-woods",
+      "score": 70,
+      "narrative": "Mainframe era — explosive growth from a small base, IBM/DEC/Honeywell dominant.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Computer & Electronic Products",
+      "regime": "stagflation",
+      "score": 45,
+      "narrative": "Microprocessor breakthroughs sustained expansion against the broader downturn.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Computer & Electronic Products",
+      "regime": "great-moderation",
+      "score": 65,
+      "narrative": "PC era and dot-com boom; assembly increasingly offshore but design dominant in US.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Computer & Electronic Products",
+      "regime": "crisis-recovery",
+      "score": 8,
+      "narrative": "Mobile transition; semiconductor leadership challenged but profits high.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Computer & Electronic Products",
+      "regime": "pandemic-reshoring",
+      "score": 32,
+      "narrative": "CHIPS Act-driven fab construction; demand softened in 2023 but capex remained.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Electrical Equipment, Appliances & Components",
+      "regime": "bretton-woods",
+      "score": 50,
+      "narrative": "Postwar appliance boom; durable expansion as middle-class formed.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Electrical Equipment, Appliances & Components",
+      "regime": "stagflation",
+      "score": -15,
+      "narrative": "Sector hit hard by recessions; competition from imports intensified.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Electrical Equipment, Appliances & Components",
+      "regime": "great-moderation",
+      "score": 18,
+      "narrative": "Industrial controls and power equipment grew; consumer durables consolidated.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Electrical Equipment, Appliances & Components",
+      "regime": "crisis-recovery",
+      "score": 12,
+      "narrative": "Renewable-energy supply chain expansion; appliance segment muted.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Electrical Equipment, Appliances & Components",
+      "regime": "pandemic-reshoring",
+      "score": 25,
+      "narrative": "Grid modernization and IRA-driven battery investment lifted multi-year backlogs.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Fabricated Metal Products",
+      "regime": "bretton-woods",
+      "score": 42,
+      "narrative": "Construction and automotive demand drove steady expansion.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Fabricated Metal Products",
+      "regime": "stagflation",
+      "score": -20,
+      "narrative": "Cyclically exposed; deeply pro-cyclical with the 1973 and 1980-82 recessions.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Fabricated Metal Products",
+      "regime": "great-moderation",
+      "score": 22,
+      "narrative": "Stable expansion with periodic auto-cycle dips.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Fabricated Metal Products",
+      "regime": "crisis-recovery",
+      "score": 5,
+      "narrative": "Pulled into GFC trough; recovery slow but durable.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Fabricated Metal Products",
+      "regime": "pandemic-reshoring",
+      "score": 28,
+      "narrative": "Construction and infrastructure backlogs strong; tariff-protection partially worked.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Food, Beverage & Tobacco",
+      "regime": "bretton-woods",
+      "score": 30,
+      "narrative": "Steady expansion mirroring population and per-capita income growth.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Food, Beverage & Tobacco",
+      "regime": "stagflation",
+      "score": 8,
+      "narrative": "Less cyclical than durables; held up better during 1970s downturns.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Food, Beverage & Tobacco",
+      "regime": "great-moderation",
+      "score": 25,
+      "narrative": "Consolidation plus packaged-foods expansion.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Food, Beverage & Tobacco",
+      "regime": "crisis-recovery",
+      "score": 20,
+      "narrative": "Resilient through GFC; e-commerce and DTC fragmentation begins.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Food, Beverage & Tobacco",
+      "regime": "pandemic-reshoring",
+      "score": 15,
+      "narrative": "Surge then mean-reversion; supply-chain stress on packaging and labor.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Furniture & Related Products",
+      "regime": "bretton-woods",
+      "score": 38,
+      "narrative": "Suburban housing boom drove sustained furniture demand.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Furniture & Related Products",
+      "regime": "stagflation",
+      "score": -25,
+      "narrative": "Housing-cyclical; deep contractions with each recession.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Furniture & Related Products",
+      "regime": "great-moderation",
+      "score": 5,
+      "narrative": "Imports rose; domestic production largely centered on commercial.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Furniture & Related Products",
+      "regime": "crisis-recovery",
+      "score": -30,
+      "narrative": "Housing-bust trough; weak post-recovery.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Furniture & Related Products",
+      "regime": "pandemic-reshoring",
+      "score": 22,
+      "narrative": "Home-office boom temporary; subsequent normalization.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Machinery",
+      "regime": "bretton-woods",
+      "score": 55,
+      "narrative": "Capex boom; US machinery exports dominant globally.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Machinery",
+      "regime": "stagflation",
+      "score": -15,
+      "narrative": "Capex pulled forward by inflation, then cratered in Volcker recession.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Machinery",
+      "regime": "great-moderation",
+      "score": 30,
+      "narrative": "Steady demand; productivity growth led to lower headcount per unit output.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Machinery",
+      "regime": "crisis-recovery",
+      "score": 18,
+      "narrative": "Capex cycle muted post-GFC; export-dependent sub-segments slowed.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Machinery",
+      "regime": "pandemic-reshoring",
+      "score": 32,
+      "narrative": "Industrial-policy driven capex surge; backlogs at multi-year highs.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Miscellaneous Manufacturing",
+      "regime": "bretton-woods",
+      "score": 32,
+      "narrative": "Catch-all category — tracks broad manufacturing trend in this era.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Miscellaneous Manufacturing",
+      "regime": "stagflation",
+      "score": -8,
+      "narrative": "Mixed; medical-device sub-segment grew while toys/sporting weakened.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Miscellaneous Manufacturing",
+      "regime": "great-moderation",
+      "score": 20,
+      "narrative": "Med-tech expansion dominant.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Miscellaneous Manufacturing",
+      "regime": "crisis-recovery",
+      "score": 12,
+      "narrative": "Med-tech and aerospace sub-segments strong.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Miscellaneous Manufacturing",
+      "regime": "pandemic-reshoring",
+      "score": 18,
+      "narrative": "Med-tech and defense both expanded.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Nonmetallic Mineral Products",
+      "regime": "bretton-woods",
+      "score": 35,
+      "narrative": "Construction-cyclical; expansion track followed housing starts.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Nonmetallic Mineral Products",
+      "regime": "stagflation",
+      "score": -22,
+      "narrative": "Energy-intensive (cement, glass) hit hard by oil shocks.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Nonmetallic Mineral Products",
+      "regime": "great-moderation",
+      "score": 12,
+      "narrative": "Stable; cement-import dependence grew.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Nonmetallic Mineral Products",
+      "regime": "crisis-recovery",
+      "score": -25,
+      "narrative": "Housing-bust trough.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Nonmetallic Mineral Products",
+      "regime": "pandemic-reshoring",
+      "score": 18,
+      "narrative": "Infrastructure and construction backlogs lifted demand.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Paper Products",
+      "regime": "bretton-woods",
+      "score": 25,
+      "narrative": "Steady industrial demand; packaging expansion.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Paper Products",
+      "regime": "stagflation",
+      "score": -5,
+      "narrative": "Mixed; cost pressure on pulp.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Paper Products",
+      "regime": "great-moderation",
+      "score": 5,
+      "narrative": "Print decline began; corrugated/packaging held up.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Paper Products",
+      "regime": "crisis-recovery",
+      "score": -10,
+      "narrative": "Print continued to fall; packaging steady.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Paper Products",
+      "regime": "pandemic-reshoring",
+      "score": 12,
+      "narrative": "E-commerce packaging surge then normalization.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Petroleum & Coal Products",
+      "regime": "bretton-woods",
+      "score": 48,
+      "narrative": "Cheap oil era — refinery expansion mirrored auto/aviation growth.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Petroleum & Coal Products",
+      "regime": "stagflation",
+      "score": 35,
+      "narrative": "Counter-cyclical winner — high prices supported domestic production despite the broader downturn.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Petroleum & Coal Products",
+      "regime": "great-moderation",
+      "score": 8,
+      "narrative": "Refinery capacity rationalized; offshoring of upstream jobs accelerated.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Petroleum & Coal Products",
+      "regime": "crisis-recovery",
+      "score": 30,
+      "narrative": "Shale revolution — US returns to net production growth.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Petroleum & Coal Products",
+      "regime": "pandemic-reshoring",
+      "score": 5,
+      "narrative": "Energy transition pressure and demand variability.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Plastics & Rubber Products",
+      "regime": "bretton-woods",
+      "score": 60,
+      "narrative": "Plastics revolution — explosive growth as substitution accelerated.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Plastics & Rubber Products",
+      "regime": "stagflation",
+      "score": 0,
+      "narrative": "Mixed — petrochemical input costs ballooned.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Plastics & Rubber Products",
+      "regime": "great-moderation",
+      "score": 28,
+      "narrative": "Stable downstream demand; consolidation.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Plastics & Rubber Products",
+      "regime": "crisis-recovery",
+      "score": 12,
+      "narrative": "Steady; tire industry pressured by imports.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Plastics & Rubber Products",
+      "regime": "pandemic-reshoring",
+      "score": 22,
+      "narrative": "Strong order books; supply-chain stress on intermediates.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Primary Metals",
+      "regime": "bretton-woods",
+      "score": 38,
+      "narrative": "Steel and aluminum capacity expanded with industry-wide demand.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Primary Metals",
+      "regime": "stagflation",
+      "score": -35,
+      "narrative": "Beginning of US steel's secular decline; integrated mills hit hard.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Primary Metals",
+      "regime": "great-moderation",
+      "score": -15,
+      "narrative": "Continued contraction with periodic countercyclical relief.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Primary Metals",
+      "regime": "crisis-recovery",
+      "score": -10,
+      "narrative": "Cyclically beat up; trade-case relief partially worked.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Primary Metals",
+      "regime": "pandemic-reshoring",
+      "score": 25,
+      "narrative": "Tariff-protection plus EV/battery demand drove a partial recovery.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Printing & Related Support Activities",
+      "regime": "bretton-woods",
+      "score": 22,
+      "narrative": "Mass-market print expansion.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Printing & Related Support Activities",
+      "regime": "stagflation",
+      "score": -12,
+      "narrative": "Costs squeezed; magazine/newspaper publishing peak.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Printing & Related Support Activities",
+      "regime": "great-moderation",
+      "score": -25,
+      "narrative": "Digital substitution begins.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Printing & Related Support Activities",
+      "regime": "crisis-recovery",
+      "score": -55,
+      "narrative": "Sustained secular decline.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Printing & Related Support Activities",
+      "regime": "pandemic-reshoring",
+      "score": -45,
+      "narrative": "Continued contraction; commercial printing hit hardest.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Textile Mills",
+      "regime": "bretton-woods",
+      "score": 30,
+      "narrative": "Domestic textile manufacturing dominant; tariff-protected.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Textile Mills",
+      "regime": "stagflation",
+      "score": -25,
+      "narrative": "Beginning of offshoring acceleration.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Textile Mills",
+      "regime": "great-moderation",
+      "score": -60,
+      "narrative": "Sharp domestic contraction; offshoring complete by 2000.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Textile Mills",
+      "regime": "crisis-recovery",
+      "score": -40,
+      "narrative": "Continued shrinkage; technical textiles a small bright spot.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Textile Mills",
+      "regime": "pandemic-reshoring",
+      "score": -15,
+      "narrative": "Modest reshoring of technical/industrial textiles.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Transportation Equipment",
+      "regime": "bretton-woods",
+      "score": 52,
+      "narrative": "Auto industry peak — Big Three dominant; aviation expansion.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Transportation Equipment",
+      "regime": "stagflation",
+      "score": -25,
+      "narrative": "Auto cycle deeply pro-cyclical; oil shocks devastating to large-car segment.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Transportation Equipment",
+      "regime": "great-moderation",
+      "score": 22,
+      "narrative": "Restructured auto industry; aerospace dominant.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Transportation Equipment",
+      "regime": "crisis-recovery",
+      "score": 5,
+      "narrative": "GFC bailouts; subsequent recovery.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Transportation Equipment",
+      "regime": "pandemic-reshoring",
+      "score": 18,
+      "narrative": "EV transition capex significant; aerospace recovering.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Wood Products",
+      "regime": "bretton-woods",
+      "score": 32,
+      "narrative": "Housing-cyclical; expansion mirrored postwar housing boom.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Wood Products",
+      "regime": "stagflation",
+      "score": -18,
+      "narrative": "Housing-cyclical contraction.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Wood Products",
+      "regime": "great-moderation",
+      "score": 8,
+      "narrative": "Stable; lumber price volatility.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Wood Products",
+      "regime": "crisis-recovery",
+      "score": -22,
+      "narrative": "Housing-bust trough.",
+      "provenance": "hand-estimate"
+    },
+    {
+      "industry": "Wood Products",
+      "regime": "pandemic-reshoring",
+      "score": 25,
+      "narrative": "Lumber price spike, sustained construction strength.",
+      "provenance": "hand-estimate"
+    }
+  ]
+}

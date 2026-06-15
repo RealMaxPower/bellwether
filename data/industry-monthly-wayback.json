@@ -1,0 +1,1731 @@
+{
+  "id": "INDUSTRY-MONTHLY-WAYBACK",
+  "title": "ISM Manufacturing — per-month industry growth/contraction lists (Wayback archive)",
+  "source": "Wayback Machine archive of ISM monthly Manufacturing Report on Business pages — overall PMI growth/contraction lists, normalized against the 18-industry canonical names from data/sectors.json",
+  "provenance": "wayback-archive",
+  "lastVerifiedAt": "2026-05-07",
+  "industries": [
+    "Apparel, Leather & Allied Products",
+    "Chemical Products",
+    "Computer & Electronic Products",
+    "Electrical Equipment, Appliances & Components",
+    "Fabricated Metal Products",
+    "Food, Beverage & Tobacco",
+    "Furniture & Related Products",
+    "Machinery",
+    "Miscellaneous Manufacturing",
+    "Nonmetallic Mineral Products",
+    "Paper Products",
+    "Petroleum & Coal Products",
+    "Plastics & Rubber Products",
+    "Primary Metals",
+    "Printing & Related Support Activities",
+    "Textile Mills",
+    "Transportation Equipment",
+    "Wood Products"
+  ],
+  "observations": [
+    {
+      "date": "2014-09-01",
+      "growing": [
+        "Wood Products",
+        "Primary Metals",
+        "Apparel, Leather & Allied Products",
+        "Nonmetallic Mineral Products",
+        "Furniture & Related Products",
+        "Fabricated Metal Products",
+        "Miscellaneous Manufacturing",
+        "Food, Beverage & Tobacco",
+        "Printing & Related Support Activities",
+        "Computer & Electronic Products",
+        "Paper Products",
+        "Chemical Products",
+        "Transportation Equipment",
+        "Petroleum & Coal Products",
+        "Textile Mills"
+      ],
+      "contracting": [
+        "Machinery",
+        "Plastics & Rubber Products",
+        "Electrical Equipment, Appliances & Components"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20141018194916/http://www.ism.ws:80/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2014-10-01",
+      "growing": [
+        "Plastics & Rubber Products",
+        "Textile Mills",
+        "Fabricated Metal Products",
+        "Miscellaneous Manufacturing",
+        "Primary Metals",
+        "Electrical Equipment, Appliances & Components",
+        "Nonmetallic Mineral Products",
+        "Food, Beverage & Tobacco",
+        "Chemical Products",
+        "Apparel, Leather & Allied Products",
+        "Printing & Related Support Activities",
+        "Transportation Equipment",
+        "Furniture & Related Products",
+        "Paper Products",
+        "Machinery",
+        "Computer & Electronic Products"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20141108072816/http://www.ism.ws/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2014-11-01",
+      "growing": [
+        "Food, Beverage & Tobacco",
+        "Miscellaneous Manufacturing",
+        "Furniture & Related Products",
+        "Fabricated Metal Products",
+        "Textile Mills",
+        "Printing & Related Support Activities",
+        "Electrical Equipment, Appliances & Components",
+        "Paper Products",
+        "Plastics & Rubber Products",
+        "Machinery",
+        "Transportation Equipment",
+        "Nonmetallic Mineral Products",
+        "Petroleum & Coal Products",
+        "Primary Metals"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20141220094037/http://www.ism.ws:80/ISMReport/MfgROB.cfm"
+    },
+    {
+      "date": "2014-12-01",
+      "growing": [
+        "Printing & Related Support Activities",
+        "Fabricated Metal Products",
+        "Primary Metals",
+        "Furniture & Related Products",
+        "Food, Beverage & Tobacco",
+        "Petroleum & Coal Products",
+        "Textile Mills",
+        "Paper Products",
+        "Miscellaneous Manufacturing",
+        "Electrical Equipment, Appliances & Components",
+        "Transportation Equipment"
+      ],
+      "contracting": [
+        "Plastics & Rubber Products",
+        "Wood Products",
+        "Machinery",
+        "Nonmetallic Mineral Products",
+        "Chemical Products",
+        "Computer & Electronic Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20150105120604/http://www.ism.ws/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2015-01-01",
+      "growing": [
+        "Primary Metals",
+        "Wood Products",
+        "Printing & Related Support Activities",
+        "Miscellaneous Manufacturing",
+        "Fabricated Metal Products",
+        "Electrical Equipment, Appliances & Components",
+        "Petroleum & Coal Products",
+        "Paper Products",
+        "Transportation Equipment",
+        "Chemical Products",
+        "Machinery",
+        "Food, Beverage & Tobacco",
+        "Computer & Electronic Products",
+        "Furniture & Related Products"
+      ],
+      "contracting": [
+        "Textile Mills",
+        "Nonmetallic Mineral Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20150207061444/http://www.ism.ws:80/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2015-02-01",
+      "growing": [
+        "Paper Products",
+        "Printing & Related Support Activities",
+        "Furniture & Related Products",
+        "Primary Metals",
+        "Nonmetallic Mineral Products",
+        "Food, Beverage & Tobacco",
+        "Miscellaneous Manufacturing",
+        "Fabricated Metal Products",
+        "Machinery",
+        "Transportation Equipment",
+        "Electrical Equipment, Appliances & Components",
+        "Chemical Products"
+      ],
+      "contracting": [
+        "Textile Mills",
+        "Apparel, Leather & Allied Products",
+        "Computer & Electronic Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20150304163935/http://www.ism.ws:80/ISMReport/MfgROB.cfm"
+    },
+    {
+      "date": "2015-03-01",
+      "growing": [
+        "Paper Products",
+        "Wood Products",
+        "Transportation Equipment",
+        "Fabricated Metal Products",
+        "Nonmetallic Mineral Products",
+        "Machinery",
+        "Chemical Products",
+        "Primary Metals",
+        "Food, Beverage & Tobacco",
+        "Computer & Electronic Products"
+      ],
+      "contracting": [
+        "Apparel, Leather & Allied Products",
+        "Textile Mills",
+        "Petroleum & Coal Products",
+        "Electrical Equipment, Appliances & Components",
+        "Miscellaneous Manufacturing",
+        "Plastics & Rubber Products",
+        "Furniture & Related Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20150402072244/http://www.ism.ws:80/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2020-06-01",
+      "growing": [
+        "Textile Mills",
+        "Wood Products",
+        "Furniture & Related Products",
+        "Printing & Related Support Activities",
+        "Apparel, Leather & Allied Products",
+        "Food, Beverage & Tobacco",
+        "Computer & Electronic Products",
+        "Plastics & Rubber Products",
+        "Chemical Products",
+        "Miscellaneous Manufacturing",
+        "Nonmetallic Mineral Products",
+        "Paper Products",
+        "Electrical Equipment, Appliances & Components"
+      ],
+      "contracting": [
+        "Transportation Equipment",
+        "Primary Metals",
+        "Fabricated Metal Products",
+        "Machinery"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20200809031403/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2020-07-01",
+      "growing": [
+        "Wood Products",
+        "Furniture & Related Products",
+        "Textile Mills",
+        "Printing & Related Support Activities",
+        "Food, Beverage & Tobacco",
+        "Plastics & Rubber Products",
+        "Chemical Products",
+        "Apparel, Leather & Allied Products",
+        "Computer & Electronic Products",
+        "Primary Metals",
+        "Petroleum & Coal Products",
+        "Miscellaneous Manufacturing",
+        "Electrical Equipment, Appliances & Components"
+      ],
+      "contracting": [
+        "Transportation Equipment",
+        "Machinery",
+        "Fabricated Metal Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20200806133002/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    },
+    {
+      "date": "2020-08-01",
+      "growing": [
+        "Wood Products",
+        "Plastics & Rubber Products",
+        "Food, Beverage & Tobacco",
+        "Textile Mills",
+        "Chemical Products",
+        "Computer & Electronic Products",
+        "Primary Metals",
+        "Fabricated Metal Products",
+        "Machinery",
+        "Apparel, Leather & Allied Products",
+        "Nonmetallic Mineral Products",
+        "Miscellaneous Manufacturing",
+        "Electrical Equipment, Appliances & Components",
+        "Paper Products",
+        "Transportation Equipment"
+      ],
+      "contracting": [
+        "Printing & Related Support Activities",
+        "Petroleum & Coal Products",
+        "Furniture & Related Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20200901183706/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/august/"
+    },
+    {
+      "date": "2020-09-01",
+      "growing": [
+        "Paper Products",
+        "Wood Products",
+        "Food, Beverage & Tobacco",
+        "Furniture & Related Products",
+        "Electrical Equipment, Appliances & Components",
+        "Nonmetallic Mineral Products",
+        "Fabricated Metal Products",
+        "Chemical Products",
+        "Miscellaneous Manufacturing",
+        "Plastics & Rubber Products",
+        "Machinery",
+        "Textile Mills",
+        "Computer & Electronic Products",
+        "Transportation Equipment"
+      ],
+      "contracting": [
+        "Apparel, Leather & Allied Products",
+        "Printing & Related Support Activities",
+        "Petroleum & Coal Products",
+        "Primary Metals"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20201004092354/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/september/"
+    },
+    {
+      "date": "2020-10-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Fabricated Metal Products",
+        "Nonmetallic Mineral Products",
+        "Food, Beverage & Tobacco",
+        "Plastics & Rubber Products",
+        "Machinery",
+        "Furniture & Related Products",
+        "Paper Products",
+        "Wood Products",
+        "Chemical Products",
+        "Primary Metals",
+        "Computer & Electronic Products",
+        "Transportation Equipment",
+        "Electrical Equipment, Appliances & Components",
+        "Miscellaneous Manufacturing"
+      ],
+      "contracting": [
+        "Textile Mills",
+        "Printing & Related Support Activities"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20201103034640/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/october/"
+    },
+    {
+      "date": "2020-11-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Nonmetallic Mineral Products",
+        "Textile Mills",
+        "Wood Products",
+        "Electrical Equipment, Appliances & Components",
+        "Fabricated Metal Products",
+        "Plastics & Rubber Products",
+        "Primary Metals",
+        "Chemical Products",
+        "Machinery",
+        "Computer & Electronic Products",
+        "Paper Products",
+        "Miscellaneous Manufacturing",
+        "Transportation Equipment",
+        "Furniture & Related Products",
+        "Food, Beverage & Tobacco"
+      ],
+      "contracting": [
+        "Printing & Related Support Activities",
+        "Petroleum & Coal Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20210124160808/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/november/"
+    },
+    {
+      "date": "2020-12-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Furniture & Related Products",
+        "Wood Products",
+        "Fabricated Metal Products",
+        "Machinery",
+        "Computer & Electronic Products",
+        "Transportation Equipment",
+        "Plastics & Rubber Products",
+        "Paper Products",
+        "Chemical Products",
+        "Petroleum & Coal Products",
+        "Primary Metals",
+        "Textile Mills",
+        "Electrical Equipment, Appliances & Components",
+        "Food, Beverage & Tobacco",
+        "Miscellaneous Manufacturing"
+      ],
+      "contracting": [
+        "Printing & Related Support Activities",
+        "Nonmetallic Mineral Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20210106042752/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/december/"
+    },
+    {
+      "date": "2021-01-01",
+      "growing": [
+        "Electrical Equipment, Appliances & Components",
+        "Machinery",
+        "Primary Metals",
+        "Chemical Products",
+        "Fabricated Metal Products",
+        "Plastics & Rubber Products",
+        "Transportation Equipment",
+        "Apparel, Leather & Allied Products",
+        "Paper Products",
+        "Wood Products",
+        "Food, Beverage & Tobacco",
+        "Nonmetallic Mineral Products",
+        "Furniture & Related Products",
+        "Miscellaneous Manufacturing",
+        "Textile Mills",
+        "Computer & Electronic Products"
+      ],
+      "contracting": [
+        "Printing & Related Support Activities",
+        "Petroleum & Coal Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20210202083119/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/january/"
+    },
+    {
+      "date": "2021-02-01",
+      "growing": [
+        "Textile Mills",
+        "Electrical Equipment, Appliances & Components",
+        "Primary Metals",
+        "Paper Products",
+        "Chemical Products",
+        "Machinery",
+        "Fabricated Metal Products",
+        "Transportation Equipment",
+        "Wood Products",
+        "Plastics & Rubber Products",
+        "Computer & Electronic Products",
+        "Apparel, Leather & Allied Products",
+        "Food, Beverage & Tobacco",
+        "Miscellaneous Manufacturing",
+        "Furniture & Related Products",
+        "Nonmetallic Mineral Products"
+      ],
+      "contracting": [
+        "Printing & Related Support Activities",
+        "Petroleum & Coal Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20210301153311/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/february/"
+    },
+    {
+      "date": "2021-03-01",
+      "growing": [
+        "Textile Mills",
+        "Electrical Equipment, Appliances & Components",
+        "Machinery",
+        "Computer & Electronic Products",
+        "Apparel, Leather & Allied Products",
+        "Furniture & Related Products",
+        "Fabricated Metal Products",
+        "Food, Beverage & Tobacco",
+        "Primary Metals",
+        "Plastics & Rubber Products",
+        "Paper Products",
+        "Transportation Equipment",
+        "Chemical Products",
+        "Nonmetallic Mineral Products",
+        "Miscellaneous Manufacturing",
+        "Printing & Related Support Activities",
+        "Petroleum & Coal Products"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20210401155330/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/march/"
+    },
+    {
+      "date": "2021-04-01",
+      "growing": [
+        "Electrical Equipment, Appliances & Components",
+        "Textile Mills",
+        "Furniture & Related Products",
+        "Machinery",
+        "Fabricated Metal Products",
+        "Primary Metals",
+        "Miscellaneous Manufacturing",
+        "Chemical Products",
+        "Plastics & Rubber Products",
+        "Food, Beverage & Tobacco",
+        "Computer & Electronic Products",
+        "Nonmetallic Mineral Products",
+        "Apparel, Leather & Allied Products",
+        "Transportation Equipment",
+        "Paper Products",
+        "Petroleum & Coal Products",
+        "Printing & Related Support Activities",
+        "Wood Products"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20210503162024/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/april/"
+    },
+    {
+      "date": "2021-05-01",
+      "growing": [
+        "Furniture & Related Products",
+        "Nonmetallic Mineral Products",
+        "Plastics & Rubber Products",
+        "Textile Mills",
+        "Primary Metals",
+        "Computer & Electronic Products",
+        "Electrical Equipment, Appliances & Components",
+        "Fabricated Metal Products",
+        "Food, Beverage & Tobacco",
+        "Machinery",
+        "Chemical Products",
+        "Miscellaneous Manufacturing",
+        "Transportation Equipment",
+        "Wood Products",
+        "Paper Products",
+        "Petroleum & Coal Products"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20210601164033/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/may/"
+    },
+    {
+      "date": "2021-06-01",
+      "growing": [
+        "Furniture & Related Products",
+        "Machinery",
+        "Electrical Equipment, Appliances & Components",
+        "Computer & Electronic Products",
+        "Plastics & Rubber Products",
+        "Chemical Products",
+        "Fabricated Metal Products",
+        "Transportation Equipment",
+        "Miscellaneous Manufacturing",
+        "Nonmetallic Mineral Products",
+        "Textile Mills",
+        "Primary Metals",
+        "Food, Beverage & Tobacco",
+        "Paper Products",
+        "Printing & Related Support Activities",
+        "Wood Products",
+        "Petroleum & Coal Products"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20210701152050/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2021-07-01",
+      "growing": [
+        "Furniture & Related Products",
+        "Printing & Related Support Activities",
+        "Apparel, Leather & Allied Products",
+        "Miscellaneous Manufacturing",
+        "Computer & Electronic Products",
+        "Nonmetallic Mineral Products",
+        "Machinery",
+        "Fabricated Metal Products",
+        "Paper Products",
+        "Chemical Products",
+        "Food, Beverage & Tobacco",
+        "Primary Metals",
+        "Plastics & Rubber Products",
+        "Transportation Equipment",
+        "Electrical Equipment, Appliances & Components",
+        "Wood Products",
+        "Petroleum & Coal Products"
+      ],
+      "contracting": [],
+      "sourceUrl": "https://web.archive.org/web/20210802165259/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    },
+    {
+      "date": "2021-08-01",
+      "growing": [
+        "Furniture & Related Products",
+        "Computer & Electronic Products",
+        "Machinery",
+        "Primary Metals",
+        "Electrical Equipment, Appliances & Components",
+        "Fabricated Metal Products",
+        "Plastics & Rubber Products",
+        "Chemical Products",
+        "Miscellaneous Manufacturing",
+        "Food, Beverage & Tobacco",
+        "Transportation Equipment",
+        "Wood Products",
+        "Printing & Related Support Activities",
+        "Paper Products",
+        "Petroleum & Coal Products"
+      ],
+      "contracting": [
+        "Textile Mills",
+        "Nonmetallic Mineral Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20210901153507/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/august/"
+    },
+    {
+      "date": "2021-09-01",
+      "growing": [
+        "Furniture & Related Products",
+        "Petroleum & Coal Products",
+        "Machinery",
+        "Electrical Equipment, Appliances & Components",
+        "Computer & Electronic Products",
+        "Chemical Products",
+        "Apparel, Leather & Allied Products",
+        "Textile Mills",
+        "Paper Products",
+        "Printing & Related Support Activities",
+        "Miscellaneous Manufacturing",
+        "Food, Beverage & Tobacco",
+        "Fabricated Metal Products",
+        "Transportation Equipment",
+        "Primary Metals",
+        "Nonmetallic Mineral Products",
+        "Plastics & Rubber Products"
+      ],
+      "contracting": [
+        "Apparel, Leather & Allied Products",
+        "Plastics & Rubber Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20211001152228/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/september/"
+    },
+    {
+      "date": "2021-10-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Furniture & Related Products",
+        "Textile Mills",
+        "Electrical Equipment, Appliances & Components",
+        "Machinery",
+        "Printing & Related Support Activities",
+        "Food, Beverage & Tobacco",
+        "Computer & Electronic Products",
+        "Chemical Products",
+        "Fabricated Metal Products",
+        "Miscellaneous Manufacturing",
+        "Petroleum & Coal Products",
+        "Plastics & Rubber Products",
+        "Paper Products",
+        "Primary Metals",
+        "Transportation Equipment"
+      ],
+      "contracting": [
+        "Wood Products",
+        "Nonmetallic Mineral Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20211101155501/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/october/"
+    },
+    {
+      "date": "2021-11-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Furniture & Related Products",
+        "Electrical Equipment, Appliances & Components",
+        "Computer & Electronic Products",
+        "Machinery",
+        "Plastics & Rubber Products",
+        "Paper Products",
+        "Food, Beverage & Tobacco",
+        "Miscellaneous Manufacturing",
+        "Chemical Products",
+        "Petroleum & Coal Products",
+        "Fabricated Metal Products",
+        "Transportation Equipment"
+      ],
+      "contracting": [
+        "Printing & Related Support Activities",
+        "Primary Metals"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20211201163719/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/november/"
+    },
+    {
+      "date": "2021-12-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Furniture & Related Products",
+        "Textile Mills",
+        "Plastics & Rubber Products",
+        "Machinery",
+        "Nonmetallic Mineral Products",
+        "Miscellaneous Manufacturing",
+        "Chemical Products",
+        "Electrical Equipment, Appliances & Components",
+        "Fabricated Metal Products",
+        "Computer & Electronic Products",
+        "Food, Beverage & Tobacco",
+        "Transportation Equipment",
+        "Primary Metals",
+        "Petroleum & Coal Products"
+      ],
+      "contracting": [
+        "Wood Products",
+        "Printing & Related Support Activities",
+        "Paper Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20220104170800/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/december/"
+    },
+    {
+      "date": "2022-01-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Furniture & Related Products",
+        "Miscellaneous Manufacturing",
+        "Nonmetallic Mineral Products",
+        "Machinery",
+        "Electrical Equipment, Appliances & Components",
+        "Food, Beverage & Tobacco",
+        "Transportation Equipment",
+        "Primary Metals",
+        "Fabricated Metal Products",
+        "Computer & Electronic Products",
+        "Chemical Products",
+        "Petroleum & Coal Products",
+        "Plastics & Rubber Products"
+      ],
+      "contracting": [
+        "Apparel, Leather & Allied Products",
+        "Textile Mills",
+        "Computer & Electronic Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20220201213908/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/january/"
+    },
+    {
+      "date": "2022-02-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Textile Mills",
+        "Paper Products",
+        "Transportation Equipment",
+        "Machinery",
+        "Miscellaneous Manufacturing",
+        "Primary Metals",
+        "Electrical Equipment, Appliances & Components",
+        "Computer & Electronic Products",
+        "Furniture & Related Products",
+        "Plastics & Rubber Products",
+        "Fabricated Metal Products",
+        "Food, Beverage & Tobacco",
+        "Nonmetallic Mineral Products",
+        "Chemical Products",
+        "Petroleum & Coal Products"
+      ],
+      "contracting": [
+        "Furniture & Related Products",
+        "Nonmetallic Mineral Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20220301154104/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/february/"
+    },
+    {
+      "date": "2022-03-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Furniture & Related Products",
+        "Food, Beverage & Tobacco",
+        "Electrical Equipment, Appliances & Components",
+        "Miscellaneous Manufacturing",
+        "Machinery",
+        "Textile Mills",
+        "Transportation Equipment",
+        "Fabricated Metal Products",
+        "Paper Products",
+        "Chemical Products",
+        "Computer & Electronic Products",
+        "Nonmetallic Mineral Products",
+        "Primary Metals",
+        "Plastics & Rubber Products"
+      ],
+      "contracting": [
+        "Wood Products",
+        "Petroleum & Coal Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20220401165236/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/march/"
+    },
+    {
+      "date": "2022-04-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Machinery",
+        "Plastics & Rubber Products",
+        "Nonmetallic Mineral Products",
+        "Computer & Electronic Products",
+        "Food, Beverage & Tobacco",
+        "Transportation Equipment",
+        "Printing & Related Support Activities",
+        "Electrical Equipment, Appliances & Components",
+        "Paper Products",
+        "Primary Metals",
+        "Furniture & Related Products",
+        "Chemical Products",
+        "Textile Mills",
+        "Fabricated Metal Products",
+        "Miscellaneous Manufacturing",
+        "Wood Products"
+      ],
+      "contracting": [
+        "Textile Mills",
+        "Fabricated Metal Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20220502160949/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/april/"
+    },
+    {
+      "date": "2022-05-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Printing & Related Support Activities",
+        "Machinery",
+        "Nonmetallic Mineral Products",
+        "Computer & Electronic Products",
+        "Food, Beverage & Tobacco",
+        "Transportation Equipment",
+        "Paper Products",
+        "Petroleum & Coal Products",
+        "Plastics & Rubber Products",
+        "Fabricated Metal Products",
+        "Chemical Products",
+        "Miscellaneous Manufacturing",
+        "Primary Metals",
+        "Electrical Equipment, Appliances & Components"
+      ],
+      "contracting": [
+        "Textile Mills",
+        "Primary Metals",
+        "Electrical Equipment, Appliances & Components",
+        "Furniture & Related Products",
+        "Plastics & Rubber Products",
+        "Miscellaneous Manufacturing",
+        "Computer & Electronic Products",
+        "Fabricated Metal Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20220601154043/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/may/"
+    },
+    {
+      "date": "2022-06-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Textile Mills",
+        "Printing & Related Support Activities",
+        "Computer & Electronic Products",
+        "Machinery",
+        "Electrical Equipment, Appliances & Components",
+        "Primary Metals",
+        "Nonmetallic Mineral Products",
+        "Plastics & Rubber Products",
+        "Transportation Equipment",
+        "Fabricated Metal Products",
+        "Miscellaneous Manufacturing",
+        "Petroleum & Coal Products",
+        "Food, Beverage & Tobacco",
+        "Chemical Products"
+      ],
+      "contracting": [
+        "Paper Products",
+        "Wood Products",
+        "Furniture & Related Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20220701153937/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2022-07-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Nonmetallic Mineral Products",
+        "Petroleum & Coal Products",
+        "Printing & Related Support Activities",
+        "Computer & Electronic Products",
+        "Transportation Equipment",
+        "Machinery",
+        "Textile Mills",
+        "Primary Metals",
+        "Plastics & Rubber Products",
+        "Electrical Equipment, Appliances & Components"
+      ],
+      "contracting": [
+        "Wood Products",
+        "Furniture & Related Products",
+        "Paper Products",
+        "Miscellaneous Manufacturing",
+        "Fabricated Metal Products",
+        "Food, Beverage & Tobacco",
+        "Chemical Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20220801152945/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    },
+    {
+      "date": "2022-08-01",
+      "growing": [
+        "Nonmetallic Mineral Products",
+        "Petroleum & Coal Products",
+        "Transportation Equipment",
+        "Computer & Electronic Products",
+        "Printing & Related Support Activities",
+        "Plastics & Rubber Products",
+        "Primary Metals",
+        "Machinery",
+        "Miscellaneous Manufacturing",
+        "Food, Beverage & Tobacco"
+      ],
+      "contracting": [
+        "Wood Products",
+        "Apparel, Leather & Allied Products",
+        "Furniture & Related Products",
+        "Paper Products",
+        "Chemical Products",
+        "Fabricated Metal Products",
+        "Electrical Equipment, Appliances & Components"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20220901210127/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/august/"
+    },
+    {
+      "date": "2022-09-01",
+      "growing": [
+        "Nonmetallic Mineral Products",
+        "Machinery",
+        "Plastics & Rubber Products",
+        "Miscellaneous Manufacturing",
+        "Apparel, Leather & Allied Products",
+        "Transportation Equipment",
+        "Food, Beverage & Tobacco",
+        "Computer & Electronic Products",
+        "Electrical Equipment, Appliances & Components"
+      ],
+      "contracting": [
+        "Furniture & Related Products",
+        "Textile Mills",
+        "Wood Products",
+        "Printing & Related Support Activities",
+        "Paper Products",
+        "Chemical Products",
+        "Fabricated Metal Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20221003153544/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/september/"
+    },
+    {
+      "date": "2022-10-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Nonmetallic Mineral Products",
+        "Machinery",
+        "Petroleum & Coal Products",
+        "Transportation Equipment",
+        "Miscellaneous Manufacturing",
+        "Plastics & Rubber Products",
+        "Electrical Equipment, Appliances & Components"
+      ],
+      "contracting": [
+        "Furniture & Related Products",
+        "Wood Products",
+        "Paper Products",
+        "Textile Mills",
+        "Printing & Related Support Activities",
+        "Fabricated Metal Products",
+        "Chemical Products",
+        "Primary Metals",
+        "Computer & Electronic Products",
+        "Food, Beverage & Tobacco"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20221101150747/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/october/"
+    },
+    {
+      "date": "2022-11-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Nonmetallic Mineral Products",
+        "Primary Metals",
+        "Miscellaneous Manufacturing",
+        "Petroleum & Coal Products",
+        "Transportation Equipment"
+      ],
+      "contracting": [
+        "Printing & Related Support Activities",
+        "Wood Products",
+        "Paper Products",
+        "Textile Mills",
+        "Fabricated Metal Products",
+        "Furniture & Related Products",
+        "Chemical Products",
+        "Plastics & Rubber Products",
+        "Computer & Electronic Products",
+        "Food, Beverage & Tobacco",
+        "Machinery",
+        "Electrical Equipment, Appliances & Components"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20221201174013/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/november/"
+    },
+    {
+      "date": "2022-12-01",
+      "growing": [
+        "Primary Metals",
+        "Petroleum & Coal Products"
+      ],
+      "contracting": [
+        "Wood Products",
+        "Fabricated Metal Products",
+        "Chemical Products",
+        "Paper Products",
+        "Plastics & Rubber Products",
+        "Electrical Equipment, Appliances & Components",
+        "Furniture & Related Products",
+        "Apparel, Leather & Allied Products",
+        "Computer & Electronic Products",
+        "Machinery",
+        "Food, Beverage & Tobacco",
+        "Transportation Equipment",
+        "Miscellaneous Manufacturing"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20230104172342/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/december/"
+    },
+    {
+      "date": "2023-01-01",
+      "growing": [
+        "Miscellaneous Manufacturing",
+        "Transportation Equipment"
+      ],
+      "contracting": [
+        "Wood Products",
+        "Textile Mills",
+        "Paper Products",
+        "Furniture & Related Products",
+        "Apparel, Leather & Allied Products",
+        "Plastics & Rubber Products",
+        "Electrical Equipment, Appliances & Components",
+        "Primary Metals",
+        "Nonmetallic Mineral Products",
+        "Fabricated Metal Products",
+        "Chemical Products",
+        "Machinery",
+        "Food, Beverage & Tobacco",
+        "Petroleum & Coal Products",
+        "Computer & Electronic Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20230201155156/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/january/"
+    },
+    {
+      "date": "2023-02-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Transportation Equipment",
+        "Petroleum & Coal Products",
+        "Electrical Equipment, Appliances & Components"
+      ],
+      "contracting": [
+        "Printing & Related Support Activities",
+        "Paper Products",
+        "Wood Products",
+        "Textile Mills",
+        "Furniture & Related Products",
+        "Nonmetallic Mineral Products",
+        "Plastics & Rubber Products",
+        "Food, Beverage & Tobacco",
+        "Chemical Products",
+        "Primary Metals",
+        "Computer & Electronic Products",
+        "Fabricated Metal Products",
+        "Machinery",
+        "Miscellaneous Manufacturing"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20230301201044/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/february/"
+    },
+    {
+      "date": "2023-03-01",
+      "growing": [
+        "Printing & Related Support Activities",
+        "Miscellaneous Manufacturing",
+        "Fabricated Metal Products",
+        "Petroleum & Coal Products",
+        "Primary Metals",
+        "Machinery"
+      ],
+      "contracting": [
+        "Furniture & Related Products",
+        "Nonmetallic Mineral Products",
+        "Textile Mills",
+        "Plastics & Rubber Products",
+        "Paper Products",
+        "Wood Products",
+        "Food, Beverage & Tobacco",
+        "Apparel, Leather & Allied Products",
+        "Chemical Products",
+        "Computer & Electronic Products",
+        "Electrical Equipment, Appliances & Components",
+        "Transportation Equipment"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20230403195704/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/march/"
+    },
+    {
+      "date": "2023-04-01",
+      "growing": [
+        "Printing & Related Support Activities",
+        "Apparel, Leather & Allied Products",
+        "Petroleum & Coal Products",
+        "Fabricated Metal Products",
+        "Transportation Equipment"
+      ],
+      "contracting": [
+        "Furniture & Related Products",
+        "Wood Products",
+        "Nonmetallic Mineral Products",
+        "Electrical Equipment, Appliances & Components",
+        "Plastics & Rubber Products",
+        "Chemical Products",
+        "Machinery",
+        "Primary Metals",
+        "Computer & Electronic Products",
+        "Food, Beverage & Tobacco",
+        "Miscellaneous Manufacturing"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20230504075654/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/april/"
+    },
+    {
+      "date": "2023-05-01",
+      "growing": [
+        "Nonmetallic Mineral Products",
+        "Furniture & Related Products",
+        "Transportation Equipment",
+        "Fabricated Metal Products"
+      ],
+      "contracting": [
+        "Wood Products",
+        "Primary Metals",
+        "Apparel, Leather & Allied Products",
+        "Textile Mills",
+        "Paper Products",
+        "Printing & Related Support Activities",
+        "Petroleum & Coal Products",
+        "Chemical Products",
+        "Food, Beverage & Tobacco",
+        "Computer & Electronic Products",
+        "Electrical Equipment, Appliances & Components",
+        "Plastics & Rubber Products",
+        "Miscellaneous Manufacturing",
+        "Machinery"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20230602061559/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/may/"
+    },
+    {
+      "date": "2023-06-01",
+      "growing": [
+        "Printing & Related Support Activities",
+        "Nonmetallic Mineral Products",
+        "Primary Metals",
+        "Transportation Equipment"
+      ],
+      "contracting": [
+        "Plastics & Rubber Products",
+        "Wood Products",
+        "Textile Mills",
+        "Chemical Products",
+        "Miscellaneous Manufacturing",
+        "Electrical Equipment, Appliances & Components",
+        "Computer & Electronic Products",
+        "Paper Products",
+        "Fabricated Metal Products",
+        "Food, Beverage & Tobacco",
+        "Machinery"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20230703210100/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2023-07-01",
+      "growing": [
+        "Petroleum & Coal Products",
+        "Furniture & Related Products"
+      ],
+      "contracting": [
+        "Apparel, Leather & Allied Products",
+        "Plastics & Rubber Products",
+        "Paper Products",
+        "Textile Mills",
+        "Wood Products",
+        "Computer & Electronic Products",
+        "Chemical Products",
+        "Primary Metals",
+        "Food, Beverage & Tobacco",
+        "Electrical Equipment, Appliances & Components",
+        "Printing & Related Support Activities",
+        "Miscellaneous Manufacturing",
+        "Fabricated Metal Products",
+        "Transportation Equipment",
+        "Nonmetallic Mineral Products",
+        "Machinery"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20230801152618/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    },
+    {
+      "date": "2023-08-01",
+      "growing": [
+        "Printing & Related Support Activities",
+        "Transportation Equipment",
+        "Food, Beverage & Tobacco",
+        "Petroleum & Coal Products",
+        "Miscellaneous Manufacturing"
+      ],
+      "contracting": [
+        "Apparel, Leather & Allied Products",
+        "Furniture & Related Products",
+        "Plastics & Rubber Products",
+        "Primary Metals",
+        "Fabricated Metal Products",
+        "Textile Mills",
+        "Electrical Equipment, Appliances & Components",
+        "Chemical Products",
+        "Computer & Electronic Products",
+        "Paper Products",
+        "Wood Products",
+        "Nonmetallic Mineral Products",
+        "Machinery"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20230901185534/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/august/"
+    },
+    {
+      "date": "2023-09-01",
+      "growing": [
+        "Nonmetallic Mineral Products",
+        "Food, Beverage & Tobacco",
+        "Textile Mills",
+        "Primary Metals",
+        "Petroleum & Coal Products"
+      ],
+      "contracting": [
+        "Printing & Related Support Activities",
+        "Furniture & Related Products",
+        "Plastics & Rubber Products",
+        "Paper Products",
+        "Fabricated Metal Products",
+        "Wood Products",
+        "Computer & Electronic Products",
+        "Machinery",
+        "Electrical Equipment, Appliances & Components",
+        "Chemical Products",
+        "Transportation Equipment"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20231002151006/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/september/"
+    },
+    {
+      "date": "2023-10-01",
+      "growing": [
+        "Food, Beverage & Tobacco",
+        "Plastics & Rubber Products"
+      ],
+      "contracting": [
+        "Printing & Related Support Activities",
+        "Textile Mills",
+        "Electrical Equipment, Appliances & Components",
+        "Machinery",
+        "Fabricated Metal Products",
+        "Wood Products",
+        "Computer & Electronic Products",
+        "Furniture & Related Products",
+        "Paper Products",
+        "Miscellaneous Manufacturing",
+        "Primary Metals",
+        "Chemical Products",
+        "Transportation Equipment"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20231101193810/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/october/"
+    },
+    {
+      "date": "2023-11-01",
+      "growing": [
+        "Food, Beverage & Tobacco",
+        "Nonmetallic Mineral Products",
+        "Transportation Equipment"
+      ],
+      "contracting": [
+        "Paper Products",
+        "Printing & Related Support Activities",
+        "Electrical Equipment, Appliances & Components",
+        "Computer & Electronic Products",
+        "Apparel, Leather & Allied Products",
+        "Textile Mills",
+        "Machinery",
+        "Primary Metals",
+        "Furniture & Related Products",
+        "Miscellaneous Manufacturing",
+        "Chemical Products",
+        "Fabricated Metal Products",
+        "Wood Products",
+        "Plastics & Rubber Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20231201184042/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/november/"
+    },
+    {
+      "date": "2023-12-01",
+      "growing": [],
+      "contracting": [
+        "Printing & Related Support Activities",
+        "Apparel, Leather & Allied Products",
+        "Plastics & Rubber Products",
+        "Machinery",
+        "Nonmetallic Mineral Products",
+        "Textile Mills",
+        "Petroleum & Coal Products",
+        "Paper Products",
+        "Wood Products",
+        "Fabricated Metal Products",
+        "Computer & Electronic Products",
+        "Miscellaneous Manufacturing",
+        "Furniture & Related Products",
+        "Electrical Equipment, Appliances & Components",
+        "Transportation Equipment",
+        "Chemical Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20240103163747/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/december/"
+    },
+    {
+      "date": "2024-01-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Textile Mills",
+        "Transportation Equipment",
+        "Chemical Products"
+      ],
+      "contracting": [
+        "Wood Products",
+        "Machinery",
+        "Plastics & Rubber Products",
+        "Nonmetallic Mineral Products",
+        "Furniture & Related Products",
+        "Computer & Electronic Products",
+        "Fabricated Metal Products",
+        "Petroleum & Coal Products",
+        "Food, Beverage & Tobacco",
+        "Electrical Equipment, Appliances & Components",
+        "Paper Products",
+        "Miscellaneous Manufacturing",
+        "Primary Metals"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20240202135753/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/january/"
+    },
+    {
+      "date": "2024-02-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Nonmetallic Mineral Products",
+        "Primary Metals",
+        "Plastics & Rubber Products",
+        "Fabricated Metal Products",
+        "Chemical Products",
+        "Miscellaneous Manufacturing",
+        "Transportation Equipment"
+      ],
+      "contracting": [
+        "Furniture & Related Products",
+        "Machinery",
+        "Wood Products",
+        "Computer & Electronic Products",
+        "Food, Beverage & Tobacco",
+        "Paper Products",
+        "Electrical Equipment, Appliances & Components"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20240301153852/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/february/"
+    },
+    {
+      "date": "2024-03-01",
+      "growing": [
+        "Textile Mills",
+        "Nonmetallic Mineral Products",
+        "Paper Products",
+        "Petroleum & Coal Products",
+        "Primary Metals",
+        "Food, Beverage & Tobacco",
+        "Fabricated Metal Products",
+        "Chemical Products",
+        "Transportation Equipment"
+      ],
+      "contracting": [
+        "Furniture & Related Products",
+        "Plastics & Rubber Products",
+        "Electrical Equipment, Appliances & Components",
+        "Machinery",
+        "Computer & Electronic Products",
+        "Miscellaneous Manufacturing"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20240402023038/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/march/"
+    },
+    {
+      "date": "2024-04-01",
+      "growing": [
+        "Nonmetallic Mineral Products",
+        "Printing & Related Support Activities",
+        "Primary Metals",
+        "Textile Mills",
+        "Electrical Equipment, Appliances & Components",
+        "Petroleum & Coal Products",
+        "Transportation Equipment",
+        "Chemical Products",
+        "Plastics & Rubber Products"
+      ],
+      "contracting": [
+        "Miscellaneous Manufacturing",
+        "Machinery",
+        "Furniture & Related Products",
+        "Wood Products",
+        "Food, Beverage & Tobacco",
+        "Fabricated Metal Products",
+        "Paper Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20240501162303/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/april/"
+    },
+    {
+      "date": "2024-05-01",
+      "growing": [
+        "Printing & Related Support Activities",
+        "Petroleum & Coal Products",
+        "Paper Products",
+        "Textile Mills",
+        "Primary Metals",
+        "Fabricated Metal Products",
+        "Chemical Products"
+      ],
+      "contracting": [
+        "Wood Products",
+        "Plastics & Rubber Products",
+        "Machinery",
+        "Computer & Electronic Products",
+        "Furniture & Related Products",
+        "Transportation Equipment",
+        "Food, Beverage & Tobacco"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20240603162504/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/may/"
+    },
+    {
+      "date": "2024-06-01",
+      "growing": [
+        "Printing & Related Support Activities",
+        "Petroleum & Coal Products",
+        "Primary Metals",
+        "Furniture & Related Products",
+        "Paper Products",
+        "Chemical Products",
+        "Miscellaneous Manufacturing",
+        "Nonmetallic Mineral Products"
+      ],
+      "contracting": [
+        "Textile Mills",
+        "Machinery",
+        "Fabricated Metal Products",
+        "Wood Products",
+        "Transportation Equipment",
+        "Plastics & Rubber Products",
+        "Food, Beverage & Tobacco",
+        "Electrical Equipment, Appliances & Components",
+        "Computer & Electronic Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20240701145332/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2024-07-01",
+      "growing": [
+        "Printing & Related Support Activities",
+        "Petroleum & Coal Products",
+        "Miscellaneous Manufacturing",
+        "Furniture & Related Products",
+        "Nonmetallic Mineral Products"
+      ],
+      "contracting": [
+        "Primary Metals",
+        "Plastics & Rubber Products",
+        "Machinery",
+        "Electrical Equipment, Appliances & Components",
+        "Transportation Equipment",
+        "Fabricated Metal Products",
+        "Food, Beverage & Tobacco",
+        "Wood Products",
+        "Paper Products",
+        "Chemical Products",
+        "Computer & Electronic Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20240801201640/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    },
+    {
+      "date": "2024-08-01",
+      "growing": [
+        "Primary Metals",
+        "Petroleum & Coal Products",
+        "Furniture & Related Products",
+        "Food, Beverage & Tobacco",
+        "Computer & Electronic Products"
+      ],
+      "contracting": [
+        "Textile Mills",
+        "Printing & Related Support Activities",
+        "Nonmetallic Mineral Products",
+        "Plastics & Rubber Products",
+        "Electrical Equipment, Appliances & Components",
+        "Fabricated Metal Products",
+        "Transportation Equipment",
+        "Wood Products",
+        "Machinery",
+        "Paper Products",
+        "Chemical Products",
+        "Miscellaneous Manufacturing"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20240903155316/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/august/"
+    },
+    {
+      "date": "2024-09-01",
+      "growing": [
+        "Petroleum & Coal Products",
+        "Food, Beverage & Tobacco",
+        "Textile Mills",
+        "Furniture & Related Products",
+        "Miscellaneous Manufacturing"
+      ],
+      "contracting": [
+        "Printing & Related Support Activities",
+        "Plastics & Rubber Products",
+        "Wood Products",
+        "Apparel, Leather & Allied Products",
+        "Primary Metals",
+        "Transportation Equipment",
+        "Nonmetallic Mineral Products",
+        "Electrical Equipment, Appliances & Components",
+        "Paper Products",
+        "Machinery",
+        "Chemical Products",
+        "Fabricated Metal Products",
+        "Computer & Electronic Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20241001154206/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/september/"
+    },
+    {
+      "date": "2024-10-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Food, Beverage & Tobacco",
+        "Petroleum & Coal Products",
+        "Computer & Electronic Products",
+        "Miscellaneous Manufacturing"
+      ],
+      "contracting": [
+        "Textile Mills",
+        "Printing & Related Support Activities",
+        "Transportation Equipment",
+        "Chemical Products",
+        "Electrical Equipment, Appliances & Components",
+        "Machinery",
+        "Primary Metals",
+        "Nonmetallic Mineral Products",
+        "Plastics & Rubber Products",
+        "Fabricated Metal Products",
+        "Paper Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20241104093646/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/october/"
+    },
+    {
+      "date": "2024-11-01",
+      "growing": [
+        "Food, Beverage & Tobacco",
+        "Computer & Electronic Products",
+        "Electrical Equipment, Appliances & Components"
+      ],
+      "contracting": [
+        "Printing & Related Support Activities",
+        "Plastics & Rubber Products",
+        "Chemical Products",
+        "Paper Products",
+        "Transportation Equipment",
+        "Fabricated Metal Products",
+        "Furniture & Related Products",
+        "Machinery",
+        "Nonmetallic Mineral Products",
+        "Miscellaneous Manufacturing",
+        "Primary Metals"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20241202184150/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/november/"
+    },
+    {
+      "date": "2024-12-01",
+      "growing": [
+        "Primary Metals",
+        "Electrical Equipment, Appliances & Components",
+        "Wood Products",
+        "Furniture & Related Products",
+        "Paper Products",
+        "Miscellaneous Manufacturing",
+        "Plastics & Rubber Products"
+      ],
+      "contracting": [
+        "Textile Mills",
+        "Fabricated Metal Products",
+        "Printing & Related Support Activities",
+        "Machinery",
+        "Chemical Products",
+        "Transportation Equipment",
+        "Nonmetallic Mineral Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20250105050846/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/december/"
+    },
+    {
+      "date": "2025-01-01",
+      "growing": [
+        "Textile Mills",
+        "Primary Metals",
+        "Petroleum & Coal Products",
+        "Chemical Products",
+        "Machinery",
+        "Transportation Equipment",
+        "Plastics & Rubber Products",
+        "Electrical Equipment, Appliances & Components"
+      ],
+      "contracting": [
+        "Nonmetallic Mineral Products",
+        "Miscellaneous Manufacturing",
+        "Wood Products",
+        "Fabricated Metal Products",
+        "Furniture & Related Products",
+        "Computer & Electronic Products",
+        "Paper Products",
+        "Food, Beverage & Tobacco"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20250203163755/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/january/"
+    },
+    {
+      "date": "2025-02-01",
+      "growing": [
+        "Petroleum & Coal Products",
+        "Miscellaneous Manufacturing",
+        "Primary Metals",
+        "Wood Products",
+        "Food, Beverage & Tobacco",
+        "Electrical Equipment, Appliances & Components",
+        "Chemical Products",
+        "Plastics & Rubber Products",
+        "Fabricated Metal Products",
+        "Transportation Equipment"
+      ],
+      "contracting": [
+        "Furniture & Related Products",
+        "Textile Mills",
+        "Nonmetallic Mineral Products",
+        "Computer & Electronic Products",
+        "Machinery"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20250303234657/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/february/"
+    },
+    {
+      "date": "2025-03-01",
+      "growing": [
+        "Textile Mills",
+        "Petroleum & Coal Products",
+        "Fabricated Metal Products",
+        "Primary Metals",
+        "Computer & Electronic Products",
+        "Nonmetallic Mineral Products",
+        "Transportation Equipment",
+        "Electrical Equipment, Appliances & Components",
+        "Miscellaneous Manufacturing"
+      ],
+      "contracting": [
+        "Wood Products",
+        "Paper Products",
+        "Plastics & Rubber Products",
+        "Furniture & Related Products",
+        "Chemical Products",
+        "Food, Beverage & Tobacco",
+        "Machinery"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20250401201900/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/march/"
+    },
+    {
+      "date": "2025-04-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Petroleum & Coal Products",
+        "Plastics & Rubber Products",
+        "Electrical Equipment, Appliances & Components",
+        "Textile Mills",
+        "Computer & Electronic Products",
+        "Nonmetallic Mineral Products",
+        "Miscellaneous Manufacturing",
+        "Machinery",
+        "Chemical Products",
+        "Primary Metals"
+      ],
+      "contracting": [
+        "Wood Products",
+        "Furniture & Related Products",
+        "Paper Products",
+        "Food, Beverage & Tobacco",
+        "Transportation Equipment",
+        "Fabricated Metal Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20250501211709/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/april/"
+    },
+    {
+      "date": "2025-05-01",
+      "growing": [
+        "Plastics & Rubber Products",
+        "Nonmetallic Mineral Products",
+        "Petroleum & Coal Products",
+        "Furniture & Related Products",
+        "Electrical Equipment, Appliances & Components",
+        "Fabricated Metal Products",
+        "Machinery"
+      ],
+      "contracting": [
+        "Paper Products",
+        "Wood Products",
+        "Printing & Related Support Activities",
+        "Food, Beverage & Tobacco",
+        "Transportation Equipment",
+        "Chemical Products",
+        "Primary Metals"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20250602200647/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/may/"
+    },
+    {
+      "date": "2025-06-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Petroleum & Coal Products",
+        "Nonmetallic Mineral Products",
+        "Miscellaneous Manufacturing",
+        "Furniture & Related Products",
+        "Computer & Electronic Products",
+        "Machinery",
+        "Food, Beverage & Tobacco",
+        "Electrical Equipment, Appliances & Components"
+      ],
+      "contracting": [
+        "Textile Mills",
+        "Wood Products",
+        "Paper Products",
+        "Chemical Products",
+        "Transportation Equipment",
+        "Fabricated Metal Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20250702051301/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2025-07-01",
+      "growing": [
+        "Apparel, Leather & Allied Products",
+        "Plastics & Rubber Products",
+        "Nonmetallic Mineral Products",
+        "Textile Mills",
+        "Miscellaneous Manufacturing",
+        "Furniture & Related Products",
+        "Primary Metals"
+      ],
+      "contracting": [
+        "Printing & Related Support Activities",
+        "Paper Products",
+        "Chemical Products",
+        "Machinery",
+        "Wood Products",
+        "Fabricated Metal Products",
+        "Computer & Electronic Products",
+        "Transportation Equipment",
+        "Electrical Equipment, Appliances & Components",
+        "Food, Beverage & Tobacco"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20250801142444/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    }
+  ]
+}

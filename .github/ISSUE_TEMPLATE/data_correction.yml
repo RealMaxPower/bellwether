@@ -1,0 +1,44 @@
+name: Data correction
+description: Report an inaccurate value, citation, or policy entry
+title: "[Data]: "
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bellwether's accuracy is the whole point. Every number should trace to a citation in one click — if one is wrong, missing, or mis-sourced, tell us. A primary-source link makes the fix fast.
+  - type: input
+    id: location
+    attributes:
+      label: Where is the value?
+      description: Page, series, month/cell — and the data file if you know it.
+      placeholder: "Timeline, Manufacturing PMI, March 2026 (data/pmi-curated.json)"
+    validations:
+      required: true
+  - type: input
+    id: shown
+    attributes:
+      label: Value currently shown
+      placeholder: "49.1"
+    validations:
+      required: true
+  - type: input
+    id: correct
+    attributes:
+      label: Correct value
+      placeholder: "50.3"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Primary source URL
+      description: ISM Report on Business, a government release, NBER, the policy text itself, or a stable Wayback capture.
+      placeholder: "https://www.ismworld.org/.../march-2026/ or a web.archive.org link"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything else — seasonal-adjustment vintage, terminology, how you spotted the discrepancy.

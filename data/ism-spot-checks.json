@@ -1,0 +1,6 @@
+{
+  "title": "ISM Manufacturing PMI spot-check values",
+  "description": "Append-only list of headline PMI values copied directly from ISM's monthly Report on Business news releases. Used by scripts/reconcile-ism.ts to assert FRED's NAPM mirror agrees with ISM's published value (FRED rounds to one decimal, so tolerance is 0.5). Add one entry per ISM monthly release after running `npm run refresh-data`.",
+  "tolerance": 0.5,
+  "entries": []
+}

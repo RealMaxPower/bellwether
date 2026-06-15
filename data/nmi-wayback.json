@@ -1,0 +1,320 @@
+{
+  "id": "NMI-WAYBACK",
+  "title": "ISM Services PMI / NMI Composite (Wayback archive of primary releases)",
+  "source": "Wayback Machine archive of ISM monthly Services Report on Business pages — values originate with ISM",
+  "units": "Index",
+  "provenance": "wayback-archive",
+  "lastVerifiedAt": "2026-05-14",
+  "observations": [
+    {
+      "date": "2014-09-01",
+      "value": 58.6,
+      "sourceUrl": "https://web.archive.org/web/20141020122800/http://www.ism.ws:80/ISMReport/nonmfgROB.cfm"
+    },
+    {
+      "date": "2014-11-01",
+      "value": 59.3,
+      "sourceUrl": "https://web.archive.org/web/20141221053517/http://www.ism.ws:80/ISMReport/NonMfgROB.cfm?"
+    },
+    {
+      "date": "2014-12-01",
+      "value": 56.2,
+      "sourceUrl": "https://web.archive.org/web/20150111064826/http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
+    },
+    {
+      "date": "2015-01-01",
+      "value": 56.7,
+      "sourceUrl": "https://web.archive.org/web/20150208024858/http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
+    },
+    {
+      "date": "2015-02-01",
+      "value": 56.9,
+      "sourceUrl": "https://web.archive.org/web/20150307201212/http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
+    },
+    {
+      "date": "2015-03-01",
+      "value": 56.5,
+      "sourceUrl": "https://web.archive.org/web/20150407035016/http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
+    },
+    {
+      "date": "2020-07-01",
+      "value": 58.1,
+      "sourceUrl": "https://web.archive.org/web/20200809044321/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/july/"
+    },
+    {
+      "date": "2020-08-01",
+      "value": 56.9,
+      "sourceUrl": "https://web.archive.org/web/20200906172645/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
+    },
+    {
+      "date": "2020-09-01",
+      "value": 57.8,
+      "sourceUrl": "https://web.archive.org/web/20201010225242/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/september/"
+    },
+    {
+      "date": "2020-10-01",
+      "value": 56.6,
+      "sourceUrl": "https://web.archive.org/web/20201105011330/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+    },
+    {
+      "date": "2020-11-01",
+      "value": 55.9,
+      "sourceUrl": "https://web.archive.org/web/20201209010500/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
+    },
+    {
+      "date": "2020-12-01",
+      "value": 57.2,
+      "sourceUrl": "https://web.archive.org/web/20210119150254/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/december/"
+    },
+    {
+      "date": "2021-01-01",
+      "value": 58.7,
+      "sourceUrl": "https://web.archive.org/web/20210204055045/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/january/"
+    },
+    {
+      "date": "2021-02-01",
+      "value": 55.3,
+      "sourceUrl": "https://web.archive.org/web/20210303190904/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/february/"
+    },
+    {
+      "date": "2021-03-01",
+      "value": 60.9,
+      "sourceUrl": "https://web.archive.org/web/20210405145401/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/march/"
+    },
+    {
+      "date": "2021-04-01",
+      "value": 62.7,
+      "sourceUrl": "https://web.archive.org/web/20210505155400/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/april/"
+    },
+    {
+      "date": "2021-05-01",
+      "value": 64,
+      "sourceUrl": "https://web.archive.org/web/20210603143817/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/may/"
+    },
+    {
+      "date": "2021-07-01",
+      "value": 64.1,
+      "sourceUrl": "https://web.archive.org/web/20210804155307/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/july/"
+    },
+    {
+      "date": "2021-08-01",
+      "value": 61.7,
+      "sourceUrl": "https://web.archive.org/web/20210903140904/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
+    },
+    {
+      "date": "2021-09-01",
+      "value": 61.9,
+      "sourceUrl": "https://web.archive.org/web/20211005165248/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/september/"
+    },
+    {
+      "date": "2021-10-01",
+      "value": 66.7,
+      "sourceUrl": "https://web.archive.org/web/20211103154042/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+    },
+    {
+      "date": "2021-11-01",
+      "value": 69.1,
+      "sourceUrl": "https://web.archive.org/web/20211205170537/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
+    },
+    {
+      "date": "2021-12-01",
+      "value": 62,
+      "sourceUrl": "https://web.archive.org/web/20220107050337/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/december/"
+    },
+    {
+      "date": "2022-01-01",
+      "value": 59.9,
+      "sourceUrl": "https://web.archive.org/web/20220203185407/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/january/"
+    },
+    {
+      "date": "2022-02-01",
+      "value": 56.5,
+      "sourceUrl": "https://web.archive.org/web/20220303181204/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/february/"
+    },
+    {
+      "date": "2022-03-01",
+      "value": 58.3,
+      "sourceUrl": "https://web.archive.org/web/20220405140449/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/march/"
+    },
+    {
+      "date": "2022-04-01",
+      "value": 57.1,
+      "sourceUrl": "https://web.archive.org/web/20220504145801/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/april/"
+    },
+    {
+      "date": "2022-05-01",
+      "value": 55.9,
+      "sourceUrl": "https://web.archive.org/web/20220603145158/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/may/"
+    },
+    {
+      "date": "2022-07-01",
+      "value": 56.7,
+      "sourceUrl": "https://web.archive.org/web/20220803160922/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/july/"
+    },
+    {
+      "date": "2022-08-01",
+      "value": 56.9,
+      "sourceUrl": "https://web.archive.org/web/20220907083724/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
+    },
+    {
+      "date": "2022-09-01",
+      "value": 56.7,
+      "sourceUrl": "https://web.archive.org/web/20221005141742/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/september/"
+    },
+    {
+      "date": "2022-10-01",
+      "value": 54.4,
+      "sourceUrl": "https://web.archive.org/web/20221103143322/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+    },
+    {
+      "date": "2022-11-01",
+      "value": 56.5,
+      "sourceUrl": "https://web.archive.org/web/20221205153915/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
+    },
+    {
+      "date": "2022-12-01",
+      "value": 49.6,
+      "sourceUrl": "https://web.archive.org/web/20230106233804/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/december/"
+    },
+    {
+      "date": "2023-01-01",
+      "value": 55.2,
+      "sourceUrl": "https://web.archive.org/web/20230203153558/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/january/"
+    },
+    {
+      "date": "2023-02-01",
+      "value": 55.1,
+      "sourceUrl": "https://web.archive.org/web/20230303152405/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/february/"
+    },
+    {
+      "date": "2023-03-01",
+      "value": 51.2,
+      "sourceUrl": "https://web.archive.org/web/20230408025007/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/march/"
+    },
+    {
+      "date": "2023-04-01",
+      "value": 51.9,
+      "sourceUrl": "https://web.archive.org/web/20230503201422/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/april/"
+    },
+    {
+      "date": "2023-05-01",
+      "value": 50.3,
+      "sourceUrl": "https://web.archive.org/web/20230612170843/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/may/"
+    },
+    {
+      "date": "2023-07-01",
+      "value": 52.7,
+      "sourceUrl": "https://web.archive.org/web/20230803184000/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/july/"
+    },
+    {
+      "date": "2023-08-01",
+      "value": 54.5,
+      "sourceUrl": "https://web.archive.org/web/20230906175257/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
+    },
+    {
+      "date": "2023-09-01",
+      "value": 53.6,
+      "sourceUrl": "https://web.archive.org/web/20231004163726/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/september/"
+    },
+    {
+      "date": "2023-10-01",
+      "value": 51.8,
+      "sourceUrl": "https://web.archive.org/web/20231103205157/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+    },
+    {
+      "date": "2023-11-01",
+      "value": 52.7,
+      "sourceUrl": "https://web.archive.org/web/20231205225517/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
+    },
+    {
+      "date": "2023-12-01",
+      "value": 50.6,
+      "sourceUrl": "https://web.archive.org/web/20240106000702/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/december/"
+    },
+    {
+      "date": "2024-01-01",
+      "value": 53.4,
+      "sourceUrl": "https://web.archive.org/web/20240205180506/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/january/"
+    },
+    {
+      "date": "2024-02-01",
+      "value": 52.6,
+      "sourceUrl": "https://web.archive.org/web/20240305160805/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/february/"
+    },
+    {
+      "date": "2024-03-01",
+      "value": 51.4,
+      "sourceUrl": "https://web.archive.org/web/20240403163812/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/march/"
+    },
+    {
+      "date": "2024-04-01",
+      "value": 49.4,
+      "sourceUrl": "https://web.archive.org/web/20240503212535/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/april/"
+    },
+    {
+      "date": "2024-05-01",
+      "value": 53.8,
+      "sourceUrl": "https://web.archive.org/web/20240605140922/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/may/"
+    },
+    {
+      "date": "2024-07-01",
+      "value": 51.4,
+      "sourceUrl": "https://web.archive.org/web/20240805151514/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/july/"
+    },
+    {
+      "date": "2024-08-01",
+      "value": 51.5,
+      "sourceUrl": "https://web.archive.org/web/20240905173754/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
+    },
+    {
+      "date": "2024-09-01",
+      "value": 54.9,
+      "sourceUrl": "https://web.archive.org/web/20241003150956/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/september/"
+    },
+    {
+      "date": "2024-10-01",
+      "value": 56,
+      "sourceUrl": "https://web.archive.org/web/20241108221045/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+    },
+    {
+      "date": "2024-11-01",
+      "value": 52.1,
+      "sourceUrl": "https://web.archive.org/web/20241204190724/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
+    },
+    {
+      "date": "2024-12-01",
+      "value": 54.1,
+      "sourceUrl": "https://web.archive.org/web/20250107164038/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/december/"
+    },
+    {
+      "date": "2025-01-01",
+      "value": 52.8,
+      "sourceUrl": "https://web.archive.org/web/20250205171223/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/january/"
+    },
+    {
+      "date": "2025-02-01",
+      "value": 53.5,
+      "sourceUrl": "https://web.archive.org/web/20250305201142/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/february/"
+    },
+    {
+      "date": "2025-03-01",
+      "value": 50.8,
+      "sourceUrl": "https://web.archive.org/web/20250405164827/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/march/"
+    },
+    {
+      "date": "2025-04-01",
+      "value": 51.6,
+      "sourceUrl": "https://web.archive.org/web/20250506023506/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/april/"
+    },
+    {
+      "date": "2025-05-01",
+      "value": 49.9,
+      "sourceUrl": "https://web.archive.org/web/20250605132537/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/may/"
+    },
+    {
+      "date": "2025-07-01",
+      "value": 50.1,
+      "sourceUrl": "https://web.archive.org/web/20250805152051/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/july/"
+    }
+  ]
+}

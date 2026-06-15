@@ -1,0 +1,355 @@
+{
+  "id": "PMI-WAYBACK",
+  "title": "ISM Manufacturing PMI Composite (Wayback archive of primary releases)",
+  "source": "Wayback Machine archive of ISM monthly Manufacturing Report on Business pages — values originate with ISM",
+  "units": "Index",
+  "provenance": "wayback-archive",
+  "lastVerifiedAt": "2026-05-14",
+  "observations": [
+    {
+      "date": "2014-09-01",
+      "value": 56.6,
+      "sourceUrl": "https://web.archive.org/web/20141018194916/http://www.ism.ws:80/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2014-10-01",
+      "value": 59,
+      "sourceUrl": "https://web.archive.org/web/20141108072816/http://www.ism.ws/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2014-11-01",
+      "value": 58.7,
+      "sourceUrl": "https://web.archive.org/web/20141220094037/http://www.ism.ws:80/ISMReport/MfgROB.cfm"
+    },
+    {
+      "date": "2014-12-01",
+      "value": 55.5,
+      "sourceUrl": "https://web.archive.org/web/20150105120604/http://www.ism.ws/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2015-01-01",
+      "value": 53.5,
+      "sourceUrl": "https://web.archive.org/web/20150207061444/http://www.ism.ws:80/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2015-02-01",
+      "value": 52.9,
+      "sourceUrl": "https://web.archive.org/web/20150304163935/http://www.ism.ws:80/ISMReport/MfgROB.cfm"
+    },
+    {
+      "date": "2015-03-01",
+      "value": 51.5,
+      "sourceUrl": "https://web.archive.org/web/20150402072244/http://www.ism.ws:80/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2020-06-01",
+      "value": 52.6,
+      "sourceUrl": "https://web.archive.org/web/20200809031403/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2020-07-01",
+      "value": 54.2,
+      "sourceUrl": "https://web.archive.org/web/20200806133002/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    },
+    {
+      "date": "2020-08-01",
+      "value": 56,
+      "sourceUrl": "https://web.archive.org/web/20200901183706/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/august/"
+    },
+    {
+      "date": "2020-09-01",
+      "value": 55.4,
+      "sourceUrl": "https://web.archive.org/web/20201004092354/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/september/"
+    },
+    {
+      "date": "2020-10-01",
+      "value": 59.3,
+      "sourceUrl": "https://web.archive.org/web/20201103034640/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/october/"
+    },
+    {
+      "date": "2020-11-01",
+      "value": 57.5,
+      "sourceUrl": "https://web.archive.org/web/20210124160808/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/november/"
+    },
+    {
+      "date": "2020-12-01",
+      "value": 60.7,
+      "sourceUrl": "https://web.archive.org/web/20210106042752/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/december/"
+    },
+    {
+      "date": "2021-01-01",
+      "value": 58.7,
+      "sourceUrl": "https://web.archive.org/web/20210202083119/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/january/"
+    },
+    {
+      "date": "2021-02-01",
+      "value": 60.8,
+      "sourceUrl": "https://web.archive.org/web/20210301153311/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/february/"
+    },
+    {
+      "date": "2021-03-01",
+      "value": 64.7,
+      "sourceUrl": "https://web.archive.org/web/20210401155330/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/march/"
+    },
+    {
+      "date": "2021-04-01",
+      "value": 60.7,
+      "sourceUrl": "https://web.archive.org/web/20210503162024/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/april/"
+    },
+    {
+      "date": "2021-05-01",
+      "value": 61.2,
+      "sourceUrl": "https://web.archive.org/web/20210601164033/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/may/"
+    },
+    {
+      "date": "2021-06-01",
+      "value": 60.6,
+      "sourceUrl": "https://web.archive.org/web/20210701152050/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2021-07-01",
+      "value": 59.5,
+      "sourceUrl": "https://web.archive.org/web/20210802165259/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    },
+    {
+      "date": "2021-08-01",
+      "value": 59.9,
+      "sourceUrl": "https://web.archive.org/web/20210901153507/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/august/"
+    },
+    {
+      "date": "2021-09-01",
+      "value": 61.1,
+      "sourceUrl": "https://web.archive.org/web/20211001152228/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/september/"
+    },
+    {
+      "date": "2021-10-01",
+      "value": 60.8,
+      "sourceUrl": "https://web.archive.org/web/20211101155501/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/october/"
+    },
+    {
+      "date": "2021-11-01",
+      "value": 61.1,
+      "sourceUrl": "https://web.archive.org/web/20211201163719/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/november/"
+    },
+    {
+      "date": "2021-12-01",
+      "value": 58.7,
+      "sourceUrl": "https://web.archive.org/web/20220104170800/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/december/"
+    },
+    {
+      "date": "2022-01-01",
+      "value": 57.6,
+      "sourceUrl": "https://web.archive.org/web/20220201213908/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/january/"
+    },
+    {
+      "date": "2022-02-01",
+      "value": 58.6,
+      "sourceUrl": "https://web.archive.org/web/20220301154104/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/february/"
+    },
+    {
+      "date": "2022-03-01",
+      "value": 57.1,
+      "sourceUrl": "https://web.archive.org/web/20220401165236/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/march/"
+    },
+    {
+      "date": "2022-04-01",
+      "value": 55.4,
+      "sourceUrl": "https://web.archive.org/web/20220502160949/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/april/"
+    },
+    {
+      "date": "2022-05-01",
+      "value": 56.1,
+      "sourceUrl": "https://web.archive.org/web/20220601154043/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/may/"
+    },
+    {
+      "date": "2022-06-01",
+      "value": 53,
+      "sourceUrl": "https://web.archive.org/web/20220701153937/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2022-07-01",
+      "value": 52.8,
+      "sourceUrl": "https://web.archive.org/web/20220801152945/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    },
+    {
+      "date": "2022-08-01",
+      "value": 52.8,
+      "sourceUrl": "https://web.archive.org/web/20220901210127/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/august/"
+    },
+    {
+      "date": "2022-09-01",
+      "value": 50.9,
+      "sourceUrl": "https://web.archive.org/web/20221003153544/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/september/"
+    },
+    {
+      "date": "2022-10-01",
+      "value": 50.2,
+      "sourceUrl": "https://web.archive.org/web/20221101150747/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/october/"
+    },
+    {
+      "date": "2022-11-01",
+      "value": 49,
+      "sourceUrl": "https://web.archive.org/web/20221201174013/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/november/"
+    },
+    {
+      "date": "2022-12-01",
+      "value": 48.4,
+      "sourceUrl": "https://web.archive.org/web/20230104172342/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/december/"
+    },
+    {
+      "date": "2023-01-01",
+      "value": 47.4,
+      "sourceUrl": "https://web.archive.org/web/20230201155156/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/january/"
+    },
+    {
+      "date": "2023-02-01",
+      "value": 47.7,
+      "sourceUrl": "https://web.archive.org/web/20230301201044/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/february/"
+    },
+    {
+      "date": "2023-03-01",
+      "value": 46.3,
+      "sourceUrl": "https://web.archive.org/web/20230403195704/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/march/"
+    },
+    {
+      "date": "2023-04-01",
+      "value": 47.1,
+      "sourceUrl": "https://web.archive.org/web/20230504075654/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/april/"
+    },
+    {
+      "date": "2023-05-01",
+      "value": 46.9,
+      "sourceUrl": "https://web.archive.org/web/20230602061559/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/may/"
+    },
+    {
+      "date": "2023-06-01",
+      "value": 46,
+      "sourceUrl": "https://web.archive.org/web/20230703210100/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2023-07-01",
+      "value": 46.4,
+      "sourceUrl": "https://web.archive.org/web/20230801152618/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    },
+    {
+      "date": "2023-08-01",
+      "value": 47.6,
+      "sourceUrl": "https://web.archive.org/web/20230901185534/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/august/"
+    },
+    {
+      "date": "2023-09-01",
+      "value": 49,
+      "sourceUrl": "https://web.archive.org/web/20231002151006/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/september/"
+    },
+    {
+      "date": "2023-10-01",
+      "value": 46.7,
+      "sourceUrl": "https://web.archive.org/web/20231101193810/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/october/"
+    },
+    {
+      "date": "2023-11-01",
+      "value": 46.7,
+      "sourceUrl": "https://web.archive.org/web/20231201184042/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/november/"
+    },
+    {
+      "date": "2023-12-01",
+      "value": 47.4,
+      "sourceUrl": "https://web.archive.org/web/20240103163747/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/december/"
+    },
+    {
+      "date": "2024-01-01",
+      "value": 49.1,
+      "sourceUrl": "https://web.archive.org/web/20240202135753/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/january/"
+    },
+    {
+      "date": "2024-02-01",
+      "value": 47.8,
+      "sourceUrl": "https://web.archive.org/web/20240301153852/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/february/"
+    },
+    {
+      "date": "2024-03-01",
+      "value": 50.3,
+      "sourceUrl": "https://web.archive.org/web/20240402023038/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/march/"
+    },
+    {
+      "date": "2024-04-01",
+      "value": 49.2,
+      "sourceUrl": "https://web.archive.org/web/20240501162303/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/april/"
+    },
+    {
+      "date": "2024-05-01",
+      "value": 48.7,
+      "sourceUrl": "https://web.archive.org/web/20240603162504/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/may/"
+    },
+    {
+      "date": "2024-06-01",
+      "value": 48.5,
+      "sourceUrl": "https://web.archive.org/web/20240701145332/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2024-07-01",
+      "value": 46.8,
+      "sourceUrl": "https://web.archive.org/web/20240801201640/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    },
+    {
+      "date": "2024-08-01",
+      "value": 47.2,
+      "sourceUrl": "https://web.archive.org/web/20240903155316/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/august/"
+    },
+    {
+      "date": "2024-09-01",
+      "value": 47.2,
+      "sourceUrl": "https://web.archive.org/web/20241001154206/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/september/"
+    },
+    {
+      "date": "2024-10-01",
+      "value": 46.5,
+      "sourceUrl": "https://web.archive.org/web/20241104093646/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/october/"
+    },
+    {
+      "date": "2024-11-01",
+      "value": 48.4,
+      "sourceUrl": "https://web.archive.org/web/20241202184150/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/november/"
+    },
+    {
+      "date": "2024-12-01",
+      "value": 49.3,
+      "sourceUrl": "https://web.archive.org/web/20250105050846/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/december/"
+    },
+    {
+      "date": "2025-01-01",
+      "value": 50.9,
+      "sourceUrl": "https://web.archive.org/web/20250203163755/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/january/"
+    },
+    {
+      "date": "2025-02-01",
+      "value": 50.3,
+      "sourceUrl": "https://web.archive.org/web/20250303234657/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/february/"
+    },
+    {
+      "date": "2025-03-01",
+      "value": 49,
+      "sourceUrl": "https://web.archive.org/web/20250401201900/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/march/"
+    },
+    {
+      "date": "2025-04-01",
+      "value": 48.7,
+      "sourceUrl": "https://web.archive.org/web/20250501211709/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/april/"
+    },
+    {
+      "date": "2025-05-01",
+      "value": 48.5,
+      "sourceUrl": "https://web.archive.org/web/20250602200647/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/may/"
+    },
+    {
+      "date": "2025-06-01",
+      "value": 49,
+      "sourceUrl": "https://web.archive.org/web/20250702051301/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/"
+    },
+    {
+      "date": "2025-07-01",
+      "value": 48,
+      "sourceUrl": "https://web.archive.org/web/20250801142444/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    }
+  ]
+}

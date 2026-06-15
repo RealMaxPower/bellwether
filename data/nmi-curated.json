@@ -1,0 +1,55 @@
+{
+  "id": "NMI-CURATED",
+  "title": "ISM Services PMI / NMI Composite (hand-curated, sparse)",
+  "source": "Hand-curated rows from primary ISM monthly Services Report on Business news releases. Each observation cites the specific release URL. Wins over Wayback rows in the merge.",
+  "units": "Index",
+  "provenance": "hand-curated",
+  "lastVerifiedAt": "2026-05-14",
+  "observations": [
+    {
+      "date": "2025-08-01",
+      "value": 52,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/services-pmi-at-52-august-2025-ism-services-pmi-report-302545705.html"
+    },
+    {
+      "date": "2025-09-01",
+      "value": 50,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/services-pmi-at-50-september-2025-ism-services-pmi-report-302574151.html"
+    },
+    {
+      "date": "2025-10-01",
+      "value": 52.4,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/services-pmi-at-52-4-october-2025-ism-services-pmi-report-302604583.html"
+    },
+    {
+      "date": "2025-11-01",
+      "value": 52.6,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/services-pmi-at-52-6-november-2025-ism-services-pmi-report-302630958.html"
+    },
+    {
+      "date": "2025-12-01",
+      "value": 54.4,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/services-pmi-at-54-4-december-2025-ism-services-pmi-report-302654304.html"
+    },
+    {
+      "date": "2026-01-01",
+      "value": 53.8,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/services-pmi-at-53-8-january-2026-ism-services-pmi-report-302678227.html"
+    },
+    {
+      "date": "2026-02-01",
+      "value": 56.1,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/services-pmi-at-56-1-february-2026-ism-services-pmi-report-302702978.html"
+    },
+    {
+      "date": "2026-03-01",
+      "value": 54,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/services-pmi-at-54-march-2026-ism-services-pmi-report-302734026.html"
+    },
+    {
+      "date": "2026-04-01",
+      "value": 53.6,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/services-pmi-at-53-6-april-2026-ism-services-pmi-report-302761674.html"
+    }
+  ]
+}
