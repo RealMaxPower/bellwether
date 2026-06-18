@@ -79,7 +79,6 @@ async function fetchWithRetry(url: string): Promise<Response | null> {
 function clean(html: string): string {
   return html
     .replace(/<[^>]+>/g, " ")
-    .replace(/&amp;/g, "&")
     .replace(/&rsquo;/g, "'")
     .replace(/&lsquo;/g, "'")
     .replace(/&ldquo;/g, '"')
@@ -88,6 +87,8 @@ function clean(html: string): string {
     .replace(/&ndash;/g, "–")
     .replace(/&nbsp;/g, " ")
     .replace(/&#8217;/g, "'")
+    // Decode &amp; last so we never double-unescape (e.g. &amp;lt; -> &lt;).
+    .replace(/&amp;/g, "&")
     .replace(/\s+/g, " ");
 }
 
