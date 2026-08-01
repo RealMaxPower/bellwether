@@ -4,7 +4,7 @@
   "source": "Wayback Machine archive of ISM monthly Manufacturing Report on Business pages — values originate with ISM",
   "units": "Index",
   "provenance": "wayback-archive",
-  "lastVerifiedAt": "2026-05-14",
+  "lastVerifiedAt": "2026-08-01",
   "observations": [
     {
       "date": "2014-09-01",
@@ -350,6 +350,51 @@
       "date": "2025-07-01",
       "value": 48,
       "sourceUrl": "https://web.archive.org/web/20250801142444/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/"
+    },
+    {
+      "date": "2025-08-01",
+      "value": 48.7,
+      "sourceUrl": "https://web.archive.org/web/20250902155544/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/august/"
+    },
+    {
+      "date": "2025-10-01",
+      "value": 48.7,
+      "sourceUrl": "https://web.archive.org/web/20251105170729/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/october/"
+    },
+    {
+      "date": "2025-11-01",
+      "value": 48.2,
+      "sourceUrl": "https://web.archive.org/web/20251201182325/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/november/"
+    },
+    {
+      "date": "2025-12-01",
+      "value": 47.9,
+      "sourceUrl": "https://web.archive.org/web/20260108083322/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/december/"
+    },
+    {
+      "date": "2026-01-01",
+      "value": 52.6,
+      "sourceUrl": "https://web.archive.org/web/20260202154619/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/january/"
+    },
+    {
+      "date": "2026-02-01",
+      "value": 52.4,
+      "sourceUrl": "https://web.archive.org/web/20260302210418/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/february/"
+    },
+    {
+      "date": "2026-03-01",
+      "value": 52.7,
+      "sourceUrl": "https://web.archive.org/web/20260401191103/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/march/"
+    },
+    {
+      "date": "2026-04-01",
+      "value": 52.7,
+      "sourceUrl": "https://web.archive.org/web/20260505230359/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/april/"
+    },
+    {
+      "date": "2026-06-01",
+      "value": 53.3,
+      "sourceUrl": "https://web.archive.org/web/20260701142312/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/june/"
     }
   ]
 }
