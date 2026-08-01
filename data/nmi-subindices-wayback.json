@@ -4,7 +4,7 @@
   "source": "Wayback Machine archive of ISM monthly Services Report on Business pages — composite and the four headline subindices (Business Activity, New Orders, Employment, Supplier Deliveries) extracted from the same paragraphs",
   "units": "Index",
   "provenance": "wayback-archive",
-  "lastVerifiedAt": "2026-05-09",
+  "lastVerifiedAt": "2026-08-01",
   "observations": [
     {
       "date": "2014-09-01",
@@ -59,6 +59,15 @@
       "employment": 56.6,
       "supplierDeliveries": 54,
       "sourceUrl": "https://web.archive.org/web/20150407035016/http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
+    },
+    {
+      "date": "2020-06-01",
+      "composite": 57.1,
+      "businessActivity": 66,
+      "newOrders": 61.6,
+      "employment": 43.1,
+      "supplierDeliveries": 57.5,
+      "sourceUrl": "https://web.archive.org/web/20200809015023/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/june/"
     },
     {
       "date": "2020-07-01",
@@ -160,6 +169,15 @@
       "sourceUrl": "https://web.archive.org/web/20210603143817/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/may/"
     },
     {
+      "date": "2021-06-01",
+      "composite": 60.1,
+      "businessActivity": 60.4,
+      "newOrders": 62.1,
+      "employment": 49.3,
+      "supplierDeliveries": 68.5,
+      "sourceUrl": "https://web.archive.org/web/20210706180614/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/june/"
+    },
+    {
       "date": "2021-07-01",
       "composite": 64.1,
       "businessActivity": 67,
@@ -257,6 +275,15 @@
       "employment": 50.2,
       "supplierDeliveries": 61.3,
       "sourceUrl": "https://web.archive.org/web/20220603145158/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/may/"
+    },
+    {
+      "date": "2022-06-01",
+      "composite": 55.3,
+      "businessActivity": 56.1,
+      "newOrders": 55.6,
+      "employment": 47.4,
+      "supplierDeliveries": 61.9,
+      "sourceUrl": "https://web.archive.org/web/20220706153736/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/june/"
     },
     {
       "date": "2022-07-01",
@@ -457,6 +484,15 @@
       "sourceUrl": "https://web.archive.org/web/20240605140922/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/may/"
     },
     {
+      "date": "2024-06-01",
+      "composite": 48.8,
+      "businessActivity": 49.6,
+      "newOrders": 47.3,
+      "employment": 46.1,
+      "supplierDeliveries": 52.2,
+      "sourceUrl": "https://web.archive.org/web/20240703152643/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/june/"
+    },
+    {
       "date": "2024-07-01",
       "composite": 51.4,
       "businessActivity": 54.5,
@@ -556,6 +592,15 @@
       "sourceUrl": "https://web.archive.org/web/20250605132537/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/may/"
     },
     {
+      "date": "2025-06-01",
+      "composite": 50.8,
+      "businessActivity": 54.2,
+      "newOrders": 51.3,
+      "employment": 47.2,
+      "supplierDeliveries": 50.3,
+      "sourceUrl": "https://web.archive.org/web/20250704104732/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/june/"
+    },
+    {
       "date": "2025-07-01",
       "composite": 50.1,
       "businessActivity": 52.6,
@@ -563,6 +608,87 @@
       "employment": 46.4,
       "supplierDeliveries": 51,
       "sourceUrl": "https://web.archive.org/web/20250805152051/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/july/"
+    },
+    {
+      "date": "2025-08-01",
+      "composite": 52,
+      "businessActivity": 55,
+      "newOrders": 56,
+      "employment": 46.5,
+      "supplierDeliveries": 50.3,
+      "sourceUrl": "https://web.archive.org/web/20250904144412/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/august/"
+    },
+    {
+      "date": "2025-09-01",
+      "composite": 50,
+      "businessActivity": 49.9,
+      "newOrders": 50.4,
+      "employment": 47.2,
+      "supplierDeliveries": 52.6,
+      "sourceUrl": "https://web.archive.org/web/20251003170849/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/september/"
+    },
+    {
+      "date": "2025-10-01",
+      "composite": 52.4,
+      "businessActivity": 54.3,
+      "newOrders": 56.2,
+      "employment": 48.2,
+      "supplierDeliveries": 50.8,
+      "sourceUrl": "https://web.archive.org/web/20251105163431/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"
+    },
+    {
+      "date": "2025-12-01",
+      "composite": 54.4,
+      "businessActivity": 56,
+      "newOrders": 57.9,
+      "employment": 52,
+      "supplierDeliveries": 51.8,
+      "sourceUrl": "https://web.archive.org/web/20260107183103/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/december/"
+    },
+    {
+      "date": "2026-01-01",
+      "composite": 53.8,
+      "businessActivity": 57.4,
+      "newOrders": 53.1,
+      "employment": 50.3,
+      "supplierDeliveries": 54.2,
+      "sourceUrl": "https://web.archive.org/web/20260204213647/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/january/"
+    },
+    {
+      "date": "2026-02-01",
+      "composite": 56.1,
+      "businessActivity": 59.9,
+      "newOrders": 58.6,
+      "employment": 51.8,
+      "supplierDeliveries": 53.9,
+      "sourceUrl": "https://web.archive.org/web/20260304173716/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/february/"
+    },
+    {
+      "date": "2026-03-01",
+      "composite": 54,
+      "businessActivity": 59.9,
+      "newOrders": 60.6,
+      "employment": 45.2,
+      "supplierDeliveries": 56.2,
+      "sourceUrl": "https://web.archive.org/web/20260406232244/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/march/"
+    },
+    {
+      "date": "2026-05-01",
+      "composite": 54.5,
+      "businessActivity": 57.7,
+      "newOrders": 57.3,
+      "employment": 47.9,
+      "supplierDeliveries": 55.2,
+      "sourceUrl": "https://web.archive.org/web/20260603221059/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/may/"
+    },
+    {
+      "date": "2026-06-01",
+      "composite": 54,
+      "businessActivity": 55.4,
+      "newOrders": 55.1,
+      "employment": 51.2,
+      "supplierDeliveries": 54.4,
+      "sourceUrl": "https://web.archive.org/web/20260706201848/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/june/"
     }
   ]
 }

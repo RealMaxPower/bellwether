@@ -1,9 +1,8 @@
 import { describe, expect, it } from "vitest";
 import {
-  getAllSubindices,
   getFedFunds,
+  getMergedNMI,
   getMergedPMI,
-  getPMI,
   getRecessions,
   getWaybackNMI,
   getWaybackNMISubindices,
@@ -61,11 +60,18 @@ describe("data freshness — Manufacturing", () => {
     expect(diffDays).toBeLessThanOrEqual(35);
   });
 
-  it("every series's lastVerifiedAt is within MAX_AGE_DAYS", () => {
+  it("every refreshed series's lastVerifiedAt is within MAX_AGE_DAYS", () => {
+    // Only series that something in the refresh pipeline actually rewrites
+    // belong here. The FRED NAPM stub and the five NAPMxxx subindex stubs are
+    // deliberately excluded: scripts/fetch-fred.ts fetches INDPRO, IPMAN and
+    // FEDFUNDS only — FRED dropped the ISM IDs in 2016 — so nothing ever
+    // touches their lastVerifiedAt. Asserting on them made this test fail by
+    // construction 75 days after the last hand-edit, which is what it did.
+    // Their inertness is covered by the STRICT provenance block below.
     const series = [
-      ["NAPM", getPMI()],
       ["FEDFUNDS", getFedFunds()],
-      ...Object.entries(getAllSubindices()),
+      ["Wayback PMI", getWaybackPMI()],
+      ...Object.entries(getWaybackSubindices()),
     ] as const;
     for (const [name, s] of series) {
       expect(daysSince(s.lastVerifiedAt), `${name} lastVerifiedAt`).toBeLessThan(MAX_AGE_DAYS);
@@ -93,13 +99,25 @@ describe("data freshness — Manufacturing", () => {
 const NMI_MAX_AGE_DAYS = 365;
 
 describe("data freshness — Services / NMI", () => {
+  it(`merged NMI's latest observation is younger than ${MAX_AGE_DAYS} days`, () => {
+    // The homepage and /pmi-explained render getMergedNMI(), the Services
+    // mirror of getMergedPMI() — Wayback overwritten by hand-curated rows,
+    // which scripts/import-prnewswire-ism.ts keeps current. This is the
+    // user-facing freshness gate for Services; the Wayback-only check below
+    // is a separate signal about the archive channel itself.
+    const nmi = getMergedNMI();
+    const last = nmi.observations.at(-1);
+    expect(last).toBeDefined();
+    expect(daysSince(last!.date)).toBeLessThan(MAX_AGE_DAYS);
+  });
+
   it(`Wayback NMI's latest observation is younger than ${NMI_MAX_AGE_DAYS} days`, () => {
-    // Services has no parallel of the Mfg curated-CSV flow, so realistic
-    // freshness is constrained by the Wayback Machine's capture cadence
-    // for ISM Services ROB pages — typically lags 6-9 months behind live.
-    // A year is the meaningful upper bound; failures here mean either the
-    // scraper hasn't been re-run in too long or Wayback isn't archiving
-    // the page anymore.
+    // Wayback captures of the ISM Services ROB pages lag live by 6-9 months,
+    // so a year is the meaningful upper bound. Failures here mean either the
+    // scraper hasn't been re-run in too long or Wayback isn't archiving the
+    // page anymore — check lastVerifiedAt to tell those apart: recent
+    // lastVerifiedAt + old observation means the scraper ran and found
+    // nothing, i.e. the archive channel itself has gone quiet.
     const nmi = getWaybackNMI();
     const last = nmi.observations.at(-1);
     expect(last).toBeDefined();

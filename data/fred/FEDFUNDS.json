@@ -4,8 +4,8 @@
   "source": "FRED (Federal Reserve Bank of St. Louis)",
   "units": "Percent",
   "provenance": "fred",
-  "lastVerifiedAt": "2026-05-05",
-  "vintage": "2026-05-05",
+  "lastVerifiedAt": "2026-08-01",
+  "vintage": "2026-08-01",
   "observations": [
     {
       "date": "1954-07-01",
@@ -3454,6 +3454,14 @@
     {
       "date": "2026-04-01",
       "value": 3.64
+    },
+    {
+      "date": "2026-05-01",
+      "value": 3.63
+    },
+    {
+      "date": "2026-06-01",
+      "value": 3.63
     }
   ]
 }
