@@ -4,16 +4,18 @@
  * web.archive.org URL as its sourceUrl, so the citation chain remains
  * linkable even though the live ISM site is reCAPTCHA-gated.
  *
- * Two URL eras, both handled here:
+ * Three URL eras, all handled here:
  *   2014-09 → ~early 2018: http://www.ism.ws/ISMReport/MfgROB.cfm  (single
  *     rotating page; snapshot timestamp determines which month)
- *   2018-mid → present:    https://www.ismworld.org/...
+ *   2018-mid → 2025-07:    https://www.ismworld.org/...
  *                          /ism-report-on-business/pmi/{month_lowercase}/
+ *   2025-08 → present:     same, but ISM renamed the path segment to
+ *                          /ism-pmi-reports/pmi/{month_lowercase}/
  *
  * Two-phase design to be friendly to Wayback's rate limits:
- *   Phase 1 — index: 13 CDX queries total (one per modern monthly URL plus
- *     the legacy rotating URL), broad date ranges. Slept generously between
- *     queries.
+ *   Phase 1 — index: 25 CDX queries total (one per modern monthly URL per
+ *     path era, plus the legacy rotating URL), broad date ranges. Slept
+ *     generously between queries.
  *   Phase 2 — extract: walk the candidate snapshots for each target
  *     (year, month), in chronological order, fetching pages until the title
  *     confirms the expected month/year and the regex extracts the value.
@@ -40,6 +42,9 @@ const MAX_RETRIES = 3;
 const OUT_PATH = resolve(process.cwd(), "data", "pmi-wayback.json");
 const CDX_CACHE_PATH = resolve(process.cwd(), "data", ".wayback-cdx-cache.json");
 const CDX_CACHE_TTL_MS = 24 * 60 * 60 * 1000; // 24 hours
+// Bump when the set of URLs cdxQueryModernMonth queries changes, so a cache
+// written by an older build is discarded even while still inside its TTL.
+const CDX_CACHE_VERSION = 2;
 
 const MONTH_NAMES = [
   "january", "february", "march", "april", "may", "june",
@@ -141,6 +146,7 @@ function cleanUrl(waybackUrl: string): string {
 }
 
 interface CdxCache {
+  version?: number;
   builtAt: number;
   modernByMonth: Record<string, CdxRow[]>;
   legacy: CdxRow[];
@@ -157,7 +163,7 @@ async function loadSnapshotIndex(): Promise<{
     try {
       const cache = JSON.parse(readFileSync(CDX_CACHE_PATH, "utf8")) as CdxCache;
       const age = Date.now() - cache.builtAt;
-      if (age < CDX_CACHE_TTL_MS) {
+      if (cache.version === CDX_CACHE_VERSION && age < CDX_CACHE_TTL_MS) {
         const modernByMonth = new Map<string, CdxRow[]>(
           Object.entries(cache.modernByMonth),
         );
@@ -178,6 +184,7 @@ async function loadSnapshotIndex(): Promise<{
         );
         const refilled = await refreshEmptySlots(modernByMonth, empties);
         const updated: CdxCache = {
+          version: CDX_CACHE_VERSION,
           builtAt: Date.now(),
           modernByMonth: Object.fromEntries(refilled),
           legacy: cache.legacy,
@@ -190,7 +197,10 @@ async function loadSnapshotIndex(): Promise<{
     }
   }
 
-  console.log("Phase 1 — building snapshot index from Wayback CDX (13 queries)");
+  console.log(
+    `Phase 1 — building snapshot index from Wayback CDX ` +
+      `(${MONTH_NAMES.length * MODERN_PATH_SEGMENTS.length + 1} queries)`,
+  );
   const modernByMonth = new Map<string, CdxRow[]>();
   for (const [i, name] of MONTH_NAMES.entries()) {
     const rows = await cdxQueryModernMonth(name);
@@ -206,6 +216,7 @@ async function loadSnapshotIndex(): Promise<{
   console.log(`  [13/13] legacy MfgROB.cfm → ${legacy.length} snapshot(s)`);
 
   const cache: CdxCache = {
+    version: CDX_CACHE_VERSION,
     builtAt: Date.now(),
     modernByMonth: Object.fromEntries(modernByMonth),
     legacy,
@@ -214,11 +225,24 @@ async function loadSnapshotIndex(): Promise<{
   return { modernByMonth, legacy };
 }
 
+// ISM renamed the path segment from `ism-report-on-business` to
+// `ism-pmi-reports` around mid-2025. The old URLs now 301 to the new ones, so
+// Wayback still records hits against them but only as redirects — which
+// cdxQuery's `filter=statuscode:200` correctly discards. Querying the old
+// path alone therefore went silently empty from 2025-08 onward. Query both:
+// the old path holds the pre-rename history, the new one everything since.
+const MODERN_PATH_SEGMENTS = ["ism-report-on-business", "ism-pmi-reports"] as const;
+
 async function cdxQueryModernMonth(monthName: string): Promise<CdxRow[]> {
-  const url =
-    `https://www.ismworld.org/supply-management-news-and-reports/reports/` +
-    `ism-report-on-business/pmi/${monthName}/`;
-  return cdxQuery(url, "20180101", "20261231");
+  const rows: CdxRow[] = [];
+  for (const [i, segment] of MODERN_PATH_SEGMENTS.entries()) {
+    if (i > 0) await sleep(CDX_SLEEP_MS);
+    const url =
+      `https://www.ismworld.org/supply-management-news-and-reports/reports/` +
+      `${segment}/pmi/${monthName}/`;
+    rows.push(...(await cdxQuery(url, "20180101", "20261231")));
+  }
+  return rows.sort((a, b) => a.timestamp.localeCompare(b.timestamp));
 }
 
 async function refreshEmptySlots(

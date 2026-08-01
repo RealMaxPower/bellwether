@@ -28,6 +28,9 @@ const MAX_RETRIES = 3;
 const OUT_PATH = resolve(process.cwd(), "data", "nmi-wayback.json");
 const CDX_CACHE_PATH = resolve(process.cwd(), "data", ".wayback-nmi-cdx-cache.json");
 const CDX_CACHE_TTL_MS = 24 * 60 * 60 * 1000;
+// Bump when the set of URLs cdxQueryModernMonth queries changes, so a cache
+// written by an older build is discarded even while still inside its TTL.
+const CDX_CACHE_VERSION = 2;
 
 const MONTH_NAMES = [
   "january", "february", "march", "april", "may", "june",
@@ -128,16 +131,30 @@ function cleanUrl(waybackUrl: string): string {
 }
 
 interface CdxCache {
+  version?: number;
   builtAt: number;
   modernByMonth: Record<string, CdxRow[]>;
   legacy: CdxRow[];
 }
 
+// ISM renamed the path segment from `ism-report-on-business` to
+// `ism-pmi-reports` around mid-2025. The old URLs now 301 to the new ones, so
+// Wayback still records hits against them but only as redirects — which
+// cdxQuery's `filter=statuscode:200` correctly discards. Querying the old
+// path alone therefore went silently empty from 2025-08 onward. Query both:
+// the old path holds the pre-rename history, the new one everything since.
+const MODERN_PATH_SEGMENTS = ["ism-report-on-business", "ism-pmi-reports"] as const;
+
 async function cdxQueryModernMonth(monthName: string): Promise<CdxRow[]> {
-  const url =
-    `https://www.ismworld.org/supply-management-news-and-reports/reports/` +
-    `ism-report-on-business/services/${monthName}/`;
-  return cdxQuery(url, "20180101", "20261231");
+  const rows: CdxRow[] = [];
+  for (const [i, segment] of MODERN_PATH_SEGMENTS.entries()) {
+    if (i > 0) await sleep(CDX_SLEEP_MS);
+    const url =
+      `https://www.ismworld.org/supply-management-news-and-reports/reports/` +
+      `${segment}/services/${monthName}/`;
+    rows.push(...(await cdxQuery(url, "20180101", "20261231")));
+  }
+  return rows.sort((a, b) => a.timestamp.localeCompare(b.timestamp));
 }
 
 async function loadSnapshotIndex(): Promise<{
@@ -148,7 +165,7 @@ async function loadSnapshotIndex(): Promise<{
     try {
       const cache = JSON.parse(readFileSync(CDX_CACHE_PATH, "utf8")) as CdxCache;
       const age = Date.now() - cache.builtAt;
-      if (age < CDX_CACHE_TTL_MS) {
+      if (cache.version === CDX_CACHE_VERSION && age < CDX_CACHE_TTL_MS) {
         const modernByMonth = new Map<string, CdxRow[]>(
           Object.entries(cache.modernByMonth),
         );
@@ -171,6 +188,7 @@ async function loadSnapshotIndex(): Promise<{
           console.log(`  refilled /services/${name}/ → ${rows.length} snapshot(s)`);
         }
         const updated: CdxCache = {
+          version: CDX_CACHE_VERSION,
           builtAt: Date.now(),
           modernByMonth: Object.fromEntries(modernByMonth),
           legacy: cache.legacy,
@@ -183,7 +201,10 @@ async function loadSnapshotIndex(): Promise<{
     }
   }
 
-  console.log("Phase 1 — building snapshot index from Wayback CDX (13 queries)");
+  console.log(
+    `Phase 1 — building snapshot index from Wayback CDX ` +
+      `(${MONTH_NAMES.length * MODERN_PATH_SEGMENTS.length + 1} queries)`,
+  );
   const modernByMonth = new Map<string, CdxRow[]>();
   for (const [i, name] of MONTH_NAMES.entries()) {
     const rows = await cdxQueryModernMonth(name);
@@ -199,6 +220,7 @@ async function loadSnapshotIndex(): Promise<{
   console.log(`  [13/13] legacy NonMfgROB.cfm → ${legacy.length} snapshot(s)`);
 
   const cache: CdxCache = {
+    version: CDX_CACHE_VERSION,
     builtAt: Date.now(),
     modernByMonth: Object.fromEntries(modernByMonth),
     legacy,

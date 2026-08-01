@@ -10,6 +10,11 @@ on:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    # The four Wayback scrapes sleep between every request and re-probe the
+    # structural 2015-04 → 2020-05 gap on each run, so the job takes tens of
+    # minutes. A job timeout kills the run outright — continue-on-error on the
+    # scrape steps does not protect against it — so leave generous headroom.
+    timeout-minutes: 90
     permissions:
       contents: write
       pull-requests: write
@@ -23,10 +28,45 @@ jobs:
 
       - run: npm ci
 
+      # Fail loudly and immediately rather than 20 minutes into the scrapes.
+      - name: Check FRED_API_KEY is configured
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: |
+          if [ -z "$FRED_API_KEY" ]; then
+            echo "::error::FRED_API_KEY repository secret is not set."
+            echo "Create one at https://fred.stlouisfed.org/docs/api/api_key.html,"
+            echo "then add it under Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+
       - name: Pull latest FRED snapshots
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: npm run refresh-data
+
+      # FRED only carries INDPRO, IPMAN and FEDFUNDS — it dropped the ISM PMI
+      # series in 2016. The series the freshness tests actually gate on
+      # (merged PMI, Wayback NMI) come from the importers below, so a refresh
+      # that skipped them left CI red no matter how often it ran.
+      - name: Backfill recent ISM prints from PRNewswire
+        run: npm run import-prnewswire
+
+      # Wayback is the citation channel for the archived ISM releases. It is
+      # third-party and rate-limited, so a bad day upstream must not fail the
+      # whole refresh — the importers are incremental, and the freshness
+      # thresholds in check-data are the real gate on going stale.
+      - name: Refresh Wayback Manufacturing archive
+        continue-on-error: true
+        run: |
+          npm run import-wayback
+          npm run import-wayback-subindices
+
+      - name: Refresh Wayback Services archive
+        continue-on-error: true
+        run: |
+          npm run import-wayback-nmi
+          npm run import-wayback-nmi-subindices
 
       - name: Run strict data checks
         env:
@@ -39,15 +79,33 @@ jobs:
       - name: Open PR with refreshed data
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: "chore(data): monthly FRED refresh"
+          commit-message: "chore(data): monthly data refresh"
           branch: data-refresh/${{ github.run_id }}
           title: "Monthly data refresh"
           body: |
-            Automated FRED + ISM spot-check refresh.
+            Automated FRED + PRNewswire + Wayback refresh.
+
+            Note: the Wayback steps are `continue-on-error`. If either was
+            skipped, the archived series are unchanged in this PR — the
+            freshness thresholds in `npm run check-data` are what fail if
+            that keeps happening.
 
             **Maintainer checklist before merging:**
             - [ ] Read this month's ISM news release and append a row to `data/ism-spot-checks.json`
             - [ ] Re-run `npm run check-data` locally to confirm reconciliation passes
             - [ ] Eyeball the diff for any series that looks wildly off prior values
+          # Every file the steps above write. Listed explicitly rather than as
+          # a data/*.json glob so a new scratch file in data/ can't silently
+          # ride along into a data PR. The .wayback-*-cdx-cache entries are
+          # deliberate — data/CONTRIBUTING.md asks for them to be committed
+          # alongside data changes.
           add-paths: |
             data/fred/*.json
+            data/pmi-curated.json
+            data/nmi-curated.json
+            data/pmi-wayback.json
+            data/pmi-subindices-wayback.json
+            data/nmi-wayback.json
+            data/nmi-subindices-wayback.json
+            data/.wayback-cdx-cache.json
+            data/.wayback-nmi-cdx-cache.json

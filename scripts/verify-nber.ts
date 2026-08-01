@@ -20,46 +20,56 @@ const usrec = JSON.parse(
   readFileSync(resolve(process.cwd(), "data", "fred", "USREC.json"), "utf8"),
 ) as UsRec;
 
-let failures = 0;
+// Wrapped in main() rather than using top-level await: tsx transpiles these
+// scripts to CJS (package.json has no "type": "module"), where top-level
+// await is a hard build error.
+async function main() {
+  let failures = 0;
 
-for (const period of usrec.periods) {
-  if (!period.sourceUrl) {
-    console.error(`FAIL  ${period.peak}–${period.trough}  missing sourceUrl`);
-    failures += 1;
-    continue;
-  }
-  if (!/^https?:\/\/(www\.)?nber\.org\b/.test(period.sourceUrl)) {
-    console.error(
-      `FAIL  ${period.peak}–${period.trough}  sourceUrl is not on nber.org: ${period.sourceUrl}`,
-    );
-    failures += 1;
-    continue;
-  }
-  try {
-    // HEAD first; some NBER pages reject HEAD, fall back to GET in that case.
-    let res = await fetch(period.sourceUrl, { method: "HEAD" });
-    if (res.status === 405 || res.status === 403) {
-      res = await fetch(period.sourceUrl, { method: "GET" });
+  for (const period of usrec.periods) {
+    if (!period.sourceUrl) {
+      console.error(`FAIL  ${period.peak}–${period.trough}  missing sourceUrl`);
+      failures += 1;
+      continue;
     }
-    if (!res.ok) {
+    if (!/^https?:\/\/(www\.)?nber\.org\b/.test(period.sourceUrl)) {
       console.error(
-        `FAIL  ${period.peak}–${period.trough}  HTTP ${res.status} on ${period.sourceUrl}`,
+        `FAIL  ${period.peak}–${period.trough}  sourceUrl is not on nber.org: ${period.sourceUrl}`,
       );
       failures += 1;
-    } else {
-      console.log(`OK    ${period.peak}–${period.trough}  ${res.status}  ${period.sourceUrl}`);
+      continue;
     }
-  } catch (err) {
-    console.error(
-      `FAIL  ${period.peak}–${period.trough}  fetch error: ${(err as Error).message}`,
-    );
-    failures += 1;
+    try {
+      // HEAD first; some NBER pages reject HEAD, fall back to GET in that case.
+      let res = await fetch(period.sourceUrl, { method: "HEAD" });
+      if (res.status === 405 || res.status === 403) {
+        res = await fetch(period.sourceUrl, { method: "GET" });
+      }
+      if (!res.ok) {
+        console.error(
+          `FAIL  ${period.peak}–${period.trough}  HTTP ${res.status} on ${period.sourceUrl}`,
+        );
+        failures += 1;
+      } else {
+        console.log(`OK    ${period.peak}–${period.trough}  ${res.status}  ${period.sourceUrl}`);
+      }
+    } catch (err) {
+      console.error(
+        `FAIL  ${period.peak}–${period.trough}  fetch error: ${(err as Error).message}`,
+      );
+      failures += 1;
+    }
   }
+
+  if (failures > 0) {
+    console.error(`\n${failures} NBER citation(s) failed verification.`);
+    process.exit(1);
+  }
+
+  console.log(`\nAll ${usrec.periods.length} NBER citations verified.`);
 }
 
-if (failures > 0) {
-  console.error(`\n${failures} NBER citation(s) failed verification.`);
+main().catch((err) => {
+  console.error(err);
   process.exit(1);
-}
-
-console.log(`\nAll ${usrec.periods.length} NBER citations verified.`);
+});
