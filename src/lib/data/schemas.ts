@@ -3,6 +3,53 @@ import { z } from "zod";
 const isoDateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "expected YYYY-MM-DD");
 
 /**
+ * Hosts a citation may point at. Every sourceUrl in this repo is written by a
+ * scraper reading untrusted remote HTML, and ends up rendered as an `href`, so
+ * `z.string().url()` alone is not enough — it accepts `javascript:` and
+ * `data:` URLs, which would make a poisoned row in an auto-generated data PR
+ * an XSS vector. (Those PRs are thousands of lines of JSON churn; a single
+ * altered URL is not something review reliably catches.)
+ *
+ * Keep in sync with the importers in scripts/:
+ *   web.archive.org  — import-wayback-*.ts
+ *   ismworld.org     — ISM primary releases
+ *   prnewswire.com   — import-prnewswire-ism.ts
+ *   nber.org         — recession dating, verified by verify-nber.ts
+ *   forecasts.org    — import-forecastsorg.ts historical mirror
+ *   stlouisfed.org   — FRED
+ */
+const CITATION_HOSTS = [
+  "web.archive.org",
+  "ismworld.org",
+  "prnewswire.com",
+  "nber.org",
+  "forecasts.org",
+  "stlouisfed.org",
+] as const;
+
+/**
+ * An https URL on a known citation host. Rejects any other scheme outright,
+ * so `javascript:`/`data:` can never reach an href.
+ */
+const sourceUrlSchema = z
+  .string()
+  .url()
+  .refine((raw) => {
+    let parsed: URL;
+    try {
+      parsed = new URL(raw);
+    } catch {
+      return false;
+    }
+    if (parsed.protocol !== "https:") return false;
+    // Match the registrable domain so `www.` and other subdomains pass, while
+    // `nber.org.evil.com` and `notnber.org` do not.
+    return CITATION_HOSTS.some(
+      (host) => parsed.hostname === host || parsed.hostname.endsWith(`.${host}`),
+    );
+  }, `sourceUrl must be an https URL on a known citation host (${CITATION_HOSTS.join(", ")})`);
+
+/**
  * How a piece of data came to be in this repo. Drives UI badges and the
  * "no synthetic in production" CI check.
  */
@@ -50,7 +97,7 @@ export const recessionPeriodSchema = z.object({
   peak: z.string().regex(/^\d{4}-\d{2}-01$/),
   trough: z.string().regex(/^\d{4}-\d{2}-01$/),
   label: z.string().optional(),
-  sourceUrl: z.string().url(),
+  sourceUrl: sourceUrlSchema,
 });
 export type RecessionPeriod = z.infer<typeof recessionPeriodSchema>;
 
@@ -70,7 +117,7 @@ export type RecessionsFile = z.infer<typeof recessionsFileSchema>;
  * monthly Report on Business news release URL).
  */
 export const curatedObservationSchema = monthlyObservationSchema.extend({
-  sourceUrl: z.string().url(),
+  sourceUrl: sourceUrlSchema,
 });
 export type CuratedObservation = z.infer<typeof curatedObservationSchema>;
 
@@ -113,7 +160,7 @@ export const industryMonthlyRowSchema = z.object({
   date: z.string().regex(/^\d{4}-\d{2}-01$/),
   growing: z.array(z.string()),
   contracting: z.array(z.string()),
-  sourceUrl: z.string().url(),
+  sourceUrl: sourceUrlSchema,
 });
 export type IndustryMonthlyRow = z.infer<typeof industryMonthlyRowSchema>;
 
@@ -142,7 +189,7 @@ export const subindexRowSchema = z.object({
   employment: z.number().finite(),
   supplierDeliveries: z.number().finite(),
   inventories: z.number().finite(),
-  sourceUrl: z.string().url(),
+  sourceUrl: sourceUrlSchema,
 });
 export type SubindexRow = z.infer<typeof subindexRowSchema>;
 
@@ -221,7 +268,7 @@ export const servicesSubindexRowSchema = z.object({
   newOrders: z.number().finite(),
   employment: z.number().finite(),
   supplierDeliveries: z.number().finite(),
-  sourceUrl: z.string().url(),
+  sourceUrl: sourceUrlSchema,
 });
 export type ServicesSubindexRow = z.infer<typeof servicesSubindexRowSchema>;
 
