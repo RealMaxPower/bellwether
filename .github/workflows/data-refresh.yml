@@ -28,17 +28,28 @@ jobs:
 
       - run: npm ci
 
-      # Fail loudly and immediately rather than 20 minutes into the scrapes.
-      - name: Check FRED_API_KEY is configured
+      # Fail loudly and immediately rather than 40 minutes into the scrapes —
+      # the last run got all the way to the final step before dying on a
+      # missing permission, throwing away the whole scrape.
+      - name: Check required secrets are configured
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          DATA_REFRESH_TOKEN: ${{ secrets.DATA_REFRESH_TOKEN }}
         run: |
+          missing=0
           if [ -z "$FRED_API_KEY" ]; then
             echo "::error::FRED_API_KEY repository secret is not set."
             echo "Create one at https://fred.stlouisfed.org/docs/api/api_key.html,"
             echo "then add it under Settings → Secrets and variables → Actions."
-            exit 1
+            missing=1
           fi
+          if [ -z "$DATA_REFRESH_TOKEN" ]; then
+            echo "::error::DATA_REFRESH_TOKEN repository secret is not set."
+            echo "Fine-grained PAT scoped to this repo only, with Contents:"
+            echo "Read and write + Pull requests: Read and write."
+            missing=1
+          fi
+          exit $missing
 
       - name: Pull latest FRED snapshots
         env:
@@ -79,6 +90,17 @@ jobs:
       - name: Open PR with refreshed data
         uses: peter-evans/create-pull-request@v6
         with:
+          # Deliberately NOT the default GITHUB_TOKEN. Letting Actions open PRs
+          # requires the repo-wide "Allow GitHub Actions to create and approve
+          # pull requests" switch, and that same switch would let any workflow
+          # holding pull-requests:write *approve* a PR — which on this repo
+          # would satisfy main's 1-required-review branch protection. A
+          # dedicated fine-grained PAT keeps that switch off.
+          #
+          # Side benefit: PRs opened with a PAT do trigger CI, whereas ones
+          # opened with GITHUB_TOKEN deliberately do not (recursion guard), so
+          # data PRs now get checked instead of arriving with no status at all.
+          token: ${{ secrets.DATA_REFRESH_TOKEN }}
           commit-message: "chore(data): monthly data refresh"
           branch: data-refresh/${{ github.run_id }}
           title: "Monthly data refresh"
