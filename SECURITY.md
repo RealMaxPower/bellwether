@@ -37,6 +37,35 @@ Bellwether has no user accounts, no database, and no payment flow. It serves che
 
 Out of scope: the accuracy of economic data itself (open a regular issue using the **Data correction** template), and findings that require physical access or social engineering of a maintainer.
 
+## Known dependency exceptions
+
+Advisories we have assessed as not reachable in this application, and
+therefore dismissed rather than patched. Each is revisited when its
+condition changes. Anyone running `npm audit` against this repo will see
+these, so the reasoning is recorded here rather than only in the GitHub UI.
+
+### sharp — libvips CVEs (CVE-2026-33327/33328/35590/35591)
+
+Installed: `sharp@0.34.5`. Fixed in `0.35.0`.
+
+`sharp` is an **optional, transitive** dependency of Next.js — it is not in
+our `package.json`. `next@16.2.12` declares `sharp ^0.34.5`, so `0.35.0`
+falls outside the range it accepts; neither Dependabot nor npm can move it,
+and forcing it via `overrides` would mean shipping a combination Next does
+not support.
+
+It is reached only through `next/image`. Every `<Image src>` in this app is
+a local static path under `public/`, and neither `images.remotePatterns`
+nor `images.domains` is configured — so Next will not fetch or optimise any
+remote image. The libvips CVEs require attacker-controlled image input,
+which has no path to reach it here.
+
+**Revisit if any of these become true:**
+
+- `images.remotePatterns` or `images.domains` is added to `next.config`
+- user-supplied or third-party images are introduced
+- Next widens its `sharp` range — at which point simply take the upgrade
+
 ## A note on secrets
 
 The only secret the project uses is a free FRED API key, supplied at build/refresh time via `.env.local` (gitignored) or a GitHub Actions secret. It is never required at runtime and is never committed. If you ever find a credential in the repo or its history, treat it as a vulnerability and report it privately.
