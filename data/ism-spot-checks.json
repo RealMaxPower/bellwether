@@ -1,6 +1,42 @@
 {
   "title": "ISM Manufacturing PMI spot-check values",
-  "description": "Append-only list of headline PMI values copied directly from ISM's monthly Report on Business news releases. Used by scripts/reconcile-ism.ts to assert FRED's NAPM mirror agrees with ISM's published value (FRED rounds to one decimal, so tolerance is 0.5). Add one entry per ISM monthly release after running `npm run refresh-data`.",
+  "description": "Headline PMI values read by hand out of the prose of ISM's monthly Report on Business releases, then compared by scripts/reconcile-ism.ts against the merged series this site publishes. Tolerance is 0.5 because ISM reports to one decimal. These exist for months a single source carries: where both the Wayback archive and the curated/PRNewswire series hold a month, reconcile-ism.ts cross-checks them automatically and no manual entry is needed. Seed at acquisition-path boundaries — a scraper regression corrupts values per URL era, so one anchor per era catches it.",
   "tolerance": 0.5,
-  "entries": []
+  "entries": [
+    {
+      "date": "2014-09-01",
+      "headlinePmi": 56.6,
+      "sourceUrl": "https://web.archive.org/web/20141018194916/http://www.ism.ws:80/ismreport/mfgrob.cfm",
+      "addedAt": "2026-08-02",
+      "note": "First month of the series. Legacy ism.ws/MfgROB.cfm era — a single rotating page where the snapshot timestamp, not the URL, determines the month, so a mis-dated capture would silently attribute the wrong value. Prose: \"The September PMI registered 56.6 percent\"."
+    },
+    {
+      "date": "2015-03-01",
+      "headlinePmi": 51.5,
+      "sourceUrl": "https://web.archive.org/web/20150402072244/http://www.ism.ws:80/ismreport/mfgrob.cfm",
+      "addedAt": "2026-08-02",
+      "note": "Last month before the structural 2015-04 to 2020-05 archive gap. Legacy ism.ws era. Prose: \"The March PMI registered 51.5 percent\"."
+    },
+    {
+      "date": "2020-06-01",
+      "headlinePmi": 52.6,
+      "sourceUrl": "https://web.archive.org/web/20200809031403/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/",
+      "addedAt": "2026-08-02",
+      "note": "First month after the structural gap, and the first on the ismworld.org per-month URL scheme. Prose: \"The June PMI registered 52.6 percent\"."
+    },
+    {
+      "date": "2025-07-01",
+      "headlinePmi": 48,
+      "sourceUrl": "https://web.archive.org/web/20250801142444/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/july/",
+      "addedAt": "2026-08-02",
+      "note": "Last month on the /ism-report-on-business/ path. ISM renamed the segment to /ism-pmi-reports/ immediately after, which silently stalled both scrapers here until 2026-08. Prose: \"The Manufacturing PMI registered 48 percent in July\"."
+    },
+    {
+      "date": "2025-09-01",
+      "headlinePmi": 49.1,
+      "sourceUrl": "https://web.archive.org/web/20251001174028/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/september/",
+      "addedAt": "2026-08-02",
+      "note": "First month recovered from the renamed /ism-pmi-reports/ path. Prose: \"The Manufacturing PMI registered 49.1 percent in September\"."
+    }
+  ]
 }
