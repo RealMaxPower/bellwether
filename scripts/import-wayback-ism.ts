@@ -34,6 +34,13 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
+import {
+  isCacheUsable,
+  resolveMonth,
+  type CdxRow,
+  type MonthQueryResult,
+} from "./lib/cdx-index";
+
 const DEFAULT_START = "2014-09";
 const PAGE_SLEEP_MS = 2500; // between page fetches in phase 2
 const CDX_SLEEP_MS = 5000; // between CDX queries in phase 1
@@ -55,10 +62,6 @@ const PMI_REGEX =
   /PMI[^.]{0,300}?registered\s+(?:an\s+)?([0-9]{1,3}(?:\.[0-9])?)\s*percent/i;
 
 type Row = { date: string; value: number; sourceUrl: string };
-interface CdxRow {
-  timestamp: string;
-  original: string;
-}
 
 function sleep(ms: number) {
   return new Promise<void>((res) => setTimeout(res, ms));
@@ -115,22 +118,27 @@ async function cdxQuery(
   targetUrl: string,
   windowStart: string,
   windowEnd: string,
-): Promise<CdxRow[]> {
+): Promise<CdxRow[] | null> {
   const u =
     `https://web.archive.org/cdx/search/cdx?url=${encodeURIComponent(targetUrl)}` +
     `&from=${windowStart}&to=${windowEnd}` +
     `&filter=statuscode:200&collapse=digest&output=json&limit=1000`;
   const res = await fetchWithRetry(u);
-  if (!res || !res.ok) return [];
+  // null means "could not answer" (network error, non-2xx, unparseable body);
+  // [] means "Wayback genuinely has no matching captures". Collapsing both to
+  // [] made a transient archive.org failure indistinguishable from a URL that
+  // was never archived, which is how a cached index silently got zeroed.
+  if (!res || !res.ok) return null;
   const text = await res.text();
   if (!text.trim() || text.trim() === "[]") return [];
   let parsed: unknown;
   try {
     parsed = JSON.parse(text);
   } catch {
-    return [];
+    return null;
   }
-  if (!Array.isArray(parsed) || parsed.length < 2) return [];
+  if (!Array.isArray(parsed)) return null;
+  if (parsed.length < 2) return [];
   const rows = parsed.slice(1) as unknown[][];
   return rows
     .map((r) => ({ timestamp: String(r[1]), original: String(r[2]) }))
@@ -156,14 +164,27 @@ async function loadSnapshotIndex(): Promise<{
   modernByMonth: Map<string, CdxRow[]>;
   legacy: CdxRow[];
 }> {
+  // Whatever is on disk, even if stale or the wrong version. A rebuild falls
+  // back to it for any query that fails, so a bad day at archive.org degrades
+  // to "kept the previous index" rather than "wrote an empty one".
+  let previous: CdxCache | null = null;
   // Use cached CDX index if fresh — keeps phase-1 CDX traffic out of the
   // way of phase-2 page-fetch traffic, which Wayback rate-limits separately
   // but together when bursted.
   if (existsSync(CDX_CACHE_PATH)) {
     try {
       const cache = JSON.parse(readFileSync(CDX_CACHE_PATH, "utf8")) as CdxCache;
+      previous = cache;
       const age = Date.now() - cache.builtAt;
-      if (cache.version === CDX_CACHE_VERSION && age < CDX_CACHE_TTL_MS) {
+      if (
+        isCacheUsable({
+          version: cache.version,
+          expectedVersion: CDX_CACHE_VERSION,
+          ageMs: age,
+          ttlMs: CDX_CACHE_TTL_MS,
+          legacyCount: cache.legacy?.length ?? 0,
+        })
+      ) {
         const modernByMonth = new Map<string, CdxRow[]>(
           Object.entries(cache.modernByMonth),
         );
@@ -203,17 +224,24 @@ async function loadSnapshotIndex(): Promise<{
   );
   const modernByMonth = new Map<string, CdxRow[]>();
   for (const [i, name] of MONTH_NAMES.entries()) {
-    const rows = await cdxQueryModernMonth(name);
+    const got = await cdxQueryModernMonth(name);
+    const { rows, note } = resolveMonth(got, previous?.modernByMonth?.[name] ?? []);
     modernByMonth.set(name, rows);
-    console.log(`  [${i + 1}/13] modern /pmi/${name}/ → ${rows.length} snapshot(s)`);
+    console.log(
+      `  [${i + 1}/13] modern /pmi/${name}/ → ${rows.length} snapshot(s)${note}`,
+    );
     await sleep(CDX_SLEEP_MS);
   }
-  const legacy = await cdxQuery(
+  const legacyRows = await cdxQuery(
     "http://www.ism.ws/ISMReport/MfgROB.cfm",
     "20140801",
     "20181231",
   );
-  console.log(`  [13/13] legacy MfgROB.cfm → ${legacy.length} snapshot(s)`);
+  const legacy = legacyRows ?? previous?.legacy ?? [];
+  console.log(
+    `  [13/13] legacy MfgROB.cfm → ${legacy.length} snapshot(s)` +
+      (legacyRows === null ? " (query failed — kept previous)" : ""),
+  );
 
   const cache: CdxCache = {
     version: CDX_CACHE_VERSION,
@@ -233,16 +261,36 @@ async function loadSnapshotIndex(): Promise<{
 // the old path holds the pre-rename history, the new one everything since.
 const MODERN_PATH_SEGMENTS = ["ism-report-on-business", "ism-pmi-reports"] as const;
 
-async function cdxQueryModernMonth(monthName: string): Promise<CdxRow[]> {
+/**
+ * null  — every path era failed, we learned nothing.
+ * complete:false — at least one era answered but another failed, so the rows
+ *   are a floor rather than the full set and must not replace a richer index.
+ */
+async function cdxQueryModernMonth(
+  monthName: string,
+): Promise<MonthQueryResult> {
   const rows: CdxRow[] = [];
+  let answered = 0;
+  let failed = 0;
   for (const [i, segment] of MODERN_PATH_SEGMENTS.entries()) {
     if (i > 0) await sleep(CDX_SLEEP_MS);
     const url =
       `https://www.ismworld.org/supply-management-news-and-reports/reports/` +
       `${segment}/pmi/${monthName}/`;
-    rows.push(...(await cdxQuery(url, "20180101", "20261231")));
+    const got = await cdxQuery(url, "20180101", "20261231");
+    if (got === null) {
+      console.warn(`    ! CDX query failed: ${segment}/pmi/${monthName}/`);
+      failed += 1;
+      continue;
+    }
+    answered += 1;
+    rows.push(...got);
   }
-  return rows.sort((a, b) => a.timestamp.localeCompare(b.timestamp));
+  if (answered === 0) return null;
+  return {
+    rows: rows.sort((a, b) => a.timestamp.localeCompare(b.timestamp)),
+    complete: failed === 0,
+  };
 }
 
 async function refreshEmptySlots(
@@ -251,9 +299,10 @@ async function refreshEmptySlots(
 ): Promise<Map<string, CdxRow[]>> {
   for (const name of empties) {
     await sleep(CDX_SLEEP_MS);
-    const rows = await cdxQueryModernMonth(name);
+    const got = await cdxQueryModernMonth(name);
+    const { rows, note } = resolveMonth(got, modernByMonth.get(name) ?? []);
     modernByMonth.set(name, rows);
-    console.log(`  refilled /pmi/${name}/ → ${rows.length} snapshot(s)`);
+    console.log(`  refilled /pmi/${name}/ → ${rows.length} snapshot(s)${note}`);
   }
   return modernByMonth;
 }
