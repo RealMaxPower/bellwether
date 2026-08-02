@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "builtAt": 1785568142956,
+  "builtAt": 1785689588749,
   "modernByMonth": {
     "january": [
       {
@@ -126,26 +126,6 @@
       {
         "timestamp": "20250401023104",
         "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/january/"
-      },
-      {
-        "timestamp": "20251008195240",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/january/"
-      },
-      {
-        "timestamp": "20260204213647",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/january/"
-      },
-      {
-        "timestamp": "20260205083810",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/january"
-      },
-      {
-        "timestamp": "20260205083812",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/january/"
-      },
-      {
-        "timestamp": "20260315082423",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/january/"
       }
     ],
     "february": [
@@ -468,30 +448,6 @@
       {
         "timestamp": "20250406153533",
         "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/february/"
-      },
-      {
-        "timestamp": "20251008191826",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/february/"
-      },
-      {
-        "timestamp": "20251211191216",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/february"
-      },
-      {
-        "timestamp": "20260122101233",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/february/"
-      },
-      {
-        "timestamp": "20260304173716",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/february/"
-      },
-      {
-        "timestamp": "20260315000836",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/february/"
-      },
-      {
-        "timestamp": "20260416233536",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/february/"
       }
     ],
     "march": [
@@ -1076,6 +1032,34 @@
       {
         "timestamp": "20250710045249",
         "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/april"
+      },
+      {
+        "timestamp": "20251008200909",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/april/"
+      },
+      {
+        "timestamp": "20251023221416",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/april/"
+      },
+      {
+        "timestamp": "20251112040857",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/april/"
+      },
+      {
+        "timestamp": "20260117163613",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/april/"
+      },
+      {
+        "timestamp": "20260120004736",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/april/"
+      },
+      {
+        "timestamp": "20260505221050",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/april/"
+      },
+      {
+        "timestamp": "20260518070404",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/april/"
       }
     ],
     "may": [
@@ -2006,265 +1990,37 @@
       {
         "timestamp": "20250901113030",
         "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/july/"
+      },
+      {
+        "timestamp": "20250907153447",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
+      },
+      {
+        "timestamp": "20250916203333",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
+      },
+      {
+        "timestamp": "20251026224916",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
+      },
+      {
+        "timestamp": "20251210183036",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
+      },
+      {
+        "timestamp": "20260117170230",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july"
+      },
+      {
+        "timestamp": "20260223180501",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
+      },
+      {
+        "timestamp": "20260417002248",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
       }
     ],
     "august": [
-      {
-        "timestamp": "20200906172645",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20200918132209",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20200922112506",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20200926013810",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20201027103601",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20210903140904",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20210903151921",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20210904133709",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20211005145347",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20211005172622",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20211103143834",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20211113161030",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20220907083724",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20220908153937",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20220908201944",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20220908202656",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20220919184840",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230906175257",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230906200645",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230906220936",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230906222329",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907000911",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907002319",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907003343",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907003928",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907003935",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907005019",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907015534",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907022225",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907022753",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907035223",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907062235",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907063837",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907070947",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907073524",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907074103",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907082242",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907082843",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907084914",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907085609",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907090544",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907091141",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230907154639",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230912215508",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230912222341",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230912232321",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230912235349",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230913013227",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230913015839",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230913020659",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230913040250",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230913050902",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230923104046",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20230925161952",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20240905173754",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20240905213739",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20240905234045",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20240906000726",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20240908015157",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20240908152031",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20240908202107",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20240909010748",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20240911092942",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
-      {
-        "timestamp": "20240912143652",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/august/"
-      },
       {
         "timestamp": "20250904144412",
         "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/august/"
@@ -3094,254 +2850,194 @@
     ],
     "october": [
       {
-        "timestamp": "20251008190602",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"
+        "timestamp": "20201105011330",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
       },
       {
-        "timestamp": "20251105163431",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"
+        "timestamp": "20201111074312",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
       },
       {
-        "timestamp": "20251111224210",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"
+        "timestamp": "20201114143353",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
       },
       {
-        "timestamp": "20251117183339",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"
+        "timestamp": "20201117124555",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
       },
       {
-        "timestamp": "20251209214343",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"
+        "timestamp": "20201118051153",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
       },
       {
-        "timestamp": "20251212044342",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"
+        "timestamp": "20201120084614",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
       },
       {
-        "timestamp": "20260215225637",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"
+        "timestamp": "20201121075053",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
       },
       {
-        "timestamp": "20260518060517",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"
+        "timestamp": "20201122040226",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20201122041230",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20201122101757",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20201126231351",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20201128005126",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20210118035834",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20211103154042",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20211103160617",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20211103183620",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20211104023741",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20211104061146",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20211106191459",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20211119163412",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20211209033545",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20221103143322",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20221103185236",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20221104185538",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20221105025348",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20221105045143",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20221106173452",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20221109101847",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20221114045929",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20231103205157",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20231103213813",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20231105213637",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20231110214946",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20231118091312",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20241108221045",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20241109030830",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20241109173251",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20241109184359",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20241109215540",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20241110065751",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20241111025340",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20241114163924",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
+      },
+      {
+        "timestamp": "20241118142417",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/october/"
       }
     ],
     "november": [
       {
-        "timestamp": "20201209010500",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
+        "timestamp": "20251008195715",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/november/"
       },
       {
-        "timestamp": "20201215112416",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
+        "timestamp": "20251203184018",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/november/"
       },
       {
-        "timestamp": "20210120233623",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
+        "timestamp": "20251210180130",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/november/"
       },
       {
-        "timestamp": "20211205170537",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20211206024824",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20220309163115",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221205153915",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221205173835",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221205210656",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221205213734",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221206005357",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221206011953",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221206015024",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221206131018",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221206202210",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221207182301",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221207182718",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221207195031",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221208193630",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221209003624",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221209052332",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221209152440",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221209225109",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221210124848",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221210132319",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221210211540",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221210214100",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221210220724",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221210233849",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221211170450",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221211172352",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221212155456",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221212173541",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221212174225",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221212210252",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20221212225521",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20230112032658",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20231205225517",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20231219113929",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20240107164737",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20240124223112",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20240204224004",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20241204190724",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20241204205104",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20241204230725",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20241204233843",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20241205000841",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20241205212250",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20241206035022",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20241208052107",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20241213005800",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20250110160816",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20250219071804",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
-      },
-      {
-        "timestamp": "20250322133750",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/november/"
+        "timestamp": "20260415041812",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/november/"
       }
     ],
     "december": [
@@ -3536,137 +3232,8 @@
       {
         "timestamp": "20250219071457",
         "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/december/"
-      },
-      {
-        "timestamp": "20251008190639",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/december/"
-      },
-      {
-        "timestamp": "20251115000210",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/december/"
-      },
-      {
-        "timestamp": "20260107183103",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/december/"
-      },
-      {
-        "timestamp": "20260217082654",
-        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/december/"
       }
     ]
   },
-  "legacy": [
-    {
-      "timestamp": "20140807225027",
-      "original": "http://www.ism.ws:80/ismreport/NONmfgrob.cfm"
-    },
-    {
-      "timestamp": "20140817051939",
-      "original": "http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
-    },
-    {
-      "timestamp": "20140818024839",
-      "original": "http://www.ism.ws/ISMReport/NonMfgROB.cfm"
-    },
-    {
-      "timestamp": "20140818161508",
-      "original": "http://www.ism.ws:80/ISMReport/NonMfgROB.cfm?"
-    },
-    {
-      "timestamp": "20140818161705",
-      "original": "http://www.ism.ws:80/ISMReport/nonmfgROB.cfm"
-    },
-    {
-      "timestamp": "20141020122800",
-      "original": "http://www.ism.ws:80/ISMReport/nonmfgROB.cfm"
-    },
-    {
-      "timestamp": "20141020140957",
-      "original": "http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
-    },
-    {
-      "timestamp": "20141021011647",
-      "original": "http://www.ism.ws:80/ISMReport/NonMfgROB.cfm?"
-    },
-    {
-      "timestamp": "20141221053517",
-      "original": "http://www.ism.ws:80/ISMReport/NonMfgROB.cfm?"
-    },
-    {
-      "timestamp": "20141221082707",
-      "original": "http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
-    },
-    {
-      "timestamp": "20141221122947",
-      "original": "http://www.ism.ws:80/ISMReport/nonmfgROB.cfm"
-    },
-    {
-      "timestamp": "20150111064826",
-      "original": "http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
-    },
-    {
-      "timestamp": "20150124143624",
-      "original": "http://www.ism.ws:80/ISMReport/NonMfgROB.cfm?"
-    },
-    {
-      "timestamp": "20150129083807",
-      "original": "http://www.ism.ws:80/ISMReport/nonmfgROB.cfm"
-    },
-    {
-      "timestamp": "20150208024858",
-      "original": "http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
-    },
-    {
-      "timestamp": "20150208115947",
-      "original": "http://www.ism.ws:80/ISMReport/NonMfgROB.cfm?"
-    },
-    {
-      "timestamp": "20150209051639",
-      "original": "http://www.ism.ws:80/ISMreport/nonmfgrob.cfm?"
-    },
-    {
-      "timestamp": "20150307201212",
-      "original": "http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
-    },
-    {
-      "timestamp": "20150309021057",
-      "original": "http://www.ism.ws:80/ISMReport/nonmfgROB.cfm"
-    },
-    {
-      "timestamp": "20150310234840",
-      "original": "http://www.ism.ws:80/ISMReport/NonMfgROB.cfm?"
-    },
-    {
-      "timestamp": "20150311183134",
-      "original": "http://www.ism.ws:80/ISMreport/nonmfgrob.cfm?"
-    },
-    {
-      "timestamp": "20150315030626",
-      "original": "http://www.ism.ws/ISMReport/nonmfgROB.cfm"
-    },
-    {
-      "timestamp": "20150329011023",
-      "original": "http://www.ism.ws/ISMReport/NonMfgROB.cfm"
-    },
-    {
-      "timestamp": "20150407035016",
-      "original": "http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
-    },
-    {
-      "timestamp": "20150409054547",
-      "original": "http://www.ism.ws:80/ISMReport/nonmfgROB.cfm"
-    },
-    {
-      "timestamp": "20150411090826",
-      "original": "http://www.ism.ws:80/ISMReport/NonMfgROB.cfm?"
-    },
-    {
-      "timestamp": "20150411091405",
-      "original": "http://www.ism.ws:80/ISMreport/nonmfgrob.cfm?"
-    },
-    {
-      "timestamp": "20150414143220",
-      "original": "http://www.ism.ws/ismreport/nonmfgrob.cfm"
-    }
-  ]
+  "legacy": []
 }
