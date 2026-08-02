@@ -1,0 +1,35 @@
+{
+  "title": "ISM Services PMI / NMI spot-check values",
+  "description": "Headline Services PMI (formerly NMI) values read by hand out of the prose of ISM's monthly Services Report on Business releases, then compared by scripts/reconcile-ism.ts against the merged Services series this site publishes. Tolerance is 0.5 because ISM reports to one decimal. These exist for months a single source carries — 68 of 79 for Services, since PRNewswire coverage only begins in 2025. Where both the Wayback archive and the curated series hold a month, reconcile-ism.ts cross-checks them automatically and no manual entry is needed. Seed at acquisition-path boundaries: a scraper regression corrupts values per URL era, so one anchor per era catches it. Parallel to data/ism-spot-checks.json for Manufacturing.",
+  "tolerance": 0.5,
+  "entries": [
+    {
+      "date": "2014-09-01",
+      "headlinePmi": 58.6,
+      "sourceUrl": "https://web.archive.org/web/20141020122800/http://www.ism.ws:80/ISMReport/nonmfgROB.cfm",
+      "addedAt": "2026-08-02",
+      "note": "First month of the series. Legacy ism.ws/NonMfgROB.cfm era — a single rotating page where the snapshot timestamp, not the URL, determines the month, so a mis-dated capture would silently attribute the wrong value. Prose: \"The NMI registered 58.6 percent in September\"."
+    },
+    {
+      "date": "2015-03-01",
+      "headlinePmi": 56.5,
+      "sourceUrl": "https://web.archive.org/web/20150407035016/http://www.ism.ws:80/ismreport/nonmfgrob.cfm",
+      "addedAt": "2026-08-02",
+      "note": "Last month before the structural 2015-04 to 2020-05 archive gap. Legacy ism.ws era. Prose: \"The NMI registered 56.5 percent in March\"."
+    },
+    {
+      "date": "2020-06-01",
+      "headlinePmi": 57.1,
+      "sourceUrl": "https://web.archive.org/web/20200809015023/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/june/",
+      "addedAt": "2026-08-02",
+      "note": "First month after the structural gap, and the first on the ismworld.org per-month URL scheme. Prose: \"The NMI registered 57.1 percent\"."
+    },
+    {
+      "date": "2025-07-01",
+      "headlinePmi": 50.1,
+      "sourceUrl": "https://web.archive.org/web/20250805152051/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/july/",
+      "addedAt": "2026-08-02",
+      "note": "Last single-source month, and the last on the /ism-report-on-business/ path. ISM renamed the segment to /ism-pmi-reports/ immediately after, which silently stalled the scraper here until 2026-08. Everything from 2025-08 on is cross-checked against PRNewswire automatically. Prose: \"In July, the Services PMI registered 50.1 percent\"."
+    }
+  ]
+}
