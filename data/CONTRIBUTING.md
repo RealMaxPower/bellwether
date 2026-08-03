@@ -13,7 +13,7 @@ npm run import-wayback 2024-01 2024-12      # explicit range
 
 For each calendar month it:
 1. CDX-queries Wayback for snapshots in the release window (the 30-45 days after ISM publishes the report — the first business day of the following month).
-2. Tries the modern URL pattern `ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/{month}/` first; falls back to the legacy `ism.ws/ISMReport/MfgROB.cfm` rotating page (pre-2018 era).
+2. Queries both modern URL eras — `ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/{month}/` (2018-mid → 2025-07) and `.../ism-pmi-reports/pmi/{month}/` (2025-08 → present, after ISM renamed the path segment) — then falls back to the legacy `ism.ws/ISMReport/MfgROB.cfm` rotating page (pre-2018 era). The old URLs now 301 to the new ones, and the CDX query filters to `statuscode:200`, so querying only the old path silently returned nothing from 2025-08 onward and froze both scrapers at 2025-07 for a year. Add a new segment here if ISM renames it again.
 3. Walks snapshots in chronological order, taking the earliest one whose `<title>` contains both the expected month name and year. This guards against the legacy rotating page still showing the *previous* month's content on its earliest captures of the release window.
 4. Extracts the value with `/PMI[^.]{0,300}?registered\s+(?:an\s+)?([0-9]{1,3}(?:\.[0-9])?)\s*percent/i` — handles both the common one-decimal form ("60.7 percent") and ISM's occasional whole-number form ("59 percent").
 5. Records `sourceUrl = https://web.archive.org/web/{timestamp}/{ism_url}` — a stable, primary-source citation that doesn't decay even if ISM later restructures or pulls the live page.
@@ -106,9 +106,20 @@ Schema enforces `provenance: "hand-curated"` and a per-observation `sourceUrl` �
 ## Refreshing FRED series (monthly)
 
 1. `FRED_API_KEY=... npm run refresh-data` — pulls real values into `data/fred/*.json`. The script stamps `provenance: "fred"` and `lastVerifiedAt: <today>` automatically.
-2. Read ISM's news release for the latest month at <https://www.ismworld.org/supply-management-news-and-reports/news-publications/news-feed/>. Copy the headline PMI number into `data/ism-spot-checks.json` as a new entry: `{ date, headlinePmi, sourceUrl, addedAt }`.
-3. `npm run check-data` — runs strict freshness, ISM reconciliation, and NBER citation verification. Must pass before commit.
-4. Commit. The diff for `data/fred/*.json` will be large; that's expected.
+2. `npm run check-data` — runs strict freshness, the three ISM reconciliations, and NBER citation verification. Must pass before commit.
+3. Commit. The diff for `data/fred/*.json` will be large; that's expected.
+
+## Reconciliation (`scripts/reconcile-ism.ts`)
+
+Three checks per sector, all against real data. Two are automatic; only the third needs a human.
+
+1. **Cross-source.** Every month held by both the Wayback archive and the curated/PRNewswire series must agree within ±0.5. Independent channels — an archived ISM page against an ISM press release — so agreement is evidence rather than a tautology. Widens by itself as PRNewswire coverage grows.
+2. **Composite.** The subindex mean must reproduce the headline, since the headline *is* the equal-weighted mean of its components. Purely internal, needs no external source, and it is the only check that catches a subindex scraped out of the wrong sentence. Correct months land within 0.08, so the 0.5 tolerance has an order of magnitude of headroom.
+3. **Spot-checks.** `data/ism-spot-checks.json` (Manufacturing) and `data/ism-services-spot-checks.json` (Services) hold headline values read by hand out of the release prose. These are the only check available for months a single source carries — most of both series.
+
+Seed spot-checks at *acquisition-path boundaries*, not simply the latest month: a scraper regression corrupts values per URL era, so one anchor per era catches it. The eras are the legacy `ism.ws` rotating page, the `ism-report-on-business` scheme, and the renamed `ism-pmi-reports` scheme. Read the value out of the release prose rather than re-running the scraper's regex — the point is to test extraction independently, and extraction is where the failures have actually been.
+
+Do **not** reconcile against `data/fred/NAPM*.json`. Those are synthetic stubs; comparing real values to them fails by construction while looking like a passing check.
 
 ## Adding a policy event
 

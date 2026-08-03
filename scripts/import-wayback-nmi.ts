@@ -47,8 +47,14 @@ const MONTH_NAMES = [
 // ISM Services releases sometimes lead with "Services PMI registered ..." and
 // sometimes "NMI registered ..." (terminology diverged across the 2021
 // rename). Match either and the rare "NMI® registered" variant.
+// `registered\s+[^.0-9]{0,40}?` rather than `registered\s+(?:an\s+)?`: ISM
+// often writes "registered an all-time high of 63.7 percent". Requiring the
+// number to follow "registered" immediately made March 2021 fail to match, so
+// the search fell through to the next sentence — "the previous high was in
+// October 2018, when the Services PMI registered 60.9 percent" — and stored a
+// 2018 value as March 2021. `[^.0-9]` keeps the qualifier inside one sentence.
 const NMI_REGEX =
-  /(?:Services\s+PMI|NMI)[®\s]*[^.]{0,300}?registered\s+(?:an\s+)?([0-9]{1,3}(?:\.[0-9])?)\s*percent/i;
+  /(?:Services\s+PMI|NMI)[®\s]*[^.]{0,300}?registered\s+[^.0-9]{0,40}?([0-9]{1,3}(?:\.[0-9])?)\s*percent/i;
 
 type Row = { date: string; value: number; sourceUrl: string };
 

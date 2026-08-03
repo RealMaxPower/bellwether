@@ -116,7 +116,7 @@ scripts/
   import-prnewswire-ism.ts        # current-vintage Mfg + Services headlines from PRNewswire
   import-forecastsorg.ts          # historical mirror
   import-pmi-csv.ts               # CSV → JSON for hand-curated rows
-  reconcile-ism.ts                # cross-checks
+  reconcile-ism.ts                # 3 checks/sector: cross-source, composite, spot-check
   verify-nber.ts                  # link health on NBER citations
 ```
 
@@ -128,6 +128,8 @@ Bellwether's edge is its provenance. Nothing is scraped live at request time —
 - **ISM Reports on Business** via the Internet Archive for the post-2014 headline, subindex, and per-industry history.
 - **ISM press releases on PRNewswire** for current-vintage Manufacturing and Services prints.
 - **A forecasts.org mirror** for the deep 1948→2014 history.
+
+Those sources are held against each other rather than trusted individually. `npm run check-data` requires that months carried by two sources agree, that each headline equals the mean of its own subindices, and that hand-read anchor values match what ships — so a scraper that starts quietly returning the wrong number fails the build instead of publishing.
 
 Every value is reproducible, and the **[per-cell provenance ledger](https://bellwether-nine.vercel.app/about-the-data)** traces each one to its source. See [data/CONTRIBUTING.md](data/CONTRIBUTING.md) for how the imports work and [data/LICENSING.md](data/LICENSING.md) for the per-source licensing posture before you redistribute the data.
 

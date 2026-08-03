@@ -47,6 +47,18 @@ type SpotChecksFile = {
 type SeriesObservation = { date: string; value: number; sourceUrl?: string };
 type SeriesFile = { id: string; observations: SeriesObservation[] };
 
+type SubindexRow = { date: string } & Record<string, number | string>;
+type SubindexFile = { observations: SubindexRow[] };
+
+/**
+ * The headline index is the equal-weighted mean of its components, so the two
+ * must agree. Correct months land within 0.08 of each other, so 0.5 leaves an
+ * order of magnitude of headroom while still catching a single mis-extracted
+ * component — one bad value moves the mean by (error / component count), which
+ * for the errors seen in practice was 1 to 3.8 points.
+ */
+const COMPOSITE_TOLERANCE = 0.5;
+
 const root = process.cwd();
 
 function readJson<T>(...segments: string[]): T {
@@ -63,6 +75,9 @@ interface Sector {
   wayback: SeriesFile;
   curated: SeriesFile;
   spotChecks: SpotChecksFile;
+  /** Subindex rows plus the component keys whose mean is the headline. */
+  subindices: SubindexFile;
+  components: readonly string[];
 }
 
 const sectors: Sector[] = [
@@ -72,12 +87,16 @@ const sectors: Sector[] = [
     wayback: readSeries("data", "pmi-wayback.json"),
     curated: readSeries("data", "pmi-curated.json"),
     spotChecks: readSpotChecks("data", "ism-spot-checks.json"),
+    subindices: readJson<SubindexFile>("data", "pmi-subindices-wayback.json"),
+    components: ["newOrders", "production", "employment", "supplierDeliveries", "inventories"],
   },
   {
     label: "Services",
     wayback: readSeries("data", "nmi-wayback.json"),
     curated: readSeries("data", "nmi-curated.json"),
     spotChecks: readSpotChecks("data", "ism-services-spot-checks.json"),
+    subindices: readJson<SubindexFile>("data", "nmi-subindices-wayback.json"),
+    components: ["businessActivity", "newOrders", "employment", "supplierDeliveries"],
   },
 ];
 
@@ -85,7 +104,7 @@ let failures = 0;
 const summary: string[] = [];
 
 for (const sector of sectors) {
-  const { label, historical, wayback, curated, spotChecks } = sector;
+  const { label, historical, wayback, curated, spotChecks, subindices, components } = sector;
   const { tolerance } = spotChecks;
 
   // -------------------------------------------------------------------------
@@ -167,7 +186,50 @@ for (const sector of sectors) {
     );
   }
 
-  summary.push(`${label}: ${overlap.length} cross-source, ${spotChecks.entries.length} spot-check`);
+  // -------------------------------------------------------------------------
+  // 3. Composite: the subindices must reproduce the headline
+  // -------------------------------------------------------------------------
+  // Purely internal — no external source needed — and the only check that
+  // catches a component scraped out of the wrong sentence. ISM packs several
+  // indices into a single sentence, so an anchored regex can drift onto a
+  // neighbouring index's number and store it under the wrong name; the value
+  // looks plausible in isolation and only the composite reveals it.
+
+  const headlineByDate = new Map(wayback.observations.map((o) => [o.date, o.value]));
+  let checked = 0;
+
+  console.log(`\n=== ${label} — composite (subindex mean vs headline)`);
+
+  for (const row of subindices.observations) {
+    const headline = headlineByDate.get(row.date);
+    if (headline === undefined) continue;
+    const values = components.map((c) => Number(row[c]));
+    if (values.some((v) => !Number.isFinite(v))) {
+      console.error(`FAIL  ${row.date}  non-numeric component in subindex row`);
+      failures += 1;
+      continue;
+    }
+    checked += 1;
+    const mean = values.reduce((a, b) => a + b, 0) / values.length;
+    const diff = Math.abs(mean - headline);
+    if (diff > COMPOSITE_TOLERANCE) {
+      console.error(
+        `FAIL  ${row.date}  mean(${components.length})=${mean.toFixed(2)}  headline=${headline}  Δ=${diff.toFixed(2)} > ${COMPOSITE_TOLERANCE}`,
+      );
+      const worst = components
+        .map((c) => `${c}=${row[c]}`)
+        .join("  ");
+      console.error(`      components: ${worst}`);
+      console.error(`      source: ${String(row.sourceUrl ?? "(none)")}`);
+      failures += 1;
+    }
+  }
+
+  console.log(`      ${checked} month(s) checked`);
+
+  summary.push(
+    `${label}: ${overlap.length} cross-source, ${spotChecks.entries.length} spot-check, ${checked} composite`,
+  );
 }
 
 if (failures > 0) {
