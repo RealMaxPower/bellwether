@@ -493,7 +493,7 @@
       "production": 48.5,
       "employment": 45.8,
       "supplierDeliveries": 46.2,
-      "inventories": 50,
+      "inventories": 44.8,
       "sourceUrl": "https://web.archive.org/web/20231201184042/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/november/"
     },
     {
@@ -707,6 +707,16 @@
       "sourceUrl": "https://web.archive.org/web/20250902155544/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/august/"
     },
     {
+      "date": "2025-09-01",
+      "composite": 49.1,
+      "newOrders": 48.9,
+      "production": 51,
+      "employment": 45.3,
+      "supplierDeliveries": 52.6,
+      "inventories": 47.7,
+      "sourceUrl": "https://web.archive.org/web/20251001174028/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/september/"
+    },
+    {
       "date": "2025-10-01",
       "composite": 48.7,
       "newOrders": 49.4,
@@ -752,7 +762,7 @@
       "newOrders": 55.8,
       "production": 53.5,
       "employment": 48.8,
-      "supplierDeliveries": 70.5,
+      "supplierDeliveries": 55.1,
       "inventories": 48.8,
       "sourceUrl": "https://web.archive.org/web/20260302210418/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/february/"
     },
@@ -762,7 +772,7 @@
       "newOrders": 53.5,
       "production": 55.1,
       "employment": 48.7,
-      "supplierDeliveries": 78.3,
+      "supplierDeliveries": 58.9,
       "inventories": 47.1,
       "sourceUrl": "https://web.archive.org/web/20260401191103/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/march/"
     },
@@ -782,7 +792,7 @@
       "newOrders": 56.8,
       "production": 54.3,
       "employment": 48.6,
-      "supplierDeliveries": 65.7,
+      "supplierDeliveries": 60.6,
       "inventories": 49.9,
       "sourceUrl": "https://web.archive.org/web/20260601221937/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/may/"
     },

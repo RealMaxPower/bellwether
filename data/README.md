@@ -12,7 +12,9 @@ Pulled via `npm run refresh-data` (requires `FRED_API_KEY`). The legacy NAPM* fi
 | `fred/IPMAN.json` | Industrial Production: Manufacturing |
 | `fred/FEDFUNDS.json` | Effective Federal Funds Rate |
 | `fred/USREC.json` | NBER recession indicator |
-| `fred/NAPM.json`, `fred/NAPM*I.json` | Legacy ISM stubs — retained for type compatibility, not user-facing |
+| `fred/NAPM.json`, `fred/NAPM*I.json` | Legacy ISM stubs — retained for type compatibility, not user-facing, and **not** valid to reconcile against (see below) |
+
+The NAPM stubs are inert in every sense: `npm run refresh-data` does not fetch them, nothing rewrites their `lastVerifiedAt`, and their values are synthetic. Anything that compares real data against them fails by construction while appearing to pass — `reconcile-ism.ts` did exactly that until 2026-08, which is why `ism-spot-checks.json` sat empty. Reconcile against the Wayback and curated series instead.
 
 ## ISM Manufacturing — Wayback + historical mirror
 
@@ -46,9 +48,12 @@ Services started in 1997 and has no third-party historical mirror, so the stack 
 
 ## Cross-checks
 
+`scripts/reconcile-ism.ts` runs three checks per sector under `npm run check-data`: **cross-source** (Wayback vs curated, for months both carry), **composite** (subindex mean must reproduce the headline), and **spot-checks** (hand-read values, the only check possible for single-source months). See [CONTRIBUTING.md](CONTRIBUTING.md#reconciliation-scriptsreconcile-ismts).
+
 | File | Purpose |
 |------|---------|
-| `ism-spot-checks.json` | Reconciliation rows for `npm run check-data` |
+| `ism-spot-checks.json` | Hand-verified Manufacturing headline values, seeded at acquisition-path boundaries |
+| `ism-services-spot-checks.json` | Same for Services |
 
 ## Refresh policy
 

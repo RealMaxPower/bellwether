@@ -4,7 +4,7 @@
   "source": "Wayback Machine archive of ISM monthly Services Report on Business pages — composite and the four headline subindices (Business Activity, New Orders, Employment, Supplier Deliveries) extracted from the same paragraphs",
   "units": "Index",
   "provenance": "wayback-archive",
-  "lastVerifiedAt": "2026-08-02",
+  "lastVerifiedAt": "2026-08-03",
   "observations": [
     {
       "date": "2014-09-01",
@@ -143,7 +143,7 @@
     },
     {
       "date": "2021-03-01",
-      "composite": 60.9,
+      "composite": 63.7,
       "businessActivity": 69.4,
       "newOrders": 67.2,
       "employment": 57.2,
@@ -675,7 +675,7 @@
     {
       "date": "2026-03-01",
       "composite": 54,
-      "businessActivity": 59.9,
+      "businessActivity": 53.9,
       "newOrders": 60.6,
       "employment": 45.2,
       "supplierDeliveries": 56.2,
