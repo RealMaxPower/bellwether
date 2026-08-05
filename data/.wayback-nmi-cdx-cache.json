@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "builtAt": 1785715784754,
+  "builtAt": 1785944345988,
   "modernByMonth": {
     "january": [
       {
@@ -3803,5 +3803,118 @@
       }
     ]
   },
-  "legacy": []
+  "legacy": [
+    {
+      "timestamp": "20140807225027",
+      "original": "http://www.ism.ws:80/ismreport/NONmfgrob.cfm"
+    },
+    {
+      "timestamp": "20140817051939",
+      "original": "http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
+    },
+    {
+      "timestamp": "20140818024839",
+      "original": "http://www.ism.ws/ISMReport/NonMfgROB.cfm"
+    },
+    {
+      "timestamp": "20140818161508",
+      "original": "http://www.ism.ws:80/ISMReport/NonMfgROB.cfm?"
+    },
+    {
+      "timestamp": "20140818161705",
+      "original": "http://www.ism.ws:80/ISMReport/nonmfgROB.cfm"
+    },
+    {
+      "timestamp": "20141020122800",
+      "original": "http://www.ism.ws:80/ISMReport/nonmfgROB.cfm"
+    },
+    {
+      "timestamp": "20141020140957",
+      "original": "http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
+    },
+    {
+      "timestamp": "20141021011647",
+      "original": "http://www.ism.ws:80/ISMReport/NonMfgROB.cfm?"
+    },
+    {
+      "timestamp": "20141221053517",
+      "original": "http://www.ism.ws:80/ISMReport/NonMfgROB.cfm?"
+    },
+    {
+      "timestamp": "20141221082707",
+      "original": "http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
+    },
+    {
+      "timestamp": "20141221122947",
+      "original": "http://www.ism.ws:80/ISMReport/nonmfgROB.cfm"
+    },
+    {
+      "timestamp": "20150111064826",
+      "original": "http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
+    },
+    {
+      "timestamp": "20150124143624",
+      "original": "http://www.ism.ws:80/ISMReport/NonMfgROB.cfm?"
+    },
+    {
+      "timestamp": "20150129083807",
+      "original": "http://www.ism.ws:80/ISMReport/nonmfgROB.cfm"
+    },
+    {
+      "timestamp": "20150208024858",
+      "original": "http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
+    },
+    {
+      "timestamp": "20150208115947",
+      "original": "http://www.ism.ws:80/ISMReport/NonMfgROB.cfm?"
+    },
+    {
+      "timestamp": "20150209051639",
+      "original": "http://www.ism.ws:80/ISMreport/nonmfgrob.cfm?"
+    },
+    {
+      "timestamp": "20150307201212",
+      "original": "http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
+    },
+    {
+      "timestamp": "20150309021057",
+      "original": "http://www.ism.ws:80/ISMReport/nonmfgROB.cfm"
+    },
+    {
+      "timestamp": "20150310234840",
+      "original": "http://www.ism.ws:80/ISMReport/NonMfgROB.cfm?"
+    },
+    {
+      "timestamp": "20150311183134",
+      "original": "http://www.ism.ws:80/ISMreport/nonmfgrob.cfm?"
+    },
+    {
+      "timestamp": "20150315030626",
+      "original": "http://www.ism.ws/ISMReport/nonmfgROB.cfm"
+    },
+    {
+      "timestamp": "20150329011023",
+      "original": "http://www.ism.ws/ISMReport/NonMfgROB.cfm"
+    },
+    {
+      "timestamp": "20150407035016",
+      "original": "http://www.ism.ws:80/ismreport/nonmfgrob.cfm"
+    },
+    {
+      "timestamp": "20150409054547",
+      "original": "http://www.ism.ws:80/ISMReport/nonmfgROB.cfm"
+    },
+    {
+      "timestamp": "20150411090826",
+      "original": "http://www.ism.ws:80/ISMReport/NonMfgROB.cfm?"
+    },
+    {
+      "timestamp": "20150411091405",
+      "original": "http://www.ism.ws:80/ISMreport/nonmfgrob.cfm?"
+    },
+    {
+      "timestamp": "20150414143220",
+      "original": "http://www.ism.ws/ismreport/nonmfgrob.cfm"
+    }
+  ]
 }
