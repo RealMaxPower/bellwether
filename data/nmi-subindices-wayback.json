@@ -4,7 +4,7 @@
   "source": "Wayback Machine archive of ISM monthly Services Report on Business pages — composite and the four headline subindices (Business Activity, New Orders, Employment, Supplier Deliveries) extracted from the same paragraphs",
   "units": "Index",
   "provenance": "wayback-archive",
-  "lastVerifiedAt": "2026-08-05",
+  "lastVerifiedAt": "2026-08-07",
   "observations": [
     {
       "date": "2014-09-01",
@@ -383,6 +383,15 @@
       "employment": 49.2,
       "supplierDeliveries": 47.7,
       "sourceUrl": "https://web.archive.org/web/20230612170843/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/may/"
+    },
+    {
+      "date": "2023-06-01",
+      "composite": 53.9,
+      "businessActivity": 59.2,
+      "newOrders": 55.5,
+      "employment": 53.1,
+      "supplierDeliveries": 47.6,
+      "sourceUrl": "https://web.archive.org/web/20230708002746/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/services/june/"
     },
     {
       "date": "2023-07-01",

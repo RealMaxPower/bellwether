@@ -20,6 +20,8 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
+import { matchSubindex } from "./lib/subindex-match";
+
 const PAGE_SLEEP_MS = 2500;
 const RETRY_DELAY_MS = 8000;
 const MAX_RETRIES = 2;
@@ -27,63 +29,6 @@ const MAX_RETRIES = 2;
 const NMI_WAYBACK_PATH = resolve(process.cwd(), "data", "nmi-wayback.json");
 const OUT_PATH = resolve(process.cwd(), "data", "nmi-subindices-wayback.json");
 
-/**
- * Two patterns, tried in order, because a page mentions each index several
- * times and only one of those mentions carries the month's actual value.
- *
- * STRICT matches ISM's canonical reporting phrasing, "{name} Index registered
- * N percent". Preferred because the looser pattern locks onto whichever
- * mention comes first, and that is often a summary or comparison sentence.
- * May 2026 had three "Supplier Deliveries Index" mentions; the second read
- * "stayed at its highest level since May 2022 (65.7 percent)", so the loose
- * pattern captured a 2022 historical reference instead of the 60.6 percent
- * reported two sentences later.
- *
- * LOOSE is the fallback for older pages that phrase it differently. Its
- * `(?:(?!Index)[^.])` is a tempered token — non-period characters that do not
- * begin another "... Index" mention. The period bound alone was not enough:
- * ISM packs several indices into one sentence, and March 2026 read "the
- * Supplier Deliveries Index indicated increasingly slowing deliveries, the
- * Inventories Index contracted at a faster rate, and the Prices Index took
- * another big leap - to 78.3 percent", so an anchor on Supplier Deliveries
- * skated past two other indices and captured the Prices value.
- *
- * Both failures stored a plausible-looking number under the wrong name. Only
- * the composite check in scripts/reconcile-ism.ts catches that, by requiring
- * the subindex mean to reproduce the headline.
- */
-const SUB_RE_STRICT = (name: string) =>
-  new RegExp(
-    `${name}\\s*Index\\s+register(?:ed|ing)\\s+[^.0-9]{0,40}?(\\d{1,3}(?:\\.\\d)?)\\s*percent\\b(?!age)`,
-    "i",
-  );
-
-/**
- * Some components are never "registered" — ISM writes "the reading of N
- * percent is X points lower than ...". Requires the definite article on
- * purpose: March 2026 also contained "dropped from February's reading of 59.9
- * percent to 53.9 percent", and matching a bare "reading of" would have taken
- * February's number.
- */
-const SUB_RE_READING = (name: string) =>
-  new RegExp(
-    `${name}\\s*Index(?:(?!Index)[^.]){0,200}?\\bthe reading of (\\d{1,3}(?:\\.\\d)?)\\s*percent\\b(?!age)`,
-    "i",
-  );
-
-const SUB_RE_LOOSE = (name: string) =>
-  new RegExp(
-    `${name}\\s*Index(?:(?!Index)[^.]){0,150}?(\\d{1,3}(?:\\.\\d)?)\\s*percent\\b(?!age)`,
-    "i",
-  );
-
-function matchSubindex(name: string, html: string): RegExpExecArray | null {
-  return (
-    SUB_RE_STRICT(name).exec(html) ??
-    SUB_RE_READING(name).exec(html) ??
-    SUB_RE_LOOSE(name).exec(html)
-  );
-}
 
 interface NmiRow {
   date: string;

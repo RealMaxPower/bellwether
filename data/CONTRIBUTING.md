@@ -53,7 +53,18 @@ Output: `data/nmi-subindices-wayback.json`. The script reads `nmi-wayback.json` 
 
 The CDX phase-1 cache lives at `data/.wayback-nmi-cdx-cache.json` (24h TTL), parallel to the Manufacturing cache. Commit it alongside data changes — it saves future runs ~65 seconds of rate-limited CDX queries.
 
-**Failure modes to expect:** roughly the same as Manufacturing (sparse-archive months, unmatched titles, regex misses). One known regex limitation: when ISM phrases the Employment paragraph as "Employment activity in the services sector ... index registering N percent" instead of the standard "Employment Index ... registered N percent", the subindex regex misses. Hand-curate the missing month directly in `data/nmi-subindices-wayback.json` (May 2023 was one such case; see git history for the row format) — there's no equivalent of `pmi-curated.csv` for NMI subindices yet.
+**Failure modes to expect:** roughly the same as Manufacturing (sparse-archive months, unmatched titles, regex misses).
+
+Subindex extraction lives in [`scripts/lib/subindex-match.ts`](../scripts/lib/subindex-match.ts), shared by both sectors and unit-tested against the real prose that has broken it. A page names each index several times and only one mention carries the month's value, so four patterns are tried most-specific first:
+
+1. **strict** — `{name} Index registered N percent`, ISM's canonical phrasing. A qualifier is allowed before the number ("registered an all-time high of 63.7 percent").
+2. **reading** — `... the reading of N percent`, for components that are never "registered". The definite article matters: a bare "reading of" also matches "February's reading of ...".
+3. **activity** — `{name} activity ... the index registered N percent`. The only tier that does not require the literal token `Index`, because this phrasing never writes it.
+4. **loose** — the fallback, with a tempered token so it cannot drift across a neighbouring `... Index` mention inside one sentence.
+
+Order is the correctness mechanism, not a performance choice — the loose pattern matches something on nearly any page, so anything more precise has to get first refusal.
+
+A component that matches no tier drops the **whole month**, which used to leave a silent hole: the composite check walks subindex rows, so a month with no row was simply never visited. `reconcile-ism.ts` now asserts that every headline month has a subindex row and fails naming the month. If you hit a phrasing none of the four tiers handles, add a tier with a test case rather than hand-editing the JSON — there is no curated overlay for subindices, and a hand row would be re-stamped with `provenance: "wayback-archive"` on the next run.
 
 ## Refreshing the historical PMI mirror (1948 → 2014)
 
