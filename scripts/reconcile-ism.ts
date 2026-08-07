@@ -225,7 +225,27 @@ for (const sector of sectors) {
     }
   }
 
-  console.log(`      ${checked} month(s) checked`);
+  // A headline month with no subindex row is invisible above: the loop walks
+  // subindex rows, so a missing one is simply never visited and only lowers
+  // `checked`. June 2023 Services sat in exactly that state — one line in a
+  // scraper log, a clean pass everywhere else. freshness.test.ts does not
+  // catch it either; it compares only the last date of each series, so an
+  // interior hole is invisible there too.
+  const subindexDates = new Set(subindices.observations.map((r) => r.date));
+  const uncovered = wayback.observations
+    .map((o) => o.date)
+    .filter((d) => !subindexDates.has(d));
+
+  for (const date of uncovered) {
+    console.error(
+      `FAIL  ${date}  headline month has no subindex row — composite check cannot cover it`,
+    );
+    failures += 1;
+  }
+
+  console.log(
+    `      ${checked} month(s) checked, ${wayback.observations.length - uncovered.length}/${wayback.observations.length} headline months covered`,
+  );
 
   summary.push(
     `${label}: ${overlap.length} cross-source, ${spotChecks.entries.length} spot-check, ${checked} composite`,
