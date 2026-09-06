@@ -79,6 +79,17 @@ jobs:
           npm run import-wayback-nmi
           npm run import-wayback-nmi-subindices
 
+      # The per-industry lists behind /heatmap. These read their URL list out
+      # of pmi-wayback.json / nmi-wayback.json, so they must follow the two
+      # steps above. Never wired in before: both files sat frozen at 2025-07
+      # while the headline series advanced, and nothing failed, because until
+      # 2026-09 no test asserted on them at all.
+      - name: Refresh Wayback industry lists
+        continue-on-error: true
+        run: |
+          npm run import-wayback-industries
+          npm run import-wayback-nmi-industries
+
       - name: Run strict data checks
         env:
           STRICT_DATA_CHECKS: "1"
@@ -129,5 +140,7 @@ jobs:
             data/pmi-subindices-wayback.json
             data/nmi-wayback.json
             data/nmi-subindices-wayback.json
+            data/industry-monthly-wayback.json
+            data/services-industry-monthly-wayback.json
             data/.wayback-cdx-cache.json
             data/.wayback-nmi-cdx-cache.json
