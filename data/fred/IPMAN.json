@@ -4,8 +4,8 @@
   "source": "FRED (Federal Reserve Bank of St. Louis)",
   "units": "Index 2017=100",
   "provenance": "fred",
-  "lastVerifiedAt": "2026-08-05",
-  "vintage": "2026-08-02",
+  "lastVerifiedAt": "2026-09-05",
+  "vintage": "2026-09-05",
   "observations": [
     {
       "date": "1972-01-01",
@@ -2605,23 +2605,27 @@
     },
     {
       "date": "2026-02-01",
-      "value": 97.7645
+      "value": 97.733
     },
     {
       "date": "2026-03-01",
-      "value": 97.876
+      "value": 98.0678
     },
     {
       "date": "2026-04-01",
-      "value": 98.5997
+      "value": 98.7618
     },
     {
       "date": "2026-05-01",
-      "value": 98.6976
+      "value": 98.8119
     },
     {
       "date": "2026-06-01",
-      "value": 98.6995
+      "value": 99.1524
+    },
+    {
+      "date": "2026-07-01",
+      "value": 99.314
     }
   ]
 }

@@ -4,7 +4,7 @@
   "source": "Hand-curated rows from primary ISM monthly Services Report on Business news releases. Each observation cites the specific release URL. Wins over Wayback rows in the merge.",
   "units": "Index",
   "provenance": "hand-curated",
-  "lastVerifiedAt": "2026-08-05",
+  "lastVerifiedAt": "2026-09-05",
   "observations": [
     {
       "date": "2025-08-01",
@@ -65,6 +65,11 @@
       "date": "2026-07-01",
       "value": 54.1,
       "sourceUrl": "https://www.prnewswire.com/news-releases/services-pmi-at-54-1-july-2026-ism-services-pmi-report-302843134.html"
+    },
+    {
+      "date": "2026-08-01",
+      "value": 55.4,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/services-pmi-at-55-4-august-2026-ism-services-pmi-report-302868046.html"
     }
   ]
 }
