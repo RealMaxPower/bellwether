@@ -9,6 +9,8 @@ import {
   getWaybackPMI,
   getWaybackSubindices,
 } from "./series";
+import industryMonthlyRaw from "../../../data/industry-monthly-wayback.json";
+import servicesIndustryMonthlyRaw from "../../../data/services-industry-monthly-wayback.json";
 
 /**
  * Freshness + provenance checks. Two tiers:
@@ -160,6 +162,83 @@ describe("data freshness — Services / NMI", () => {
         daysSince(s.lastVerifiedAt),
         `NMI subindex ${name} lastVerifiedAt`,
       ).toBeLessThan(365);
+    }
+  });
+});
+
+/**
+ * The per-industry Wayback files behind /heatmap. Until 2026-09 nothing
+ * asserted on them at all, and they rotted twice over without a single test
+ * going red: once when ISM's URL rename froze both files at 2025-07, and
+ * once when ISM reworded its contraction sentence and the Services file
+ * stopped parsing contraction entirely from 2022-03 on.
+ *
+ * The second failure is the dangerous one. loadSectors() scores each cell by
+ * growth *share* — g/(g+c) — so an empty contraction list does not blank the
+ * panel, it pins every cell toward +100. A reader sees a confident number
+ * with no way to tell it apart from a real boom. Freshness alone would not
+ * have caught it: the file was current, its rows were simply half-parsed.
+ */
+const INDUSTRY_MAX_AGE_DAYS = 365;
+
+describe("industry-level Wayback files behind /heatmap", () => {
+  const files = [
+    ["Manufacturing", industryMonthlyRaw],
+    ["Services", servicesIndustryMonthlyRaw],
+  ] as const;
+
+  it.each(files)(
+    `%s industry file's latest observation is younger than ${INDUSTRY_MAX_AGE_DAYS} days`,
+    (_name, file) => {
+      const last = file.observations.at(-1);
+      expect(last).toBeDefined();
+      expect(daysSince(last!.date)).toBeLessThan(INDUSTRY_MAX_AGE_DAYS);
+    },
+  );
+
+  it.each(files)(
+    "%s industry file records contraction somewhere in its most recent 12 months",
+    (_name, file) => {
+      // Not "every month has a contracting industry" — a strong month can
+      // genuinely have none. But a year with zero contraction anywhere across
+      // 18 industries is a parser regression, not an economy. Both real
+      // regressions produced exactly this signature.
+      const recent = file.observations.slice(-12);
+      const withContraction = recent.filter((o) => o.contracting.length > 0);
+      expect(
+        withContraction.length,
+        `no contracting industries in any of the last ${recent.length} months — ` +
+          `check extractOverallLists() in scripts/import-wayback-*industries.ts ` +
+          `against a current ISM page`,
+      ).toBeGreaterThan(0);
+    },
+  );
+
+  it.each(files)("%s industry file never lists one industry as both", (_name, file) => {
+    // An industry cannot grow and contract in the same month. When this
+    // fired it meant a contraction pattern had matched a *subindex*
+    // sentence and appended its industries on top of the real overall list,
+    // which also inflated the row past the 18 that exist.
+    for (const o of file.observations) {
+      const both = o.growing.filter((i) => o.contracting.includes(i));
+      expect(both, `${o.date} lists ${both.join(", ")} as both growing and contracting`).toEqual(
+        [],
+      );
+      expect(
+        o.growing.length + o.contracting.length,
+        `${o.date} classifies more industries than exist`,
+      ).toBeLessThanOrEqual(file.industries.length);
+    }
+  });
+
+  it.each(files)("%s industry file classifies every month it holds", (_name, file) => {
+    // A row with neither list is a silent fetch/parse failure that still
+    // counted toward "we have data for that month".
+    for (const o of file.observations) {
+      expect(
+        o.growing.length + o.contracting.length,
+        `${o.date} has empty growing AND contracting lists`,
+      ).toBeGreaterThan(0);
     }
   });
 });
