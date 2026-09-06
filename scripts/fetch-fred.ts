@@ -58,18 +58,45 @@ type FredFetchResult = {
   vintage: string | undefined;
 };
 
-async function fetchSeries(id: string): Promise<FredFetchResult> {
-  const url = new URL("https://api.stlouisfed.org/fred/series/observations");
-  url.searchParams.set("series_id", id);
+function endpoint(path: string, params: Record<string, string>): URL {
+  const url = new URL(`https://api.stlouisfed.org/fred/${path}`);
+  for (const [k, v] of Object.entries(params)) url.searchParams.set(k, v);
   url.searchParams.set("api_key", apiKey!);
   url.searchParams.set("file_type", "json");
-  url.searchParams.set("observation_start", "1948-01-01");
+  return url;
+}
 
-  const res = await fetch(url);
+/**
+ * The date FRED last published this series, from /fred/series `last_updated`.
+ *
+ * NOT `realtime_end` from the observations response, which is what this used
+ * to store: on a query that passes no realtime_start/realtime_end, FRED
+ * echoes back today's date, so `vintage` merely repeated `lastVerifiedAt`
+ * and told you nothing about which release the numbers came from. Verified
+ * 2026-09-06 — all three series returned realtime_end 2026-09-06, while
+ * last_updated correctly separated the Fed G.17 (INDPRO and IPMAN, both
+ * 2026-08-18, 48 seconds apart) from FEDFUNDS (2026-09-01).
+ */
+async function fetchVintage(id: string): Promise<string | undefined> {
+  const res = await fetch(endpoint("series", { series_id: id }));
+  if (!res.ok) {
+    // A missing vintage is not worth failing a refresh over.
+    console.warn(`  ! ${id}: series metadata HTTP ${res.status} — vintage omitted`);
+    return undefined;
+  }
+  const json = (await res.json()) as { seriess?: { last_updated?: string }[] };
+  // "2026-08-18 08:20:15-05" -> "2026-08-18", matching the file's date format.
+  return json.seriess?.[0]?.last_updated?.slice(0, 10);
+}
+
+async function fetchSeries(id: string): Promise<FredFetchResult> {
+  const res = await fetch(
+    endpoint("series/observations", { series_id: id, observation_start: "1948-01-01" }),
+  );
   if (!res.ok) {
     throw new Error(`FRED ${id}: HTTP ${res.status}`);
   }
-  const json = (await res.json()) as FredResponse & { realtime_end?: string };
+  const json = (await res.json()) as FredResponse;
   const observations = json.observations
     .filter((o) => o.value !== ".")
     .map((o) => ({
@@ -77,7 +104,7 @@ async function fetchSeries(id: string): Promise<FredFetchResult> {
       date: `${o.date.slice(0, 7)}-01`,
       value: Number(o.value),
     }));
-  return { observations, vintage: json.realtime_end };
+  return { observations, vintage: await fetchVintage(id) };
 }
 
 const TODAY = new Date().toISOString().slice(0, 10);
