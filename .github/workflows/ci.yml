@@ -19,6 +19,13 @@ jobs:
           node-version: 20
           cache: npm
 
+      # node-version above floats across Node 20.x patches, each of which can
+      # bundle a different npm — and npm's own package-lock.json output isn't
+      # stable across versions (see package.json's packageManager comment).
+      # Pin npm explicitly so `npm ci` here matches what regenerates the
+      # committed lockfile, rather than whatever the runner happens to ship.
+      - run: npm install -g npm@10.9.9
+
       - run: npm ci
 
       - name: Lint

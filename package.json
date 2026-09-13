@@ -2,6 +2,7 @@
   "name": "bellwether",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "npm@10.9.9",
   "description": "Interactive atlas of the ISM PMI suite — Manufacturing 1948→present, Services 1997→present — with US economic-policy overlay.",
   "license": "CC0-1.0",
   "author": "Max (RealMaxPower)",

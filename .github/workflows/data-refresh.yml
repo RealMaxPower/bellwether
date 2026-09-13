@@ -26,6 +26,11 @@ jobs:
           node-version: "20"
           cache: "npm"
 
+      # See ci.yml for why this is pinned: npm's package-lock.json output
+      # isn't stable across npm versions, and node-version above floats
+      # across Node 20.x patches that can bundle different npm.
+      - run: npm install -g npm@10.9.9
+
       - run: npm ci
 
       # Fail loudly and immediately rather than 40 minutes into the scrapes —
