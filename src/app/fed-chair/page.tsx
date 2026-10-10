@@ -2,10 +2,10 @@ import Link from "next/link";
 import { scenarios } from "@/lib/fed-chair/scenarios";
 import { Card, CardContent } from "@/components/ui/card";
 import { PageHero } from "@/components/layout/page-hero";
-import { getPMI } from "@/lib/data/series";
+import { getMergedPMI } from "@/lib/data/series";
 
 export default function FedChairIndexPage() {
-  const pmi = getPMI();
+  const pmi = getMergedPMI();
   const last = pmi.observations[pmi.observations.length - 1];
   if (!last) throw new Error("PMI series has no observations");
   const scenarioYears = scenarios.map((s) => parseInt(s.decisionDate.slice(0, 4), 10));
@@ -30,9 +30,9 @@ export default function FedChairIndexPage() {
           </>
         }
         meta={[
-          { label: "Series", value: "NAPM" },
+          { label: "Series", value: "ISM Mfg PMI" },
           { label: "Frequency", value: "Monthly" },
-          { label: "Source", value: "FRED + ISM" },
+          { label: "Source", value: "ISM ROB" },
           { label: "Coverage", value: `${coverageStart} → ${coverageEnd}` },
         ]}
       />
@@ -40,9 +40,9 @@ export default function FedChairIndexPage() {
       <div className="mx-auto max-w-[1280px] px-8 py-7">
         <section className="mb-6 max-w-[68ch] font-serif text-[14px] leading-[1.55] text-ink-500">
           <p>
-            The Federal Reserve was created in 1913 and has had sixteen chairs since. The five
-            scenarios below cover the modern era — Volcker, Greenspan, Bernanke, Yellen, and
-            Powell.{" "}
+            The Federal Reserve was created in 1913 and has had seventeen chairs since. The five
+            scenarios below cover the modern era — Volcker, Greenspan, Bernanke, and Powell
+            (twice).{" "}
             <Link
               href="/background#fed-act-1913"
               className="font-sans text-[11px] font-semibold uppercase tracking-[0.06em] text-oxblood hover:underline"

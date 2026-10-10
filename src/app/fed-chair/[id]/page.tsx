@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { ScenarioRunner } from "@/components/fed-chair/scenario-runner";
 import { MiniExhibit } from "@/components/background/mini-exhibit";
 import { findScenario, scenarios } from "@/lib/fed-chair/scenarios";
-import { getPMI, getRecessions } from "@/lib/data/series";
+import { getMergedPMI, getRecessions } from "@/lib/data/series";
 import { getScenarioChair } from "@/lib/background/lookup";
 
 export function generateStaticParams() {
@@ -18,7 +18,7 @@ export default async function FedChairScenarioPage({
   const scenario = findScenario(id);
   if (!scenario) notFound();
 
-  const pmi = getPMI();
+  const pmi = getMergedPMI();
   const recessions = getRecessions();
   const chairEntry = getScenarioChair(id);
 
