@@ -72,7 +72,7 @@ export default function BackgroundPage() {
 
           <footer className="mt-16 border-t border-ink-100 pt-6 font-serif text-[14px] leading-[1.55] text-ink-500">
             <p>
-              Five of the chairs above face you in the{" "}
+              Four of the chairs above face you in the{" "}
               <Link href="/fed-chair" className="underline hover:text-ink-700">
                 decision game
               </Link>

@@ -36,7 +36,7 @@ export const timelineEntries: readonly TimelineEntry[] = [
     photoAlt: "Woodrow Wilson, official presidential portrait",
     photoCredit: "Library of Congress · public domain",
     body:
-      "On December 23, 1913 Wilson signed the Federal Reserve Act, creating a Board of Governors in Washington, twelve regional Reserve Banks, and the Federal Open Market Committee. The dual mandate the Fed is most often described by today — stable prices and maximum employment — would not be added until 1977.",
+      "On December 23, 1913 Wilson signed the Federal Reserve Act, creating the Federal Reserve Board in Washington and a system of regional Reserve Banks — twelve, once the districts were drawn in 1914. The Federal Open Market Committee came later, in the banking acts of the 1930s. The dual mandate the Fed is most often described by today — stable prices and maximum employment — would not be added until 1977.",
     source: {
       label: "Federal Reserve History — “Federal Reserve Act Signed”",
       url: "https://www.federalreservehistory.org/essays/federal-reserve-act-signed",
@@ -53,7 +53,7 @@ export const timelineEntries: readonly TimelineEntry[] = [
     photoAlt: "Charles S. Hamlin",
     photoCredit: "Library of Congress · public domain",
     body:
-      "A Boston lawyer and Treasury veteran, Hamlin became the new Federal Reserve Board's first Governor — the title only changed to “Chair” in 1935. His job was to stand up an institution that did not yet exist, hire its first staff, and convince Wall Street the regional Reserve Banks were not just twelve more government offices.",
+      "A Boston lawyer and Treasury veteran, Hamlin became the new Federal Reserve Board's first Governor — the title only became “Chairman” in 1935. His job was to stand up an institution that did not yet exist, hire its first staff, and convince Wall Street the regional Reserve Banks were not just twelve more government offices.",
     source: {
       label: "Federal Reserve History — Charles S. Hamlin",
       url: "https://www.federalreservehistory.org/people/charles-s-hamlin",
@@ -65,7 +65,7 @@ export const timelineEntries: readonly TimelineEntry[] = [
     decade: 1910,
     thread: "pmi",
     title: "NAPM is founded in New York",
-    subtitle: "National Association of Purchasing Agents",
+    subtitle: "National Association of Purchasing Agents · NAPM from 1968",
     photo: "hoover",
     photoAlt: "Herbert Hoover, official presidential portrait",
     photoCredit: "Library of Congress · public domain (Hoover ca. 1929)",
@@ -149,13 +149,13 @@ export const timelineEntries: readonly TimelineEntry[] = [
     year: 1931,
     decade: 1930,
     thread: "pmi",
-    title: "NAPM launches the Report on Business",
+    title: "Purchasing agents launch the Report on Business",
     subtitle: "Hoover-era origin of the index this site plots",
     photo: "hoover",
     photoAlt: "Herbert Hoover",
     photoCredit: "Library of Congress · public domain",
     body:
-      "In 1931, with the Depression deepening, NAPM began publishing a monthly survey of its purchasing-manager members on production, new orders, employment, deliveries, and inventories. Hoover, a former mining engineer who had spent the 1920s pushing trade associations to standardize statistics, gave the project federal blessing. The Report on Business survives — almost a century later — as the ISM Manufacturing PMI you see on the homepage.",
+      "In 1930 Hoover, looking for data to steer by as the Depression deepened, backed a Chamber of Commerce committee to gather business conditions from member firms. It disbanded in June 1931. The purchasing agents' association, which had been surveying its own members since 1923, carried the work on through a new Business Survey Committee and sent the tabulations to the President. Apart from a pause during the Second World War, the Report on Business has been published ever since — almost a century later it is the ISM Manufacturing PMI you see on the homepage.",
     source: {
       label: "Wikipedia — ISM Report On Business",
       url: "https://en.wikipedia.org/wiki/ISM_Report_On_Business",
@@ -172,7 +172,7 @@ export const timelineEntries: readonly TimelineEntry[] = [
     photoAlt: "Eugene R. Black",
     photoCredit: "Library of Congress · public domain",
     body:
-      "An Atlanta banker brought in by Roosevelt to steady nerves after the Bank Holiday and the first New Deal banking acts, Black served barely a year before resigning to return to the Atlanta Fed. His brief tenure spanned the creation of the FDIC and the gold-clause cases that would test whether the Fed's liabilities were redeemable in gold.",
+      "An Atlanta banker brought in by Roosevelt to steady nerves after the Bank Holiday and the first New Deal banking acts, Black served barely a year before resigning to return to the Atlanta Fed. His brief tenure spanned the creation of the FDIC and the Gold Reserve Act of January 1934, which transferred the Reserve Banks' gold to the Treasury.",
     source: {
       label: "Federal Reserve History — Eugene Robert Black",
       url: "https://www.federalreservehistory.org/people/eugene-robert-black",
@@ -189,7 +189,7 @@ export const timelineEntries: readonly TimelineEntry[] = [
     photoAlt: "Marriner S. Eccles",
     photoCredit: "Federal Reserve · public domain",
     body:
-      "A Utah banker who had survived the 1930s with his banks intact, Eccles essentially rewrote the Federal Reserve. The Banking Act of 1935 — which he drafted — moved authority from the regional Reserve Banks to the Washington Board, created the FOMC in its modern form, and renamed the chief officer “Chair.” The Fed's main building in DC bears his name.",
+      "A Utah banker who had survived the 1930s with his banks intact, Eccles essentially rewrote the Federal Reserve. The Banking Act of 1935 — which he drafted — moved authority from the regional Reserve Banks to the Washington Board, created the FOMC in its modern form, and retitled the chief officer “Chairman.” The Fed's main building in DC bears his name.",
     source: {
       label: "Federal Reserve History — Marriner S. Eccles",
       url: "https://www.federalreservehistory.org/people/marriner-s-eccles",
@@ -206,7 +206,7 @@ export const timelineEntries: readonly TimelineEntry[] = [
     photoAlt: "Thomas B. McCabe",
     photoCredit: "Library of Congress · public domain",
     body:
-      "After the Second World War, NAPM standardized its survey into the diffusion-index format we know today: each respondent reports better, same, or worse than last month, and the result is centered on 50. FRED's NAPM time series begins January 1948, which is why the timeline on the homepage starts there. Anything earlier exists in NAPM's own archives but not in a continuous comparable form.",
+      "The purchasing agents' survey resumed after the Second World War and has run every month since: each respondent reports better, same, or worse than last month, and the answers are tallied into diffusion indexes centered on 50. The composite PMI itself was devised in the early 1980s with economists at the Commerce Department and computed back over the postwar survey data, which is why the series — and the timeline on the homepage — begins in January 1948. Anything earlier exists in the association's own archives but not in a continuous comparable form.",
     source: {
       label: "FRED — NAPM series metadata",
       url: "https://fred.stlouisfed.org/series/NAPM",
@@ -223,7 +223,7 @@ export const timelineEntries: readonly TimelineEntry[] = [
     photoAlt: "Thomas B. McCabe",
     photoCredit: "Library of Congress · public domain",
     body:
-      "A Scott Paper executive recruited by Truman, McCabe inherited a Fed still pegging long-term Treasury yields at 2.5% — a wartime arrangement Truman wanted to keep. McCabe's running fight with the White House, conducted partly through his deputy William McChesney Martin, would produce the document that finally freed the Fed.",
+      "A Scott Paper executive recruited by Truman, McCabe inherited a Fed still pegging long-term Treasury yields at 2.5% — a wartime arrangement Truman wanted to keep. McCabe's running fight with the White House and the Treasury would produce the document that finally freed the Fed — negotiated, on the Treasury's side, by the man who would succeed him.",
     source: {
       label: "Federal Reserve History — Thomas B. McCabe",
       url: "https://www.federalreservehistory.org/people/thomas-b-mccabe",
@@ -257,7 +257,7 @@ export const timelineEntries: readonly TimelineEntry[] = [
     photoAlt: "William McChesney Martin Jr.",
     photoCredit: "Federal Reserve · public domain",
     body:
-      "Martin served almost nineteen years under five presidents — Truman, Eisenhower, Kennedy, Johnson, Nixon — and gave the Fed its most-quoted self-description: the central bank's job, he said, is to “take away the punch bowl just as the party gets going.” His tenure ended with mounting Vietnam-era inflation that his successors would inherit.",
+      "Martin served almost nineteen years under five presidents — Truman, Eisenhower, Kennedy, Johnson, Nixon — and popularized the Fed's most-quoted self-description: the central bank, he told New York bankers in 1955, “is in the position of the chaperone who has ordered the punch bowl removed just when the party was really warming up.” His tenure ended with mounting Vietnam-era inflation that his successors would inherit.",
     source: {
       label: "Federal Reserve History — William McChesney Martin Jr.",
       url: "https://www.federalreservehistory.org/people/william-mcchesney-martin-jr",
@@ -291,7 +291,7 @@ export const timelineEntries: readonly TimelineEntry[] = [
     photoAlt: "Arthur F. Burns chairing the FOMC",
     photoCredit: "Federal Reserve · public domain",
     body:
-      "The Federal Reserve Reform Act amended the 1913 Act to direct the Fed to “promote effectively the goals of maximum employment, stable prices, and moderate long-term interest rates.” The dual mandate Powell invokes today was added here — sixty-four years after the institution itself was created. The Full Employment and Balanced Growth Act of 1978 (Humphrey–Hawkins) then required the Fed to report to Congress twice a year on its progress against those goals — the “Humphrey–Hawkins testimony” that ran until 2000 and survives in spirit as the semi-annual Monetary Policy Report.",
+      "The Federal Reserve Reform Act amended the 1913 Act to direct the Fed to “promote effectively the goals of maximum employment, stable prices, and moderate long-term interest rates.” The dual mandate the Fed still cites today was added here — sixty-four years after the institution itself was created. The Full Employment and Balanced Growth Act of 1978 (Humphrey–Hawkins) then required the Fed to report to Congress twice a year on its progress against those goals — the “Humphrey–Hawkins testimony” that ran until 2000 and survives in spirit as the semi-annual Monetary Policy Report.",
     source: {
       label: "Federal Reserve History — Federal Reserve Reform Act of 1977",
       url: "https://www.federalreservehistory.org/essays/federal-reserve-reform-act-of-1977",
@@ -308,7 +308,7 @@ export const timelineEntries: readonly TimelineEntry[] = [
     photoAlt: "G. William Miller",
     photoCredit: "Federal Reserve · public domain",
     body:
-      "A Textron CEO with no central-banking background, Miller was Carter's compromise pick. Inflation accelerated from roughly 7% to over 11% during his seventeen months at the Fed, and Carter moved him to Treasury — clearing the way for the chair who would finally break it.",
+      "A Textron CEO with no central-banking background, Miller was Carter's compromise pick. Inflation accelerated from about 6½% to over 11% during his seventeen months at the Fed, and Carter moved him to Treasury — clearing the way for the chair who would finally break it.",
     source: {
       label: "Federal Reserve History — G. William Miller",
       url: "https://www.federalreservehistory.org/people/g-william-miller",
@@ -376,7 +376,7 @@ export const timelineEntries: readonly TimelineEntry[] = [
     photoAlt: "Ben S. Bernanke",
     photoCredit: "Federal Reserve · public domain",
     body:
-      "A Princeton economist whose academic career had been dedicated to studying the Great Depression, Bernanke arrived at the Fed eighteen months before the Global Financial Crisis. He authored QE1, QE2, and QE3, took the funds rate to zero, and pushed the Fed's balance sheet from under $1 trillion to over $4 trillion.",
+      "A Princeton economist whose academic career had been dedicated to studying the Great Depression, Bernanke became chair eighteen months before the Global Financial Crisis. He authored QE1, QE2, and QE3, took the funds rate to zero, and pushed the Fed's balance sheet from under $1 trillion to over $4 trillion.",
     source: {
       label: "Federal Reserve History — Ben S. Bernanke",
       url: "https://www.federalreservehistory.org/people/ben-s-bernanke",
@@ -422,15 +422,32 @@ export const timelineEntries: readonly TimelineEntry[] = [
     decade: 2010,
     thread: "fed",
     title: "Chair 16 — Jerome H. Powell",
-    subtitle: "2018 → present",
+    subtitle: "2018 → 2026",
     photo: "powell",
     photoAlt: "Jerome H. Powell",
     photoCredit: "Federal Reserve · public domain",
     body:
-      "A lawyer and former private-equity executive — the first non-economist chair since Miller — Powell took the Fed through the 2020 pandemic shock (cutting to zero in two weeks, expanding the balance sheet by $3 trillion) and the 2022–23 hiking cycle that lifted the funds rate from zero to over 5% in eighteen months. He is the chair sitting at the right edge of every chart on this site.",
+      "A lawyer and former private-equity executive — the first non-economist chair since Miller — Powell took the Fed through the 2020 pandemic shock (cutting to zero in two weeks, expanding the balance sheet by $3 trillion) and the 2022–23 hiking cycle that lifted the funds rate from zero to over 5% in sixteen months. When his term as chair ended in May 2026 he stayed on as a governor — the first former chair to remain on the Board since Eccles in 1948.",
     source: {
       label: "Federal Reserve History — Jerome H. Powell",
       url: "https://www.federalreservehistory.org/people/jerome-h-powell",
+    },
+  },
+  {
+    id: "warsh-2026",
+    year: 2026,
+    decade: 2020,
+    thread: "fed",
+    title: "Chair 17 — Kevin M. Warsh",
+    subtitle: "2026 → present",
+    photo: "warsh",
+    photoAlt: "Kevin M. Warsh",
+    photoCredit: "Federal Reserve · public domain",
+    body:
+      "A former Morgan Stanley mergers banker and Bush White House economic aide, Warsh first joined the Board in 2006 at 35 — the youngest appointee in the Fed's history — and served as its main liaison to Wall Street through the 2008 crisis before resigning in 2011. Nominated by President Trump in January 2026 and confirmed 54–45, he was sworn in at the White House on May 22, 2026. He is the chair sitting at the right edge of every chart on this site.",
+    source: {
+      label: "Federal Reserve History — Kevin M. Warsh",
+      url: "https://www.federalreservehistory.org/people/kevin-m-warsh",
     },
   },
 ];
