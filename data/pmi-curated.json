@@ -8,43 +8,343 @@
   "observations": [
     {
       "date": "2008-10-01",
-      "value": 38.7,
-      "sourceUrl": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"
+      "value": 38.9,
+      "sourceUrl": "https://web.archive.org/web/20081106205916/http://www.ism.ws:80/ISMReport/MfgROB.cfm"
     },
     {
       "date": "2009-03-01",
       "value": 36.3,
-      "sourceUrl": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"
+      "sourceUrl": "https://web.archive.org/web/20090404115040/http://www.ism.ws:80/ISMReport/MfgROB.cfm"
+    },
+    {
+      "date": "2015-04-01",
+      "value": 51.5,
+      "sourceUrl": "https://web.archive.org/web/20150513023436/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2015-05-01",
+      "value": 52.8,
+      "sourceUrl": "https://web.archive.org/web/20150612172258/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2015-06-01",
+      "value": 53.5,
+      "sourceUrl": "https://web.archive.org/web/20150710141423/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?navItemNumber=12942"
+    },
+    {
+      "date": "2015-07-01",
+      "value": 52.7,
+      "sourceUrl": "https://web.archive.org/web/20150905135003/http://www.prnewswire.com/news-releases/july-manufacturing-ism-report-on-business-pmi-at-527-new-orders-production-and-employment-growing-inventories-contracting-supplier-deliveries-faster-300120162.html"
+    },
+    {
+      "date": "2015-08-01",
+      "value": 51.1,
+      "sourceUrl": "https://web.archive.org/web/20150925115019/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2015-09-01",
+      "value": 50.2,
+      "sourceUrl": "https://web.archive.org/web/20151002200858/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm"
+    },
+    {
+      "date": "2015-10-01",
+      "value": 50.1,
+      "sourceUrl": "https://web.archive.org/web/20151105094057/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2015-11-01",
+      "value": 48.6,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/pmi-at-486-november-manufacturing-ism-report-on-business-new-orders-and-production-contracting-employment-growing-supplier-deliveries-slowing-inventories-contracting-300184523.html"
+    },
+    {
+      "date": "2015-12-01",
+      "value": 48.2,
+      "sourceUrl": "https://web.archive.org/web/20160104235441/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2016-01-01",
+      "value": 48.2,
+      "sourceUrl": "https://web.archive.org/web/20160218075721/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm"
+    },
+    {
+      "date": "2016-02-01",
+      "value": 49.5,
+      "sourceUrl": "https://web.archive.org/web/20160302083920/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?navItemNumber=12942"
+    },
+    {
+      "date": "2016-03-01",
+      "value": 51.8,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/pmi-at-518-march-manufacturing-ism-report-on-business-new-orders-and-production-growing-employment-and-inventories-contracting-supplier-deliveries-slower-300244356.html"
+    },
+    {
+      "date": "2016-04-01",
+      "value": 50.8,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/pmi-at-508-april-manufacturing-ism-report-on-business-new-orders-and-production-growing-employment-and-inventories-contracting-supplier-deliveries-faster-300260229.html"
+    },
+    {
+      "date": "2016-05-01",
+      "value": 51.3,
+      "sourceUrl": "https://web.archive.org/web/20160625020257/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?navItemNumber=30219"
+    },
+    {
+      "date": "2016-06-01",
+      "value": 53.2,
+      "sourceUrl": "https://web.archive.org/web/20160712233342/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm"
+    },
+    {
+      "date": "2016-07-01",
+      "value": 52.6,
+      "sourceUrl": "https://web.archive.org/web/20160804180237/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm"
+    },
+    {
+      "date": "2016-08-01",
+      "value": 49.4,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/pmi-at-494-august-manufacturing-ism-report-on-business-new-orders-production-and-employment-contracting-inventories-contracting-supplier-deliveries-slowing-300320979.html"
+    },
+    {
+      "date": "2016-09-01",
+      "value": 51.5,
+      "sourceUrl": "https://web.archive.org/web/20161025151859/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2016-10-01",
+      "value": 51.9,
+      "sourceUrl": "https://web.archive.org/web/20161104093450/http://www.prnewswire.com/news-releases/pmi-at-519-october-manufacturing-ism-report-on-business-new-orders-production-and-employment-growing-inventories-contracting-supplier-deliveries-slowing-300354251.html"
+    },
+    {
+      "date": "2016-11-01",
+      "value": 53.2,
+      "sourceUrl": "https://web.archive.org/web/20161202053516/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?navItemNumber=12942&SSO=1"
+    },
+    {
+      "date": "2016-12-01",
+      "value": 54.7,
+      "sourceUrl": "https://web.archive.org/web/20170104100704/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
+    },
+    {
+      "date": "2017-01-01",
+      "value": 56,
+      "sourceUrl": "https://web.archive.org/web/20170206131632/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2017-02-01",
+      "value": 57.7,
+      "sourceUrl": "https://web.archive.org/web/20170303101832/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?navItemNumber=12942&SSO=1"
+    },
+    {
+      "date": "2017-03-01",
+      "value": 57.2,
+      "sourceUrl": "https://web.archive.org/web/20170406012954/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2017-04-01",
+      "value": 54.8,
+      "sourceUrl": "https://web.archive.org/web/20170504172652/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?navItemNumber=12942"
+    },
+    {
+      "date": "2017-05-01",
+      "value": 54.9,
+      "sourceUrl": "https://web.archive.org/web/20170607042158/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2017-06-01",
+      "value": 57.8,
+      "sourceUrl": "https://web.archive.org/web/20170706090038/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2017-07-01",
+      "value": 56.3,
+      "sourceUrl": "https://web.archive.org/web/20170810190508/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2017-08-01",
+      "value": 58.8,
+      "sourceUrl": "https://web.archive.org/web/20170911114210/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
+    },
+    {
+      "date": "2017-09-01",
+      "value": 60.8,
+      "sourceUrl": "https://web.archive.org/web/20171010211955/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2017-10-01",
+      "value": 58.7,
+      "sourceUrl": "https://web.archive.org/web/20171109125417/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2017-11-01",
+      "value": 58.2,
+      "sourceUrl": "https://web.archive.org/web/20171228130020/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
+    },
+    {
+      "date": "2017-12-01",
+      "value": 59.7,
+      "sourceUrl": "https://web.archive.org/web/20180107183105/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2018-01-01",
+      "value": 59.1,
+      "sourceUrl": "https://web.archive.org/web/20180209023928/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2018-02-01",
+      "value": 60.8,
+      "sourceUrl": "https://web.archive.org/web/20180306232716/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2018-03-01",
+      "value": 59.3,
+      "sourceUrl": "https://web.archive.org/web/20180407050702/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2018-04-01",
+      "value": 57.3,
+      "sourceUrl": "https://web.archive.org/web/20180512185141/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2018-05-01",
+      "value": 58.7,
+      "sourceUrl": "https://web.archive.org/web/20180612000901/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2018-06-01",
+      "value": 60.2,
+      "sourceUrl": "https://web.archive.org/web/20180715112152/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2018-07-01",
+      "value": 58.1,
+      "sourceUrl": "https://web.archive.org/web/20180806143220/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
     },
     {
       "date": "2018-08-01",
-      "value": 60.8,
-      "sourceUrl": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"
+      "value": 61.3,
+      "sourceUrl": "https://web.archive.org/web/20180905003910/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2018-09-01",
+      "value": 59.8,
+      "sourceUrl": "https://web.archive.org/web/20181004061640/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
+    },
+    {
+      "date": "2018-10-01",
+      "value": 57.7,
+      "sourceUrl": "https://web.archive.org/web/20181102132137/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2018-11-01",
+      "value": 59.3,
+      "sourceUrl": "https://web.archive.org/web/20181204144040/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2018-12-01",
+      "value": 54.1,
+      "sourceUrl": "https://web.archive.org/web/20190110040921/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2019-01-01",
+      "value": 56.6,
+      "sourceUrl": "https://web.archive.org/web/20190210230544/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2019-02-01",
+      "value": 54.2,
+      "sourceUrl": "https://web.archive.org/web/20190307095543/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
+    },
+    {
+      "date": "2019-03-01",
+      "value": 55.3,
+      "sourceUrl": "https://web.archive.org/web/20190406073842/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
+    },
+    {
+      "date": "2019-04-01",
+      "value": 52.8,
+      "sourceUrl": "https://web.archive.org/web/20190509075847/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
+    },
+    {
+      "date": "2019-05-01",
+      "value": 52.1,
+      "sourceUrl": "https://web.archive.org/web/20190612200436/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
+    },
+    {
+      "date": "2019-06-01",
+      "value": 51.7,
+      "sourceUrl": "https://web.archive.org/web/20190712152344/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
+    },
+    {
+      "date": "2019-07-01",
+      "value": 51.2,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/pmi-at-51-2-july-manufacturing-ism-report-on-business-300892730.html"
+    },
+    {
+      "date": "2019-08-01",
+      "value": 49.1,
+      "sourceUrl": "https://web.archive.org/web/20190912002550/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2019-09-01",
+      "value": 47.8,
+      "sourceUrl": "https://web.archive.org/web/20191012023253/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
+    },
+    {
+      "date": "2019-10-01",
+      "value": 48.3,
+      "sourceUrl": "https://web.archive.org/web/20191112105252/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
+    },
+    {
+      "date": "2019-11-01",
+      "value": 48.1,
+      "sourceUrl": "https://web.archive.org/web/20191212042536/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
+    },
+    {
+      "date": "2019-12-01",
+      "value": 47.2,
+      "sourceUrl": "https://web.archive.org/web/20200112100944/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
+    },
+    {
+      "date": "2020-01-01",
+      "value": 50.9,
+      "sourceUrl": "https://web.archive.org/web/20200212024643/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
+    },
+    {
+      "date": "2020-02-01",
+      "value": 50.1,
+      "sourceUrl": "https://web.archive.org/web/20200312073859/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
+    },
+    {
+      "date": "2020-03-01",
+      "value": 49.1,
+      "sourceUrl": "https://web.archive.org/web/20200409112903/https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1"
     },
     {
       "date": "2020-04-01",
       "value": 41.5,
-      "sourceUrl": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"
+      "sourceUrl": "https://web.archive.org/web/20200512181052/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
+    },
+    {
+      "date": "2020-05-01",
+      "value": 43.1,
+      "sourceUrl": "https://web.archive.org/web/20200610183806/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1"
     },
     {
       "date": "2020-08-01",
       "value": 56,
-      "sourceUrl": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"
+      "sourceUrl": "https://www.prnewswire.com/news-releases/pmi-at-56-0-august-2020-manufacturing-ism-report-on-business-301121423.html"
     },
     {
       "date": "2022-06-01",
       "value": 53,
-      "sourceUrl": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"
+      "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-53-june-2022-manufacturing-ism-report-on-business-301579263.html"
     },
     {
       "date": "2023-06-01",
       "value": 46,
-      "sourceUrl": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"
+      "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-46-june-2023-manufacturing-ism-report-on-business-301868365.html"
     },
     {
       "date": "2024-01-01",
       "value": 49.1,
-      "sourceUrl": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/manufacturing/"
+      "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-49-1-january-2024-manufacturing-ism-report-on-business-302049663.html"
     },
     {
       "date": "2025-08-01",

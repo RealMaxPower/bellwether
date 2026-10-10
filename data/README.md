@@ -22,7 +22,7 @@ The Manufacturing PMI history is reconstructed from three sources, in priority o
 
 | File | Coverage | Source |
 |------|----------|--------|
-| `pmi-curated.json` (and `pmi-curated.csv`) | Sparse hand-transcribed rows | ISM news releases (live) |
+| `pmi-curated.json` (and `pmi-curated.csv`) | Hand-transcribed rows: 2015-04 → 2020-05 (fills the Wayback gap below), plus scattered months and recent PRNewswire prints | ISM news releases (release-day pages via Wayback, PRNewswire) |
 | `pmi-wayback.json` | 2014-09 → present (with a 2015-04 → 2020-05 structural gap) | Wayback Machine snapshots of ISM monthly ROB pages |
 | `pmi-historical.json` | 1948-01 → 2014-08 | forecasts.org NAPM mirror |
 | `pmi-subindices-wayback.json` | New Orders / Production / Employment / Supplier Deliveries / Inventories, 2014→present | Wayback ROB pages |

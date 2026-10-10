@@ -18,6 +18,27 @@
       "note": "Last month before the structural 2015-04 to 2020-05 archive gap. Legacy ism.ws era. Prose: \"The March PMI registered 51.5 percent\"."
     },
     {
+      "date": "2015-04-01",
+      "headlinePmi": 51.5,
+      "sourceUrl": "https://web.archive.org/web/20150513023436/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm",
+      "addedAt": "2026-10-10",
+      "note": "First month of the hand-curated 2015-04 to 2020-05 gap fill (instituteforsupplymanagement.org/MfgROB.cfm rotating-page era; heading \"April 2015 Manufacturing ISM Report On Business\"). Prose: \"The April PMI registered 51.5 percent\"."
+    },
+    {
+      "date": "2018-11-01",
+      "headlinePmi": 59.3,
+      "sourceUrl": "https://web.archive.org/web/20181204144040/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1",
+      "addedAt": "2026-10-10",
+      "note": "Mid gap fill; the last print before the December 2018 FOMC, quoted in the Powell 2018 Fed Chair scenario. Also in the Dec 3, 2018 PR Newswire copy and the December release (\"from the November reading of 59.3 percent\"). Prose: \"The November PMI registered 59.3 percent\"."
+    },
+    {
+      "date": "2020-05-01",
+      "headlinePmi": 43.1,
+      "sourceUrl": "https://web.archive.org/web/20200610183806/https://www.instituteforsupplymanagement.org/ismreport/mfgrob.cfm?SSO=1",
+      "addedAt": "2026-10-10",
+      "note": "Last month of the hand-curated gap fill, at the hand-off to the ismworld.org Wayback era (2020-06). Prose: \"The May PMI registered 43.1 percent\"."
+    },
+    {
       "date": "2020-06-01",
       "headlinePmi": 52.6,
       "sourceUrl": "https://web.archive.org/web/20200809031403/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-report-on-business/pmi/june/",
