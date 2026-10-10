@@ -25,7 +25,7 @@ export function SectorHeatmap({ data }: SectorHeatmapProps) {
           <CardContent className="space-y-3 px-5 py-5">
             <h3 className="font-serif text-title-2 text-ink-700">Color scale</h3>
             <div className="space-y-2 text-caption text-ink-500">
-              <div className="h-3 w-full rounded-full bg-gradient-to-r from-contraction via-ink-200 to-expansion" />
+              <div className="h-3 w-full rounded-full bg-linear-to-r from-contraction via-ink-200 to-expansion" />
               <div className="flex justify-between text-[11px] text-ink-400">
                 <span>-100 contraction</span>
                 <span>0 mixed</span>

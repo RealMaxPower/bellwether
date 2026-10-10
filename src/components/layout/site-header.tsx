@@ -35,7 +35,7 @@ export function SiteHeader() {
   return (
     <>
       <header className="sticky top-0 z-50 grid grid-cols-[1fr_auto_1fr] items-end gap-6 border-b border-ink-700 bg-paper px-8 pb-3 pt-3.5">
-        <div className="flex items-center gap-4 font-sans text-[11px] uppercase tracking-[0.1em] text-ink-400">
+        <div className="flex items-center gap-4 font-sans text-[11px] uppercase tracking-widest text-ink-400">
           <span className="inline-flex items-center gap-1.5">
             <span
               aria-hidden

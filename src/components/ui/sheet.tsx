@@ -40,7 +40,7 @@ export const SheetContent = React.forwardRef<
       {...props}
     >
       {children}
-      <DialogPrimitive.Close className="absolute right-4 top-4 flex h-7 w-7 items-center justify-center border border-paper-edge text-ink-400 transition-colors hover:border-ink-700 hover:bg-ink-700 hover:text-paper focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-ink-700">
+      <DialogPrimitive.Close className="absolute right-4 top-4 flex h-7 w-7 items-center justify-center border border-paper-edge text-ink-400 transition-colors hover:border-ink-700 hover:bg-ink-700 hover:text-paper focus:outline-hidden focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-ink-700">
         <X className="h-4 w-4" />
         <span className="sr-only">Close</span>
       </DialogPrimitive.Close>

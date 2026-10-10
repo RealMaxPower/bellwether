@@ -1,5 +1,20 @@
 import { clsx, type ClassValue } from "clsx";
-import { twMerge } from "tailwind-merge";
+import { extendTailwindMerge } from "tailwind-merge";
+
+/**
+ * tailwind-merge only knows Tailwind's default theme. Register the custom
+ * scales from globals.css's @theme so it doesn't misread them — e.g. treating
+ * `text-caption` as a colour and dropping it next to `text-ink-400`.
+ */
+const twMerge = extendTailwindMerge({
+  extend: {
+    theme: {
+      text: ["display-1", "display-2", "title-1", "title-2", "body-lg", "body", "caption"],
+      shadow: ["card", "drawer"],
+      animate: ["fade-in", "slide-in-right", "live-pulse"],
+    },
+  },
+});
 
 /** Conditional className helper used by all UI primitives. */
 export function cn(...inputs: ClassValue[]): string {

@@ -25,7 +25,7 @@ export function MiniExhibit({ entry, href }: MiniExhibitProps) {
   return (
     <aside className="grid gap-4 border border-ink-700 bg-paper-2/40 p-4 md:grid-cols-[120px_1fr] md:gap-5 md:p-5">
       <Link href={target} className="group block" aria-label={`Read ${entry.title} on the timeline`}>
-        <div className="relative aspect-[4/5] overflow-hidden border border-ink-700 bg-paper-2">
+        <div className="relative aspect-4/5 overflow-hidden border border-ink-700 bg-paper-2">
           <Image
             src={`/background/${entry.photo}.jpg`}
             alt={entry.photoAlt}
