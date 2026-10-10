@@ -32,9 +32,23 @@ export function SiteHeader() {
     );
   }, []);
 
+  // Below ~830px the tab row scrolls sideways; bring the current section's
+  // tab into view so it isn't hidden off the right edge on load.
+  const tabsRef = React.useRef<HTMLDivElement>(null);
+  React.useEffect(() => {
+    const row = tabsRef.current;
+    const active = row?.querySelector<HTMLElement>('[aria-current="page"]');
+    if (!row || !active) return;
+    const r = row.getBoundingClientRect();
+    const a = active.getBoundingClientRect();
+    if (a.left < r.left || a.right > r.right) row.scrollLeft += a.left - r.left - 16;
+  }, [pathname]);
+
   return (
-    <>
-      <header className="sticky top-0 z-50 grid grid-cols-[1fr_auto_1fr] items-end gap-6 border-b border-ink-700 bg-paper px-8 pb-3 pt-3.5">
+    // One sticky wrapper for masthead + tabs, so the tabs never need a
+    // hard-coded offset matching the masthead's height (which varies by width).
+    <div className="sticky top-0 z-50">
+      <header className="grid grid-cols-[1fr_auto_1fr] items-end gap-3 border-b border-ink-700 bg-paper px-4 pb-3 pt-3.5 sm:gap-6 sm:px-8">
         <div className="flex items-center gap-4 font-sans text-[11px] uppercase tracking-widest text-ink-400">
           <span className="inline-flex items-center gap-1.5">
             <span
@@ -55,7 +69,7 @@ export function SiteHeader() {
           >
             Bell<span className="italic">wether</span>
           </Link>
-          <div className="mt-1 flex items-center justify-center gap-2 font-sans text-[10px] uppercase tracking-[0.22em] text-ink-400">
+          <div className="mt-1 hidden items-center justify-center gap-2 font-sans text-[10px] uppercase tracking-[0.22em] text-ink-400 sm:flex">
             <span aria-hidden className="h-px w-6 bg-paper-edge" />
             <span aria-hidden className="text-[12px] leading-none text-oxblood">❦</span>
             <span>ISM PMI Atlas — Manufacturing &amp; Services</span>
@@ -70,44 +84,48 @@ export function SiteHeader() {
             href="https://github.com/RealMaxPower/bellwether"
             target="_blank"
             rel="noreferrer"
-            className="border border-paper-edge px-3.5 py-1.5 font-sans text-[11px] font-medium uppercase tracking-[0.06em] text-ink-400 transition-colors hover:border-ink-700 hover:bg-ink-700 hover:text-paper"
+            className="hidden border border-paper-edge px-3.5 py-1.5 font-sans text-[11px] font-medium uppercase tracking-[0.06em] text-ink-400 transition-colors hover:border-ink-700 hover:bg-ink-700 hover:text-paper sm:block"
           >
             Source
           </a>
         </div>
       </header>
 
-      <nav
-        aria-label="Primary"
-        className="sticky top-[76px] z-40 flex border-b border-ink-700 bg-paper px-8"
-      >
-        {NAV.map((item, i) => {
-          const active = pathname === item.href;
-          const num = String(i + 1).padStart(2, "0");
-          return (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={cn(
-                "-mb-px flex items-center gap-2.5 border-b-2 px-5 pb-3 pt-3.5 font-sans text-[12px] font-medium uppercase tracking-[0.08em] transition-colors",
-                active
-                  ? "border-oxblood font-semibold text-ink-700"
-                  : "border-transparent text-ink-400 hover:text-ink-700",
-              )}
-            >
-              <span
+      <nav aria-label="Primary" className="border-b border-ink-700 bg-paper">
+        <div
+          ref={tabsRef}
+          className="-mb-px flex overflow-x-auto scrollbar-none px-4 md:px-8 [&::-webkit-scrollbar]:hidden"
+        >
+          {NAV.map((item, i) => {
+            const active = pathname === item.href;
+            const num = String(i + 1).padStart(2, "0");
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                aria-current={active ? "page" : undefined}
                 className={cn(
-                  "font-mono text-[10px] font-normal",
-                  active ? "text-oxblood" : "text-ink-300",
+                  // Inset focus ring: the scrolling row would clip one drawn outside the tab.
+                  "flex shrink-0 items-center gap-2.5 whitespace-nowrap border-b-2 px-3 pb-3 pt-3.5 font-sans text-[12px] font-medium uppercase tracking-[0.08em] transition-colors focus-visible:-outline-offset-2 md:px-5",
+                  active
+                    ? "border-oxblood font-semibold text-ink-700"
+                    : "border-transparent text-ink-400 hover:text-ink-700",
                 )}
               >
-                {num}
-              </span>
-              {item.label}
-            </Link>
-          );
-        })}
+                <span
+                  className={cn(
+                    "font-mono text-[10px] font-normal",
+                    active ? "text-oxblood" : "text-ink-300",
+                  )}
+                >
+                  {num}
+                </span>
+                {item.label}
+              </Link>
+            );
+          })}
+        </div>
       </nav>
-    </>
+    </div>
   );
 }
