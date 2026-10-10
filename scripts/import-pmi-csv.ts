@@ -10,8 +10,12 @@
  *      Lines starting with # and blank lines are ignored.
  *   3. Run:           npx tsx scripts/import-pmi-csv.ts
  *      (or `npm run import-pmi`)
- *   4. The script validates each row, sorts by date, and writes
- *      data/pmi-curated.json with an updated lastVerifiedAt.
+ *   4. The script validates each row and merges it into data/pmi-curated.json
+ *      (CSV rows win on overlap), then writes the file sorted by date with an
+ *      updated lastVerifiedAt. Rows already in the JSON but absent from the
+ *      CSV — the PRNewswire importer writes the JSON directly — are kept, so
+ *      re-running this never drops them. To remove a month, delete it from
+ *      both files.
  *
  * Schema enforcement happens on the *next* page render — the loader runs the
  * curatedSeriesSchema parse, so any malformed entry fails the build loud.
@@ -82,6 +86,16 @@ for (const row of rows) {
   seen.add(row.date);
 }
 
+// Merge rather than overwrite: the PRNewswire importer appends straight to the
+// JSON, so a CSV-only rebuild would silently delete those months.
+const existing: Row[] = existsSync(jsonPath)
+  ? (JSON.parse(readFileSync(jsonPath, "utf8")) as { observations: Row[] }).observations
+  : [];
+const byDate = new Map(existing.map((o) => [o.date, o]));
+const kept = existing.filter((o) => !seen.has(o.date)).length;
+for (const row of rows) byDate.set(row.date, row);
+const observations = Array.from(byDate.values()).sort((a, b) => a.date.localeCompare(b.date));
+
 const today = new Date().toISOString().slice(0, 10);
 const out = {
   id: "PMI-CURATED",
@@ -90,8 +104,11 @@ const out = {
   units: "Index",
   provenance: "hand-curated",
   lastVerifiedAt: today,
-  observations: rows,
+  observations,
 };
 
 writeFileSync(jsonPath, `${JSON.stringify(out, null, 2)}\n`);
-console.log(`Wrote ${rows.length} observation(s) to data/pmi-curated.json (verified ${today}).`);
+console.log(
+  `Wrote ${observations.length} observation(s) to data/pmi-curated.json ` +
+    `(${rows.length} from CSV, ${kept} kept from JSON only; verified ${today}).`,
+);

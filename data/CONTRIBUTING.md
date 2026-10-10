@@ -109,7 +109,7 @@ The press-release path covers only headline values, not subindex breakdowns or i
    2026-04-01,49.1,https://www.ismworld.org/.../april-2026/
    ```
    Lines starting with `#` and blank lines are ignored.
-4. Run `npm run import-pmi`. The script validates each row, sorts by date, deduplicates, and writes `data/pmi-curated.json` with an updated `lastVerifiedAt`.
+4. Run `npm run import-pmi`. The script validates each row and merges it into `data/pmi-curated.json` (CSV rows win on overlap), keeping months that exist only in the JSON — the PRNewswire importer writes there directly — and updates `lastVerifiedAt`. To remove a month, delete it from both files.
 5. Commit both `data/pmi-curated.csv` and `data/pmi-curated.json`. The homepage's PMI snapshot panel renders automatically once the file has at least one observation.
 
 Schema enforces `provenance: "hand-curated"` and a per-observation `sourceUrl` — no value ships without a citation, regardless of which path produced the row. Subindices are not curated this way (their per-month values aren't always quoted in ISM news releases) and remain gated on ISM redistribution licensing.

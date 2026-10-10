@@ -57,7 +57,7 @@ export const getWaybackPMI = cache((): CuratedSeries =>
  * authoritative source wins on overlap.
  *   1. forecasts.org mirror (1948→2014)         — third-party-mirror
  *   2. Wayback archive of ISM releases (2014→)  — wayback-archive (overwrites mirror)
- *   3. Hand-curated rows (sparse, current vintage) — overwrites everything
+ *   3. Hand-curated rows (2015-04 → 2020-05 gap fill + scattered months) — overwrites everything
  * Each observation keeps its own sourceUrl, so the citation chain remains
  * row-level. The file-level provenance label is the weakest of the inputs.
  */
