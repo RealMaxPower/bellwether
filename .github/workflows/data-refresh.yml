@@ -56,6 +56,39 @@ jobs:
           fi
           exit $missing
 
+      # Present is not the same as valid. Fine-grained PATs expire (30 days by
+      # default), and an expired one only surfaces at the very last step: the
+      # 2026-10-05 run scraped for 50 minutes, then create-pull-request died on
+      # "could not read Username" and threw the whole refresh away. Probe the
+      # token up front, and warn while there's still time to rotate it.
+      - name: Check DATA_REFRESH_TOKEN is valid and not about to expire
+        env:
+          DATA_REFRESH_TOKEN: ${{ secrets.DATA_REFRESH_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          headers=$(mktemp)
+          status=$(curl -sS -o /dev/null -D "$headers" -w '%{http_code}' \
+            -H "Authorization: Bearer $DATA_REFRESH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/$REPO")
+          if [ "$status" != "200" ]; then
+            echo "::error::GitHub rejected DATA_REFRESH_TOKEN (HTTP $status) — it has most likely expired."
+            echo "Create a new fine-grained PAT scoped to this repo only (Contents: Read and write,"
+            echo "Pull requests: Read and write) and update the secret under Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+          expiry=$(grep -i '^github-authentication-token-expiration:' "$headers" | cut -d' ' -f2- | tr -d '\r')
+          if [ -z "$expiry" ]; then
+            echo "DATA_REFRESH_TOKEN is valid and has no expiry."
+            exit 0
+          fi
+          days=$(( ($(date -d "$expiry" +%s) - $(date +%s)) / 86400 ))
+          echo "DATA_REFRESH_TOKEN is valid; expires $expiry ($days days)."
+          # Runs are monthly, so anything under ~5 weeks dies before the next one.
+          if [ "$days" -lt 35 ]; then
+            echo "::warning::DATA_REFRESH_TOKEN expires in $days days, before next month's run. Rotate it now."
+          fi
+
       - name: Pull latest FRED snapshots
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
