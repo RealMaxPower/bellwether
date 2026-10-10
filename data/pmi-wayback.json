@@ -4,7 +4,7 @@
   "source": "Wayback Machine archive of ISM monthly Manufacturing Report on Business pages — values originate with ISM",
   "units": "Index",
   "provenance": "wayback-archive",
-  "lastVerifiedAt": "2026-09-05",
+  "lastVerifiedAt": "2026-10-10",
   "observations": [
     {
       "date": "2014-09-01",
@@ -405,6 +405,16 @@
       "date": "2026-06-01",
       "value": 53.3,
       "sourceUrl": "https://web.archive.org/web/20260701142312/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/june/"
+    },
+    {
+      "date": "2026-07-01",
+      "value": 55.6,
+      "sourceUrl": "https://web.archive.org/web/20260805065247/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/july/"
+    },
+    {
+      "date": "2026-08-01",
+      "value": 54.6,
+      "sourceUrl": "https://web.archive.org/web/20260901144448/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/august/"
     }
   ]
 }

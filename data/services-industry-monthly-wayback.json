@@ -3,7 +3,7 @@
   "title": "ISM Services — per-month industry growth/contraction lists (Wayback archive)",
   "source": "Wayback Machine archive of ISM monthly Services Report on Business pages — overall NMI / Services PMI growth/contraction lists, normalized against the 18-industry canonical names from data/sectors-services.json",
   "provenance": "wayback-archive",
-  "lastVerifiedAt": "2026-09-06",
+  "lastVerifiedAt": "2026-10-10",
   "industries": [
     "Accommodation & Food Services",
     "Agriculture, Forestry, Fishing & Hunting",
@@ -2011,6 +2011,56 @@
         "Public Administration"
       ],
       "sourceUrl": "https://web.archive.org/web/20260706201848/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/june/"
+    },
+    {
+      "date": "2026-07-01",
+      "growing": [
+        "Retail Trade",
+        "Transportation & Warehousing",
+        "Wholesale Trade",
+        "Management of Companies & Support Services",
+        "Information",
+        "Construction",
+        "Accommodation & Food Services",
+        "Public Administration",
+        "Utilities",
+        "Educational Services",
+        "Mining",
+        "Professional, Scientific & Technical Services",
+        "Finance & Insurance"
+      ],
+      "contracting": [
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Other Services",
+        "Health Care & Social Assistance",
+        "Real Estate, Rental & Leasing"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20260912073811/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
+    },
+    {
+      "date": "2026-08-01",
+      "growing": [
+        "Mining",
+        "Real Estate, Rental & Leasing",
+        "Accommodation & Food Services",
+        "Wholesale Trade",
+        "Arts, Entertainment & Recreation",
+        "Educational Services",
+        "Retail Trade",
+        "Information",
+        "Professional, Scientific & Technical Services",
+        "Utilities",
+        "Transportation & Warehousing",
+        "Public Administration"
+      ],
+      "contracting": [
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Construction",
+        "Management of Companies & Support Services",
+        "Finance & Insurance",
+        "Health Care & Social Assistance"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20260907095101/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/august/"
     }
   ]
 }
