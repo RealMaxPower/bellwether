@@ -118,7 +118,7 @@ export function PolicyLane({ policies, observations, onSelect }: PolicyLaneProps
             key={policy.id}
             href={`?policy=${policy.id}`}
             aria-label={`${n}. ${policy.title}`}
-            className="group cursor-pointer focus:outline-none"
+            className="group cursor-pointer focus:outline-hidden"
             onClick={(e) => {
               e.preventDefault();
               onSelect(policy.id);

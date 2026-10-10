@@ -446,7 +446,7 @@ function PMIMarkers({
             target="_blank"
             rel="noopener noreferrer"
             aria-label={label}
-            className="cursor-pointer focus:outline-none"
+            className="cursor-pointer focus:outline-hidden"
           >
             {/* Larger transparent hit target so the dot is easy to click. */}
             <circle cx={x} cy={y} r={10} className="fill-transparent" />
@@ -562,7 +562,7 @@ function Tooltip({
   const isLeftHalf = xPercent < 50;
   return (
     <div
-      className="pointer-events-none absolute top-3 z-10 min-w-[130px] bg-ink-700 px-3 py-2 font-mono text-[11px] leading-[1.5] text-paper"
+      className="pointer-events-none absolute top-3 z-10 min-w-[130px] bg-ink-700 px-3 py-2 font-mono text-[11px] leading-normal text-paper"
       style={{ [isLeftHalf ? "left" : "right"]: `${isLeftHalf ? xPercent + 2 : 100 - xPercent + 2}%` }}
     >
       <div className="text-[10px] uppercase tracking-[0.06em] text-paper-2/80">

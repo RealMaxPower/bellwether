@@ -33,7 +33,7 @@ export function Exhibit({ entry, reverse }: { entry: TimelineEntry; reverse: boo
         }`}
       >
         <figure className="group">
-          <div className="relative aspect-[4/5] overflow-hidden border border-ink-700 bg-paper-2">
+          <div className="relative aspect-4/5 overflow-hidden border border-ink-700 bg-paper-2">
             <Image
               src={`/background/${entry.photo}.jpg`}
               alt={entry.photoAlt}
@@ -55,7 +55,7 @@ export function Exhibit({ entry, reverse }: { entry: TimelineEntry; reverse: boo
           <p className="mt-4 max-w-[58ch] font-serif text-[15px] leading-[1.6] text-ink-500">
             {entry.body}
           </p>
-          <p className="mt-4 font-sans text-[10px] uppercase tracking-[0.1em] text-ink-400">
+          <p className="mt-4 font-sans text-[10px] uppercase tracking-widest text-ink-400">
             Source ·{" "}
             <a
               href={entry.source.url}

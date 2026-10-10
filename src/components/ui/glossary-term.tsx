@@ -66,7 +66,7 @@ export function GlossaryTerm({ slug, children, className }: GlossaryTermProps) {
         aria-haspopup="dialog"
         onClick={() => setOpen((v) => !v)}
         className={cn(
-          "border-b border-dotted border-ink-400 text-ink-700 transition-colors hover:border-oxblood hover:text-oxblood focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-700",
+          "border-b border-dotted border-ink-400 text-ink-700 transition-colors hover:border-oxblood hover:text-oxblood focus:outline-hidden focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-700",
           open && "border-oxblood text-oxblood",
           className,
         )}

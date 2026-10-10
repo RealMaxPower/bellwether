@@ -314,7 +314,7 @@ function Sparkline({ observations }: { observations: CuratedSeries["observations
         x={W - M.r}
         y={thresholdY - 3}
         textAnchor="end"
-        className="fill-ink-300 font-sans text-[9px] uppercase tracking-[0.1em]"
+        className="fill-ink-300 font-sans text-[9px] uppercase tracking-widest"
       >
         50
       </text>

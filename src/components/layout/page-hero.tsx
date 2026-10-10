@@ -26,7 +26,7 @@ export function PageHero({ number, eyebrow, headline, lede, meta }: PageHeroProp
         <p className="eyebrow mb-6">
           <span className="text-ink-300">{num} ·</span> {eyebrow}
         </p>
-        <h1 className="max-w-[14ch] font-serif text-[clamp(2.5rem,5vw+1rem,3.75rem)] font-normal italic leading-[1.0] tracking-[-0.025em] text-ink-700 [&_em]:not-italic [&_em]:font-semibold [&_em]:text-oxblood">
+        <h1 className="max-w-[14ch] font-serif text-[clamp(2.5rem,5vw+1rem,3.75rem)] font-normal italic leading-none tracking-tight text-ink-700 [&_em]:not-italic [&_em]:font-semibold [&_em]:text-oxblood">
           {headline}
         </h1>
         <p className="mt-6 max-w-[60ch] font-serif text-[17px] leading-[1.55] text-ink-500">

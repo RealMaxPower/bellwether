@@ -39,7 +39,7 @@ export function DecadeNav({ decades }: DecadeNavProps) {
   return (
     <nav
       aria-label="Decades"
-      className="sticky top-[140px] hidden flex-col gap-1 self-start font-sans text-[11px] uppercase tracking-[0.1em] lg:flex"
+      className="sticky top-[140px] hidden flex-col gap-1 self-start font-sans text-[11px] uppercase tracking-widest lg:flex"
     >
       <span className="mb-2 text-ink-300">Decades</span>
       {decades.map((d) => {

@@ -61,7 +61,7 @@ export function NumberedIndex({ policies, onSelect }: NumberedIndexProps) {
               <button
                 type="button"
                 onClick={() => onSelect(policy.id)}
-                className="group flex h-full w-full flex-col gap-1.5 bg-paper px-4 py-4 text-left transition-colors hover:bg-paper-2 focus:outline-none focus-visible:bg-paper-2"
+                className="group flex h-full w-full flex-col gap-1.5 bg-paper px-4 py-4 text-left transition-colors hover:bg-paper-2 focus:outline-hidden focus-visible:bg-paper-2"
               >
                 <div className="flex items-center gap-2.5">
                   <span
@@ -70,7 +70,7 @@ export function NumberedIndex({ policies, onSelect }: NumberedIndexProps) {
                     {n}
                   </span>
                   <span
-                    className={`border ${KIND_BORDER[policy.kind]} ${KIND_TEXT[policy.kind]} px-2 py-0.5 font-sans text-[10px] font-semibold uppercase tracking-[0.1em]`}
+                    className={`border ${KIND_BORDER[policy.kind]} ${KIND_TEXT[policy.kind]} px-2 py-0.5 font-sans text-[10px] font-semibold uppercase tracking-widest`}
                   >
                     {KIND_LABEL[policy.kind]}
                   </span>
