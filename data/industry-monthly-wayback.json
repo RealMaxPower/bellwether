@@ -1,9 +1,9 @@
 {
   "id": "INDUSTRY-MONTHLY-WAYBACK",
-  "title": "ISM Manufacturing \u2014 per-month industry growth/contraction lists (Wayback archive)",
-  "source": "Wayback Machine archive of ISM monthly Manufacturing Report on Business pages \u2014 overall PMI growth/contraction lists, normalized against the 18-industry canonical names from data/sectors.json",
+  "title": "ISM Manufacturing — per-month industry growth/contraction lists (Wayback archive)",
+  "source": "Wayback Machine archive of ISM monthly Manufacturing Report on Business pages — overall PMI growth/contraction lists, normalized against the 18-industry canonical names from data/sectors.json",
   "provenance": "wayback-archive",
-  "lastVerifiedAt": "2026-09-06",
+  "lastVerifiedAt": "2026-10-10",
   "industries": [
     "Apparel, Leather & Allied Products",
     "Chemical Products",
@@ -1981,6 +1981,31 @@
         "Wood Products"
       ],
       "sourceUrl": "https://web.archive.org/web/20260701142312/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/june/"
+    },
+    {
+      "date": "2026-08-01",
+      "growing": [
+        "Primary Metals",
+        "Electrical Equipment, Appliances & Components",
+        "Miscellaneous Manufacturing",
+        "Textile Mills",
+        "Furniture & Related Products",
+        "Nonmetallic Mineral Products",
+        "Paper Products",
+        "Transportation Equipment",
+        "Fabricated Metal Products",
+        "Petroleum & Coal Products",
+        "Printing & Related Support Activities",
+        "Computer & Electronic Products",
+        "Plastics & Rubber Products",
+        "Machinery",
+        "Food, Beverage & Tobacco"
+      ],
+      "contracting": [
+        "Wood Products",
+        "Chemical Products"
+      ],
+      "sourceUrl": "https://web.archive.org/web/20260901144448/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/august/"
     }
   ]
 }

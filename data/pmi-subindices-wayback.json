@@ -4,7 +4,7 @@
   "source": "Wayback Machine archive of ISM monthly Manufacturing Report on Business pages — composite and the five subindices (New Orders, Production, Employment, Supplier Deliveries, Inventories) extracted from the same paragraphs",
   "units": "Index",
   "provenance": "wayback-archive",
-  "lastVerifiedAt": "2026-09-05",
+  "lastVerifiedAt": "2026-10-10",
   "observations": [
     {
       "date": "2014-09-01",
@@ -805,6 +805,26 @@
       "supplierDeliveries": 57.4,
       "inventories": 51.4,
       "sourceUrl": "https://web.archive.org/web/20260701142312/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/june/"
+    },
+    {
+      "date": "2026-07-01",
+      "composite": 55.6,
+      "newOrders": 56.7,
+      "production": 58.5,
+      "employment": 52.8,
+      "supplierDeliveries": 58.9,
+      "inventories": 51.2,
+      "sourceUrl": "https://web.archive.org/web/20260805065247/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/july/"
+    },
+    {
+      "date": "2026-08-01",
+      "composite": 54.6,
+      "newOrders": 53.7,
+      "production": 58.3,
+      "employment": 51.2,
+      "supplierDeliveries": 59.3,
+      "inventories": 50.6,
+      "sourceUrl": "https://web.archive.org/web/20260901144448/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/august/"
     }
   ]
 }
