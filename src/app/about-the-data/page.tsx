@@ -429,7 +429,7 @@ function DataTable({
   rows: { label: string; provenance: string; lastVerifiedAt: string; latestObservation: string; n: number }[];
 }) {
   return (
-    <div className="mt-4 overflow-hidden rounded-md border border-ink-700/15">
+    <div className="mt-4 overflow-x-auto rounded-md border border-ink-700/15">
       <table className="w-full text-caption">
         <thead className="bg-ink-700/5 text-ink-500">
           <tr>
