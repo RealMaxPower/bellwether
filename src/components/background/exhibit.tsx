@@ -28,8 +28,8 @@ export function Exhibit({ entry, reverse }: { entry: TimelineEntry; reverse: boo
       </div>
 
       <div
-        className={`grid gap-6 md:grid-cols-[240px_1fr] md:gap-8 ${
-          reverse ? "md:[&>figure]:order-2" : ""
+        className={`grid gap-6 md:gap-8 ${
+          reverse ? "md:grid-cols-[1fr_240px] md:[&>figure]:order-2" : "md:grid-cols-[240px_1fr]"
         }`}
       >
         <figure className="group">

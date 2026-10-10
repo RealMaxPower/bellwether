@@ -3,7 +3,7 @@ import { SectorHeatmap } from "@/components/heatmap/sector-heatmap";
 import { PageHero } from "@/components/layout/page-hero";
 import { GlossaryTerm } from "@/components/ui/glossary-term";
 import { loadSectors, loadSectorsServices } from "@/lib/data/sectors";
-import { getPMI } from "@/lib/data/series";
+import { getMergedPMI } from "@/lib/data/series";
 import { cn } from "@/lib/utils";
 
 type Report = "manufacturing" | "services";
@@ -16,7 +16,7 @@ export default async function HeatmapPage({ searchParams }: HeatmapPageProps) {
   const params = (await searchParams) ?? {};
   const report: Report = params.report === "services" ? "services" : "manufacturing";
   const sectors = report === "services" ? loadSectorsServices() : loadSectors();
-  const pmi = getPMI();
+  const pmi = getMergedPMI();
   const first = pmi.observations[0];
   const last = pmi.observations[pmi.observations.length - 1];
   if (!first || !last) throw new Error("PMI series has no observations");
@@ -58,7 +58,7 @@ export default async function HeatmapPage({ searchParams }: HeatmapPageProps) {
         meta={[
           { label: "Series", value: report === "services" ? "NMI" : "NAPM" },
           { label: "Frequency", value: "Monthly" },
-          { label: "Source", value: "FRED + ISM" },
+          { label: "Source", value: "ISM ROB" },
           { label: "Coverage", value: `${seriesStart} → ${seriesEnd}` },
         ]}
       />
