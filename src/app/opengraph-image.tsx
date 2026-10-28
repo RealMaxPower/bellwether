@@ -1,8 +1,23 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
 export const alt = "Bellwether — atlas of the ISM PMI suite";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+
+// next/og only bundles one sans-serif face, so the site's fonts are supplied
+// here. They're Google Fonts' static TTF instances, unmodified (Satori can't
+// read woff2 or variable fonts); the licences sit alongside them. The image
+// is prerendered, so they're only read at build time.
+const font = (file: string) => readFile(join(process.cwd(), "assets/fonts", file));
+const [serifMedium, serifMediumItalic, serifItalic, inter, interSemiBold] = await Promise.all([
+  font("SourceSerif4-Medium.ttf"),
+  font("SourceSerif4-MediumItalic.ttf"),
+  font("SourceSerif4-Italic.ttf"),
+  font("Inter-Regular.ttf"),
+  font("Inter-SemiBold.ttf"),
+]);
 
 const PAPER = "rgb(245, 240, 230)";
 const PAPER_EDGE = "rgb(221, 211, 191)";
@@ -22,7 +37,7 @@ export default async function OpengraphImage() {
           justifyContent: "space-between",
           background: PAPER,
           padding: "72px 96px",
-          fontFamily: "serif",
+          fontFamily: "Source Serif 4",
           color: INK_700,
         }}
       >
@@ -31,7 +46,7 @@ export default async function OpengraphImage() {
             display: "flex",
             alignItems: "center",
             gap: 16,
-            fontFamily: "sans-serif",
+            fontFamily: "Inter",
             fontSize: 22,
             letterSpacing: "0.22em",
             textTransform: "uppercase",
@@ -87,8 +102,8 @@ export default async function OpengraphImage() {
             justifyContent: "space-between",
             paddingTop: 28,
             borderTop: `1px solid ${PAPER_EDGE}`,
-            fontFamily: "sans-serif",
-            fontSize: 22,
+            fontFamily: "Inter",
+            fontSize: 20,
             color: INK_400,
             letterSpacing: "0.06em",
           }}
@@ -98,6 +113,15 @@ export default async function OpengraphImage() {
         </div>
       </div>
     ),
-    size,
+    {
+      ...size,
+      fonts: [
+        { name: "Source Serif 4", data: serifMedium, weight: 500, style: "normal" },
+        { name: "Source Serif 4", data: serifMediumItalic, weight: 500, style: "italic" },
+        { name: "Source Serif 4", data: serifItalic, weight: 400, style: "italic" },
+        { name: "Inter", data: inter, weight: 400, style: "normal" },
+        { name: "Inter", data: interSemiBold, weight: 600, style: "normal" },
+      ],
+    },
   );
 }
