@@ -5,7 +5,7 @@ const isoDateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "expected YYYY-MM-
 /**
  * Hosts a citation may point at. Every sourceUrl in this repo is written by a
  * scraper reading untrusted remote HTML, and ends up rendered as an `href`, so
- * `z.string().url()` alone is not enough — it accepts `javascript:` and
+ * `z.url()` alone is not enough — it accepts `javascript:` and
  * `data:` URLs, which would make a poisoned row in an auto-generated data PR
  * an XSS vector. (Those PRs are thousands of lines of JSON churn; a single
  * altered URL is not something review reliably catches.)
@@ -32,7 +32,6 @@ const CITATION_HOSTS = [
  * so `javascript:`/`data:` can never reach an href.
  */
 const sourceUrlSchema = z
-  .string()
   .url()
   .refine((raw) => {
     let parsed: URL;
@@ -76,7 +75,7 @@ export const provenanceLabels: Record<Provenance, string> = {
 
 export const monthlyObservationSchema = z.object({
   date: z.string().regex(/^\d{4}-\d{2}-01$/, "expected YYYY-MM-01"),
-  value: z.number().finite(),
+  value: z.number(),
 });
 export type MonthlyObservation = z.infer<typeof monthlyObservationSchema>;
 
@@ -183,12 +182,12 @@ export type IndustryMonthlyFile = z.infer<typeof industryMonthlyFileSchema>;
  */
 export const subindexRowSchema = z.object({
   date: z.string().regex(/^\d{4}-\d{2}-01$/),
-  composite: z.number().finite(),
-  newOrders: z.number().finite(),
-  production: z.number().finite(),
-  employment: z.number().finite(),
-  supplierDeliveries: z.number().finite(),
-  inventories: z.number().finite(),
+  composite: z.number(),
+  newOrders: z.number(),
+  production: z.number(),
+  employment: z.number(),
+  supplierDeliveries: z.number(),
+  inventories: z.number(),
   sourceUrl: sourceUrlSchema,
 });
 export type SubindexRow = z.infer<typeof subindexRowSchema>;
@@ -263,11 +262,11 @@ export const servicesDefaultWeights: Record<ServicesSubindexName, number> = {
  */
 export const servicesSubindexRowSchema = z.object({
   date: z.string().regex(/^\d{4}-\d{2}-01$/),
-  composite: z.number().finite(),
-  businessActivity: z.number().finite(),
-  newOrders: z.number().finite(),
-  employment: z.number().finite(),
-  supplierDeliveries: z.number().finite(),
+  composite: z.number(),
+  businessActivity: z.number(),
+  newOrders: z.number(),
+  employment: z.number(),
+  supplierDeliveries: z.number(),
   sourceUrl: sourceUrlSchema,
 });
 export type ServicesSubindexRow = z.infer<typeof servicesSubindexRowSchema>;

@@ -42,7 +42,7 @@ export type Interpretation = z.infer<typeof interpretationSchema>;
 
 export const sourceSchema = z.object({
   label: z.string(),
-  url: z.string().url(),
+  url: z.url(),
   kind: z.enum(["primary", "secondary"]).optional(),
 });
 export type Source = z.infer<typeof sourceSchema>;
@@ -51,7 +51,7 @@ export const ismCommentSchema = z.object({
   date: z.string().regex(/^\d{4}-\d{2}-01$/),
   industry: z.string().optional(),
   quote: z.string(),
-  sourceUrl: z.string().url().optional(),
+  sourceUrl: z.url().optional(),
 });
 export type ISMComment = z.infer<typeof ismCommentSchema>;
 
