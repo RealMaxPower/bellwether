@@ -174,7 +174,7 @@ function covidTrough(y, m) {
 
 // ---------- Fed Funds ----------
 
-function fedFundsValue(y, m) {
+function fedFundsValue(y) {
   // Hand-shaped contour of the effective Fed Funds rate.
   if (y < 1955) return 1.5;
   if (y < 1960) return 2.5;
@@ -233,7 +233,7 @@ for (const [id, title, salt, lead, amp, bias] of subindexConfigs) {
 
 const fedFundsObs = [];
 for (const [y, m] of months(start[0], start[1], end[0], end[1])) {
-  fedFundsObs.push({ date: monthIso(y, m), value: r1(fedFundsValue(y, m) + (rng(y * 19 + m)() - 0.5) * 0.4) });
+  fedFundsObs.push({ date: monthIso(y, m), value: r1(fedFundsValue(y) + (rng(y * 19 + m)() - 0.5) * 0.4) });
 }
 writeFileSync(
   resolve(dataDir, "FEDFUNDS.json"),
