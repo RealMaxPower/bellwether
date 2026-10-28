@@ -8,16 +8,13 @@ export const contentType = "image/png";
 
 // next/og only bundles one sans-serif face, so the site's fonts are supplied
 // here. They're Google Fonts' static TTF instances, unmodified (Satori can't
-// read woff2 or variable fonts); the licences sit alongside them. The image
-// is prerendered, so they're only read at build time.
+// read woff2 or variable fonts); the licences sit alongside them.
+//
+// Read them inside the handler, never at module scope: every page imports this
+// module for its og:image metadata, and the request-time pages (/heatmap,
+// /decompose) run in functions that don't ship assets/. The image itself is
+// prerendered, so the reads only happen at build time.
 const font = (file: string) => readFile(join(process.cwd(), "assets/fonts", file));
-const [serifMedium, serifMediumItalic, serifItalic, inter, interSemiBold] = await Promise.all([
-  font("SourceSerif4-Medium.ttf"),
-  font("SourceSerif4-MediumItalic.ttf"),
-  font("SourceSerif4-Italic.ttf"),
-  font("Inter-Regular.ttf"),
-  font("Inter-SemiBold.ttf"),
-]);
 
 const PAPER = "rgb(245, 240, 230)";
 const PAPER_EDGE = "rgb(221, 211, 191)";
@@ -26,6 +23,14 @@ const INK_400 = "rgb(107, 99, 84)";
 const OXBLOOD = "rgb(139, 30, 30)";
 
 export default async function OpengraphImage() {
+  const [serifMedium, serifMediumItalic, serifItalic, inter, interSemiBold] = await Promise.all([
+    font("SourceSerif4-Medium.ttf"),
+    font("SourceSerif4-MediumItalic.ttf"),
+    font("SourceSerif4-Italic.ttf"),
+    font("Inter-Regular.ttf"),
+    font("Inter-SemiBold.ttf"),
+  ]);
+
   return new ImageResponse(
     (
       <div
