@@ -32,7 +32,7 @@ export const sectorCellSchema = z.object({
   score: z.number().int().gte(-100).lte(100),
   narrative: z.string(),
   provenance: sectorProvenanceSchema,
-  sourceUrl: z.string().url().optional(),
+  sourceUrl: z.url().optional(),
 });
 
 export const sectorsFileSchema = z.object({
