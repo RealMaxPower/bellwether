@@ -4,7 +4,7 @@
   "source": "ISM monthly Report on Business news releases",
   "units": "Index",
   "provenance": "hand-curated",
-  "lastVerifiedAt": "2026-10-10",
+  "lastVerifiedAt": "2026-11-05",
   "observations": [
     {
       "date": "2008-10-01",
@@ -415,6 +415,11 @@
       "date": "2026-09-01",
       "value": 54.5,
       "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-54-5-september-2026-ism-manufacturing-pmi-report-302894520.html"
+    },
+    {
+      "date": "2026-10-01",
+      "value": 55.5,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-55-5-october-2026-ism-manufacturing-pmi-report-302925617.html"
     }
   ]
 }
