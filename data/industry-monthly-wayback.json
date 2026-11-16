@@ -3,7 +3,7 @@
   "title": "ISM Manufacturing — per-month industry growth/contraction lists (Wayback archive)",
   "source": "Wayback Machine archive of ISM monthly Manufacturing Report on Business pages — overall PMI growth/contraction lists, normalized against the 18-industry canonical names from data/sectors.json",
   "provenance": "wayback-archive",
-  "lastVerifiedAt": "2026-11-05",
+  "lastVerifiedAt": "2026-11-16",
   "industries": [
     "Apparel, Leather & Allied Products",
     "Chemical Products",
@@ -2001,7 +2001,9 @@
         "Furniture & Related Products",
         "Fabricated Metal Products"
       ],
-      "contracting": [],
+      "contracting": [
+        "Chemical Products"
+      ],
       "sourceUrl": "https://web.archive.org/web/20260805065247/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/july/"
     },
     {
