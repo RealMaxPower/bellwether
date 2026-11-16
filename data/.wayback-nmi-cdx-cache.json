@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "builtAt": 1791672880380,
+  "builtAt": 1793888532440,
   "modernByMonth": {
     "january": [
       {
@@ -495,6 +495,10 @@
       },
       {
         "timestamp": "20260416233536",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/february/"
+      },
+      {
+        "timestamp": "20260716043254",
         "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/february/"
       }
     ],
@@ -1108,6 +1112,10 @@
       {
         "timestamp": "20260518070404",
         "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/april/"
+      },
+      {
+        "timestamp": "20260713155708",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/april"
       }
     ],
     "may": [
@@ -1610,6 +1618,10 @@
         "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/june/"
       },
       {
+        "timestamp": "20260711181652",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/june/"
+      },
+      {
         "timestamp": "20260801192150",
         "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/june/"
       }
@@ -2077,6 +2089,10 @@
       },
       {
         "timestamp": "20260417002248",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
+      },
+      {
+        "timestamp": "20260716052040",
         "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/july/"
       },
       {
@@ -3226,6 +3242,10 @@
       {
         "timestamp": "20261008203507",
         "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/september/"
+      },
+      {
+        "timestamp": "20261009032552",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/september/"
       }
     ],
     "october": [
@@ -3431,6 +3451,10 @@
       },
       {
         "timestamp": "20260518060517",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"
+      },
+      {
+        "timestamp": "20261009231508",
         "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/"
       }
     ],
@@ -3884,6 +3908,10 @@
       {
         "timestamp": "20260711171611",
         "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/december/"
+      },
+      {
+        "timestamp": "20260713145302",
+        "original": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/December"
       },
       {
         "timestamp": "20260829221929",

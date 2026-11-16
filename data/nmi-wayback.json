@@ -4,7 +4,7 @@
   "source": "Wayback Machine archive of ISM monthly Services Report on Business pages — values originate with ISM",
   "units": "Index",
   "provenance": "wayback-archive",
-  "lastVerifiedAt": "2026-10-10",
+  "lastVerifiedAt": "2026-11-05",
   "observations": [
     {
       "date": "2014-09-01",
@@ -410,6 +410,11 @@
       "date": "2026-08-01",
       "value": 55.4,
       "sourceUrl": "https://web.archive.org/web/20260907095101/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/august/"
+    },
+    {
+      "date": "2026-09-01",
+      "value": 54.9,
+      "sourceUrl": "https://web.archive.org/web/20261007175455/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/september/"
     }
   ]
 }

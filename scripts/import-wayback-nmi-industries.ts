@@ -21,6 +21,7 @@
 
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
+import { verblessContractionRe } from "./lib/verbless-contraction";
 
 const PAGE_SLEEP_MS = 2500;
 const RETRY_DELAY_MS = 8000;
@@ -181,16 +182,10 @@ function extractOverallLists(
       "i",
     );
 
-  // 2026 pages introduced a verbless form carrying no month token at all:
-  //   "The three industries in contraction are: A; B; C."
-  // It cannot be anchored on the month, so it is a fallback used only when
-  // the month-anchored patterns found no contraction. "industries reporting
-  // contraction or decreases" (the trailing methodology boilerplate) does
-  // not match — it has no "in" before "contraction".
-  const verblessContractionRe = new RegExp(
-    `${NOUN}\\s+in\\s+contraction\\s+(?:are|is)\\s*:?\\s*([A-Z][^.]+?)(?:\\.|$)`,
-    "i",
-  );
+  // 2026 pages introduced a verbless form with no month token, in either
+  // tense ("…in contraction are: A; B." / "…in contraction was X."). See
+  // scripts/lib/verbless-contraction.ts; used only as a near-growth fallback.
+  const verblessRe = verblessContractionRe(NOUN);
 
   const out = { growing: [] as string[], contracting: [] as string[], unknown: [] as string[] };
 
@@ -236,7 +231,7 @@ function extractOverallLists(
   const contraction =
     nearGrowth(match("contraction")) ??
     nearGrowth(match("a\\s+decrease")) ??
-    nearGrowth(verblessContractionRe.exec(text));
+    nearGrowth(verblessRe.exec(text));
   if (contraction) absorb(contraction[1]!, "contracting");
 
   return out;
