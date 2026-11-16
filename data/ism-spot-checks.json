@@ -58,6 +58,13 @@
       "sourceUrl": "https://web.archive.org/web/20251001174028/https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/september/",
       "addedAt": "2026-08-02",
       "note": "First month recovered from the renamed /ism-pmi-reports/ path. Prose: \"The Manufacturing PMI registered 49.1 percent in September\"."
+    },
+    {
+      "date": "2026-10-01",
+      "headlinePmi": 55.5,
+      "sourceUrl": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-55-5-october-2026-ism-manufacturing-pmi-report-302925617.html",
+      "addedAt": "2026-11-15",
+      "note": "Single-source month at merge time: PRNewswire release only, Wayback archive not yet caught up. Prose: \"The Manufacturing PMI registered 55.5 percent in October, 1 percentage point above the September figure of 54.5 percent\"."
     }
   ]
 }
