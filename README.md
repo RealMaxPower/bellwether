@@ -61,7 +61,7 @@ The build doesn't require FRED at runtime — all market data is checked-in JSON
 - **Charts:** D3 (`d3-shape`, `d3-scale`, `d3-array`) for the timeline and backtests
 - **State:** Zustand (Fed Chair scenario state)
 - **Data:** checked-in JSON, validated with Zod at load time; sourced from FRED, ISM Reports on Business via the Internet Archive, ISM press releases on PRNewswire, and a forecasts.org historical mirror
-- **Testing:** Vitest
+- **Testing:** Vitest (unit), Playwright (end-to-end smoke test)
 - **Analytics:** Vercel Analytics
 
 No database, no auth.

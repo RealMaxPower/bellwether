@@ -39,3 +39,21 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      # Smoke-test the build above with Playwright, served by a local
+      # `next start`. Vercel previews sit behind deployment protection, so CI
+      # can't test them; failures that only happen on Vercel are caught by
+      # running `npm run test:e2e:prod` after a production merge.
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
+      - name: E2E smoke test
+        run: npm run test:e2e
+
+      - name: Upload Playwright results
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-results
+          path: test-results/
+          retention-days: 7
