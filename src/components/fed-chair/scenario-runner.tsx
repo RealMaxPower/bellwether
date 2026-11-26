@@ -52,7 +52,7 @@ export function ScenarioRunner({ scenario, pmiObservations, recessions }: Scenar
               Scenario {scenarios.findIndex((s) => s.id === scenario.id) + 1} of {scenarios.length} ·{" "}
               {scenario.era}
             </p>
-            <h2 className="mt-2 font-serif text-display-2 text-ink-700">{scenario.hookQuestion}</h2>
+            <h1 className="mt-2 font-serif text-display-2 text-ink-700">{scenario.hookQuestion}</h1>
           </div>
           <div className="editorial-prose">
             {scenario.dossier.map((p, i) => (
