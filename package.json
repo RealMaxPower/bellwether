@@ -32,6 +32,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:e2e": "playwright install chromium && playwright test",
+    "test:e2e:prod": "playwright install chromium && E2E_BASE_URL=https://bellwether-nine.vercel.app playwright test",
     "refresh-data": "tsx scripts/fetch-fred.ts",
     "import-pmi": "tsx scripts/import-pmi-csv.ts",
     "import-historical": "tsx scripts/import-forecastsorg.ts",
@@ -68,6 +70,7 @@
     "zustand": "^5.0.0"
   },
   "devDependencies": {
+    "@playwright/test": "1.65.1",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/d3-array": "^3.2.1",
     "@types/d3-axis": "^3.0.6",

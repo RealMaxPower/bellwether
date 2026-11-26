@@ -29,6 +29,14 @@ npm run typecheck   # tsc --noEmit (strict)
 npm run test        # vitest
 ```
 
+If your change touches pages, layout or routing, also run the Playwright smoke test against a local production build. It loads every page at desktop and mobile widths and fails on console errors, uncaught exceptions or failed requests. CI runs it on every PR too.
+
+```bash
+npm run build && npm run test:e2e
+```
+
+The first run downloads Playwright's Chromium (about 100 MB); later runs reuse it. Maintainers run `npm run test:e2e:prod` against the live site after each production merge, since some failures only happen on Vercel.
+
 If your change touches data, also run:
 
 ```bash
